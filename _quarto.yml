@@ -16,8 +16,6 @@ website:
         menu:
           - text: "Todos los cursos"
             href: cursos/index.qmd
-          #- text: "Métodos Cuantitativos"
-          #  href: cursos/metodos-cuanti/index.qmd
   search: true
   page-navigation: true
 

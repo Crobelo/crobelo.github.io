@@ -7,5 +7,4 @@ title: "Inicio"
 Este es mi sitio personal. Aquí encontrarás información sobre mi trabajo, proyectos y cursos que imparto.
 
 ## Cursos destacados
-- [Métodos Cuantitativos](cursos/metodos-cuanti/index.html)
 

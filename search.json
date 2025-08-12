@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Inicio",
+    "section": "",
+    "text": "Este es mi sitio personal. Aquí encontrarás información sobre mi trabajo, proyectos y cursos que imparto.\n\n\n\nMétodos Cuantitativos"
+  },
+  {
+    "objectID": "index.html#cursos-destacados",
+    "href": "index.html#cursos-destacados",
+    "title": "Inicio",
+    "section": "",
+    "text": "Métodos Cuantitativos"
+  },
+  {
+    "objectID": "cursos/index.html",
+    "href": "cursos/index.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Advanced Quantitative Methods"
+  },
+  {
+    "objectID": "cursos/index.html#current-classes",
+    "href": "cursos/index.html#current-classes",
+    "title": "Teaching",
+    "section": "",
+    "text": "Advanced Quantitative Methods"
+  },
+  {
+    "objectID": "cursos/index.html#archived-classes",
+    "href": "cursos/index.html#archived-classes",
+    "title": "Teaching",
+    "section": "Archived Classes",
+    "text": "Archived Classes\n\nPOS 3713: Introduction to Political Science Research Methods\nPOS 5737: Introduction to Data Analysis\nPOLS 209 at TAMU: Research Methods"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html",
+    "href": "cursos/metodos-cuanti/index.html",
+    "title": "Métodos Cuantitativos",
+    "section": "",
+    "text": "Este curso cubre fundamentos y técnicas avanzadas de análisis cuantitativo.\nPodés seguir la ruta común o elegir una de las tres trayectorias:"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#módulos",
+    "href": "cursos/metodos-cuanti/index.html#módulos",
+    "title": "Métodos Cuantitativos",
+    "section": "Módulos",
+    "text": "Módulos\n\nIntroducción\nR y Python\nVisualización"
+  }
+]

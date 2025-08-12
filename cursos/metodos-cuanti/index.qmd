@@ -1,0 +1,16 @@
+---
+title: "Métodos Cuantitativos"
+---
+
+Este curso cubre fundamentos y técnicas avanzadas de análisis cuantitativo.  
+
+Podés seguir la ruta común o elegir una de las **tres trayectorias**:
+
+- [Opinión pública](perfiles/opinion-publica.html)
+- [Gestión pública](perfiles/gestion-publica.html)
+- [Investigación académica](perfiles/investigacion-academica.html)
+
+## Módulos
+1. [Introducción](modulos/01-intro.html)
+2. [R y Python](modulos/02-r-python.html)
+3. [Visualización](modulos/03-visualizacion.html)

@@ -1,0 +1,10 @@
+.DS_Store
+.Rhistory
+.Rproj.user
+/.quarto/
+_blog-drafts/
+_old/
+papers2/
+
+/.luarc.json
+cv.pages

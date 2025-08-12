@@ -1,0 +1,59 @@
+project:
+  type: website
+  output-dir: docs
+  resources: 
+    - "cv.pdf"
+    - CNAME
+  render:
+    - "*.qmd"
+    - "!pols-209/files/"  # dir has .Rmd (-> .pdf) files that should be re-compiled.
+
+website:
+  title: "Claudio Robelo"
+  favicon: favicon.ico
+  site-url: https://www.carlislerainey.com
+  google-analytics: "G-F57WQLHH67" # Que es esto ???
+  twitter-card: 
+    creator: "@ClaudioRobelo"
+    image: "/profile-tw.png"
+  open-graph: true
+  navbar:
+    #right:
+    tools:    
+      - icon: rss
+        href: blog/index.xml
+        #text: Blog RSS
+      - icon: twitter
+        href: https://twitter.com/ClaudioRobelo
+      - icon: linkedin
+        href: https://www.linkedin.com/in/claudio-robelo/
+      - icon: github
+        href: https://github.com/Crobelo
+
+    left:
+      - href: index.qmd
+        text: About
+      #- href: papers/index.qmd
+      #  text: Papers
+      - href: research/index.qmd
+        text: Research
+      - href: teaching/index.qmd
+        text: Teaching  
+      - href: talks/index.qmd
+        text: Talks
+      - href: blog/index.qmd
+        text: Blog
+      #- href: email-list/index.qmd
+      #  text: "Email List"
+        
+  #margin-header: subscribe.html
+      
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+editor: source
+

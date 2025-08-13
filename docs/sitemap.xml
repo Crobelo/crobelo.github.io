@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://crobelo.github.io/index.html</loc>
-    <lastmod>2025-08-13T13:45:59.786Z</lastmod>
-  </url>
-  <url>
     <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/01-intro.html</loc>
     <lastmod>2025-08-12T20:06:22.650Z</lastmod>
   </url>
@@ -14,7 +10,7 @@
   </url>
   <url>
     <loc>https://crobelo.github.io/cursos/metodos-cuanti/index.html</loc>
-    <lastmod>2025-08-12T20:03:07.223Z</lastmod>
+    <lastmod>2025-08-13T23:31:04.988Z</lastmod>
   </url>
   <url>
     <loc>https://crobelo.github.io/cursos/metodos-cuanti/perfiles/gestion-publica.html</loc>

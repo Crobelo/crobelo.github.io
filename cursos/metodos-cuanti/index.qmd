@@ -2,14 +2,50 @@
 title: "Métodos Cuantitativos"
 ---
 
-Este curso cubre fundamentos y técnicas avanzadas de análisis cuantitativo.  
+# Bienvenidos a *Métodos Cuantitativos*
 
-Podés seguir la ruta común o elegir una de las **tres trayectorias**:
+Esta página fue creada para acompañarlos a lo largo de la cursada, brindando un espacio centralizado donde encontrarán los conceptos clave, los materiales trabajados en clase y ejercicios prácticos.  
+Su propósito es **suplementar** la bibliografía y las lecturas obligatorias, no reemplazarlas.
 
-- [Opinión pública](perfiles/opinion-publica.html)
-- [Gestión pública](perfiles/gestion-publica.html)
+Aquí podrán acceder a posteos organizados por cada encuentro, con materiales, ejemplos y actividades.  
+El diseño modular les permitirá revisitar cualquier sección en el momento que lo necesiten — incluso después de finalizar la cursada — de modo que este recurso pueda seguir sirviéndoles como material de referencia tanto en el ámbito académico como en el profesional.
 
+Se trata de una materia eminentemente práctica, dictada por docentes con experiencia directa en todos los ámbitos que abordaremos:  
+- **Encuestas de opinión pública**  
+- **Análisis de datos para la gestión pública**  
+- **Análisis de datos para la toma de decisiones estratégicas**  
+- **Investigación académica cuantitativa**
 
-## Módulos
-1. [Introducción](modulos/01-intro.html)
+Nuestro objetivo es que, si dominan los contenidos y habilidades que trabajaremos, puedan **desempeñarse profesionalmente de inmediato** en entornos donde los datos son protagonistas.  
+El análisis de datos se ha convertido en un campo esencial en la Ciencia Política y las Relaciones Internacionales: desde campañas políticas que requieren encuestas y proyecciones, hasta programas de políticas públicas que deben estimar su impacto antes de implementarse.
+
+Aquí aprenderán a **leer, interpretar y generar información**, pero sobre todo a **formular las preguntas correctas** y a reconocer qué se puede — y qué no se puede — responder con determinados datos.  
+También desarrollarán la capacidad de dialogar con profesionales de otras disciplinas y de evaluar la calidad de los insumos producidos por organismos públicos, instituciones internacionales, medios de comunicación y consultoras.
+
+Por el carácter práctico del curso, todos trabajarán sobre los mismos fundamentos — principalmente herramientas estadísticas — pero cada estudiante podrá profundizar en la orientación que más le interese:  
+- Opinión Pública  
+- Gestión Pública  
+- Análisis de Datos  
+- Investigación Académica  
+
+Cada orientación cuenta con materiales y trayectos opcionales que podrán explorar libremente para fortalecer su perfil y mejorar su inserción laboral.
+
+Además, tendrán acceso a una **suscripción gratuita por 6 meses a DataCamp**, una plataforma de aprendizaje en línea especializada en ciencia de datos.  
+DataCamp ofrece cursos interactivos en estadística, programación, visualización y análisis, permitiéndoles practicar a su propio ritmo y adquirir competencias muy demandadas en el mercado laboral.
+
+---
+
+## 📄 Programa de la Materia
+
+En el siguiente enlace encontrarán el **Programa 2025 de Métodos Cuantitativos** y el **cronograma de clases**:
+
+➡️ [Descargar Programa](archivos/Programa-2025.pdf)
+
+El programa **rige la materia**.  
+Es nuestro **contrato mutuo**: allí se define qué esperamos de ustedes y a qué nos comprometemos nosotros.  
+Es el corazón de la materia, por eso les pedimos que lo lean y lo comprendan en profundidad.  
+
+En el **segundo encuentro** esperamos que todos lo tengan leído y aprendido, ya que realizaremos un **parcialito** sobre su contenido.
+
+---
 

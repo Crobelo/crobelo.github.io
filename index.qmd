@@ -2,9 +2,3 @@
 title: "Inicio"
 ---
 
-# Bienvenido/a
-
-Este es mi sitio personal. Aquí encontrarás información sobre mi trabajo, proyectos y cursos que imparto.
-
-## Cursos destacados
-

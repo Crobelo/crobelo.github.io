@@ -1,8 +1,7 @@
 ---
-title: "Métodos Cuantitativos"
+title: "Bienvenidos a *Métodos Cuantitativos*"
 ---
 
-# Bienvenidos a *Métodos Cuantitativos*
 
 Esta página fue creada para acompañarlos a lo largo de la cursada, brindando un espacio centralizado donde encontrarán los conceptos clave, los materiales trabajados en clase y ejercicios prácticos.  
 Su propósito es **suplementar** la bibliografía y las lecturas obligatorias, no reemplazarlas.

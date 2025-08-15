@@ -1,0 +1,95 @@
+---
+title: "Módulo 1 — Preguntas y Respuestas"
+format: html
+---
+
+# Introducción: la inquietud por conocer
+
+La historia del pensamiento humano comienza con una pregunta. Desde que los primeros grupos humanos miraron el cielo nocturno o se preguntaron por qué cambiaban las estaciones, la curiosidad ha sido el motor de descubrimientos, teorías y transformaciones.  
+
+> “Los mejores científicos y exploradores tienen la curiosidad de un niño. Se preguntan quién, qué, dónde, por qué, cuándo y cómo... y nunca dejan de hacerlo.” —Sylvia Earle
+
+En este curso queremos recuperar ese espíritu de curiosidad. La Ciencia Política y las Relaciones Internacionales —y, en particular, la investigación empírica— empiezan con una pregunta que queremos responder de forma sistemática. Sin embargo, no todas las preguntas son iguales: difieren en su objetivo, en cómo se responden y en el tipo de conocimiento que generan.
+
+---
+
+# De la curiosidad a la ciencia
+
+La ciencia es, ante todo, un **método** para abordar preguntas. No pretende ofrecer verdades absolutas, sino **respuestas justificadas y comunicables**. La transparencia del método es esencial, no porque garantice una objetividad perfecta, sino porque permite que otros puedan evaluar, replicar y debatir nuestras conclusiones. Esto hace que la ciencia sea una actividad social: avanza gracias a la interacción, la crítica y el consenso (siempre provisional) de la comunidad.
+
+Pero la **filosofía de la ciencia** nos recuerda que incluso este método tiene límites. Los debates sobre qué constituye evidencia, cómo interpretar datos o qué significa “explicación” siguen abiertos. Nosotros trabajaremos dentro de un marco de referencia concreto, que haremos explícito, pero que no agota las posibilidades ni resuelve todas las discusiones.
+
+---
+
+# Ciencias sociales, ciencia política y relaciones internacionales
+
+Las ciencias sociales estudian fenómenos complejos, dinámicos y profundamente humanos. La Ciencia Política se ocupa de cómo se ejerce el poder, cómo se toman las decisiones colectivas y cómo se estructuran las instituciones que regulan la vida en sociedad. Las Relaciones Internacionales, por su parte, analizan cómo los Estados y otros actores interactúan en el sistema internacional, ya sea en contextos de cooperación o de conflicto.
+
+En Argentina, esto significa, por ejemplo, analizar:  
+* La estabilidad y calidad de la democracia.  
+* Las relaciones entre poderes del Estado.  
+* La representación política y el rol de los partidos.  
+* La relación entre ciudadanía y autoridades.  
+* La política exterior argentina frente a alianzas militares y acuerdos de defensa.  
+* El papel de Argentina en operaciones de paz y en organismos multilaterales.  
+* La posición del país frente a conflictos internacionales y guerras recientes.
+
+---
+
+# Tipos de preguntas
+
+En política y en relaciones internacionales, podemos hacer preguntas **normativas**, **descriptivas** o **causales**.
+
+| Tipo        | Qué pregunta                         | Ejemplo argentino sobre democracia | Ejemplo en relaciones internacionales | Enfoque para responder |
+|-------------|--------------------------------------|-------------------------------------|----------------------------------------|------------------------|
+| Normativa   | ¿Qué debería ser? (juicio moral)     | ¿Debería la Corte Suprema tener mandatos limitados? | ¿Debería Argentina participar en alianzas militares permanentes? | Lógica y razonamiento |
+| Descriptiva | ¿Cómo es la realidad? (observación)  | ¿Qué porcentaje de argentinos confía en el Congreso? | ¿Cuántas misiones de paz ha integrado Argentina desde 1990? | Observación y medición |
+| Causal      | ¿Por qué es así? (explicación)       | ¿Influye la situación económica en la aprobación presidencial? | ¿Reduce la participación en operaciones de paz la probabilidad de conflicto interestatal? | Observación, medición y diseño |
+
+Las preguntas **normativas** son fundamentales para el debate democrático y ético, pero en este curso nos centraremos en las **descriptivas** y **causales**, que son las que podemos abordar con métodos cuantitativos.
+
+---
+
+# Ejemplos prácticos
+
+## Confianza en la democracia
+* **Normativa:** ¿Deberían los ciudadanos confiar en la democracia como forma de gobierno?  
+* **Descriptiva:** ¿Qué porcentaje de argentinos declara estar satisfecho con la democracia? ¿Cómo varía según edad, región o nivel educativo?  
+* **Causal:** ¿La experiencia personal con corrupción reduce la confianza en la democracia?
+
+## Alianzas militares y cooperación internacional
+* **Normativa:** ¿Debería Argentina unirse formalmente a una alianza militar regional o global?  
+* **Descriptiva:** ¿Cuántos acuerdos de cooperación en defensa ha firmado Argentina en la última década?  
+* **Causal:** ¿La firma de un tratado de defensa mutua aumenta la probabilidad de recibir asistencia militar en caso de crisis?
+
+---
+
+# Causalidad y el problema del contrafáctico
+
+En ciencias sociales y relaciones internacionales, afirmar que “X causa Y” implica imaginar un **mundo contrafáctico**, donde X no ocurre, y comparar el resultado con el mundo real.  
+
+Por ejemplo:  
+* Mundo real: un país que se une a una alianza militar recibe apoyo logístico en una operación internacional.  
+* Mundo contrafáctico: ese mismo país no se une a la alianza. ¿Habría recibido el mismo apoyo?
+
+El problema es que **no podemos observar ambos mundos a la vez**. A esto se lo llama *problema fundamental de la inferencia causal*. Resolverlo requiere creatividad metodológica: experimentos, diseños cuasi-experimentales o análisis estadísticos cuidadosos.
+
+---
+
+# Para estimular la inquietud
+
+Esta introducción no pretende agotar el tema, sino abrir puertas:  
+* ¿Qué preguntas te gustaría responder sobre la democracia en Argentina?  
+* ¿Qué preguntas te gustaría explorar sobre la política exterior o las alianzas militares del país?  
+* ¿Qué datos necesitarías para responderlas?  
+* ¿Qué dificultades encontrarías para demostrar una relación causal en cada caso?  
+
+En el resto del curso aprenderemos a formular preguntas investigables, a diseñar estrategias para responderlas y a interpretar los resultados con espíritu crítico. La meta es que puedas usar la metodología no para apagar tu curiosidad, sino para darle un camino claro y sólido.
+
+---
+
+::: {.callout-note}
+**Para pensar:** La democracia argentina cumplió 40 años en 2023. ¿Cómo ha cambiado la confianza ciudadana en las instituciones en estas cuatro décadas?  
+Y en el plano internacional: ¿Ha cambiado el papel de Argentina en las alianzas militares y en las misiones de paz desde 1983?  
+¿Cuáles serían tus hipótesis?
+:::

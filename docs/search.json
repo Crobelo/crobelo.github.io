@@ -18,7 +18,7 @@
     "href": "cursos/metodos-cuanti/index.html",
     "title": "Bienvenidos a Métodos Cuantitativos",
     "section": "",
-    "text": "Esta página fue creada para acompañarlos a lo largo de la cursada, brindando un espacio centralizado donde encontrarán los conceptos clave, los materiales trabajados en clase y ejercicios prácticos.\nSu propósito es suplementar la bibliografía y las lecturas obligatorias, no reemplazarlas.\nAquí podrán acceder a posteos organizados por cada encuentro, con materiales, ejemplos y actividades.\nEl diseño modular les permitirá revisitar cualquier sección en el momento que lo necesiten — incluso después de finalizar la cursada — de modo que este recurso pueda seguir sirviéndoles como material de referencia tanto en el ámbito académico como en el profesional.\nSe trata de una materia eminentemente práctica, dictada por docentes con experiencia directa en todos los ámbitos que abordaremos:\n- Encuestas de opinión pública\n- Análisis de datos para la gestión pública\n- Análisis de datos para la toma de decisiones estratégicas\n- Investigación académica cuantitativa\nNuestro objetivo es que, si dominan los contenidos y habilidades que trabajaremos, puedan desempeñarse profesionalmente de inmediato en entornos donde los datos son protagonistas.\nEl análisis de datos se ha convertido en un campo esencial en la Ciencia Política y las Relaciones Internacionales: desde campañas políticas que requieren encuestas y proyecciones, hasta programas de políticas públicas que deben estimar su impacto antes de implementarse.\nAquí aprenderán a leer, interpretar y generar información, pero sobre todo a formular las preguntas correctas y a reconocer qué se puede — y qué no se puede — responder con determinados datos.\nTambién desarrollarán la capacidad de dialogar con profesionales de otras disciplinas y de evaluar la calidad de los insumos producidos por organismos públicos, instituciones internacionales, medios de comunicación y consultoras.\nPor el carácter práctico del curso, todos trabajarán sobre los mismos fundamentos — principalmente herramientas estadísticas — pero cada estudiante podrá profundizar en la orientación que más le interese:\n- Opinión Pública\n- Gestión Pública\n- Análisis de Datos\n- Investigación Académica\nCada orientación cuenta con materiales y trayectos opcionales que podrán explorar libremente para fortalecer su perfil y mejorar su inserción laboral.\nAdemás, tendrán acceso a una suscripción gratuita por 6 meses a DataCamp, una plataforma de aprendizaje en línea especializada en ciencia de datos.\nDataCamp ofrece cursos interactivos en estadística, programación, visualización y análisis, permitiéndoles practicar a su propio ritmo y adquirir competencias muy demandadas en el mercado laboral."
+    "text": "Esta página fue creada para acompañarlos a lo largo de la cursada, brindando un espacio centralizado donde encontrarán los conceptos clave, los materiales trabajados en clase y ejercicios prácticos.\nSu propósito es suplementar la bibliografía y las lecturas obligatorias, no reemplazarlas.\nAquí podrán acceder a posteos organizados por cada encuentro, con materiales, ejemplos y actividades.\nEl diseño modular les permitirá revisitar cualquier sección en el momento que lo necesiten — incluso después de finalizar la cursada — de modo que este recurso pueda seguir sirviéndoles como material de referencia tanto en el ámbito académico como en el profesional.\nSe trata de una materia eminentemente práctica, dictada por docentes con experiencia directa en todos los ámbitos que abordaremos:\n* Encuestas de opinión pública\n* Análisis de datos para la gestión pública\n* Análisis de datos para la toma de decisiones estratégicas\n* Investigación académica cuantitativa\nNuestro objetivo es que, si dominan los contenidos y habilidades que trabajaremos, puedan desempeñarse profesionalmente de inmediato en entornos donde los datos son protagonistas.\nEl análisis de datos se ha convertido en un campo esencial en la Ciencia Política y las Relaciones Internacionales: desde campañas políticas que requieren encuestas y proyecciones, hasta programas de políticas públicas que deben estimar su impacto antes de implementarse.\nAquí aprenderán a leer, interpretar y generar información, pero sobre todo a formular las preguntas correctas y a reconocer qué se puede — y qué no se puede — responder con determinados datos.\nTambién desarrollarán la capacidad de dialogar con profesionales de otras disciplinas y de evaluar la calidad de los insumos producidos por organismos públicos, instituciones internacionales, medios de comunicación y consultoras.\nPor el carácter práctico del curso, todos trabajarán sobre los mismos fundamentos — principalmente herramientas estadísticas — pero cada estudiante podrá profundizar en la orientación que más le interese:\n* Opinión Pública\n* Gestión Pública\n* Análisis de Datos\n* Investigación Académica\nCada orientación cuenta con materiales y trayectos opcionales que podrán explorar libremente para fortalecer su perfil y mejorar su inserción laboral.\n\n\nDependiendo de sus intereses y experiencia previa, durante el curso trabajaremos con dos herramientas principales:\n\nExcel: un software omnipresente en el ámbito laboral, versátil y de gran utilidad. Aprenderemos a aprovecharlo al máximo, explorando sus funciones estadísticas y de visualización de datos. Excel puede generar todo lo que necesitamos para este curso —y mucho más— de manera rápida y accesible.\nR: un lenguaje de programación orientado a objetos y optimizado para el análisis estadístico, ampliamente utilizado en investigación y ciencia de datos. Con R podremos implementar las mismas tareas vistas en Excel, pero con la ventaja de la reproducibilidad y automatización. Esta misma página web ha sido desarrollada con R y Quarto.\n\nTeniendo en cuenta la variedad de herramientas disponibles —incluyendo el apoyo de herramientas de IA generativa como ChatGPT, tutoriales en YouTube y otros recursos en línea—, no evaluaremos su destreza técnica en el uso del software, sino su capacidad para interpretar correctamente los resultados que obtengan.\nEse es nuestro diferencial y nuestra ventaja comparativa: comprender e interpretar la información, independientemente de si se produce con una herramienta avanzada o con cálculos manuales. Las herramientas nos ayudan a hacerlo más rápido o más presentable, pero la comprensión del contenido y su interpretación correcta son las competencias que buscamos desarrollar.\nPara quien desee expandir en el uso de herramientas practicas, tendrán acceso (a solicitud individual) a una suscripción gratuita por 6 meses a DataCamp, una plataforma de aprendizaje en línea especializada en ciencia de datos. DataCamp ofrece cursos interactivos en estadística, programación, visualización y análisis, permitiéndoles practicar a su propio ritmo y adquirir competencias muy demandadas en el mercado laboral."
   },
   {
     "objectID": "cursos/metodos-cuanti/index.html#programa-de-la-materia",
@@ -26,5 +26,173 @@
     "title": "Bienvenidos a Métodos Cuantitativos",
     "section": "📄 Programa de la Materia",
     "text": "📄 Programa de la Materia\nEn el siguiente enlace encontrarán el Programa 2025 de Métodos Cuantitativos y el cronograma de clases:\n➡️ Descargar Programa\nEl programa rige la materia.\nEs nuestro contrato mutuo: allí se define qué esperamos de ustedes y a qué nos comprometemos nosotros.\nEs el corazón de la materia, por eso les pedimos que lo lean y lo comprendan en profundidad.\nEn el segundo encuentro esperamos que todos lo tengan leído y aprendido, ya que realizaremos un parcialito sobre su contenido."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-intro.html",
+    "href": "cursos/metodos-cuanti/modulos/01-intro.html",
+    "title": "Clase 1 — Introducción al Conocimiento Científico y la Metodología Cuantitativa",
+    "section": "",
+    "text": "En esta primera clase nos proponemos establecer las bases conceptuales y epistemológicas para comprender la investigación científica, con especial énfasis en la metodología cuantitativa y su lugar dentro de las ciencias sociales.\nComo veremos, hablar de ciencia no implica únicamente manejar procedimientos técnicos. También supone reconocer que estos procedimientos están insertos en un marco epistemológico y en una filosofía de la ciencia que orientan nuestra forma de conocer. Estos marcos no están exentos de debates, tensiones y desacuerdos.\n\n“La limitación del método en la vida práctica está muy tallada por el consenso y el arbitraje de la comunidad científica… con lo positivo que esto puede tener y con lo negativo también, porque no deja de ser una acción humana permeada por intereses.”\n(MC. CLASE 2. Video 1)\n\nEsto nos recuerda que la ciencia es una actividad social: un conjunto de prácticas, acuerdos y disputas que, aunque orientados al conocimiento, están atravesados por la historia, la política y la cultura."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-intro.html#bases-epistemológicas",
+    "href": "cursos/metodos-cuanti/modulos/01-intro.html#bases-epistemológicas",
+    "title": "Clase 1 — Introducción al Conocimiento Científico y la Metodología Cuantitativa",
+    "section": "2.1 Bases epistemológicas",
+    "text": "2.1 Bases epistemológicas\n\nCuantitativo: se asienta en el positivismo y el empirismo. Solo lo mensurable es considerado cognoscible; busca estandarización y generalización.\nCualitativo: se apoya en corrientes como la fenomenología o el interaccionismo simbólico. Prioriza la comprensión profunda de fenómenos únicos.\n\n\n“En el caso del paradigma cuantitativo, el positivismo es el paradigma dominante… En contrapartida, la metodología cualitativa apunta a entender procesos que se dan de manera única.”\n(MC. CLASE 2. Video 2)\n\nBlalock (1982) recuerda que la elección de un método no es neutral:\n&gt; “El investigador que escoge un método lo hace siempre dentro de un marco conceptual, consciente o no, que determina qué datos se consideran relevantes y cómo se interpretan.”\n&gt; (Blalock, Conceptualization and Measurement in the Social Sciences)"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-intro.html#preguntas-y-objetivos",
+    "href": "cursos/metodos-cuanti/modulos/01-intro.html#preguntas-y-objetivos",
+    "title": "Clase 1 — Introducción al Conocimiento Científico y la Metodología Cuantitativa",
+    "section": "2.2 Preguntas y objetivos",
+    "text": "2.2 Preguntas y objetivos\n\nCuantitativo: tiende a formular preguntas relacionales o causales. Ej.: ¿Cómo influye el nivel educativo en la participación política?\nCualitativo: busca comprender significados y experiencias. Ej.: ¿Cómo describen los vecinos su sentido de pertenencia al barrio?"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-intro.html#recolección-y-análisis-de-datos",
+    "href": "cursos/metodos-cuanti/modulos/01-intro.html#recolección-y-análisis-de-datos",
+    "title": "Clase 1 — Introducción al Conocimiento Científico y la Metodología Cuantitativa",
+    "section": "2.3 Recolección y análisis de datos",
+    "text": "2.3 Recolección y análisis de datos\n\nCuantitativo: usa instrumentos estandarizados (cuestionarios, escalas), muestreo probabilístico y análisis estadístico.\nCualitativo: emplea técnicas flexibles y emergentes (entrevistas, observación participante), con análisis interpretativo.\n\nJauretche, en El medio pelo en la sociedad argentina, ironiza sobre la confianza ciega en las cifras: &gt; “Cuando el dato estadístico es presentado como verdad absoluta, se olvida que antes de llegar a la cifra hubo un acto de selección: qué medir, cómo medirlo, y quién lo mide.”"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-intro.html#bibliografía",
+    "href": "cursos/metodos-cuanti/modulos/01-intro.html#bibliografía",
+    "title": "Clase 1 — Introducción al Conocimiento Científico y la Metodología Cuantitativa",
+    "section": "Bibliografía",
+    "text": "Bibliografía\n\nBlalock, H. M. (1982). Conceptualization and Measurement in the Social Sciences.\n\nJauretche, A. (1966). El medio pelo en la sociedad argentina.\n\nMaterial de Cátedra — MC. CLASE 2. Videos 1 a 4."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#preguntas-y-respuestas",
+    "href": "cursos/metodos-cuanti/index.html#preguntas-y-respuestas",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "1. Preguntas y respuestas",
+    "text": "1. Preguntas y respuestas\nExploramos las preguntas que impulsan la persecución del conocimiento humano por curiosidad. Analizamos la diferencia entre respuestas ideales y respuestas reales y contextualizamos la materia desde esta perspectiva."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#ciencia-ciencias-sociales-y-lo-social-en-la-ciencia",
+    "href": "cursos/metodos-cuanti/index.html#ciencia-ciencias-sociales-y-lo-social-en-la-ciencia",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "2. Ciencia, ciencias sociales y lo social en la ciencia",
+    "text": "2. Ciencia, ciencias sociales y lo social en la ciencia\nIntroducción epistemológica a qué es la ciencia, cuáles son sus límites, mitos y posibilidades. Incluye la reflexión sobre cómo lo social influye en la práctica científica."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#diseño-de-investigación-modelos-teóricos-hipótesis-y-unidad-de-análisis",
+    "href": "cursos/metodos-cuanti/index.html#diseño-de-investigación-modelos-teóricos-hipótesis-y-unidad-de-análisis",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "3. Diseño de investigación, modelos teóricos, hipótesis y unidad de análisis",
+    "text": "3. Diseño de investigación, modelos teóricos, hipótesis y unidad de análisis\nEstudiamos los cimientos de cualquier investigación social: desde la elección del diseño hasta la definición de hipótesis y unidades de análisis. Evaluamos la factibilidad como punto crítico."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#conceptos-operacionalización-y-variables",
+    "href": "cursos/metodos-cuanti/index.html#conceptos-operacionalización-y-variables",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "4. Conceptos, operacionalización y variables",
+    "text": "4. Conceptos, operacionalización y variables\nCómo pasar de conceptos abstractos de interés a definiciones medibles y observables."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#opcional-repaso-de-álgebra-y-notación-matemática",
+    "href": "cursos/metodos-cuanti/index.html#opcional-repaso-de-álgebra-y-notación-matemática",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "4.5 (opcional) Repaso de álgebra y notación matemática",
+    "text": "4.5 (opcional) Repaso de álgebra y notación matemática\nClase opcional para reforzar la comprensión de fórmulas básicas, como el cálculo de promedios, de cara a los módulos posteriores."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#datos-cantidades-de-interés-y-medidas-resumen",
+    "href": "cursos/metodos-cuanti/index.html#datos-cantidades-de-interés-y-medidas-resumen",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "5. Datos, cantidades de interés y medidas resumen",
+    "text": "5. Datos, cantidades de interés y medidas resumen\nDe un conjunto de datos, extraemos información útil para describirlo: medidas de tendencia central y de dispersión."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#gráficos-para-la-comunicación",
+    "href": "cursos/metodos-cuanti/index.html#gráficos-para-la-comunicación",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "6. Gráficos para la comunicación",
+    "text": "6. Gráficos para la comunicación\nTransformar datos en representaciones visuales claras y efectivas."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#de-los-conceptos-a-las-relaciones",
+    "href": "cursos/metodos-cuanti/index.html#de-los-conceptos-a-las-relaciones",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "7. De los conceptos a las relaciones",
+    "text": "7. De los conceptos a las relaciones\nTablas de frecuencia y tablas de contingencia: cómo pasar de la descripción de una variable a explorar relaciones entre variables."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#introducción-a-la-probabilidad",
+    "href": "cursos/metodos-cuanti/index.html#introducción-a-la-probabilidad",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "8. Introducción a la probabilidad",
+    "text": "8. Introducción a la probabilidad\nTeorema del límite central, distribución normal, su historia y mitos. Incluye los fundamentos filosóficos del enfoque frequentista."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#test-de-hipótesis-y-errores-tipo-i-y-tipo-ii",
+    "href": "cursos/metodos-cuanti/index.html#test-de-hipótesis-y-errores-tipo-i-y-tipo-ii",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "9. Test de hipótesis y errores tipo I y tipo II",
+    "text": "9. Test de hipótesis y errores tipo I y tipo II\nAnalizamos la toma de decisiones ante la incertidumbre, usando el ejemplo de Freedman, Pisani y Purves sobre el grado de duda razonable que enfrenta un jurado."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#chi-cuadrado-significancia-estadística-y-comparación-de-medias",
+    "href": "cursos/metodos-cuanti/index.html#chi-cuadrado-significancia-estadística-y-comparación-de-medias",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "10. Chi-cuadrado, significancia estadística y comparación de medias",
+    "text": "10. Chi-cuadrado, significancia estadística y comparación de medias\nIncluye experimentos de encuesta y técnicas para evaluar diferencias y asociaciones."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#correlación-y-regresión-bivariada",
+    "href": "cursos/metodos-cuanti/index.html#correlación-y-regresión-bivariada",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "11. Correlación y regresión bivariada",
+    "text": "11. Correlación y regresión bivariada\nCómo medir y modelar relaciones entre dos variables."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#regresión-multivariada-como-promedio-condicional",
+    "href": "cursos/metodos-cuanti/index.html#regresión-multivariada-como-promedio-condicional",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "12. Regresión multivariada como promedio condicional",
+    "text": "12. Regresión multivariada como promedio condicional\nInterpretación y uso descriptivo de modelos que incorporan múltiples variables."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#casos-académicos-en-la-regresión",
+    "href": "cursos/metodos-cuanti/index.html#casos-académicos-en-la-regresión",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "13. Casos académicos en la regresión",
+    "text": "13. Casos académicos en la regresión\nAplicaciones reales de la regresión: interpretación, casos complejos, interacciones, otras distribuciones y simulaciones computacionales."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-intro.html#la-revolución-de-la-replicación-y-las-buenas-prácticas-actuales",
+    "href": "cursos/metodos-cuanti/modulos/01-intro.html#la-revolución-de-la-replicación-y-las-buenas-prácticas-actuales",
+    "title": "Clase 1 — Introducción al Conocimiento Científico y la Metodología Cuantitativa",
+    "section": "La revolución de la replicación y las buenas prácticas actuales",
+    "text": "La revolución de la replicación y las buenas prácticas actuales\nEn la última década, las ciencias sociales han vivido lo que se conoce como la revolución de la replicación. Diversos estudios influyentes no pudieron ser replicados, lo que llevó a una crisis de confianza en los resultados publicados. Este episodio impulsó un cambio profundo: la comunidad comenzó a exigir que los datos, códigos y protocolos de investigación estuvieran disponibles para su verificación. Hoy en día, las buenas prácticas incluyen:\n\nPre-registro de estudios: declarar hipótesis, métodos y análisis antes de recolectar datos para evitar sesgos de confirmación.\n\nCompartir datos y código: garantizar que otros puedan reproducir los análisis exactamente como fueron realizados.\n\nDocumentar el flujo de trabajo: detallar cada paso del proceso de investigación, desde la recolección hasta la interpretación.\n\nEste movimiento no solo fortalece la credibilidad de la disciplina, sino que reafirma su carácter social: la ciencia progresa cuando los hallazgos pueden ser discutidos, verificados y, si es necesario, corregidos por la comunidad."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html#herramientas-prácticas",
+    "href": "cursos/metodos-cuanti/index.html#herramientas-prácticas",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "",
+    "text": "Dependiendo de sus intereses y experiencia previa, durante el curso trabajaremos con dos herramientas principales:\n\nExcel: un software omnipresente en el ámbito laboral, versátil y de gran utilidad. Aprenderemos a aprovecharlo al máximo, explorando sus funciones estadísticas y de visualización de datos. Excel puede generar todo lo que necesitamos para este curso —y mucho más— de manera rápida y accesible.\nR: un lenguaje de programación orientado a objetos y optimizado para el análisis estadístico, ampliamente utilizado en investigación y ciencia de datos. Con R podremos implementar las mismas tareas vistas en Excel, pero con la ventaja de la reproducibilidad y automatización. Esta misma página web ha sido desarrollada con R y Quarto.\n\nTeniendo en cuenta la variedad de herramientas disponibles —incluyendo el apoyo de herramientas de IA generativa como ChatGPT, tutoriales en YouTube y otros recursos en línea—, no evaluaremos su destreza técnica en el uso del software, sino su capacidad para interpretar correctamente los resultados que obtengan.\nEse es nuestro diferencial y nuestra ventaja comparativa: comprender e interpretar la información, independientemente de si se produce con una herramienta avanzada o con cálculos manuales. Las herramientas nos ayudan a hacerlo más rápido o más presentable, pero la comprensión del contenido y su interpretación correcta son las competencias que buscamos desarrollar.\nPara quien desee expandir en el uso de herramientas practicas, tendrán acceso (a solicitud individual) a una suscripción gratuita por 6 meses a DataCamp, una plataforma de aprendizaje en línea especializada en ciencia de datos. DataCamp ofrece cursos interactivos en estadística, programación, visualización y análisis, permitiéndoles practicar a su propio ritmo y adquirir competencias muy demandadas en el mercado laboral."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html",
+    "title": "Módulo 1 — Preguntas y Respuestas",
+    "section": "",
+    "text": "La historia del pensamiento humano comienza con una pregunta. Desde que los primeros grupos humanos miraron el cielo nocturno o se preguntaron por qué cambiaban las estaciones, la curiosidad ha sido el motor de descubrimientos, teorías y transformaciones.\n\n“Los mejores científicos y exploradores tienen la curiosidad de un niño. Se preguntan quién, qué, dónde, por qué, cuándo y cómo… y nunca dejan de hacerlo.” —Sylvia Earle\n\nEn este curso queremos recuperar ese espíritu de curiosidad. La Ciencia Política y las Relaciones Internacionales —y, en particular, la investigación empírica— empiezan con una pregunta que queremos responder de forma sistemática. Sin embargo, no todas las preguntas son iguales: difieren en su objetivo, en cómo se responden y en el tipo de conocimiento que generan."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#confianza-en-la-democracia",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#confianza-en-la-democracia",
+    "title": "Módulo 1 — Preguntas y Respuestas",
+    "section": "Confianza en la democracia",
+    "text": "Confianza en la democracia\n\nNormativa: ¿Deberían los ciudadanos confiar en la democracia como forma de gobierno?\n\nDescriptiva: ¿Qué porcentaje de argentinos declara estar satisfecho con la democracia? ¿Cómo varía según edad, región o nivel educativo?\n\nCausal: ¿La experiencia personal con corrupción reduce la confianza en la democracia?"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#alianzas-militares-y-cooperación-internacional",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#alianzas-militares-y-cooperación-internacional",
+    "title": "Módulo 1 — Preguntas y Respuestas",
+    "section": "Alianzas militares y cooperación internacional",
+    "text": "Alianzas militares y cooperación internacional\n\nNormativa: ¿Debería Argentina unirse formalmente a una alianza militar regional o global?\n\nDescriptiva: ¿Cuántos acuerdos de cooperación en defensa ha firmado Argentina en la última década?\n\nCausal: ¿La firma de un tratado de defensa mutua aumenta la probabilidad de recibir asistencia militar en caso de crisis?"
   }
 ]

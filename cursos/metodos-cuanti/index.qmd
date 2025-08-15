@@ -1,7 +1,9 @@
 ---
 title: "Bienvenidos a *Métodos Cuantitativos*"
+format: html
 ---
 
+# Presentación general
 
 Esta página fue creada para acompañarlos a lo largo de la cursada, brindando un espacio centralizado donde encontrarán los conceptos clave, los materiales trabajados en clase y ejercicios prácticos.  
 Su propósito es **suplementar** la bibliografía y las lecturas obligatorias, no reemplazarlas.
@@ -10,10 +12,10 @@ Aquí podrán acceder a posteos organizados por cada encuentro, con materiales, 
 El diseño modular les permitirá revisitar cualquier sección en el momento que lo necesiten — incluso después de finalizar la cursada — de modo que este recurso pueda seguir sirviéndoles como material de referencia tanto en el ámbito académico como en el profesional.
 
 Se trata de una materia eminentemente práctica, dictada por docentes con experiencia directa en todos los ámbitos que abordaremos:  
-- **Encuestas de opinión pública**  
-- **Análisis de datos para la gestión pública**  
-- **Análisis de datos para la toma de decisiones estratégicas**  
-- **Investigación académica cuantitativa**
+* **Encuestas de opinión pública**  
+* **Análisis de datos para la gestión pública**  
+* **Análisis de datos para la toma de decisiones estratégicas**  
+* **Investigación académica cuantitativa**
 
 Nuestro objetivo es que, si dominan los contenidos y habilidades que trabajaremos, puedan **desempeñarse profesionalmente de inmediato** en entornos donde los datos son protagonistas.  
 El análisis de datos se ha convertido en un campo esencial en la Ciencia Política y las Relaciones Internacionales: desde campañas políticas que requieren encuestas y proyecciones, hasta programas de políticas públicas que deben estimar su impacto antes de implementarse.
@@ -22,29 +24,97 @@ Aquí aprenderán a **leer, interpretar y generar información**, pero sobre tod
 También desarrollarán la capacidad de dialogar con profesionales de otras disciplinas y de evaluar la calidad de los insumos producidos por organismos públicos, instituciones internacionales, medios de comunicación y consultoras.
 
 Por el carácter práctico del curso, todos trabajarán sobre los mismos fundamentos — principalmente herramientas estadísticas — pero cada estudiante podrá profundizar en la orientación que más le interese:  
-- Opinión Pública  
-- Gestión Pública  
-- Análisis de Datos  
-- Investigación Académica  
+* Opinión Pública  
+* Gestión Pública  
+* Análisis de Datos  
+* Investigación Académica  
 
 Cada orientación cuenta con materiales y trayectos opcionales que podrán explorar libremente para fortalecer su perfil y mejorar su inserción laboral.
 
-Además, tendrán acceso a una **suscripción gratuita por 6 meses a DataCamp**, una plataforma de aprendizaje en línea especializada en ciencia de datos.  
-DataCamp ofrece cursos interactivos en estadística, programación, visualización y análisis, permitiéndoles practicar a su propio ritmo y adquirir competencias muy demandadas en el mercado laboral.
+
+## Herramientas prácticas
+
+Dependiendo de sus intereses y experiencia previa, durante el curso trabajaremos con **dos herramientas principales**:
+
+* **Excel**: un software omnipresente en el ámbito laboral, versátil y de gran utilidad. Aprenderemos a aprovecharlo al máximo, explorando sus funciones estadísticas y de visualización de datos. Excel puede generar todo lo que necesitamos para este curso —y mucho más— de manera rápida y accesible.
+
+* **R**: un lenguaje de programación orientado a objetos y optimizado para el análisis estadístico, ampliamente utilizado en investigación y ciencia de datos. Con R podremos implementar las mismas tareas vistas en Excel, pero con la ventaja de la reproducibilidad y automatización. Esta misma página web ha sido desarrollada con R y Quarto.
+
+Teniendo en cuenta la variedad de herramientas disponibles —incluyendo el apoyo de herramientas de IA generativa como ChatGPT, tutoriales en YouTube y otros recursos en línea—, **no evaluaremos su destreza técnica en el uso del software**, sino **su capacidad para interpretar correctamente los resultados** que obtengan.
+
+Ese es nuestro diferencial y nuestra ventaja comparativa: comprender e interpretar la información, independientemente de si se produce con una herramienta avanzada o con cálculos manuales. Las herramientas nos ayudan a hacerlo más rápido o más presentable, pero la comprensión del contenido y su interpretación correcta son las competencias que buscamos desarrollar.
+
+Para quien desee expandir en el uso de herramientas practicas, tendrán acceso (a solicitud individual) a una **suscripción gratuita por 6 meses a DataCamp**, una plataforma de aprendizaje en línea especializada en ciencia de datos. DataCamp ofrece cursos interactivos en estadística, programación, visualización y análisis, permitiéndoles practicar a su propio ritmo y adquirir competencias muy demandadas en el mercado laboral.
 
 ---
 
-## 📄 Programa de la Materia
+# Funcionamiento del curso
+
+El curso se desarrolla en **13 entregas semanales**.  
+Cada módulo se activará con:
+
+- **Material de expansión** que profundiza los temas tratados en clase.  
+- **Recursos extra recomendados** (lecturas, videos, datasets).  
+- **Ejercicios adaptados a trayectos profesionales**.
+
+Aunque algunos temas incluyen **componentes de matemática**, la intención no es trabajar con cuestiones excesivamente sofisticadas como las que se han desarrollado en la ciencia de datos avanzada, sino **dominar las nociones fundamentales** a un nivel concreto.  
+El objetivo es que puedan **trabajar con intuición** al momento de leer e interpretar datos e información, tanto académica como proveniente de agencias productoras de información (consultoras, organismos estatales, organismos internacionales).  
+
+Por eso, los módulos están diseñados para ser **altamente interactivos** y **apoyados en gráficos** siempre que sea posible, con ejemplos extraídos de nuestra experiencia conjunta en el aula (por ejemplo, indicadores básicos como notas de exámenes y horas de estudio) antes de pasar a ejemplos concretos de cada rama de la ciencia política, las relaciones internacionales, la política comparada y las políticas públicas.
+
+---
+
+# Módulos del curso
+
+**1. Preguntas y respuestas.** Exploramos las preguntas que impulsan la persecución del conocimiento humano por curiosidad. Analizamos la diferencia entre **respuestas ideales** y **respuestas reales** y contextualizamos la materia desde esta perspectiva.
+
+**2. Ciencia, ciencias sociales y lo social en la ciencia.** Introducción epistemológica a qué es la ciencia, cuáles son sus límites, mitos y posibilidades. Incluye la reflexión sobre cómo lo social influye en la práctica científica.
+
+**3. Diseño de investigación, modelos teóricos, hipótesis y unidad de análisis.** Estudiamos los cimientos de cualquier investigación social: desde la elección del diseño hasta la definición de hipótesis y unidades de análisis. Evaluamos la factibilidad como punto crítico.
+
+**4. Conceptos, operacionalización y variables.** Cómo pasar de conceptos abstractos de interés a definiciones medibles y observables.
+
+**4.5 (opcional) Repaso de álgebra y notación matemática.** Clase opcional para reforzar la comprensión de fórmulas básicas, como el cálculo de promedios, de cara a los módulos posteriores.
+
+**5. Datos, cantidades de interés y medidas resumen.** De un conjunto de datos, extraemos información útil para describirlo: medidas de tendencia central y de dispersión.
+
+**6. Gráficos para la comunicación.** Transformar datos en representaciones visuales claras y efectivas.
+
+**7. De los conceptos a las relaciones.** Tablas de frecuencia y tablas de contingencia: cómo pasar de la descripción de una variable a explorar relaciones entre variables.
+
+**8. Introducción a la probabilidad.** Teorema del límite central, distribución normal, su historia y mitos. Incluye los fundamentos filosóficos del enfoque frequentista.
+
+**9. Test de hipótesis y errores tipo I y tipo II.** Analizamos la toma de decisiones ante la incertidumbre, usando el ejemplo de Freedman, Pisani y Purves sobre el grado de duda razonable que enfrenta un jurado.
+
+**10. Chi-cuadrado, significancia estadística y comparación de medias.** Incluye experimentos de encuesta y técnicas para evaluar diferencias y asociaciones.
+
+**11. Correlación y regresión bivariada.** Cómo medir y modelar relaciones entre dos variables.
+
+**12. Regresión multivariada como promedio condicional.** Interpretación y uso descriptivo de modelos que incorporan múltiples variables.
+
+**13. Casos académicos en la regresión.** Aplicaciones reales de la regresión: interpretación, casos complejos, interacciones, otras distribuciones y simulaciones computacionales.
+
+---
+
+# Programa de la Materia
 
 En el siguiente enlace encontrarán el **Programa 2025 de Métodos Cuantitativos** y el **cronograma de clases**:
 
 ➡️ [Descargar Programa](archivos/Programa-2025.pdf)
 
-El programa **rige la materia**.  
-Es nuestro **contrato mutuo**: allí se define qué esperamos de ustedes y a qué nos comprometemos nosotros.  
-Es el corazón de la materia, por eso les pedimos que lo lean y lo comprendan en profundidad.  
+El programa **rige la materia**. Es nuestro **contrato mutuo**, allí se define qué esperamos de ustedes y a qué nos comprometemos nosotros.  Es el corazón de la materia, por eso les pedimos que lo lean y lo comprendan en profundidad.  
 
 En el **segundo encuentro** esperamos que todos lo tengan leído y aprendido, ya que realizaremos un **parcialito** sobre su contenido.
 
 ---
+# Cómo seguir
 
+A partir de aquí, el camino es tuyo. Te invitamos a comenzar explorando los **perfiles profesionales** que proponemos: identifica cuáles se ajustan mejor a tus intereses y piensa cómo este curso puede potenciar tu desarrollo en ese sentido.
+
+El siguiente paso es entrar directamente al **Módulo 1**, sumergirte en sus contenidos y actividades, y empezar a ajustar tus **herramientas de trabajo** —ya sea Excel, R o ambas— para que se adapten a tu uso preferido. A lo largo del curso, encontrarás ejemplos y ejercicios pensados para que puedas aplicarlos de inmediato a tu área de interés.
+
+Te animamos también a revisar los **testimonios y resultados de las encuestas de satisfacción** de estudiantes de años anteriores. Sus experiencias y recomendaciones pueden ayudarte a aprovechar al máximo este recorrido.
+
+Nos alegra mucho que formes parte de esta cursada. Estamos convencidos de que, trabajando juntos, vas a desarrollar las competencias necesarias para **leer, interpretar y comunicar datos con criterio y confianza**.
+
+¡Bienvenidos y que tengamos un excelente curso!

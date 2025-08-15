@@ -1,0 +1,153 @@
+---
+title: "Clase 1 — Introducción al Conocimiento Científico y la Metodología Cuantitativa"
+format: html
+#author: "Cátedra de Metodología de la Investigación"
+---
+
+# Introducción
+
+En esta primera clase nos proponemos establecer las bases conceptuales y epistemológicas para comprender la investigación científica, con especial énfasis en la **metodología cuantitativa** y su lugar dentro de las ciencias sociales.
+
+Como veremos, hablar de ciencia no implica únicamente manejar procedimientos técnicos. También supone reconocer que estos procedimientos están insertos en un **marco epistemológico** y en una **filosofía de la ciencia** que orientan nuestra forma de conocer. Estos marcos no están exentos de debates, tensiones y desacuerdos. 
+
+> “La limitación del método en la vida práctica está muy tallada por el consenso y el arbitraje de la comunidad científica... con lo positivo que esto puede tener y con lo negativo también, porque no deja de ser una acción humana permeada por intereses.”  
+> *(MC. CLASE 2. Video 1)*
+
+Esto nos recuerda que la ciencia es una actividad social: un conjunto de prácticas, acuerdos y disputas que, aunque orientados al conocimiento, están atravesados por la historia, la política y la cultura.
+
+---
+
+# 1. Metodología, métodos y técnicas
+
+La distinción entre **metodología**, **método** y **técnica** es clave para evitar confusiones.
+
+- **Metodología**: estudio sistemático y reflexivo sobre los métodos y técnicas de investigación. Opera en un plano abstracto y analítico.  
+  Ejemplo: la reflexión sobre qué criterios debe cumplir un experimento para ser considerado válido en ciencias sociales.
+
+- **Método**: camino o estrategia estructurada para alcanzar un fin (el conocimiento del objeto de estudio). No existe un único método; la comunidad científica valida y consensúa su uso.  
+  Ejemplo: el método hipotético-deductivo en un estudio comparativo de sistemas electorales.
+
+- **Técnica**: procedimientos concretos para recolectar o analizar datos, perfeccionables con la práctica.  
+  Ejemplo: la aplicación de una encuesta estructurada, o la codificación de entrevistas en profundidad.
+
+> “Metodología, métodos y técnicas son tres cosas que trabajan mancomunadamente pero son tres cosas distintas: uno más teórico, otro más estratégico y otro mucho más empírico y práctico.”  
+> *(MC. CLASE 2. Video 1)*
+
+---
+
+# 2. Método cuantitativo vs. método cualitativo
+
+En las ciencias sociales contemporáneas, el **método cuantitativo** y el **método cualitativo** representan paradigmas metodológicos con diferencias sustantivas en sus fundamentos, propósitos y procedimientos.
+
+## 2.1 Bases epistemológicas
+
+- **Cuantitativo**: se asienta en el positivismo y el empirismo. Solo lo mensurable es considerado cognoscible; busca estandarización y generalización.
+- **Cualitativo**: se apoya en corrientes como la fenomenología o el interaccionismo simbólico. Prioriza la comprensión profunda de fenómenos únicos.
+
+> “En el caso del paradigma cuantitativo, el positivismo es el paradigma dominante... En contrapartida, la metodología cualitativa apunta a entender procesos que se dan de manera única.”  
+> *(MC. CLASE 2. Video 2)*
+
+Blalock (1982) recuerda que la elección de un método no es neutral:  
+> “El investigador que escoge un método lo hace siempre dentro de un marco conceptual, consciente o no, que determina qué datos se consideran relevantes y cómo se interpretan.”  
+> *(Blalock, *Conceptualization and Measurement in the Social Sciences*)*
+
+## 2.2 Preguntas y objetivos
+
+- **Cuantitativo**: tiende a formular preguntas relacionales o causales. Ej.: *¿Cómo influye el nivel educativo en la participación política?*
+- **Cualitativo**: busca comprender significados y experiencias. Ej.: *¿Cómo describen los vecinos su sentido de pertenencia al barrio?*
+
+## 2.3 Recolección y análisis de datos
+
+- **Cuantitativo**: usa instrumentos estandarizados (cuestionarios, escalas), muestreo probabilístico y análisis estadístico.
+- **Cualitativo**: emplea técnicas flexibles y emergentes (entrevistas, observación participante), con análisis interpretativo.
+
+Jauretche, en *El medio pelo en la sociedad argentina*, ironiza sobre la confianza ciega en las cifras:
+> “Cuando el dato estadístico es presentado como verdad absoluta, se olvida que antes de llegar a la cifra hubo un acto de selección: qué medir, cómo medirlo, y quién lo mide.”
+
+---
+
+# 3. Etapas de la investigación científica
+
+Tanto en investigación cuantitativa como cualitativa, el proceso general incluye:
+
+1. **Elección del tema**  
+2. **Formulación del problema**  
+3. **Diseño de investigación**  
+4. **Conceptualización y operacionalización**  
+5. **Recolección de datos**  
+6. **Análisis de datos**  
+7. **Comunicación de resultados**
+
+La **metodología cuantitativa** introduce elementos propios:
+
+- Hipótesis explícitas que guían la investigación.  
+- Operacionalización rigurosa de variables.  
+- Muestreo probabilístico para garantizar representatividad.  
+- Análisis estadístico descriptivo, inferencial o multivariado.
+
+> “En lo cuantitativo... la existencia de la hipótesis y el diseño experimental o cuasi experimental son elementos diferenciadores claros.”  
+> *(MC. CLASE 2. Video 3)*
+
+---
+
+# 4. Mitos de la investigación cuantitativa
+
+En la práctica, circulan creencias simplificadas que pueden sesgar la comprensión de la metodología:
+
+1. **Objetividad absoluta** — No existe: todo dato pasa por decisiones humanas.  
+2. **Exactitud infalible** — Las cifras precisas pueden describir fenómenos sociales de forma aproximada, no definitiva.  
+3. **Neutralidad valorativa** — Las decisiones metodológicas reflejan marcos teóricos y valores.  
+4. **Necesidad de hipótesis en todos los casos** — Hay estudios cuantitativos descriptivos que no parten de hipótesis formales.  
+5. **Capacidad para probar causalidad definitiva** — En ciencias sociales, la causalidad es siempre una construcción limitada por el diseño y los datos.
+
+> “La metodología cuantitativa... parece explicar el mundo y sus alrededores, y sin embargo no explica absolutamente nada por sí sola: es simplemente una aproximación.”  
+> *(MC. CLASE 2. Video 2)*
+
+---
+
+# 5. Ciencia, epistemología y filosofía de la ciencia
+
+La metodología que empleamos en nuestras investigaciones no es un conjunto de recetas técnicas aisladas: surge de tradiciones epistemológicas y de debates filosóficos que discuten **qué es el conocimiento válido**, **cómo se obtiene** y **cuál es el papel del investigador**.
+
+Estos debates siguen abiertos:
+
+- **En epistemología**: discusiones sobre la naturaleza del conocimiento, el papel de la observación y el lugar de la teoría.
+- **En filosofía de la ciencia**: tensiones entre visiones acumulativas del conocimiento (positivismo) y visiones rupturistas (falsacionismo, constructivismo).
+
+Como recuerda Blalock:
+> “Las ciencias sociales deben reconocer que sus conceptos clave son construcciones... Su validez depende del consenso, no de una correspondencia directa con una ‘realidad’ objetiva.”
+
+Y, como subraya Jauretche, el acto científico es social:
+> “Las ideas, como las estadísticas, nacen en un contexto. Pretender que son puras y universales es no entender que también son hijos de su tiempo.”
+
+## La revolución de la replicación y las buenas prácticas actuales
+En la última década, las ciencias sociales han vivido lo que se conoce como la **revolución de la replicación**. Diversos estudios influyentes no pudieron ser replicados, lo que llevó a una crisis de confianza en los resultados publicados. Este episodio impulsó un cambio profundo: la comunidad comenzó a exigir que los datos, códigos y protocolos de investigación estuvieran disponibles para su verificación. Hoy en día, las buenas prácticas incluyen:
+
+- **Pre-registro de estudios**: declarar hipótesis, métodos y análisis antes de recolectar datos para evitar sesgos de confirmación.  
+- **Compartir datos y código**: garantizar que otros puedan reproducir los análisis exactamente como fueron realizados.  
+- **Documentar el flujo de trabajo**: detallar cada paso del proceso de investigación, desde la recolección hasta la interpretación.  
+
+Este movimiento no solo fortalece la credibilidad de la disciplina, sino que reafirma su carácter social: la ciencia progresa cuando los hallazgos pueden ser discutidos, verificados y, si es necesario, corregidos por la comunidad.
+
+---
+
+# Conclusión: hacia un abordaje crítico y plural
+
+Reconocer la naturaleza social de la ciencia y las bases epistemológicas de nuestras elecciones metodológicas es esencial para una investigación más rica y consciente.
+
+La metodología cuantitativa ofrece herramientas potentes para identificar patrones y tendencias, pero alcanza su verdadero potencial cuando se combina con:
+
+- **Una conciencia crítica** sobre sus límites y sesgos.
+- **El diálogo con métodos cualitativos** que aporten profundidad interpretativa.
+- **La reflexión filosófica** sobre lo que significa “conocer” en ciencias sociales.
+
+En palabras de la cátedra:
+> “Lo mensurable no agota lo real. La riqueza del conocimiento social está en abordar la realidad desde múltiples perspectivas.”
+
+---
+
+## Bibliografía
+
+- Blalock, H. M. (1982). *Conceptualization and Measurement in the Social Sciences*.  
+- Jauretche, A. (1966). *El medio pelo en la sociedad argentina*.  
+- Material de Cátedra — MC. CLASE 2. Videos 1 a 4.

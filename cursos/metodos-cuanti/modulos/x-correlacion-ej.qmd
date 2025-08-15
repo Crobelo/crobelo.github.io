@@ -1,10 +1,10 @@
 ---
 title: "Correlación Bivariada de Pearson"
-description: "Clase: concepto, visualización con slider, fórmula, ejemplo e interpretaciones."
 format:
   html:
     toc: true
     toc-location: left
+    toc-title: "Contenido de la clase"
     code-fold: false
 execute:
   echo: false
@@ -32,19 +32,20 @@ Su valor está acotado entre **-1 y 1**:
   Podemos ver cómo cambia el patrón de puntos y la recta estimada a medida que la correlación varía.
 
 ```{ojs}
-//| echo: false
-//| output: true
-
-// Importes
-
-// Slider de correlación (como en tu ejemplo)
+// Slider de correlación
 viewof rho = Inputs.range([-1, 1], {
   value: 0,
   step: 0.01,
   label: "Correlación (ρ)"
 })
 
-// RNG normal estándar (Box–Muller)
+// Checkbox para mostrar/ocultar la línea
+viewof capas = Inputs.checkbox(["Recta de regresión"], {
+  value: ["Recta de regresión"],
+  label: "Capas:"
+})
+
+// RNG normal estándar
 function randn() {
   let u = 0, v = 0;
   while (u === 0) u = Math.random();
@@ -56,14 +57,11 @@ function randn() {
 
 
 ```{ojs}
-
-// Datos y estadísticos (reactivos a 'rho')
+// Generar datos correlacionados
 n = 400
-
 data = {
   const x1 = Array.from({length: n}, randn);
   const x2 = Array.from({length: n}, randn);
-  // Construimos Y con correlación aprox. 'rho' respecto de X
   return x1.map((z1, i) => {
     const z2 = x2[i];
     const x = z1;
@@ -72,25 +70,18 @@ data = {
   });
 }
 
-// utilidades
-function mean(arr, f){ let s=0; for (const d of arr) s += f(d); return s/arr.length; }
-function sum(arr, f){ let s=0; for (const d of arr) s += f(d); return s; }
-
-// estadísticos para la recta y r
-meanX = mean(data, d => d.x)
-meanY = mean(data, d => d.y)
-Sxx = sum(data, d => (d.x - meanX)**2)
-Syy = sum(data, d => (d.y - meanY)**2)
-Sxy = sum(data, d => (d.x - meanX)*(d.y - meanY))
+// Estadísticos para la línea
+meanX = d3.mean(data, d => d.x)
+meanY = d3.mean(data, d => d.y)
+Sxx = d3.sum(data, d => (d.x - meanX)**2)
+Syy = d3.sum(data, d => (d.y - meanY)**2)
+Sxy = d3.sum(data, d => (d.x - meanX)*(d.y - meanY))
 slope = Sxy / Sxx
 intercept = meanY - slope * meanX
-r_sample = Sxy / Math.sqrt(Sxx * Syy)
-
-// dominio y puntos de la recta
-xMin = -3.5
-xMax =  3.5
-fitline = [{x: xMin, y: intercept + slope*xMin}, {x: xMax, y: intercept + slope*xMax}]
-
+fitline = [
+  {x: -3.5, y: intercept + slope*(-3.5)},
+  {x:  3.5, y: intercept + slope*(3.5)}
+]
 
 ```
 
@@ -98,7 +89,7 @@ fitline = [{x: xMin, y: intercept + slope*xMin}, {x: xMax, y: intercept + slope*
 
 ```{ojs}
 
-// Gráfico (la última expresión devuelve el SVG)
+// Gráfico con recta opcional según checkbox
 Plot.plot({
   width: 720,
   height: 440,
@@ -106,11 +97,12 @@ Plot.plot({
     Plot.dot(data, {x: "x", y: "y", r: 2, fillOpacity: 0.7}),
     Plot.ruleX([0], {stroke: "gray", strokeOpacity: 0.5}),
     Plot.ruleY([0], {stroke: "gray", strokeOpacity: 0.5}),
-    Plot.line(fitline, {x: "x", y: "y"})
+    ...(capas.includes("Recta de regresión") ? [Plot.line(fitline, {x: "x", y: "y"})] : [])
   ],
-  x: {label: "X (estandarizada)", domain: [xMin, xMax]},
-  y: {label: "Y (estandarizada)", domain: [xMin, xMax]}
+  x: {label: "X (estandarizada)", domain: [-3.5, 3.5]},
+  y: {label: "Y (estandarizada)", domain: [-3.5, 3.5]}
 })
+
 
 ```
 
@@ -153,11 +145,9 @@ Cálculos paso a paso:
    $\bar{x} = 6, \qquad \bar{y} = 78.6$
 
 2. Sumas centradas:
-   $$
-   S_{xx}=\sum (x_i-\bar{x})^2 = 40.0, \quad
-   S_{yy}=\sum (y_i-\bar{y})^2 = 569.2, \quad
-   S_{xy}=\sum (x_i-\bar{x})(y_i-\bar{y}) = 150.0
-   $$
+   $$S_{xx}=\sum (x_i-\bar{x})^2 = 40.0 \quad $$
+   $$S_{yy}=\sum (y_i-\bar{y})^2 = 569.2 \quad$$
+   $$S_{xy}=\sum (x_i-\bar{x})(y_i-\bar{y}) = 150.0$$
 
 3. Denominador:
    $$

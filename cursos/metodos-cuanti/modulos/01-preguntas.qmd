@@ -5,15 +5,11 @@ format: html
 
 > “Los mejores científicos y exploradores tienen la curiosidad de un niño. Se preguntan quién, qué, dónde, por qué, cuándo y cómo... y nunca dejan de hacerlo.” —Sylvia Earle
 
-# La inquietud por conocer
+# De la curiosidad a la ciencia
 
 La historia del pensamiento humano comienza con una pregunta. Desde que los primeros grupos humanos miraron el cielo nocturno o se preguntaron por qué cambiaban las estaciones, la curiosidad ha sido el motor de descubrimientos, teorías y transformaciones.
 
 En este curso queremos recuperar ese espíritu de curiosidad. La investigación empírica empiezan con una pregunta que queremos responder de forma sistemática, en nuestro caso centrados en fenomenos politicos y sociales. Sin embargo, no todas las preguntas son iguales: difieren en su objetivo, en cómo se responden y en el tipo de conocimiento que generan.
-
-------------------------------------------------------------------------
-
-# De la curiosidad a la ciencia
 
 La ciencia es, ante todo, un **método** para abordar preguntas. No pretende ofrecer verdades absolutas, sino **respuestas justificadas y comunicables**. La transparencia del método es esencial, no porque garantice una objetividad perfecta, sino porque permite que otros puedan evaluar, replicar y debatir nuestras conclusiones. Esto hace que la ciencia sea una actividad social: avanza gracias a la interacción, la crítica y el consenso (siempre provisional) de la comunidad.
 
@@ -29,10 +25,10 @@ Algunos de los temas y debates que han enmarcado nuestra disciplina son:
 
 > **Nota:** Pensar en temas propios de cada subrama de CsPol.
 
--   La estabilidad y calidad de la democracia.\
--   Las relaciones entre poderes del Estado.\
--   La representación política y el rol de los partidos.\
--   La relación entre ciudadanía y autoridades.\
+-   La estabilidad y calidad de la democracia.
+-   Las relaciones entre poderes del Estado.
+-   La representación política y el rol de los partidos.
+-   La relación entre ciudadanía y autoridades.
 -   La estabilidad y cambio en las instituciones politicas.
 -   Las causas del conflicto y guerra.
 
@@ -40,27 +36,30 @@ Algunos de los temas y debates que han enmarcado nuestra disciplina son:
 
 # Avanzando con preguntas  
 
-Aplicamos nuestra curiosidad y avanzamos en nuestro conocimiento, mediante preguntas. Las preguntas ciertamente no salen del vacio, sino que es fruto de  intereses individuales, desafios colectivos, el conocimiento previo y las limitaciones de implementacion. Mucho de la filosofia de la ciencia se debate sobre el origen y destino de estas preguntas y sus respuestas. 
+Aplicamos nuestra curiosidad y avanzamos en nuestro conocimiento, mediante preguntas. Las preguntas ciertamente no salen del vacio, sino que es fruto de  intereses individuales, desafios colectivos, el conocimiento previo y las limitaciones de implementacion. Parte de la filosofia de la ciencia se debate sobre el origen y destino de estas preguntas y sus respuestas. 
 
-Por ahora, quedemonos profundizando en las preguntas en si, cuales son sus aspectos deseables y una clasificacion util de trabajo para nuestro curso. En primera instancia buscamos preguntas *utiles*[^utilidad] y por ende que puedan ser respondidas. 
+Por ahora, quedemonos profundizando en las preguntas en si, cuales son sus aspectos deseables y una clasificacion util de trabajo para nuestro curso. En primera instancia buscamos preguntas *utiles*[^utilidad]. Aqui consideramos utiles las preguntas que puedan tener respuesta. Las preguntas sin respuesta pueden servir como disparadores narrativos y formas de captar la atencion y la imaginacion. No obstante, una pregunta que satisfaga a la curiosidad y avance la ciencia debe poder tener una respuesta. Ello no implica que la respuesta tenga que ser unica y definitiva, como vieron en metodologia de la investigacion y en sus aspectos epistemologicos. Al mismo tiempo la posibilidad de la respuesta dependera de como este formulada la pregunta. "La pregunta es la mitar de la respuesta.
 
-Luego, tendremos que definir con claridad **qué tipo de pregunta estamos formulando**. La pregunta guía no solo determina la relevancia del trabajo, sino también cuáles serán los métodos apropiados para responderla y cuáles serán sus limitaciones. No es lo mismo preguntarse qué porcentaje de ciudadanos confía en una institución que indagar por qué algunos confían y otros no, o debatir sobre si esa institución debería reformarse.  
+En el esfuerzo por formular la pregunta, tendremos que definir con claridad **qué tipo de pregunta estamos formulando**. La pregunta guía no solo determina la relevancia del trabajo, sino también cuáles serán los métodos apropiados para responderla y cuáles serán sus limitaciones. No es lo mismo preguntarse qué porcentaje de ciudadanos confía en una institución que indagar por qué algunos confían y otros no, o debatir sobre si esa institución debería reformarse.  
 
 Entonces, suele ser útil distinguir entre tres grandes tipos de interrogantes: las **preguntas de hecho**, las **preguntas de causa** y las **preguntas de valor**. Cada una de ellas refleja un modo distinto de aproximarse a la realidad política y social.  
 
----
 
 ## Preguntas de hecho: observar y describir la realidad  
 
-Las preguntas de hecho —también llamadas *factuales* o *descriptivas*— buscan conocer **cómo es el mundo en un momento determinado** o **qué ha ocurrido en el pasado**. Son interrogantes que apuntan directamente a la observación de fenómenos y a la construcción de descripciones sistemáticas.  
+En el corazón de toda investigación científica se encuentra el esfuerzo por **describir con precisión aquello que ocurre en el mundo**. Las preguntas de hecho, también llamadas descriptivas o fácticas, constituyen el punto de partida indispensable para cualquier empresa de conocimiento. Las preguntas de hecho se concentran en establecer **qué ocurre, cómo ocurre, cuándo ocurre y a quién le ocurre**.  
 
-Un ejemplo sencillo sería preguntarse: *¿Qué porcentaje de argentinos confía en el Congreso en 2025?* Otro caso, en el terreno de las relaciones internacionales, podría ser: *¿Cuántas misiones de paz ha integrado Argentina desde 1990?* En ambos ejemplos, lo que se busca es reunir información, organizarla y comunicarla de manera precisa.  
+Lejos de ser un ejercicio menor o preliminar, la descripción es el fundamento mismo sobre el que se erigen las demás formas de análisis. Sin embargo, la ciencia política (fundamentalmente en la tradicion norteamericana[^Shepsle1997]) ha tendido a subestimar la descripción, considerándola un paso previo hacia la causalidad [^Gerring2012]. Sin embargo, sin una base descriptiva rigurosa no hay posibilidad de identificar patrones, ni de construir inferencias causales sólidas. Una explicación sobre los determinantes de la aprobación presidencial, por ejemplo, será frágil si no contamos antes con mediciones sistemáticas sobre cuánta aprobación existe y cómo se distribuye en distintos sectores sociales.  
 
-Estas preguntas se responden a través de procesos de **medición y observación empírica**. Pueden requerir encuestas, análisis de datos oficiales, registros históricos o estadísticas comparativas. En general, no suponen teorías complejas, sino un esfuerzo por describir con rigor la realidad tal como se presenta.  
+Las preguntas de hecho pueden adoptar distintas formas. En su versión más sencilla, buscan establecer datos puntuales: ¿qué porcentaje de argentinos confía en el Congreso en 2025?, ¿cuál fue el nivel de desempleo en octubre de 2023?, ¿cuántas misiones de paz ha integrado Argentina desde 1990?, ¿qué países votaron junto a Estados Unidos en la última sesión de la Asamblea General de Naciones Unidas? Todas estas preguntas apuntan a reunir información y comunicarla de manera clara y ordenada, a partir de encuestas, registros oficiales o estadísticas comparativas.  
 
-En la investigación política, las preguntas de hecho cumplen una función básica pero indispensable: establecen el punto de partida sobre el cual luego pueden construirse análisis más sofisticados. Es imposible preguntarnos por qué ocurre un fenómeno si antes no sabemos con claridad **qué está ocurriendo realmente**.  
+Sin embargo, el potencial de las preguntas descriptivas va mucho más allá de estas indagaciones elementales. La descripción puede orientarse al estudio de **evoluciones temporales**, preguntándose cómo varía un fenómeno a lo largo del tiempo. Así, podríamos examinar la trayectoria del apoyo a la democracia en América Latina entre 1980 y 2020, observando sus ciclos de ascenso y retroceso. También puede adoptar un carácter **comparativo**, al poner en relación distintos casos con el fin de destacar similitudes y diferencias. Un ejemplo de ello sería la descripción de las estructuras legislativas en países federales frente a aquellos con sistemas unitarios, con el propósito de identificar patrones institucionales recurrentes.  
 
----
+Otro camino es el de las **asociaciones descriptivas**, que indagan la co-ocurrencia de fenómenos sin necesariamente atribuirles un vínculo causal. Así, podríamos observar la relación entre nivel educativo y participación electoral en diferentes regiones del país, describiendo los patrones que emergen de esa interacción. Finalmente, la descripción puede tomar la forma de **síntesis y tipologías**, donde se busca organizar la diversidad de casos en categorías coherentes. De este modo, es posible clasificar distintos modelos de democracia —electoral, liberal, participativa o deliberativa—.  
+
+Lo que todas estas variantes tienen en común es que, al delimitar, organizar y dar forma a los fenómenos políticos, la investigación descriptiva ofrece el mapa sobre el cual luego será posible identificar regularidades y proponer explicaciones. En última instancia, cualquier análisis causal descansa sobre la solidez del trabajo descriptivo que lo antecede. De allí que las preguntas de hecho no deban ser vistas como una versión reducida de la investigación empírica, sino como una de sus expresiones más valiosas y necesarias.  
+
+Además de su relevancia académica, la descripción cumple un papel decisivo en el ámbito profesional. Las respuestas a preguntas descriptivas guían la toma de decisiones públicas, ya que permiten a los responsables de diseñar políticas conocer con precisión la magnitud y características de los problemas que enfrentan. También informan al público y a los medios, proveyendo datos verificables que fortalecen el debate democrático y la rendición de cuentas. En ultima instancia nos facilitan un conocimiento compartido de la realidad social y política, que sirve de base tanto para la formulación de estrategias institucionales como para la evaluación de resultados en la gestión estatal o en el trabajo de organizaciones de la sociedad civil.  
 
 ## Preguntas de causa: explicar y predecir  
 
@@ -166,3 +165,6 @@ Y en el plano internacional: ¿Ha cambiado el papel de Argentina en las alianzas
 
 
 [^utilidad]: Nos referimos a la utilidad como algo que sirve a un proposito ulterior, sin hacer juicio de valor respecto a su bondad o deseabilidad. En el contexto del conocimiento cientifico, esto lo enmarca en una tradicion pragmatica y positivista. Mientras que una perspectiva moral y humana debe preguntarse sobre el fin ultimo de las preguntas, metodos e investigacion. Consideramos que si bien las dimensiones eticas de la investigacion social no pueden ir separadas de la consideracion del metodo de investigacion, aqui dejamos para mas adelante las menciones a esos debates por propositos expositivos.
+
+[^Shepsle1997]: Bonchek, M. S., & Shepsle, K. A. (1997). Analyzing politics. Rationality, Behavior and Institutions. Norton 
+[^Gerring2012]: Gerring, J. (2012). Mere description. British Journal of Political Science, 42(4), 721-746.

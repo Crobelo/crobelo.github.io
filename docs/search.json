@@ -1,0 +1,436 @@
+[
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/11-correlacion.html",
+    "href": "cursos/metodos-cuanti/modulos/11-correlacion.html",
+    "title": "Correlación Bivariada de Pearson",
+    "section": "",
+    "text": "La correlación mide el grado de asociación lineal entre dos variables numéricas.\nSu valor está acotado entre -1 y 1:\n\n+1 → correlación positiva perfecta: cuando una variable aumenta, la otra también lo hace de forma proporcional.\n-1 → correlación negativa perfecta: cuando una variable aumenta, la otra disminuye de forma proporcional.\n0 → ausencia de correlación lineal.\n\n\n💡 Importante: la correlación no implica causalidad.\n\nEjemplo conceptual:\n- Altura y peso de las personas: suele haber correlación positiva (personas más altas tienden a pesar más).\n- Horas de estudio y cantidad de errores en un examen: podría haber correlación negativa (más estudio, menos errores)."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/11-correlacion.html#apéndice-buenas-prácticas-al-usar-correlación",
+    "href": "cursos/metodos-cuanti/modulos/11-correlacion.html#apéndice-buenas-prácticas-al-usar-correlación",
+    "title": "Correlación Bivariada de Pearson",
+    "section": "Apéndice: buenas prácticas al usar correlación",
+    "text": "Apéndice: buenas prácticas al usar correlación\n\nUse correlación de Pearson con variables cuantitativas y relación aprox. lineal.\n\nRevise outliers y no linealidades; pueden distorsionar (r).\n\nPara relaciones monótonas no lineales, considere Spearman.\n\nRecuerde: correlación no es causalidad; complemente con teoría/diseño de investigación."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/09-test.html",
+    "href": "cursos/metodos-cuanti/modulos/09-test.html",
+    "title": "Módulo X — Inferencia estadística: del Teorema del Límite Central al test de hipótesis",
+    "section": "",
+    "text": "El TLC es la piedra angular de la inferencia estadística. Afirma que, si tomamos muchas muestras aleatorias de tamaño suficientemente grande de una población, la distribución de las medias muestrales tenderá a una distribución normal alrededor de la media verdadera de la población, sin importar la forma de la distribución original.\n[ {X} (, ) ]\n\n\nEjemplo (dados):\nSi lanzamos un dado 600 veces y calculamos el promedio de los valores, ese promedio se distribuirá normalmente alrededor de 3,5, con una desviación estándar más pequeña cuanto mayor sea (n).\n\n\nClaves 1. La media muestral es insesgada.\n2. El error estándar disminuye con (n).\n3. A partir de cierto tamaño muestral ((n )), la normalidad es una buena aproximación.\n\nEste resultado hace posible construir intervalos de confianza y realizar tests de hipótesis en ciencias sociales, incluso cuando no conocemos toda la población."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/09-test.html#hipótesis-nula-y-alternativa",
+    "href": "cursos/metodos-cuanti/modulos/09-test.html#hipótesis-nula-y-alternativa",
+    "title": "Módulo X — Inferencia estadística: del Teorema del Límite Central al test de hipótesis",
+    "section": "2.1 Hipótesis nula y alternativa",
+    "text": "2.1 Hipótesis nula y alternativa\n\nHipótesis nula (H₀): no hay efecto o diferencia.\n\nHipótesis alternativa (H₁): existe efecto o diferencia.\n\nEjemplo:\n* (H_0): “La tasa de participación electoral es igual en hombres y mujeres”.\n* (H_1): “La tasa de participación electoral difiere entre hombres y mujeres”."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/09-test.html#estadístico-de-prueba-y-p-valor",
+    "href": "cursos/metodos-cuanti/modulos/09-test.html#estadístico-de-prueba-y-p-valor",
+    "title": "Módulo X — Inferencia estadística: del Teorema del Límite Central al test de hipótesis",
+    "section": "2.2 Estadístico de prueba y p-valor",
+    "text": "2.2 Estadístico de prueba y p-valor\nEl procedimiento general es:\n\nFormular (H_0) y (H_1).\n\nElegir un nivel de significancia ((), comúnmente 0,05).\n\nCalcular un estadístico de prueba (z, t, chi², etc.).\n\nCalcular el p-valor: probabilidad de observar un resultado tan extremo como el obtenido si (H_0) fuera cierta.\n\nComparar:\n\nSi (p &lt; ), rechazamos (H_0).\n\nSi (p ), no rechazamos (H_0)."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "",
+    "text": "En este módulo unificamos los dos grandes bloques de la descripción univariada:\n\nCantidades de interés que normalizan conteos para hacerlos comparables (proporciones, tasas, razones y cambios porcentuales).\nMedidas resumen de posición (location) y dispersión (scale), con variantes clásicas y robustas para datos con asimetrías u outliers.\n\nAdemás, añadimos herramientas prácticas de transformación y escalado para preparar datos de política y relaciones internacionales (porcentajes de voto, gasto público, comercio, aprobación presidencial, etc.)."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#proporción-y-porcentaje",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#proporción-y-porcentaje",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "4.1 Proporción y porcentaje",
+    "text": "4.1 Proporción y porcentaje\nSea (x) el número de “éxitos” (casos con el atributo) en una muestra de tamaño (n).\n\\[\n\\hat{p} \\;=\\; \\frac{x}{n}, \\qquad \\%\\;=\\; 100 \\times \\hat{p}\n\\]\nEjemplo (encuesta): 240 personas declaran “aprueba” sobre 600 entrevistados.\n(=240/600=0{.}40 %)."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#tasa-por-k",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#tasa-por-k",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "4.2 Tasa (por (k))",
+    "text": "4.2 Tasa (por (k))\nEstandariza por tamaño poblacional:\n\\[\n\\text{tasa}_{(k)} \\;=\\; \\frac{\\text{eventos}}{\\text{población}}\\times k\n\\]\nEjemplo (gestión pública): 450 robos en población 300.000; tasa por 100.000:\n(000=150)."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#razón-y-cambio-porcentual",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#razón-y-cambio-porcentual",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "4.3 Razón y cambio porcentual",
+    "text": "4.3 Razón y cambio porcentual\nRazón: (R=).\nCambio %: \\[\n\\%\\Delta \\;=\\; \\frac{\\text{nuevo}-\\text{viejo}}{\\text{viejo}}\\times 100\n\\]\nEj.: gasto militar pasa de 0,9% a 1,2% del PBI:\n(%=(1{.}2-0{.}9)/0{.}9=33{.}3%)."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#media-aritmética",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#media-aritmética",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "5.1 Media aritmética",
+    "text": "5.1 Media aritmética\n\n\nPara datos simples (x_1,,x_n):\n\\[\n\\bar{x} \\;=\\; \\frac{1}{n}\\sum_{i=1}^{n} x_i\n\\]\nPara datos con frecuencias (x_j) con (f_j):\n\\[\n\\bar{x} \\;=\\; \\frac{\\sum_{j} f_j x_j}{\\sum_{j} f_j}\n\\]\nEjemplo (notas): (x={5,6,7,9,10}{x}=7{.}4).\n\n\nPros y contras\n* Eficiente en simetría.\n* Sensible a outliers."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#mediana",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#mediana",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "5.2 Mediana",
+    "text": "5.2 Mediana\n\n\nLa mediana ( ) es el valor central de los datos ordenados.\n\n(n) impar: posición ( (n+1)/2 ).\n(n) par: promedio de ( n/2 ) y ( n/2+1 ).\n\n\n\nRobustez\n* Resiste outliers y colas pesadas.\n* Requiere escala ordinal o superior."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#moda",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#moda",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "5.3 Moda",
+    "text": "5.3 Moda\n\nValor más frecuente.\n\nVálida para todas las escalas.\n\nPuede ser bimodal o multimodal (advertirlo al reportar)."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#medias-especiales-cuando-la-media-clásica-no-alcanza",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#medias-especiales-cuando-la-media-clásica-no-alcanza",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "5.4 Medias especiales (cuando la media “clásica” no alcanza)",
+    "text": "5.4 Medias especiales (cuando la media “clásica” no alcanza)\n\n\nMedia ponderada\nSi cada observación tiene peso (w_i):\n\\[\n\\bar{x}_{w}=\\frac{\\sum_{i=1}^{n} w_i x_i}{\\sum_{i=1}^{n} w_i}\n\\]\nÚtil con encuestas probabilísticas (ponderación por diseño/post-estratificación) o al combinar provincias/países de distinto tamaño.\nMedia geométrica\nPara promediar crecimientos o razones (positivos):\n\\[\nG \\;=\\; \\left(\\prod_{i=1}^{n} x_i \\right)^{1/n}\n\\quad\\text{y}\\quad\n\\text{TCAC} \\;=\\; \\left(\\frac{x_n}{x_1}\\right)^{1/(n-1)}-1\n\\]\nMedia armónica\nPara promediar tasas del tipo “por unidad”:\n\\[\nH \\;=\\; \\frac{n}{\\sum_{i=1}^{n} \\dfrac{1}{x_i}}\n\\]\nEj.: km/h en tramos con diferentes velocidades, o “casos por 100.000”.\n\n\nReglas de uso * Ponderada: cuando (w_i) ≠ 1.\n* Geom.: crecimiento compuesto, índices.\n* Arm.: promediar tasas."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#medias-robustas",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#medias-robustas",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "5.5 Medias robustas",
+    "text": "5.5 Medias robustas\n\n\nMedia recortada (trimmed mean)\nQuita un (%) inferior y superior y promedia el resto (p. ej., 10%–20%).\nMedia winsorizada\nReemplaza los extremos por los cuantiles de corte y luego promedia.\nAmbas reducen la influencia de outliers manteniendo eficiencia.\n\n\nCuándo\n* Histogramas con colas largas.\n* Datos administrativos con errores de carga."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#rango-y-cuantiles",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#rango-y-cuantiles",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "6.1 Rango y cuantiles",
+    "text": "6.1 Rango y cuantiles\n\n\nRango: (- ).\nRecorrido intercuartílico (IQR): (Q_3 - Q_1) (50% central).\n\n\nNotas\n* Rango: solo extremos.\n* IQR: robusto a outliers."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#varianza-y-desvío-estándar",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#varianza-y-desvío-estándar",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "6.2 Varianza y desvío estándar",
+    "text": "6.2 Varianza y desvío estándar\n\n\nPoblación:\n\\[\n\\sigma^2=\\frac{1}{N}\\sum_{i=1}^{N}(x_i-\\mu)^2,\n\\qquad \\sigma=\\sqrt{\\sigma^2}\n\\]\nMuestra:\n\\[\ns^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(x_i-\\bar{x})^2,\n\\qquad s=\\sqrt{s^2}\n\\]\n\n\nPaso a paso 1. Restá la media.\n2. Elevá al cuadrado.\n3. Sumá y dividí por (n-1) o (N)."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#dispersión-relativa-coeficiente-de-variación",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#dispersión-relativa-coeficiente-de-variación",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "6.3 Dispersión relativa: coeficiente de variación",
+    "text": "6.3 Dispersión relativa: coeficiente de variación\n\\[\n\\mathrm{CV} \\;=\\; \\frac{s}{\\bar{x}}\\times 100\n\\]\nCompara variabilidad entre variables/grupos con medias distintas."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#dispersión-robusta-mad",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#dispersión-robusta-mad",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "6.4 Dispersión robusta: MAD",
+    "text": "6.4 Dispersión robusta: MAD\nMAD (median absolute deviation)\n\\[\n\\mathrm{MAD} \\;=\\; \\mathrm{mediana}\\big(|x_i-\\tilde{x}|\\big)\n\\]\nEscala robusta alternativa al (s); útil con outliers."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#outlier-y-elección-de-resumen",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#outlier-y-elección-de-resumen",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "8.1 Outlier y elección de resumen",
+    "text": "8.1 Outlier y elección de resumen\nIngresos (miles): ({50,60,70,75,80}{x}=67{.}0, =70).\nAgregamos 1000 → ({x}=222{.}5, =72{.}5).\nConclusión: con extremos, reportá mediana + IQR y, si hace falta, una media recortada 10%."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#tasa-y-razón-en-seguridad",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#tasa-y-razón-en-seguridad",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "8.2 Tasa y razón en seguridad",
+    "text": "8.2 Tasa y razón en seguridad\nRobos: 450 en 300.000 → tasa 100.000 = 150.\nRazón aprehensiones/robos (R=a/b).\nBuenas prácticas: reportá tasa, (R), periodo y fuente."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#media-geométrica-para-crecimiento",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#media-geométrica-para-crecimiento",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "8.3 Media geométrica para crecimiento",
+    "text": "8.3 Media geométrica para crecimiento\nExportaciones (índice): 80 → 120 en 5 años.\n(=(120/80)^{1/4}-1=10{.}67%) anual."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/07-medidas.html#z-scores-para-comparar-cohortes",
+    "href": "cursos/metodos-cuanti/modulos/07-medidas.html#z-scores-para-comparar-cohortes",
+    "title": "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen",
+    "section": "8.4 Z-scores para comparar cohortes",
+    "text": "8.4 Z-scores para comparar cohortes\nAprobación presidencial: curso A (({x}=7,s=1)) y curso B (({x}=10,s=4)).\nUna observación 8 en A: (z=1).\nUna observación 9 en B: (z=-0{.}25).\nComparación justa entre escalas diferentes."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/05-histograma-tablas.html",
+    "href": "cursos/metodos-cuanti/modulos/05-histograma-tablas.html",
+    "title": "Modulo 5 - Explorando los datos, Estadística descriptiva de una variable: tablas de frecuencia e histogramas",
+    "section": "",
+    "text": "En análisis cuantitativo, uno de los primeros pasos para comprender un conjunto de datos es describir el comportamiento de una sola variable. Antes de calcular medidas resumen o probar hipótesis, necesitamos una idea clara de:\n\nQué valores toma.\nCon qué frecuencia se presentan.\nCómo se distribuyen.\n\nEn esta clase vamos a introducir dos herramientas fundamentales para lograrlo:\n\nTablas de frecuencia, que nos permiten resumir los datos en formato tabular.\nHistogramas, que nos ofrecen una representación gráfica intuitiva y universalmente comprendida.\n\nEl objetivo es desarrollar la capacidad de leer y producir estos resúmenes, para luego usarlos como base de análisis más complejos. # 1. ¿Qué hacemos con los datos?\nCuando termina la recolección, comienza la fase de análisis e interpretación. Es tan crucial como la de campo, y hoy es impensable sin procesamiento informático (planillas, paquetes estadísticos, scripts) que cubren un amplio espectro analítico (Cea D’Ancona, 2002, p. 251).\nEn este módulo vamos a describir conjuntos de datos: primero con tablas de frecuencias y cantidades de interés (proporciones, tasas, razones), y luego con medidas resumen: tendencia central (media, mediana, moda) y dispersión (rango, IQR, varianza, desvío estándar, coeficiente de variación). También miraremos la forma de la distribución (asimetría y curtosis) y los preliminares indispensables: missing values y outliers (Cea D’Ancona, 2002, p. 271)."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/05-histograma-tablas.html#ejemplo-1-tipo-de-régimen-político",
+    "href": "cursos/metodos-cuanti/modulos/05-histograma-tablas.html#ejemplo-1-tipo-de-régimen-político",
+    "title": "Modulo 5 - Explorando los datos, Estadística descriptiva de una variable: tablas de frecuencia e histogramas",
+    "section": "Ejemplo 1: Tipo de régimen político",
+    "text": "Ejemplo 1: Tipo de régimen político\nSupongamos que tenemos datos de 20 países clasificados como:\n\nDemocracia\nHíbrido\nAutoritarismo\n\n\n\n\nRégimen\nf\n%\n% acumulado\n\n\n\n\nDemocracia\n8\n40,0%\n40,0%\n\n\nHíbrido\n6\n30,0%\n70,0%\n\n\nAutoritarismo\n6\n30,0%\n100,0%\n\n\nTotal\n20\n100%\n—\n\n\n\nEsta tabla nos permite ver de un vistazo la distribución de casos y, con la frecuencia acumulada, entender la proporción que representan los regímenes más inclusivos, por ejemplo."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/05-histograma-tablas.html#ejemplo-2-gasto-militar-como-del-pbi",
+    "href": "cursos/metodos-cuanti/modulos/05-histograma-tablas.html#ejemplo-2-gasto-militar-como-del-pbi",
+    "title": "Modulo 5 - Explorando los datos, Estadística descriptiva de una variable: tablas de frecuencia e histogramas",
+    "section": "Ejemplo 2: Gasto militar como % del PBI",
+    "text": "Ejemplo 2: Gasto militar como % del PBI\nSupongamos que tenemos datos de gasto militar (% del PBI) para 50 países. El histograma podría verse así:\n\n\n\nHistograma de gasto militar\n\n\nPodemos interpretar:\n\nSi la mayor parte de las observaciones está concentrada en intervalos bajos (p. ej., entre 0% y 2%), la distribución está sesgada hacia la izquierda.\nSi hay una barra muy alta en un intervalo, indica un rango de valores particularmente frecuente."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/04-conceptos.html",
+    "href": "cursos/metodos-cuanti/modulos/04-conceptos.html",
+    "title": "Módulo 4 — Conceptos, operacionalización y variables",
+    "section": "",
+    "text": "“Toda investigación comienza con ideas vagas que necesitan transformarse en herramientas observables. Ese proceso es la médula del trabajo metodológico.”\n— Adaptado de Paul Lazarsfeld\n\nEn este módulo vamos a recorrer el camino que nos lleva de conceptos abstractos a definiciones medibles y observables, de modo que podamos usarlas para analizar fenómenos reales. Esto implica entender qué es un concepto, cómo lo definimos, cómo lo convertimos en variable, y cómo evaluamos si nuestra medición es válida y confiable.\n\n\n\nEn el lenguaje común, un concepto es una idea general que nos ayuda a agrupar y entender fenómenos. En la ciencia, un concepto es una abstracción controlada y definida explícitamente.\nPaul Lazarsfeld señalaba:\n\n“Ninguna ciencia aborda su objeto en su plenitud concreta. Todas las ciencias seleccionan determinadas propiedades de su objeto e intentan establecer entre ellas relaciones recíprocas”:contentReferenceoaicite:2.\n\nEn ciencias sociales, estos conceptos suelen ser multidimensionales y objeto de disputa. Por ejemplo:\n\nPobreza\nDemocracia\nGénero\nPoder\nDesigualdad\nConfianza política\nTensión internacional\n\nCada uno de estos términos puede definirse de distintas formas. Por eso, el primer paso es conceptualizar, es decir, acordar qué entendemos por ese concepto en el contexto de nuestra investigación.\n\n\n\n\nConceptualización: definir con precisión qué entendemos por un término.\nOperacionalización: decidir cómo vamos a observar o medir ese concepto en la realidad.\nEjemplo — Democracia:\n* Definición conceptual (según Dahl): un régimen con altos niveles de inclusión y contienda.\n* Operacionalización: codificar como democracia a los países que cumplen simultáneamente estas condiciones:contentReferenceoaicite:3:\n1. El jefe de Estado es elegido popularmente o por un cuerpo electo popularmente.\n2. El legislativo es elegido popularmente.\n3. Más de un partido compite en elecciones.\n4. Hubo alternancia en el poder bajo las mismas reglas electorales.\n\n\n\n\nUna variable es cualquier característica de un objeto o evento que puede tomar al menos dos valores o categorías. Para que una variable esté bien definida, debe cumplir tres condiciones clave:contentReferenceoaicite:4:\n\nExhaustividad: todas las posibilidades están contempladas.\nEjemplo: incluir categorías como “Otros” o “No sabe/No contesta” en encuestas.\nExclusividad: cada valor solo puede estar en una categoría.\nEjemplo: evitar rangos que se superpongan (18–25, 25–30).\nPrecisión: las categorías son lo más ajustadas posible a la realidad.\n\n\n\n\n\nClasificamos las variables según su función y según el tipo de medición:\n\n\n\nIndependiente (X): se supone que influye o explica.\nEj.: horas de estudio.\nDependiente (Y): es lo que queremos explicar.\nEj.: nota de examen.\nInterviniente (Z): media o modera la relación.\nEj.: horas de sueño.\n\n\n\n\n\nCualitativas nominales: categorías sin orden. Ej.: nacionalidad, religión.\nCualitativas ordinales: categorías con orden, pero sin distancias iguales. Ej.: nivel educativo, grado de satisfacción.\nCuantitativas de intervalo: valores numéricos con distancias iguales, pero sin un cero absoluto. Ej.: temperatura en °C, año calendario.\nCuantitativas de razón: valores numéricos con distancias iguales y cero absoluto. Ej.: ingreso, número de hijos.\n\n\n\n\n\nDiscretas: conteos enteros. Ej.: cantidad de tratados firmados.\nContinuas: cualquier valor en un rango infinito. Ej.: altura, gasto militar como % del PBI.\n\n\n\n\n\n\nCuando medimos un concepto, debemos preguntarnos:\n\nValidez: ¿La medición refleja realmente el concepto que queremos?\n\nValidez aparente (face validity): a simple vista, ¿tiene sentido?\n\nUn indicador inválido introduce sesgo sistemático.\n\nConfiabilidad: ¿La medición es consistente si repetimos el procedimiento?\n\nLa falta de confiabilidad introduce error aleatorio.\n\n\nPodemos representar una medición como:\nMedición observada = Valor verdadero + Sesgo + Error aleatorio\nEjemplo de baja validez: medir “democracia” solo preguntando por la existencia de elecciones, sin considerar la competencia real o la inclusión.\nEjemplo de baja confiabilidad: una encuesta que produce resultados muy diferentes cada vez que se aplica al mismo grupo sin que haya cambios reales.\n\n\n\n\nConcepto: Pobreza\n* Dimensión: capacidad de consumo.\n* Indicador: porcentaje de hogares bajo la línea de pobreza.\n* Fuente: estadísticas oficiales.\nConcepto: Poder militar\n* Dimensión: proyección de fuerza.\n* Indicador: número de bases militares en el extranjero.\n* Fuente: bases de datos internacionales (p. ej., SIPRI).\nConcepto: Tensión política internacional\n* Definición (Davis & Meunier, 2011): desacuerdos sobre políticas, hostilidad entre líderes y sentimiento público negativo:contentReferenceoaicite:5.\n* Indicador: frecuencia anual de incidentes diplomáticos reportados.\n\n\n\n\nToda definición y operacionalización implica elecciones políticas y metodológicas. Por ejemplo:\n\nMedir “inseguridad” por la tasa de delitos denunciados puede invisibilizar la violencia no denunciada.\nClasificar un país como “democrático” o “autoritario” según criterios demasiado estrictos o laxos puede servir a agendas políticas.\n\nEsto exige transparencia: explicitar qué definiciones usamos, por qué y con qué limitaciones.\n\n\n\n\n\nElige un concepto central en ciencia política o relaciones internacionales (p. ej., corrupción, alianzas militares, participación electoral).\nDefine conceptualmente qué significa en tu estudio.\nPropón al menos dos formas distintas de operacionalizarlo.\nEvalúa brevemente la validez y confiabilidad de cada forma.\nDiscute posibles sesgos o implicancias políticas de tu elección.\n\n\nEn el próximo módulo veremos cómo, a partir de nuestras variables, podemos construir resúmenes estadísticos y representaciones gráficas para describir realidades complejas de forma clara y efectiva."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/04-conceptos.html#introduccion",
+    "href": "cursos/metodos-cuanti/modulos/04-conceptos.html#introduccion",
+    "title": "Módulo 4 — Conceptos, operacionalización y variables",
+    "section": "",
+    "text": "“Toda investigación comienza con ideas vagas que necesitan transformarse en herramientas observables. Ese proceso es la médula del trabajo metodológico.”\n— Adaptado de Paul Lazarsfeld\n\nEn este módulo vamos a recorrer el camino que nos lleva de conceptos abstractos a definiciones medibles y observables, de modo que podamos usarlas para analizar fenómenos reales. Esto implica entender qué es un concepto, cómo lo definimos, cómo lo convertimos en variable, y cómo evaluamos si nuestra medición es válida y confiable.\n\n\n\nEn el lenguaje común, un concepto es una idea general que nos ayuda a agrupar y entender fenómenos. En la ciencia, un concepto es una abstracción controlada y definida explícitamente.\nPaul Lazarsfeld señalaba:\n\n“Ninguna ciencia aborda su objeto en su plenitud concreta. Todas las ciencias seleccionan determinadas propiedades de su objeto e intentan establecer entre ellas relaciones recíprocas”:contentReferenceoaicite:2.\n\nEn ciencias sociales, estos conceptos suelen ser multidimensionales y objeto de disputa. Por ejemplo:\n\nPobreza\nDemocracia\nGénero\nPoder\nDesigualdad\nConfianza política\nTensión internacional\n\nCada uno de estos términos puede definirse de distintas formas. Por eso, el primer paso es conceptualizar, es decir, acordar qué entendemos por ese concepto en el contexto de nuestra investigación.\n\n\n\n\nConceptualización: definir con precisión qué entendemos por un término.\nOperacionalización: decidir cómo vamos a observar o medir ese concepto en la realidad.\nEjemplo — Democracia:\n* Definición conceptual (según Dahl): un régimen con altos niveles de inclusión y contienda.\n* Operacionalización: codificar como democracia a los países que cumplen simultáneamente estas condiciones:contentReferenceoaicite:3:\n1. El jefe de Estado es elegido popularmente o por un cuerpo electo popularmente.\n2. El legislativo es elegido popularmente.\n3. Más de un partido compite en elecciones.\n4. Hubo alternancia en el poder bajo las mismas reglas electorales.\n\n\n\n\nUna variable es cualquier característica de un objeto o evento que puede tomar al menos dos valores o categorías. Para que una variable esté bien definida, debe cumplir tres condiciones clave:contentReferenceoaicite:4:\n\nExhaustividad: todas las posibilidades están contempladas.\nEjemplo: incluir categorías como “Otros” o “No sabe/No contesta” en encuestas.\nExclusividad: cada valor solo puede estar en una categoría.\nEjemplo: evitar rangos que se superpongan (18–25, 25–30).\nPrecisión: las categorías son lo más ajustadas posible a la realidad.\n\n\n\n\n\nClasificamos las variables según su función y según el tipo de medición:\n\n\n\nIndependiente (X): se supone que influye o explica.\nEj.: horas de estudio.\nDependiente (Y): es lo que queremos explicar.\nEj.: nota de examen.\nInterviniente (Z): media o modera la relación.\nEj.: horas de sueño.\n\n\n\n\n\nCualitativas nominales: categorías sin orden. Ej.: nacionalidad, religión.\nCualitativas ordinales: categorías con orden, pero sin distancias iguales. Ej.: nivel educativo, grado de satisfacción.\nCuantitativas de intervalo: valores numéricos con distancias iguales, pero sin un cero absoluto. Ej.: temperatura en °C, año calendario.\nCuantitativas de razón: valores numéricos con distancias iguales y cero absoluto. Ej.: ingreso, número de hijos.\n\n\n\n\n\nDiscretas: conteos enteros. Ej.: cantidad de tratados firmados.\nContinuas: cualquier valor en un rango infinito. Ej.: altura, gasto militar como % del PBI.\n\n\n\n\n\n\nCuando medimos un concepto, debemos preguntarnos:\n\nValidez: ¿La medición refleja realmente el concepto que queremos?\n\nValidez aparente (face validity): a simple vista, ¿tiene sentido?\n\nUn indicador inválido introduce sesgo sistemático.\n\nConfiabilidad: ¿La medición es consistente si repetimos el procedimiento?\n\nLa falta de confiabilidad introduce error aleatorio.\n\n\nPodemos representar una medición como:\nMedición observada = Valor verdadero + Sesgo + Error aleatorio\nEjemplo de baja validez: medir “democracia” solo preguntando por la existencia de elecciones, sin considerar la competencia real o la inclusión.\nEjemplo de baja confiabilidad: una encuesta que produce resultados muy diferentes cada vez que se aplica al mismo grupo sin que haya cambios reales.\n\n\n\n\nConcepto: Pobreza\n* Dimensión: capacidad de consumo.\n* Indicador: porcentaje de hogares bajo la línea de pobreza.\n* Fuente: estadísticas oficiales.\nConcepto: Poder militar\n* Dimensión: proyección de fuerza.\n* Indicador: número de bases militares en el extranjero.\n* Fuente: bases de datos internacionales (p. ej., SIPRI).\nConcepto: Tensión política internacional\n* Definición (Davis & Meunier, 2011): desacuerdos sobre políticas, hostilidad entre líderes y sentimiento público negativo:contentReferenceoaicite:5.\n* Indicador: frecuencia anual de incidentes diplomáticos reportados.\n\n\n\n\nToda definición y operacionalización implica elecciones políticas y metodológicas. Por ejemplo:\n\nMedir “inseguridad” por la tasa de delitos denunciados puede invisibilizar la violencia no denunciada.\nClasificar un país como “democrático” o “autoritario” según criterios demasiado estrictos o laxos puede servir a agendas políticas.\n\nEsto exige transparencia: explicitar qué definiciones usamos, por qué y con qué limitaciones.\n\n\n\n\n\nElige un concepto central en ciencia política o relaciones internacionales (p. ej., corrupción, alianzas militares, participación electoral).\nDefine conceptualmente qué significa en tu estudio.\nPropón al menos dos formas distintas de operacionalizarlo.\nEvalúa brevemente la validez y confiabilidad de cada forma.\nDiscute posibles sesgos o implicancias políticas de tu elección.\n\n\nEn el próximo módulo veremos cómo, a partir de nuestras variables, podemos construir resúmenes estadísticos y representaciones gráficas para describir realidades complejas de forma clara y efectiva."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/02-ciencia.html",
+    "href": "cursos/metodos-cuanti/modulos/02-ciencia.html",
+    "title": "2 — Introducción al Conocimiento Científico y la Metodología Cuantitativa",
+    "section": "",
+    "text": "En esta segunda entrega expandimos las bases conceptuales y epistemológicas para comprender la investigación científica que introdujimos, con especial énfasis en la metodología cuantitativa y su lugar dentro de las ciencias sociales.\nComo veremos, hablar de ciencia no implica únicamente manejar procedimientos técnicos. También supone reconocer que estos procedimientos están insertos en un marco epistemológico y en una filosofía de la ciencia que orientan nuestra forma de conocer. Estos marcos no están exentos de debates, tensiones y desacuerdos.\n\n“La limitación del método en la vida práctica está muy tallada por el consenso y el arbitraje de la comunidad científica… con lo positivo que esto puede tener y con lo negativo también, porque no deja de ser una acción humana permeada por intereses.”\n(MC. CLASE 2. Video 1)\n\nEsto nos recuerda que la ciencia es una actividad social: un conjunto de prácticas, acuerdos y disputas que, aunque orientados al conocimiento, están atravesados por la historia, la política y la cultura."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/02-ciencia.html#bases-epistemológicas",
+    "href": "cursos/metodos-cuanti/modulos/02-ciencia.html#bases-epistemológicas",
+    "title": "2 — Introducción al Conocimiento Científico y la Metodología Cuantitativa",
+    "section": "2.1 Bases epistemológicas",
+    "text": "2.1 Bases epistemológicas\n\nCuantitativo: se asienta en el positivismo y el empirismo. Solo lo mensurable es considerado cognoscible; busca estandarización y generalización.\nCualitativo: se apoya en corrientes como la fenomenología o el interaccionismo simbólico. Prioriza la comprensión profunda de fenómenos únicos.\n\n\n“En el caso del paradigma cuantitativo, el positivismo es el paradigma dominante… En contrapartida, la metodología cualitativa apunta a entender procesos que se dan de manera única.”\n(MC. CLASE 2. Video 2)\n\nBlalock (1982) recuerda que la elección de un método no es neutral:\n&gt; “El investigador que escoge un método lo hace siempre dentro de un marco conceptual, consciente o no, que determina qué datos se consideran relevantes y cómo se interpretan.”\n&gt; (Blalock, Conceptualization and Measurement in the Social Sciences)"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/02-ciencia.html#preguntas-y-objetivos",
+    "href": "cursos/metodos-cuanti/modulos/02-ciencia.html#preguntas-y-objetivos",
+    "title": "2 — Introducción al Conocimiento Científico y la Metodología Cuantitativa",
+    "section": "2.2 Preguntas y objetivos",
+    "text": "2.2 Preguntas y objetivos\n\nCuantitativo: tiende a formular preguntas relacionales o causales. Ej.: ¿Cómo influye el nivel educativo en la participación política?\nCualitativo: busca comprender significados y experiencias. Ej.: ¿Cómo describen los vecinos su sentido de pertenencia al barrio?"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/02-ciencia.html#recolección-y-análisis-de-datos",
+    "href": "cursos/metodos-cuanti/modulos/02-ciencia.html#recolección-y-análisis-de-datos",
+    "title": "2 — Introducción al Conocimiento Científico y la Metodología Cuantitativa",
+    "section": "2.3 Recolección y análisis de datos",
+    "text": "2.3 Recolección y análisis de datos\n\nCuantitativo: usa instrumentos estandarizados (cuestionarios, escalas), muestreo probabilístico y análisis estadístico.\nCualitativo: emplea técnicas flexibles y emergentes (entrevistas, observación participante), con análisis interpretativo.\n\nJauretche, en El medio pelo en la sociedad argentina, ironiza sobre la confianza ciega en las cifras: &gt; “Cuando el dato estadístico es presentado como verdad absoluta, se olvida que antes de llegar a la cifra hubo un acto de selección: qué medir, cómo medirlo, y quién lo mide.”"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/02-ciencia.html#la-revolución-de-la-replicación-y-las-buenas-prácticas-actuales",
+    "href": "cursos/metodos-cuanti/modulos/02-ciencia.html#la-revolución-de-la-replicación-y-las-buenas-prácticas-actuales",
+    "title": "2 — Introducción al Conocimiento Científico y la Metodología Cuantitativa",
+    "section": "La revolución de la replicación y las buenas prácticas actuales",
+    "text": "La revolución de la replicación y las buenas prácticas actuales\nEn la última década, las ciencias sociales han vivido lo que se conoce como la revolución de la replicación. Diversos estudios influyentes no pudieron ser replicados, lo que llevó a una crisis de confianza en los resultados publicados. Este episodio impulsó un cambio profundo: la comunidad comenzó a exigir que los datos, códigos y protocolos de investigación estuvieran disponibles para su verificación. Hoy en día, las buenas prácticas incluyen:\n\nPre-registro de estudios: declarar hipótesis, métodos y análisis antes de recolectar datos para evitar sesgos de confirmación.\n\nCompartir datos y código: garantizar que otros puedan reproducir los análisis exactamente como fueron realizados.\n\nDocumentar el flujo de trabajo: detallar cada paso del proceso de investigación, desde la recolección hasta la interpretación.\n\nEste movimiento no solo fortalece la credibilidad de la disciplina, sino que reafirma su carácter social: la ciencia progresa cuando los hallazgos pueden ser discutidos, verificados y, si es necesario, corregidos por la comunidad."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/02-ciencia.html#bibliografía",
+    "href": "cursos/metodos-cuanti/modulos/02-ciencia.html#bibliografía",
+    "title": "2 — Introducción al Conocimiento Científico y la Metodología Cuantitativa",
+    "section": "Bibliografía",
+    "text": "Bibliografía\n\nBlalock, H. M. (1982). Conceptualization and Measurement in the Social Sciences.\n\nJauretche, A. (1966). El medio pelo en la sociedad argentina."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/index.html",
+    "href": "cursos/metodos-cuanti/index.html",
+    "title": "Bienvenidos a Métodos Cuantitativos",
+    "section": "",
+    "text": "Presentación general\nEsta página fue creada para acompañarlos a lo largo de la cursada, brindando un espacio centralizado donde encontrarán los conceptos clave, los materiales trabajados en clase y ejercicios prácticos. Su propósito es suplementar las lecturas y actividades, no reemplazarlas.\nAquí podrán acceder a paginas individuales por cada modulo tematico organizados por cada encuentro, con materiales, ejemplos y actividades. El diseño modular les permitirá revisitar cualquier sección en el momento que lo necesiten — incluso después de finalizar la cursada — de modo que este recurso pueda seguir sirviéndoles como material de referencia tanto en el ámbito académico como en el profesional.\nHay varias formas de tratar una materia de metodos cuantitativos en ciencias sociales. En algunos casos se enfocan en los aspectos teoricos del diseño de investigacion, otros en aspectos formales de la estadistica general, recientemente cada vez mas se los orienta a adquirir rudimentos de programacion. Todos esos enfoques son valiosos para el aprendizaje y desarrollo profesional, pero nuestro tiempo juntos es limitado.\nEn nuestro caso, queremos orientar la materia a que puedan leer, interpretar y generar información cuantitativa, pero sobre todo a formular las preguntas correctas y a reconocer qué se puede — y qué no se puede — responder con determinados datos. Los datos se generan en un contexto determinado que tendran que tener en cuenta. En algunos casos, como investigaciones propias, los pueden generar ustedes a partir de conceptos claramente definidos guiados por un marco teorico precisamente definido. En otros provendran de organismos publicos que recopilan estadisticas con objetivos muy distintos al suyo y tendran que saber conciliar las distanias metodologicas entre lo que quieren y lo que tienen a la mano. Evaluar la calidad de los insumos producidos por organismos públicos, instituciones internacionales, medios de comunicación y consultoras es una sensibilidad es crucial al momento de analizar informacion y llegar a conclusiones para la toma de decisiones y el debate academico.\nJunto con la sensibilidad por el contexto de los datos, también desarrollarán la capacidad de dialogar con profesionales de otras disciplinas. La ciencia politica nutre y se nutre de la informacion que se generan en muchos ambitos de actividad. Economistas, Sociologos, Historiadores, Abogados, y autoridades publicas producen sus propios datos y leeran nuestras conclusiones. Poder comunicarse con ellos y el publico general es otra habilidad crucial en la actualidad.\nEn suma, nuestro objetivo es que, si dominan los contenidos y habilidades que trabajaremos, puedan desempeñarse profesionalmente de inmediato en entornos donde los datos son protagonistas. El análisis de datos se ha convertido en un campo esencial en la Ciencia Política y las Relaciones Internacionales: desde campañas políticas que requieren encuestas y proyecciones, hasta programas de políticas públicas que deben estimar su impacto antes de implementarse. En la investigacion academica los metodos cuantitativos tambien han crecido de manera sistematica gracias a los avances en computacion y la revolucion de la replicacion. Acercar las conclusiones y debates empiricos de nuestra disciplina tambien es un valor agregado en el mercado laboral.\nPor el carácter práctico del curso, todos trabajarán sobre los mismos fundamentos — principalmente herramientas estadísticas — pero cada estudiante podrá profundizar en la orientación que más le interese:\n\nOpinión Pública\n\nGestión Pública\n\nAnálisis de Datos\n\nInvestigación Académica\n\nCada orientación cuenta con materiales y trayectos opcionales que podrán explorar libremente para fortalecer su perfil y mejorar su inserción laboral.\n\n\nHerramientas prácticas\nDependiendo de sus intereses y experiencia previa, durante el curso trabajaremos con dos herramientas principales:\n\nMS Excel: un software omnipresente en el ámbito laboral, versátil y de gran utilidad. Aprenderemos a aprovecharlo, explorando sus funciones estadísticas y de visualización de datos. Excel puede generar todo lo que necesitamos para este curso —y mucho más— de manera rápida y accesible. Ademas, junto con sus cuentas institucionales de la UCA tienen acceso al mismo como parte del pauete Office.\nR: un lenguaje de programación orientado a objetos y optimizado para el análisis estadístico, ampliamente utilizado en investigación y ciencia de datos. Con R podremos implementar las mismas tareas vistas en Excel, pero con la ventaja de la reproducibilidad y automatización. Esta misma página web ha sido desarrollada con R y Quarto.\n\nTeniendo en cuenta la variedad de herramientas disponibles, incluyendo el apoyo de herramientas de IA generativa como ChatGPT, tutoriales en YouTube y otros recursos en línea, no evaluaremos su destreza técnica en el uso del software, sino su capacidad para interpretar correctamente los resultados que obtengan a partir de la herramienta de su preferencia.\nComprender y comunicar informacion compleja es nuestro diferencial y nuestra ventaja comparativa. Las herramientas nos ayudan a hacerlo más rápido o más presentable, pero la comprensión del contenido y su interpretación correcta son las competencias que buscamos desarrollar.\nPara quien desee expandir en el uso de herramientas practicas, tendrán acceso (a solicitud individual) a una suscripción gratuita por 6 meses a DataCamp, una plataforma de aprendizaje en línea especializada en ciencia de datos. DataCamp ofrece cursos interactivos en estadística, programación, visualización y análisis, permitiéndoles practicar a su propio ritmo y adquirir competencias muy demandadas en el mercado laboral.\n\n\n\nFuncionamiento del curso\nEl curso se desarrolla en 13 entregas semanales.\nCada módulo se activará con:\n\nMaterial de expansión que profundiza los temas tratados en clase y complementan la bibliografia.\n\nRecursos extra recomendados como lecturas de divulgacion masiva, videos ilustrativos y posteos de redes sociales.\n\nEjercicios adaptados a trayectos profesionales donde podran interactuar con datasets relacionados.\n\nAunque algunos temas incluyen componentes de matemática, la intención no es trabajar con cuestiones excesivamente sofisticadas como las que se han desarrollado en la ciencia de datos avanzada, sino dominar las nociones fundamentales a un nivel concreto. El objetivo es que puedan trabajar con intuición al momento de leer e interpretar datos e información, tanto académica como proveniente de agencias productoras de información (consultoras, organismos estatales, organismos internacionales).\nPor eso, los módulos están diseñados para ser altamente interactivos y apoyados en gráficos siempre que sea posible, con ejemplos extraídos de nuestra experiencia conjunta en el aula (por ejemplo, indicadores básicos como notas de exámenes y horas de estudio) antes de pasar a ejemplos concretos de cada rama de la ciencia política, las relaciones internacionales, la política comparada y las políticas públicas.\n\n\n\nMódulos del curso\n\n1. Preguntas y respuestas.\nExploramos las preguntas que impulsan la persecución del conocimiento humano por curiosidad. Analizamos la diferencia entre respuestas ideales y respuestas reales y contextualizamos la materia desde esta perspectiva.\n2. Ciencia, ciencias sociales y lo social en la ciencia.\nIntroducción epistemológica a qué es la ciencia. Límites, mitos y posibilidades. Explicacion y prediccion. Cómo lo social influye en la práctica científica. Metodología, método y técnica. Metodos cuantitativos. Perspectivas deterministas y probabilisticas.Contrafacticos y el problema fundamental de las ciencias sociales.\n3. Diseño de investigación, modelos teóricos, hipótesis y unidad de análisis.\nLos cimientos de la investigación social. Modelos teoricos e implementacion practica. Tipos de diseño de investigacion. Unidades de análisis. Hipotesis. Ideal y factibilidad en el diseño de la investigacion y comunicacion sus resultados.\n4. Conceptos, operacionalización y variables. Conceptos abstractos y definiciones claras de interés.Definiciones medibles y observables. Los desafios de la medicion, la validez y la confianza. Variables y constantes. Clasificaciones y niveles de medicion.\n4.5 (opcional) Repaso de álgebra y notación matemática.\nModulo opcional para reforzar la comprensión de fórmulas básicas, la notacion matematica como el cálculo de promedios, de cara a los módulos posteriores. Tambien introducimos la nocion de la matematica como un lenguaje de comunicacion simbolica basado en la precision para la comunicacion.\n5. Explorando los datos, desde conceptos a las relaciones.\nNuestro primer encuentro con los datos cuantitativos. El Histograma como herramienta de exploración. Describimos los datoscon tablas de frecuencia y tablas de contingencia descriptivas.\n6. Comunicando los datos, gráficos uso y principios.\nTransformar datos en representaciones visuales claras y efectivas. Convenciones clasicas de la presentacion de graficos. Principios modernos para la comunicacion cuantitativa. Malas practicas y desafios.\n7. Reduciendo los datos, cantidades de interés y medidas resumen.\nDe un conjunto de datos, extraemos información útil para describirlo. Definiendo cantidades de interes. Medidas resumen de tendencia central, posicion y de dispersión.\n8. Introducción a la probabilidad.\nTeorema del límite central, distribución normal, su historia y mitos. Probabilidades, regla de la adicion y de la multiplicacion. Interpretacion de probabilidaes. Fundamentos filosóficos del enfoque frequentista y desafios en la ciencias sociales. El rol de los contrafacticos.\n9. Test de hipótesis y errores tipo I y tipo II.\nToma de decisiones ante la incertidumbre. Test de hipótesis y sus pasos. Desafios en su implementacion. p-valor y significancia. Errores de tipo I y tipo II. El rol de la duda razonable\n10. Chi-cuadrado, significancia estadística y comparación de medias.\nEstadisticos de prueba, requisitos. Evaluando la asociacion de eventos discretos. Chi-cuadrado en tablas de contingencia. T de student y comparacion de medias. Implementacion en experimentos de encuesta.\n11. Correlación y regresión bivariada.\nAsociacion entre variables cuantitativas. Proposito y limitaciones. Medicion e interpretacion. Causalidad y asociacion. Causalidad y causalidad inversa. Correlacion espurea. Cómo medir y modelar relaciones entre dos variables. Regresion lineal simple. Regla de minimos cuadrados.\n12. Regresión multivariada como promedio condicional.\nRepaso de Regresion lineal bivariada. \\(\\beta\\) y \\(\\alpha\\), calculo e interpretacion. Extension del modelo de Regresion lineal bivariada a multiples variables. Interpretacion de los coeficientes. Comunicacion de los resultados descriptivos. Simulacion de un caso practico. Sesgo, variables omitidas y saturacion de modelo.\n13. Casos académicos en la regresión.\nAplicaciones reales de la regresión, revision de literatura actual interpretación, casos complejos, interacciones, otras distribuciones y simulaciones computacionales.\n\n\n\n\nPrograma de la Materia\nEn el siguiente enlace encontrarán el Programa actualizado de Métodos Cuantitativos:\n➡️ Descargar Programa\nEl programa rige la materia. Es nuestro contrato mutuo, allí se define qué esperamos de ustedes y a qué nos comprometemos nosotros. Es el corazón de la materia, por eso les pedimos que lo lean y lo comprendan en profundidad. En el segundo encuentro esperamos que todos lo tengan leído y aprendido, ya que realizaremos un parcialito sobre su contenido.\n\n\n\nCómo seguir\nA partir de aquí, el camino es tuyo. Te invitamos a comenzar explorando los perfiles profesionales que proponemos: identifica cuáles se ajustan mejor a tus intereses y piensa cómo este curso puede potenciar tu desarrollo en ese sentido.\nEl siguiente paso es entrar directamente al Módulo 1, sumergirte en sus contenidos y actividades, y empezar a ajustar tus herramientas de trabajo —ya sea Excel, R o ambas— para que se adapten a tu uso preferido. A lo largo del curso, encontrarás ejemplos y ejercicios pensados para que puedas aplicarlos de inmediato a tu área de interés.\nTe animamos también a revisar los testimonios y resultados de las encuestas de satisfacción de estudiantes de años anteriores. Sus experiencias y recomendaciones pueden ayudarte a aprovechar al máximo este recorrido.\nNos alegra mucho que formes parte de esta cursada. Estamos convencidos de que, trabajando juntos, vas a desarrollar las competencias necesarias para leer, interpretar y comunicar datos con criterio y confianza.\n¡Bienvenidos y que tengamos un excelente curso!"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "",
+    "text": "“Los mejores científicos y exploradores tienen la curiosidad de un niño. Se preguntan quién, qué, dónde, por qué, cuándo y cómo… y nunca dejan de hacerlo.” —Sylvia Earle"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#preguntas-de-hecho-observar-y-describir-la-realidad",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#preguntas-de-hecho-observar-y-describir-la-realidad",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "Preguntas de hecho: observar y describir la realidad",
+    "text": "Preguntas de hecho: observar y describir la realidad\nEn el corazón de toda investigación científica se encuentra el esfuerzo por describir con precisión aquello que ocurre en el mundo. Las preguntas de hecho, también llamadas descriptivas o fácticas, constituyen el punto de partida indispensable para cualquier empresa de conocimiento. Las preguntas de hecho se concentran en establecer qué ocurre, cómo ocurre, cuándo ocurre y a quién le ocurre.\nLejos de ser un ejercicio menor o preliminar, la descripción es el fundamento mismo sobre el que se erigen las demás formas de análisis. Sin embargo, la ciencia política (fundamentalmente en la tradicion norteamericana2) ha tendido a subestimar la descripción, considerándola un paso previo hacia la causalidad 3. Sin embargo, sin una base descriptiva rigurosa no hay posibilidad de identificar patrones, ni de construir inferencias causales sólidas. Una explicación sobre los determinantes de la aprobación presidencial, por ejemplo, será frágil si no contamos antes con mediciones sistemáticas sobre cuánta aprobación existe y cómo se distribuye en distintos sectores sociales.\nLas preguntas de hecho pueden adoptar distintas formas. En su versión más sencilla, buscan establecer datos puntuales: ¿qué porcentaje de argentinos confía en el Congreso en 2025?, ¿cuál fue el nivel de desempleo en octubre de 2023?, ¿cuántas misiones de paz ha integrado Argentina desde 1990?, ¿qué países votaron junto a Estados Unidos en la última sesión de la Asamblea General de Naciones Unidas? Todas estas preguntas apuntan a reunir información y comunicarla de manera clara y ordenada, a partir de encuestas, registros oficiales o estadísticas comparativas.\nSin embargo, el potencial de las preguntas descriptivas va mucho más allá de estas indagaciones elementales. La descripción puede orientarse al estudio de evoluciones temporales, preguntándose cómo varía un fenómeno a lo largo del tiempo. Así, podríamos examinar la trayectoria del apoyo a la democracia en América Latina entre 1980 y 2020, observando sus ciclos de ascenso y retroceso. También puede adoptar un carácter comparativo, al poner en relación distintos casos con el fin de destacar similitudes y diferencias. Un ejemplo de ello sería la descripción de las estructuras legislativas en países federales frente a aquellos con sistemas unitarios, con el propósito de identificar patrones institucionales recurrentes.\nOtro camino es el de las asociaciones descriptivas, que indagan la co-ocurrencia de fenómenos sin necesariamente atribuirles un vínculo causal. Así, podríamos observar la relación entre nivel educativo y participación electoral en diferentes regiones del país, describiendo los patrones que emergen de esa interacción. Finalmente, la descripción puede tomar la forma de síntesis y tipologías, donde se busca organizar la diversidad de casos en categorías coherentes. De este modo, es posible clasificar distintos modelos de democracia —electoral, liberal, participativa o deliberativa—.\nLo que todas estas variantes tienen en común es que, al delimitar, organizar y dar forma a los fenómenos políticos, la investigación descriptiva ofrece el mapa sobre el cual luego será posible identificar regularidades y proponer explicaciones. En última instancia, cualquier análisis causal descansa sobre la solidez del trabajo descriptivo que lo antecede. De allí que las preguntas de hecho no deban ser vistas como una versión reducida de la investigación empírica, sino como una de sus expresiones más valiosas y necesarias.\nAdemás de su relevancia académica, la descripción cumple un papel decisivo en el ámbito profesional. Las respuestas a preguntas descriptivas guían la toma de decisiones públicas, ya que permiten a los responsables de diseñar políticas conocer con precisión la magnitud y características de los problemas que enfrentan. También informan al público y a los medios, proveyendo datos verificables que fortalecen el debate democrático y la rendición de cuentas. En ultima instancia nos facilitan un conocimiento compartido de la realidad social y política, que sirve de base tanto para la formulación de estrategias institucionales como para la evaluación de resultados en la gestión estatal o en el trabajo de organizaciones de la sociedad civil."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#preguntas-de-causa-explicar-y-predecir",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#preguntas-de-causa-explicar-y-predecir",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "Preguntas de causa: explicar y predecir",
+    "text": "Preguntas de causa: explicar y predecir\nMás allá de la descripción, los investigadores suelen interesarse en por qué los fenómenos ocurren de determinada manera. Aquí entramos en el terreno de las preguntas causales —también llamadas explicativas—. Estas preguntas intentan descubrir las relaciones entre variables y, en lo posible, identificar mecanismos de causalidad.\nUn ejemplo en política comparada sería: ¿Influye la situación económica en la aprobación presidencial? En el campo de las relaciones internacionales, una pregunta típica podría ser: ¿Reduce la participación en operaciones de paz la probabilidad de que un Estado enfrente un conflicto interestatal?\nResponder a este tipo de preguntas implica un esfuerzo mucho más elaborado que en el caso de las preguntas de hecho. No basta con observar y medir; es necesario diseñar investigaciones que permitan contrastar hipótesis, controlar por variables alternativas y evaluar la plausibilidad de los vínculos causales. Esto puede hacerse mediante estudios estadísticos, experimentos, estudios de caso comparados o modelos formales.\n\nNota metodológica: a las preguntas causales también se las denomina preguntas explicativas. Sin embargo, conviene aclarar que la palabra “explicación” puede interpretarse de maneras distintas según el marco epistemológico adoptado. En algunos enfoques, una explicación causal se entiende como la identificación certera de un mecanismo universal que conecta variables. En otros, más pragmáticos, una explicación válida es aquella que permite realizar predicciones útiles, aunque no revele una causa “última”. Incluso, dentro de la teoría formal o en el análisis de juegos estratégicos, es posible encontrar preguntas de tipo causal que no son estrictamente empíricas, ya que se formulan en términos deductivos o abstractos.\n\nAsí, la causalidad en ciencias sociales rara vez implica certezas absolutas. Más bien, se trata de establecer relaciones probables y patrones que, bajo ciertas condiciones, nos ayudan a comprender y anticipar la dinámica de lo social y lo político."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#preguntas-de-valor-debatir-lo-que-debería-ser",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#preguntas-de-valor-debatir-lo-que-debería-ser",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "Preguntas de valor: debatir lo que debería ser",
+    "text": "Preguntas de valor: debatir lo que debería ser\nEl tercer tipo de interrogantes está constituido por las preguntas de valor, también conocidas como normativas. A diferencia de las anteriores, no se centran en lo que ocurre ni en por qué ocurre, sino en lo que debería ocurrir. Estas preguntas introducen explícitamente un juicio de valor, una perspectiva ética o un ideal político.\nPor ejemplo: ¿Debería la Corte Suprema tener mandatos limitados? o ¿Debería Argentina integrarse a una alianza militar permanente con potencias extra-regionales? En ambos casos, el debate se centra en principios normativos: la legitimidad, la justicia, la conveniencia moral o política de determinadas decisiones.\nEste tipo de interrogantes es fundamental para el pensamiento político y filosófico, y constituye el núcleo de la reflexión normativa en la disciplina. Sin embargo, en un curso orientado a la metodología empírica de las ciencias sociales, el énfasis estará puesto en las preguntas de hecho y de causa, ya que son aquellas que pueden responderse con las herramientas de observación, medición y análisis cuantitativo o cualitativo."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#comparación-y-articulación-entre-los-tipos-de-preguntas",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#comparación-y-articulación-entre-los-tipos-de-preguntas",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "Comparación y articulación entre los tipos de preguntas",
+    "text": "Comparación y articulación entre los tipos de preguntas\nAunque las hemos presentado como categorías diferenciadas, en la práctica estos tres tipos de preguntas suelen estar interconectados. Es habitual que un investigador comience con una inquietud normativa (“¿Debería…?”), que luego derive en un interrogante de hecho (“¿Qué ocurre actualmente…?”), y que finalmente dé lugar a una pregunta causal (“¿Qué factores explican que ocurra de ese modo…?”).\nPor ejemplo, un debate sobre si los jueces de la Corte Suprema deberían tener límites de mandato (pregunta de valor) puede llevar a investigar cuántos países efectivamente los tienen (pregunta de hecho), y a continuación a preguntarse si la existencia de límites influye en la independencia judicial o en la estabilidad institucional (pregunta de causa).\nDe este modo, cada tipo de pregunta cumple una función específica y complementaria en el proceso de construcción del conocimiento. Entender esta tipología ayuda a los estudiantes a reconocer el alcance y los límites de su propio trabajo y a formular preguntas que sean viables, pertinentes y significativas."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#síntesis",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#síntesis",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "Síntesis",
+    "text": "Síntesis\n\nLas preguntas de hecho buscan describir la realidad observable: qué ocurre y cómo ocurre.\n\nLas preguntas de causa intentan explicar por qué ocurre, estableciendo relaciones entre variables y mecanismos.\n\nLas preguntas de valor discuten lo que debería ser, incorporando juicios éticos y políticos.\n\nA lo largo de este curso, nos concentraremos en las preguntas de hecho y de causa, ya que son las que se prestan al análisis metodológico y empírico. Las preguntas normativas seguirán siendo parte del horizonte intelectual de la ciencia política, pero requieren herramientas conceptuales distintas a las que abordaremos aquí.\n\n\n\n\n\n\n| Tipo | Qué pregunta | Ejemplo argentino sobre democracia | Ejemplo en relaciones internacionales | Enfoque para responder | |—————|—————|—————|—————|—————| | Normativa | ¿Qué debería ser? (juicio moral) | ¿Debería la Corte Suprema tener mandatos limitados? | ¿Debería Argentina participar en alianzas militares permanentes? | Lógica y razonamiento | | Descriptiva | ¿Cómo es la realidad? (observación) | ¿Qué porcentaje de argentinos confía en el Congreso? | ¿Cuántas misiones de paz ha integrado Argentina desde 1990? | Observación y medición | | Causal | ¿Por qué es así? (explicación) | ¿Influye la situación económica en la aprobación presidencial? | ¿Reduce la participación en operaciones de paz la probabilidad de conflicto interestatal? | Observación, medición y diseño |\n\n\nLas preguntas normativas son fundamentales para el debate democrático y ético, pero en este curso nos centraremos en las descriptivas y causales, que son las que podemos abordar con métodos cuantitativos."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#confianza-en-la-democracia",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#confianza-en-la-democracia",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "Confianza en la democracia",
+    "text": "Confianza en la democracia\n\nNormativa: ¿Deberían los ciudadanos confiar en la democracia como forma de gobierno?\n\nDescriptiva: ¿Qué porcentaje de argentinos declara estar satisfecho con la democracia? ¿Cómo varía según edad, región o nivel educativo?\n\nCausal: ¿La experiencia personal con corrupción reduce la confianza en la democracia?"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#alianzas-militares-y-cooperación-internacional",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#alianzas-militares-y-cooperación-internacional",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "Alianzas militares y cooperación internacional",
+    "text": "Alianzas militares y cooperación internacional\n\nNormativa: ¿Debería Argentina unirse formalmente a una alianza militar regional o global?\n\nDescriptiva: ¿Cuántos acuerdos de cooperación en defensa ha firmado Argentina en la última década?\n\nCausal: ¿La firma de un tratado de defensa mutua aumenta la probabilidad de recibir asistencia militar en caso de crisis?"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#footnotes",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#footnotes",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "Notas",
+    "text": "Notas\n\n\nNos referimos a la utilidad como algo que sirve a un proposito ulterior, sin hacer juicio de valor respecto a su bondad o deseabilidad. En el contexto del conocimiento cientifico, esto lo enmarca en una tradicion pragmatica y positivista. Mientras que una perspectiva moral y humana debe preguntarse sobre el fin ultimo de las preguntas, metodos e investigacion. Consideramos que si bien las dimensiones eticas de la investigacion social no pueden ir separadas de la consideracion del metodo de investigacion, aqui dejamos para mas adelante las menciones a esos debates por propositos expositivos.↩︎\nBonchek, M. S., & Shepsle, K. A. (1997). Analyzing politics. Rationality, Behavior and Institutions. Norton↩︎\nGerring, J. (2012). Mere description. British Journal of Political Science, 42(4), 721-746.↩︎"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/03-modelos.html",
+    "href": "cursos/metodos-cuanti/modulos/03-modelos.html",
+    "title": "Módulo 3 — Diseño de Investigación, Modelos Teóricos, Hipótesis y Unidad de Análisis",
+    "section": "",
+    "text": "Todo proyecto de investigación, sin importar su escala, campo o enfoque metodológico, debe comenzar con un diseño sólido. Este diseño es mucho más que un esquema técnico: es una decisión estratégica sobre cómo queremos conocer algo, a qué preguntas intentaremos responder, qué tipo de datos nos hacen falta, y cómo los vamos a interpretar. En este módulo, nos enfocaremos en los cimientos conceptuales y metodológicos de toda investigación cuantitativa: el diseño, el modelo teórico, las hipótesis y la unidad de análisis.\nTambién reflexionaremos sobre un elemento frecuentemente olvidado en los cursos metodológicos: la factibilidad. Es decir, si lo que queremos hacer es realmente viable. No toda buena idea puede transformarse en una buena investigación. Y muchas investigaciones correctas en su diseño terminan fallando por no considerar sus limitaciones prácticas.\nEste módulo se apoya en materiales clave como Polit y Hungler, Cea D’Ancona, King-Keohane-Verba (KKV), y notas propias de la cátedra."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/03-modelos.html#elementos-básicos-del-diseño",
+    "href": "cursos/metodos-cuanti/modulos/03-modelos.html#elementos-básicos-del-diseño",
+    "title": "Módulo 3 — Diseño de Investigación, Modelos Teóricos, Hipótesis y Unidad de Análisis",
+    "section": "Elementos básicos del diseño:",
+    "text": "Elementos básicos del diseño:\n\nEl problema o pregunta de investigación: ¿qué queremos saber?\nEl modelo teórico: ¿cómo creemos que funciona ese fenómeno?\nLas hipótesis: ¿qué predicciones derivamos del modelo?\nLa unidad de análisis: ¿sobre qué elementos vamos a observar o recolectar datos?\nEl tipo de datos: ¿cómo vamos a medir nuestras variables?\nEl método de análisis: ¿cómo vamos a interpretar la información?\n\n\n“La pregunta de investigación determina el tipo de datos por colectar para el estudio. Si un investigador hace una predicción específica acerca de la respuesta a esas preguntas, se dice que plantea una hipótesis que prueba empíricamente.”\n— Polit & Hungler, p. 131:contentReferenceoaicite:0\n\n\nEjemplo 1: Política argentina\nPregunta: ¿Los niveles de educación explican diferencias en la participación electoral en las provincias argentinas?\nDiseño inicial: * Modelo teórico: mayor educación → mayor participación. * Hipótesis: las provincias con mayor proporción de población con educación secundaria completa muestran mayores niveles de participación. * Unidad de análisis: provincias. * Datos: censo + resultados electorales. * Método: regresión lineal.\n\n\nEjemplo 2: Relaciones internacionales\nPregunta: ¿Las alianzas militares aumentan la cooperación en votaciones multilaterales?\nDiseño inicial: * Modelo teórico: las alianzas estratégicas no solo implican cooperación militar sino también alineamiento diplomático. * Hipótesis: los países miembros de una misma alianza militar votan de forma más similar en la Asamblea General de la ONU. * Unidad de análisis: pares de países (dyads). * Datos: ATOP + registros de votación de la ONU. * Método: análisis de correlación y regresión logística."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/06-graficos.html",
+    "href": "cursos/metodos-cuanti/modulos/06-graficos.html",
+    "title": "Módulo 6 — Visualización de datos: de la estadística descriptiva a la comunicación efectiva",
+    "section": "",
+    "text": "En la estadística descriptiva, los gráficos no son un adorno: son herramientas de pensamiento y comunicación.\nUn gráfico bien diseñado puede revelar patrones, anomalías o relaciones que no son evidentes en tablas o promedios.\nPero para que esto ocurra, debemos combinar:\n\nFundamentos estadísticos clásicos: precisión, claridad, fidelidad a los datos.\nPrincipios modernos de visualización: contar historias, facilitar la interpretación, aprovechar el diseño para guiar la atención.\nPrincipios de Tufte: maximizar la información y minimizar la distracción."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/06-graficos.html#variable-única",
+    "href": "cursos/metodos-cuanti/modulos/06-graficos.html#variable-única",
+    "title": "Módulo 6 — Visualización de datos: de la estadística descriptiva a la comunicación efectiva",
+    "section": "3.1 Variable única",
+    "text": "3.1 Variable única\n\nBarras: categorías políticas, tipo de régimen, partidos.\nHistogramas: distribución de edad de legisladores, gasto militar como % del PBI.\nBoxplots: salarios en el sector público por región."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/06-graficos.html#dos-variables",
+    "href": "cursos/metodos-cuanti/modulos/06-graficos.html#dos-variables",
+    "title": "Módulo 6 — Visualización de datos: de la estadística descriptiva a la comunicación efectiva",
+    "section": "3.2 Dos variables",
+    "text": "3.2 Dos variables\n\nBarras agrupadas: voto por partido según región.\nDispersión: gasto militar vs. PIB per cápita.\nLíneas: evolución de aprobación presidencial."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/06-graficos.html#el-histograma-nuestro-viejo-amigo",
+    "href": "cursos/metodos-cuanti/modulos/06-graficos.html#el-histograma-nuestro-viejo-amigo",
+    "title": "Módulo 6 — Visualización de datos: de la estadística descriptiva a la comunicación efectiva",
+    "section": "el histograma (nuestro viejo amigo)",
+    "text": "el histograma (nuestro viejo amigo)"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/06-graficos.html#el-grafico-de-torta",
+    "href": "cursos/metodos-cuanti/modulos/06-graficos.html#el-grafico-de-torta",
+    "title": "Módulo 6 — Visualización de datos: de la estadística descriptiva a la comunicación efectiva",
+    "section": "El grafico de torta",
+    "text": "El grafico de torta\n” los amigos no dejan que los amigos hagan graficos de torta ”"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/06-graficos.html#de-barras-horizontales-verticales-apiladas",
+    "href": "cursos/metodos-cuanti/modulos/06-graficos.html#de-barras-horizontales-verticales-apiladas",
+    "title": "Módulo 6 — Visualización de datos: de la estadística descriptiva a la comunicación efectiva",
+    "section": "De barras (horizontales, verticales, apiladas)",
+    "text": "De barras (horizontales, verticales, apiladas)"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/06-graficos.html#de-lineas",
+    "href": "cursos/metodos-cuanti/modulos/06-graficos.html#de-lineas",
+    "title": "Módulo 6 — Visualización de datos: de la estadística descriptiva a la comunicación efectiva",
+    "section": "De lineas",
+    "text": "De lineas"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/06-graficos.html#boxplot",
+    "href": "cursos/metodos-cuanti/modulos/06-graficos.html#boxplot",
+    "title": "Módulo 6 — Visualización de datos: de la estadística descriptiva a la comunicación efectiva",
+    "section": "Boxplot",
+    "text": "Boxplot"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/06-graficos.html#el-diagrama-de-dispersion-o-scatterplot-nuestro-nuevo-mejor-amigo",
+    "href": "cursos/metodos-cuanti/modulos/06-graficos.html#el-diagrama-de-dispersion-o-scatterplot-nuestro-nuevo-mejor-amigo",
+    "title": "Módulo 6 — Visualización de datos: de la estadística descriptiva a la comunicación efectiva",
+    "section": "el diagrama de dispersion o scatterplot (nuestro nuevo mejor amigo)",
+    "text": "el diagrama de dispersion o scatterplot (nuestro nuevo mejor amigo)"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/08-probabilidad.html",
+    "href": "cursos/metodos-cuanti/modulos/08-probabilidad.html",
+    "title": "Módulo 8 — Introducción a la probabilidad",
+    "section": "",
+    "text": "La probabilidad es la rama de la estadística que estudia fenómenos en los cuales existe incertidumbre.\nMientras la estadística descriptiva resume lo que ya sucedió, la probabilidad nos permite anticipar lo que puede ocurrir en el futuro.\nEjemplo cotidiano: un meteorólogo anuncia “70% de probabilidad de lluvia”. Esto significa que, si se repitieran muchas veces situaciones climáticas similares, en el 70% de los casos llovería."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/08-probabilidad.html#probabilidad-clásica",
+    "href": "cursos/metodos-cuanti/modulos/08-probabilidad.html#probabilidad-clásica",
+    "title": "Módulo 8 — Introducción a la probabilidad",
+    "section": "1. Probabilidad clásica",
+    "text": "1. Probabilidad clásica\nSe aplica cuando los resultados son igualmente probables.\n[ P(E) = ]\nEjemplo: al lanzar un dado, la probabilidad de obtener un número par (2, 4 o 6) es:\n[ P() = = 0.5 ]"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/08-probabilidad.html#probabilidad-empírica-frecuencia-relativa",
+    "href": "cursos/metodos-cuanti/modulos/08-probabilidad.html#probabilidad-empírica-frecuencia-relativa",
+    "title": "Módulo 8 — Introducción a la probabilidad",
+    "section": "2. Probabilidad empírica (frecuencia relativa)",
+    "text": "2. Probabilidad empírica (frecuencia relativa)\nSe basa en la observación repetida de un fenómeno.\n[ P(E) = ]\nEjemplo: en una clase de 80 estudiantes, 12 obtuvieron “A” en la materia:\n[ P() = = 0.15 ]\nLa ley de los grandes números indica que mientras más repeticiones hagamos, más se acercará esta probabilidad empírica a la clásica."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/08-probabilidad.html#probabilidad-subjetiva",
+    "href": "cursos/metodos-cuanti/modulos/08-probabilidad.html#probabilidad-subjetiva",
+    "title": "Módulo 8 — Introducción a la probabilidad",
+    "section": "3. Probabilidad subjetiva",
+    "text": "3. Probabilidad subjetiva\nSe aplica cuando no hay datos suficientes y la estimación se hace en base a juicio personal o experiencia.\nEjemplos: * Probabilidad de que un país firme un acuerdo internacional.\n* Probabilidad de que un equipo de fútbol gane el campeonato."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/10-chi-medias.html",
+    "href": "cursos/metodos-cuanti/modulos/10-chi-medias.html",
+    "title": "Módulo 10 — Tablas de Contingencia, Chi-Cuadrado y Comparación de Medias",
+    "section": "",
+    "text": "1. Introducción\nCon las pruebas de hipótesis dimos un paso fundamental en el análisis inferencial. Ahora avanzamos hacia un conjunto de técnicas que permiten explorar cómo dos o más variables cualitativas o categóricas se relacionan entre sí.\nLa herramienta clásica es la tabla de contingencia, también conocida como tabla de doble entrada o de asociación.\nComo señalan los materiales de clase:contentReferenceoaicite:0, estas tablas sirven para:\n\nDescribir: cómo se distribuyen los casos en función de combinaciones de categorías.\nExplicar: observar asociaciones entre variables independientes y dependientes (en sentido estadístico, no causal estricto).\n\n\n\n\n2. Aspectos formales de una tabla de contingencia\nUna tabla de contingencia debe cumplir ciertos criterios formales básicos:\n\nNumeración: todas las tablas se numeran para referencia.\nTítulo estructurado: comienza por la variable dependiente, seguida de la independiente, unidas por un conector como “según” o “por”.\n\nEjemplo: Votación de la Resolución 125 de los senadores oficialistas según matriz productiva provincial.\n\nFuente: indicar si es elaboración propia o de qué publicación provienen los datos.\nEscala de medida: señalar si los números son absolutos, porcentajes, proporciones, etc.\n\nEsto asegura transparencia y comunicabilidad, condiciones esenciales de cualquier producto científico:contentReferenceoaicite:1.\n\n\n\n3. Lectura descriptiva\nLa primera aproximación es descriptiva: ver cómo se distribuyen los porcentajes dentro de la tabla.\nEjemplo: supongamos una encuesta en Argentina donde se pregunta:\nVariable dependiente: percepción de inseguridad en la casa de noche (muy segura, segura, poco segura, nada segura).\nVariable independiente: edad del entrevistado (15–29, 30–49, 50–69, 70+).\nPodemos observar si los más jóvenes tienden a sentirse más seguros, o si los mayores reportan más inseguridad. La tabla muestra cómo cada grupo etario se distribuye en las categorías de seguridad.\n\nAdvertencia: a este nivel, solo describimos. No afirmamos causalidad ni inferimos a la población entera.\n\n\n\n\n4. Lectura explicativa: ordinales y linealidad\nCuando las variables son ordinales (por ejemplo, edad en categorías y percepción en grados de seguridad), podemos buscar patrones lineales:\n¿Aumenta sistemáticamente la inseguridad percibida con la edad? ¿Disminuye?\nLa estrategia consiste en mirar diagonales dentro de la tabla y verificar si concentran los valores mínimos o máximos en cada fila:contentReferenceoaicite:2.\n\nSi ocurre, podemos hablar de una relación lineal directa o inversa.\nSi no ocurre, concluimos que la relación no es lineal, aunque puede haber diferencias descriptivas en categorías particulares.\n\nEsto nos entrena a distinguir entre un análisis relacional de variables (variable completa contra variable completa) y un análisis meramente descriptivo (categoría por categoría).\n\n\n\n5. Prueba Chi-Cuadrado ((^2))\nEl paso natural tras la exploración descriptiva es evaluar si la asociación observada podría deberse al azar. Aquí se aplica la prueba chi-cuadrado de independencia.\nLa fórmula general es:\n\\[\n\\chi^2 \\;=\\; \\sum_{i=1}^R \\sum_{j=1}^C \\frac{(O_{ij} - E_{ij})^2}{E_{ij}}\n\\]\nDonde:\n\n(O_{ij}): frecuencia observada en la celda (i,j).\n\n(E_{ij} = ): frecuencia esperada bajo independencia.\n\nSi el valor de (^2) es suficientemente grande (p &lt; 0.05), rechazamos la hipótesis de independencia y afirmamos que hay asociación estadística entre las variables.\nEjemplo político:\nQueremos saber si la preferencia de voto (gobierno vs oposición) está asociada al género del votante. Una tabla de contingencia con 2×2 categorías nos permitirá aplicar chi-cuadrado y evaluar si las diferencias entre hombres y mujeres son significativas.\n\n\n\n6. Comparación de medias: t de Student\nCuando tenemos una variable cuantitativa y una variable cualitativa dicotómica, usamos otra estrategia: la comparación de medias entre dos grupos.\nLa estadística t se calcula como:\n\\[\nt \\;=\\; \\frac{\\bar{x}_1 - \\bar{x}_2}{\\sqrt{s_p^2 \\left(\\tfrac{1}{n_1}+\\tfrac{1}{n_2}\\right)}}\n\\]\ncon la varianza combinada:\n\\[\ns_p^2 = \\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}\n\\]\nEjemplo (estudiantes):\nQueremos saber si hay diferencias en el promedio de horas de estudio semanales entre quienes trabajan y quienes no. La t de Student nos permite evaluar si la diferencia entre medias observada es estadísticamente significativa.\n\n\n\n7. Decisiones prácticas y cautelas\n\nLas tablas de contingencia son muy útiles para explorar datos categóricos, pero deben complementarse con pruebas de significancia.\n\nEl chi-cuadrado indica asociación, no causalidad.\n\nLa comparación de medias permite contrastar diferencias, pero requiere verificar supuestos (normalidad, varianzas homogéneas).\n\nSiempre documentar: qué categorías se usaron, cómo se agruparon los datos, y qué nivel de confianza se adoptó.\n\n\n\n\n8. Conclusión\nLas tablas de contingencia y las pruebas asociadas constituyen un puente entre lo descriptivo y lo inferencial.\nNos permiten:\n\nExplorar cómo se distribuyen los datos en distintas combinaciones.\n\nIdentificar asociaciones y patrones de linealidad.\n\nFormalizar la evidencia con chi-cuadrado y t de Student.\n\nDe este modo, avanzamos en la lectura crítica de datos sociales y políticos, entrenando la mirada para distinguir entre simples diferencias aparentes y asociaciones respaldadas por evidencia estadística."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/12-regresion.html",
+    "href": "cursos/metodos-cuanti/modulos/12-regresion.html",
+    "title": "Módulo 12 — Regresión Multivariada",
+    "section": "",
+    "text": "Hasta ahora hemos visto modelos de regresión bivariada, donde una variable dependiente (Y) se explica en función de una sola variable independiente (X). Sin embargo, en el mundo real los fenómenos sociales y políticos rara vez se explican por un solo factor. La regresión multivariada nos permite analizar el efecto simultáneo de múltiples variables independientes sobre una variable dependiente.\nEjemplo: ¿Qué factores explican el apoyo ciudadano a la democracia? Podríamos incluir el nivel educativo, el ingreso, la edad, y la ideología política."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/12-regresion.html#outliers-e-influencia",
+    "href": "cursos/metodos-cuanti/modulos/12-regresion.html#outliers-e-influencia",
+    "title": "Módulo 12 — Regresión Multivariada",
+    "section": "6.1 Outliers e influencia",
+    "text": "6.1 Outliers e influencia\n\nUn outlier es un caso que no encaja con el resto de los datos.\nLos casos influyentes pueden distorsionar las estimaciones.\nEstrategias: verificar errores de codificación, incluir una dummy para ese caso, o justificar su exclusión:contentReferenceoaicite:3."
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/12-regresion.html#multicolinealidad",
+    "href": "cursos/metodos-cuanti/modulos/12-regresion.html#multicolinealidad",
+    "title": "Módulo 12 — Regresión Multivariada",
+    "section": "6.2 Multicolinealidad",
+    "text": "6.2 Multicolinealidad\n\nOcurre cuando dos o más variables independientes están fuertemente correlacionadas.\nConsecuencia: los errores estándar crecen, los coeficientes pierden significancia aunque el (R^2) sea alto:contentReferenceoaicite:4.\nHerramienta: VIF (Variance Inflation Factor).\nSi (VIF &gt; 10), hay indicios serios de multicolinealidad:contentReferenceoaicite:5."
+  }
+]

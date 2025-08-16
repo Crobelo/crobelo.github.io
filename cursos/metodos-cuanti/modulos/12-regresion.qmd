@@ -1,0 +1,111 @@
+---
+title: "Módulo 12 — Regresión Multivariada"
+format: html
+---
+
+# 1. Introducción
+
+Hasta ahora hemos visto modelos de regresión bivariada, donde una variable dependiente \(Y\) se explica en función de una sola variable independiente \(X\). Sin embargo, en el mundo real los fenómenos sociales y políticos rara vez se explican por un solo factor. La **regresión multivariada** nos permite analizar el efecto simultáneo de múltiples variables independientes sobre una variable dependiente.
+
+Ejemplo: ¿Qué factores explican el apoyo ciudadano a la democracia? Podríamos incluir el nivel educativo, el ingreso, la edad, y la ideología política.
+
+---
+
+# 2. El modelo de regresión múltiple
+
+En su forma más simple, el modelo lineal múltiple se expresa como:
+
+$$
+Y_i = \alpha + \beta_1 X_{1i} + \beta_2 X_{2i} + \dots + \beta_k X_{ki} + \epsilon_i
+$$
+
+Donde:
+
+* \(Y_i\): variable dependiente.
+* \(X_{1}, X_{2}, \dots, X_{k}\): variables independientes.
+* \(\beta_1, \beta_2, \dots, \beta_k\): coeficientes que estimamos.
+* \(\epsilon_i\): término de error.
+
+Interpretación básica: cada \(\beta_j\) indica el efecto esperado de un cambio unitario en \(X_j\), manteniendo constantes todas las demás variables.
+
+---
+
+# 3. Variables categóricas y *dummies*
+
+Cuando una variable independiente es categórica (ej. género, partido político), no podemos incluirla directamente. Utilizamos variables **dummy** (0/1) para representarlas.
+
+* Ejemplo: género  
+  - Hombre = 0  
+  - Mujer = 1  
+
+En este caso, el coeficiente de la dummy (\(\beta\)) representa la diferencia en el promedio de \(Y\) entre mujeres y hombres:contentReference[oaicite:0]{index=0}.
+
+Más categorías: si tenemos religión con 4 categorías, generamos 3 dummies (dejamos una como grupo de referencia).
+
+---
+
+# 4. Control de variables y confusión
+
+Una de las grandes ventajas de la regresión múltiple es controlar por variables de confusión.  
+Ejemplo: supongamos que encontramos diferencias de género en actitudes hacia el aborto. Pero al controlar por afiliación partidaria, descubrimos que parte de esas diferencias se deben a que hombres y mujeres se distribuyen de forma distinta entre partidos:contentReference[oaicite:1]{index=1}.
+
+---
+
+# 5. Interacciones
+
+Muchas veces, el efecto de una variable depende del valor de otra. Para modelar esto introducimos **términos de interacción**.
+
+Ejemplo:
+$$
+Y = \alpha + \beta_1 X + \beta_2 Z + \beta_3 (X \times Z) + \epsilon
+$$
+
+Aquí, \(\beta_3\) indica cómo cambia el efecto de \(X\) sobre \(Y\) cuando \(Z\) pasa de 0 a 1:contentReference[oaicite:2]{index=2}.
+
+---
+
+# 6. Problemas comunes
+
+## 6.1 Outliers e influencia
+* Un **outlier** es un caso que no encaja con el resto de los datos.
+* Los casos influyentes pueden distorsionar las estimaciones.
+* Estrategias: verificar errores de codificación, incluir una dummy para ese caso, o justificar su exclusión:contentReference[oaicite:3]{index=3}.
+
+## 6.2 Multicolinealidad
+* Ocurre cuando dos o más variables independientes están fuertemente correlacionadas.
+* Consecuencia: los errores estándar crecen, los coeficientes pierden significancia aunque el \(R^2\) sea alto:contentReference[oaicite:4]{index=4}.
+* Herramienta: **VIF (Variance Inflation Factor)**.  
+  Si \(VIF > 10\), hay indicios serios de multicolinealidad:contentReference[oaicite:5]{index=5}.
+
+---
+
+# 7. Ejemplo aplicado
+
+Supongamos que estudiamos el **índice de Estado de Derecho** en 118 países. Planteamos el modelo:
+
+$$
+RuleOfLaw = \alpha + \beta_1 Competition + \beta_2 TransitionPower + \beta_3 (Competition \times TransitionPower) + \epsilon
+$$
+
+Resultados:
+
+* La **competencia electoral** por sí sola no mejora el Estado de Derecho.
+* La **transición pacífica de poder** sí lo hace (\(\beta_2 > 0\)).
+* La interacción muestra que el efecto de la transición pacífica es mucho mayor en democracias competitivas:contentReference[oaicite:6]{index=6}.
+
+---
+
+# 8. Buenas prácticas
+
+* Revisar supuestos del modelo lineal: linealidad, independencia, homocedasticidad, normalidad de errores.
+* Documentar siempre las decisiones sobre outliers y variables de control.
+* Reportar los intervalos de confianza además de los coeficientes.
+* Evitar la “caza de significancias” (*p-hacking*). Diseñar hipótesis a priori.
+
+---
+
+# 9. Conclusión
+
+La regresión multivariada es una de las herramientas más potentes de la investigación social y política. Nos permite no solo describir relaciones, sino también aislar efectos, comparar grupos, y explorar condiciones contextuales a través de interacciones. Pero su poder depende del cuidado con el que seleccionemos variables, revisemos supuestos y comuniquemos resultados.
+
+---

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Módulo 10 — Tablas de Contingencia, Chi-Cuadrado y Comparación de Medias – Claudio Robelo</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Claudio Robelo</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">1. Introducción</a></li>
+  <li><a href="#aspectos-formales-de-una-tabla-de-contingencia" id="toc-aspectos-formales-de-una-tabla-de-contingencia" class="nav-link" data-scroll-target="#aspectos-formales-de-una-tabla-de-contingencia">2. Aspectos formales de una tabla de contingencia</a></li>
+  <li><a href="#lectura-descriptiva" id="toc-lectura-descriptiva" class="nav-link" data-scroll-target="#lectura-descriptiva">3. Lectura descriptiva</a></li>
+  <li><a href="#lectura-explicativa-ordinales-y-linealidad" id="toc-lectura-explicativa-ordinales-y-linealidad" class="nav-link" data-scroll-target="#lectura-explicativa-ordinales-y-linealidad">4. Lectura explicativa: ordinales y linealidad</a></li>
+  <li><a href="#prueba-chi-cuadrado-2" id="toc-prueba-chi-cuadrado-2" class="nav-link" data-scroll-target="#prueba-chi-cuadrado-2">5. Prueba Chi-Cuadrado ((^2))</a></li>
+  <li><a href="#comparación-de-medias-t-de-student" id="toc-comparación-de-medias-t-de-student" class="nav-link" data-scroll-target="#comparación-de-medias-t-de-student">6. Comparación de medias: t de Student</a></li>
+  <li><a href="#decisiones-prácticas-y-cautelas" id="toc-decisiones-prácticas-y-cautelas" class="nav-link" data-scroll-target="#decisiones-prácticas-y-cautelas">7. Decisiones prácticas y cautelas</a></li>
+  <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión">8. Conclusión</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Módulo 10 — Tablas de Contingencia, Chi-Cuadrado y Comparación de Medias</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introducción" class="level1">
+<h1>1. Introducción</h1>
+<p>Con las pruebas de hipótesis dimos un paso fundamental en el análisis inferencial. Ahora avanzamos hacia un conjunto de técnicas que permiten explorar cómo <strong>dos o más variables cualitativas o categóricas se relacionan entre sí</strong>.<br>
+La herramienta clásica es la <strong>tabla de contingencia</strong>, también conocida como tabla de doble entrada o de asociación.</p>
+<p>Como señalan los materiales de clase:contentReference<span data-index="0">oaicite:0</span>, estas tablas sirven para:</p>
+<ul>
+<li><strong>Describir</strong>: cómo se distribuyen los casos en función de combinaciones de categorías.</li>
+<li><strong>Explicar</strong>: observar asociaciones entre variables independientes y dependientes (en sentido estadístico, no causal estricto).</li>
+</ul>
+<hr>
+</section>
+<section id="aspectos-formales-de-una-tabla-de-contingencia" class="level1">
+<h1>2. Aspectos formales de una tabla de contingencia</h1>
+<p>Una tabla de contingencia debe cumplir ciertos criterios formales básicos:</p>
+<ul>
+<li><strong>Numeración</strong>: todas las tablas se numeran para referencia.</li>
+<li><strong>Título estructurado</strong>: comienza por la variable dependiente, seguida de la independiente, unidas por un conector como “según” o “por”.
+<ul>
+<li>Ejemplo: <em>Votación de la Resolución 125 de los senadores oficialistas según matriz productiva provincial</em>.</li>
+</ul></li>
+<li><strong>Fuente</strong>: indicar si es elaboración propia o de qué publicación provienen los datos.</li>
+<li><strong>Escala de medida</strong>: señalar si los números son absolutos, porcentajes, proporciones, etc.</li>
+</ul>
+<p>Esto asegura <strong>transparencia y comunicabilidad</strong>, condiciones esenciales de cualquier producto científico:contentReference<span data-index="1">oaicite:1</span>.</p>
+<hr>
+</section>
+<section id="lectura-descriptiva" class="level1">
+<h1>3. Lectura descriptiva</h1>
+<p>La primera aproximación es <strong>descriptiva</strong>: ver cómo se distribuyen los porcentajes dentro de la tabla.</p>
+<p><strong>Ejemplo:</strong> supongamos una encuesta en Argentina donde se pregunta:</p>
+<p><em>Variable dependiente:</em> percepción de inseguridad en la casa de noche (muy segura, segura, poco segura, nada segura).<br>
+<em>Variable independiente:</em> edad del entrevistado (15–29, 30–49, 50–69, 70+).</p>
+<p>Podemos observar si los más jóvenes tienden a sentirse más seguros, o si los mayores reportan más inseguridad. La tabla muestra cómo cada grupo etario se distribuye en las categorías de seguridad.</p>
+<blockquote class="blockquote">
+<p><strong>Advertencia:</strong> a este nivel, solo describimos. No afirmamos causalidad ni inferimos a la población entera.</p>
+</blockquote>
+<hr>
+</section>
+<section id="lectura-explicativa-ordinales-y-linealidad" class="level1">
+<h1>4. Lectura explicativa: ordinales y linealidad</h1>
+<p>Cuando las variables son <strong>ordinales</strong> (por ejemplo, edad en categorías y percepción en grados de seguridad), podemos buscar <strong>patrones lineales</strong>:<br>
+¿Aumenta sistemáticamente la inseguridad percibida con la edad? ¿Disminuye?</p>
+<p>La estrategia consiste en mirar <strong>diagonales</strong> dentro de la tabla y verificar si concentran los valores mínimos o máximos en cada fila:contentReference<span data-index="2">oaicite:2</span>.</p>
+<ul>
+<li>Si ocurre, podemos hablar de una <strong>relación lineal directa o inversa</strong>.</li>
+<li>Si no ocurre, concluimos que la relación no es lineal, aunque puede haber diferencias descriptivas en categorías particulares.</li>
+</ul>
+<p>Esto nos entrena a distinguir entre un <strong>análisis relacional de variables</strong> (variable completa contra variable completa) y un <strong>análisis meramente descriptivo</strong> (categoría por categoría).</p>
+<hr>
+</section>
+<section id="prueba-chi-cuadrado-2" class="level1">
+<h1>5. Prueba Chi-Cuadrado ((^2))</h1>
+<p>El paso natural tras la exploración descriptiva es evaluar si la asociación observada podría deberse al azar. Aquí se aplica la prueba <strong>chi-cuadrado de independencia</strong>.</p>
+<p>La fórmula general es:</p>
+<p><span class="math display">\[
+\chi^2 \;=\; \sum_{i=1}^R \sum_{j=1}^C \frac{(O_{ij} - E_{ij})^2}{E_{ij}}
+\]</span></p>
+<p>Donde:</p>
+<ul>
+<li>(O_{ij}): frecuencia observada en la celda (i,j).<br>
+</li>
+<li>(E_{ij} = ): frecuencia esperada bajo independencia.</li>
+</ul>
+<p>Si el valor de (^2) es suficientemente grande (p &lt; 0.05), rechazamos la hipótesis de independencia y afirmamos que <strong>hay asociación estadística</strong> entre las variables.</p>
+<p><strong>Ejemplo político:</strong><br>
+Queremos saber si la preferencia de voto (gobierno vs oposición) está asociada al género del votante. Una tabla de contingencia con 2×2 categorías nos permitirá aplicar chi-cuadrado y evaluar si las diferencias entre hombres y mujeres son significativas.</p>
+<hr>
+</section>
+<section id="comparación-de-medias-t-de-student" class="level1">
+<h1>6. Comparación de medias: t de Student</h1>
+<p>Cuando tenemos una <strong>variable cuantitativa</strong> y una <strong>variable cualitativa dicotómica</strong>, usamos otra estrategia: la <strong>comparación de medias</strong> entre dos grupos.</p>
+<p>La estadística t se calcula como:</p>
+<p><span class="math display">\[
+t \;=\; \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{s_p^2 \left(\tfrac{1}{n_1}+\tfrac{1}{n_2}\right)}}
+\]</span></p>
+<p>con la varianza combinada:</p>
+<p><span class="math display">\[
+s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}
+\]</span></p>
+<p><strong>Ejemplo (estudiantes):</strong><br>
+Queremos saber si hay diferencias en el promedio de horas de estudio semanales entre quienes trabajan y quienes no. La t de Student nos permite evaluar si la diferencia entre medias observada es estadísticamente significativa.</p>
+<hr>
+</section>
+<section id="decisiones-prácticas-y-cautelas" class="level1">
+<h1>7. Decisiones prácticas y cautelas</h1>
+<ul>
+<li>Las tablas de contingencia son muy útiles para explorar datos categóricos, pero deben complementarse con pruebas de significancia.<br>
+</li>
+<li>El chi-cuadrado indica asociación, <strong>no causalidad</strong>.<br>
+</li>
+<li>La comparación de medias permite contrastar diferencias, pero requiere verificar supuestos (normalidad, varianzas homogéneas).<br>
+</li>
+<li>Siempre documentar: qué categorías se usaron, cómo se agruparon los datos, y qué nivel de confianza se adoptó.</li>
+</ul>
+<hr>
+</section>
+<section id="conclusión" class="level1">
+<h1>8. Conclusión</h1>
+<p>Las tablas de contingencia y las pruebas asociadas constituyen un puente entre lo descriptivo y lo inferencial.<br>
+Nos permiten:</p>
+<ul>
+<li>Explorar cómo se distribuyen los datos en distintas combinaciones.<br>
+</li>
+<li>Identificar asociaciones y patrones de linealidad.<br>
+</li>
+<li>Formalizar la evidencia con chi-cuadrado y t de Student.</li>
+</ul>
+<p>De este modo, avanzamos en la <strong>lectura crítica de datos sociales y políticos</strong>, entrenando la mirada para distinguir entre simples diferencias aparentes y asociaciones respaldadas por evidencia estadística.</p>
+<hr>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/crobelo\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,209 @@
+---
+title: "Correlación Bivariada de Pearson"
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-title: "Contenido de la clase"
+    code-fold: false
+execute:
+  echo: false
+---
+
+# 1. ¿Qué es una correlación?
+  
+  La **correlación** mide el grado de asociación lineal entre dos variables numéricas.  
+Su valor está acotado entre **-1 y 1**:
+  
+  - **+1** → correlación positiva perfecta: cuando una variable aumenta, la otra también lo hace de forma proporcional.
+- **-1** → correlación negativa perfecta: cuando una variable aumenta, la otra disminuye de forma proporcional.
+- **0** → ausencia de correlación lineal.
+
+> 💡 Importante: la correlación **no implica causalidad**.
+
+**Ejemplo conceptual**:  
+  - Altura y peso de las personas: suele haber correlación positiva (personas más altas tienden a pesar más).  
+- Horas de estudio y cantidad de errores en un examen: podría haber correlación negativa (más estudio, menos errores).
+
+
+  
+# 2. Visualización interactiva
+  
+  Podemos ver cómo cambia el patrón de puntos y la recta estimada a medida que la correlación varía.
+
+```{ojs}
+// Slider de correlación
+viewof rho = Inputs.range([-1, 1], {
+  value: 0,
+  step: 0.01,
+  label: "Correlación (ρ)"
+})
+
+// Checkbox para mostrar/ocultar la línea
+viewof capas = Inputs.checkbox(["Recta de regresión"], {
+  value: ["Recta de regresión"],
+  label: "Capas:"
+})
+
+// RNG normal estándar
+function randn() {
+  let u = 0, v = 0;
+  while (u === 0) u = Math.random();
+  while (v === 0) v = Math.random();
+  return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+}
+
+```
+
+
+```{ojs}
+// Generar datos correlacionados
+n = 400
+data = {
+  const x1 = Array.from({length: n}, randn);
+  const x2 = Array.from({length: n}, randn);
+  return x1.map((z1, i) => {
+    const z2 = x2[i];
+    const x = z1;
+    const y = rho * z1 + Math.sqrt(Math.max(0, 1 - rho**2)) * z2;
+    return {x, y};
+  });
+}
+
+// Estadísticos para la línea
+meanX = d3.mean(data, d => d.x)
+meanY = d3.mean(data, d => d.y)
+Sxx = d3.sum(data, d => (d.x - meanX)**2)
+Syy = d3.sum(data, d => (d.y - meanY)**2)
+Sxy = d3.sum(data, d => (d.x - meanX)*(d.y - meanY))
+slope = Sxy / Sxx
+intercept = meanY - slope * meanX
+fitline = [
+  {x: -3.5, y: intercept + slope*(-3.5)},
+  {x:  3.5, y: intercept + slope*(3.5)}
+]
+
+```
+
+
+
+```{ojs}
+
+// Gráfico con recta opcional según checkbox
+Plot.plot({
+  width: 720,
+  height: 440,
+  marks: [
+    Plot.dot(data, {x: "x", y: "y", r: 2, fillOpacity: 0.7}),
+    Plot.ruleX([0], {stroke: "gray", strokeOpacity: 0.5}),
+    Plot.ruleY([0], {stroke: "gray", strokeOpacity: 0.5}),
+    ...(capas.includes("Recta de regresión") ? [Plot.line(fitline, {x: "x", y: "y"})] : [])
+  ],
+  x: {label: "X (estandarizada)", domain: [-3.5, 3.5]},
+  y: {label: "Y (estandarizada)", domain: [-3.5, 3.5]}
+})
+
+
+```
+
+
+
+
+# 3. Fórmula formal de la correlación de Pearson
+
+La correlación muestral de Pearson entre $X$ e $Y$ es:
+
+$$
+r_{xy} = \frac{\sum_{i=1}^{n} (x_i - \bar{x}) (y_i - \bar{y})}
+{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2} \ \sqrt{\sum_{i=1}^{n} (y_i - \bar{y})^2}}
+$$
+
+**Elementos:**
+- $x_i, y_i$: valores observados de las variables $X$ e $Y$.  
+- $\bar{x}, \bar{y}$: medias muestrales de $X$ e $Y$.  
+- $n$: número de observaciones.  
+- El **numerador** es la suma de productos centrados (proporcional a la **covarianza** muestral).  
+- El **denominador** normaliza por la dispersión de cada variable (sus desviaciones estándar muestrales), acotando $r$ a $[-1, 1]$.
+
+---
+
+# 4. Ejemplo numérico completo
+
+Supongamos los siguientes datos:
+
+| Persona | Horas de estudio (X) | Nota en el examen (Y) |
+|:------:|:---------------------:|:---------------------:|
+|   1    |          2            |          65           |
+|   2    |          4            |          70           |
+|   3    |          6            |          78           |
+|   4    |          8            |          85           |
+|   5    |         10            |          95           |
+
+Cálculos paso a paso:
+
+1. Medias:
+   $\bar{x} = 6, \qquad \bar{y} = 78.6$
+
+2. Sumas centradas:
+   $$S_{xx}=\sum (x_i-\bar{x})^2 = 40.0 \quad $$
+   $$S_{yy}=\sum (y_i-\bar{y})^2 = 569.2 \quad$$
+   $$S_{xy}=\sum (x_i-\bar{x})(y_i-\bar{y}) = 150.0$$
+
+3. Denominador:
+   $$
+   \sqrt{S_{xx}}\cdot\sqrt{S_{yy}} \approx 6.3249 \times 23.8440 \approx 150.8907
+   $$
+
+4. Correlación:
+   $$
+   r \;=\; \frac{S_{xy}}{\sqrt{S_{xx}}\sqrt{S_{yy}}}
+     \;=\; \frac{150.0}{150.8907}
+     \;\approx\; 0.9941
+   $$
+
+**Interpretación:** relación **positiva y muy fuerte** entre horas de estudio y nota en este ejemplo.
+
+---
+
+# 5. Interpretando correlaciones (callouts plegables)
+
+Afirmaciones frecuentes y su traducción a lenguaje matemático/interpretativo:
+
+::: {.callout-tip collapse="true" title="“Altura y peso tienen una correlación de 0.80.”"}
+- **Tipo:** proporcional (correlación **positiva**).  
+- **Fuerza:** **fuerte** (≈ 0.8).  
+- **Significado:** a mayor altura, mayor peso, y la relación lineal es consistente (pero no perfecta).  
+- **Cuidado:** no implica que la altura “cause” el peso; describe asociación lineal.
+:::
+
+::: {.callout-warning collapse="true" title="“Horas de estudio y errores tienen una correlación de -0.65.”"}
+- **Tipo:** inversamente proporcional (correlación **negativa**).  
+- **Fuerza:** **moderada** (≈ -0.65).  
+- **Significado:** más horas de estudio suelen asociarse con **menos** errores.  
+- **Cuidado:** hay variabilidad; no todos los casos siguen exactamente ese patrón.
+:::
+
+::: {.callout-note collapse="true" title="“Consumo de café y productividad tienen una correlación de 0.30.”"}
+- **Tipo:** proporcional (positiva).  
+- **Fuerza:** **débil a moderada** (≈ 0.3).  
+- **Significado:** tendencia leve a que, cuanto más café, mayor productividad **en promedio**.  
+- **Cuidado:** la relación es débil; podría no ser estable entre grupos/escenarios.
+:::
+
+::: {.callout-important collapse="true" title="“La correlación entre dos variables es -0.05.”"}
+- **Tipo:** prácticamente **nula** (muy cerca de 0).  
+- **Fuerza:** **inexistente** a **muy débil**.  
+- **Significado:** no hay evidencia de relación lineal clara.  
+- **Cuidado:** podría existir **relación no lineal** que el coeficiente de Pearson no capta.
+:::
+
+---
+
+## Apéndice: buenas prácticas al usar correlación
+
+- Use correlación de Pearson con **variables cuantitativas** y relación **aprox. lineal**.  
+- Revise **outliers** y **no linealidades**; pueden distorsionar \(r\).  
+- Para relaciones monótonas no lineales, considere **Spearman**.  
+- Recuerde: correlación **no** es causalidad; complemente con teoría/diseño de investigación.
+
+---

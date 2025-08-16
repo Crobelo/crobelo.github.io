@@ -65,34 +65,49 @@ Por eso, los módulos están diseñados para ser **altamente interactivos** y **
 ---
 
 # Módulos del curso
+# Módulos del curso
 
-**1. Preguntas y respuestas.** Exploramos las preguntas que impulsan la persecución del conocimiento humano por curiosidad. Analizamos la diferencia entre **respuestas ideales** y **respuestas reales** y contextualizamos la materia desde esta perspectiva.
+* [**1. Preguntas y respuestas.**](modulos/01-preguntas.qmd)  
+  Exploramos las preguntas que impulsan la persecución del conocimiento humano por curiosidad. Analizamos la diferencia entre **respuestas ideales** y **respuestas reales** y contextualizamos la materia desde esta perspectiva.
 
-**2. Ciencia, ciencias sociales y lo social en la ciencia.** Introducción epistemológica a qué es la ciencia, cuáles son sus límites, mitos y posibilidades. Incluye la reflexión sobre cómo lo social influye en la práctica científica.
+* [**2. Ciencia, ciencias sociales y lo social en la ciencia.**](modulos/02-ciencia.qmd)  
+  Introducción epistemológica a qué es la ciencia, cuáles son sus límites, mitos y posibilidades. Incluye la reflexión sobre cómo lo social influye en la práctica científica.
 
-**3. Diseño de investigación, modelos teóricos, hipótesis y unidad de análisis.** Estudiamos los cimientos de cualquier investigación social: desde la elección del diseño hasta la definición de hipótesis y unidades de análisis. Evaluamos la factibilidad como punto crítico.
+* [**3. Diseño de investigación, modelos teóricos, hipótesis y unidad de análisis.**](modulos/03-modelos.qmd)  
+  Estudiamos los cimientos de cualquier investigación social: desde la elección del diseño hasta la definición de hipótesis y unidades de análisis. Evaluamos la factibilidad como punto crítico.
 
-**4. Conceptos, operacionalización y variables.** Cómo pasar de conceptos abstractos de interés a definiciones medibles y observables.
+* [**4. Conceptos, operacionalización y variables.**](modulos/04-conceptos.qmd)  
+  Cómo pasar de conceptos abstractos de interés a definiciones medibles y observables.
 
-**4.5 (opcional) Repaso de álgebra y notación matemática.** Clase opcional para reforzar la comprensión de fórmulas básicas, como el cálculo de promedios, de cara a los módulos posteriores.
+* [**4.5 (opcional) Repaso de álgebra y notación matemática.**](modulos/04-matematica.qmd)  
+  Clase opcional para reforzar la comprensión de fórmulas básicas, como el cálculo de promedios, de cara a los módulos posteriores.
 
-**5. Datos, cantidades de interés y medidas resumen.** De un conjunto de datos, extraemos información útil para describirlo: medidas de tendencia central y de dispersión.
+* [**5. Explorando los datos, desde conceptos a las relaciones.**](modulos/05-histograma-tablas.qmd)  
+  Histogramas como herramienta de exploración, Tablas de frecuencia y tablas de contingencia descriptivas.
 
-**6. Gráficos para la comunicación.** Transformar datos en representaciones visuales claras y efectivas.
+* [**6. Comunicando los datos, gráficos uso y principios.**](modulos/06-graficos.qmd)  
+  Transformar datos en representaciones visuales claras y efectivas.
 
-**7. De los conceptos a las relaciones.** Tablas de frecuencia y tablas de contingencia: cómo pasar de la descripción de una variable a explorar relaciones entre variables.
+* [**7. Reduciendo los datos, cantidades de interés y medidas resumen.**](modulos/07-medidas.qmd)  
+  De un conjunto de datos, extraemos información útil para describirlo: medidas de tendencia central y de dispersión.
 
-**8. Introducción a la probabilidad.** Teorema del límite central, distribución normal, su historia y mitos. Incluye los fundamentos filosóficos del enfoque frequentista.
+* [**8. Introducción a la probabilidad.**](modulos/08-probabilidad.qmd)  
+  Teorema del límite central, distribución normal, su historia y mitos. Incluye los fundamentos filosóficos del enfoque frequentista.
 
-**9. Test de hipótesis y errores tipo I y tipo II.** Analizamos la toma de decisiones ante la incertidumbre, usando el ejemplo de Freedman, Pisani y Purves sobre el grado de duda razonable que enfrenta un jurado.
+* [**9. Test de hipótesis y errores tipo I y tipo II.**](modulos/09-test.qmd)  
+  Analizamos la toma de decisiones ante la incertidumbre, usando el ejemplo de Freedman, Pisani y Purves sobre el grado de duda razonable que enfrenta un jurado.
 
-**10. Chi-cuadrado, significancia estadística y comparación de medias.** Incluye experimentos de encuesta y técnicas para evaluar diferencias y asociaciones.
+* [**10. Chi-cuadrado, significancia estadística y comparación de medias.**](modulos/10-chi-medias.qmd)  
+  Incluye experimentos de encuesta y técnicas para evaluar diferencias y asociaciones.
 
-**11. Correlación y regresión bivariada.** Cómo medir y modelar relaciones entre dos variables.
+* [**11. Correlación y regresión bivariada.**](modulos/11-correlacion.qmd)  
+  Cómo medir y modelar relaciones entre dos variables.
 
-**12. Regresión multivariada como promedio condicional.** Interpretación y uso descriptivo de modelos que incorporan múltiples variables.
+* [**12. Regresión multivariada como promedio condicional.**](modulos/12-regresion.qmd)  
+  Interpretación y uso descriptivo de modelos que incorporan múltiples variables.
 
-**13. Casos académicos en la regresión.** Aplicaciones reales de la regresión: interpretación, casos complejos, interacciones, otras distribuciones y simulaciones computacionales.
+* [**13. Casos académicos en la regresión.**](modulos/13-casos.qmd)  
+  Aplicaciones reales de la regresión: interpretación, casos complejos, interacciones, otras distribuciones y simulaciones computacionales.
 
 ---
 

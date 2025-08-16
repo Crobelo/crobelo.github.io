@@ -1,0 +1,121 @@
+---
+title: "Módulo X — Inferencia estadística: del Teorema del Límite Central al test de hipótesis"
+format: html
+---
+
+# 1. El Teorema del Límite Central (TLC)
+
+El **TLC** es la piedra angular de la inferencia estadística. Afirma que, si tomamos muchas muestras aleatorias de tamaño suficientemente grande de una población, la distribución de las medias muestrales tenderá a una **distribución normal** alrededor de la media verdadera de la población, sin importar la forma de la distribución original.
+
+\[
+\bar{X} \sim \mathcal{N}\left(\mu, \frac{\sigma}{\sqrt{n}}\right)
+\]
+
+::: {.columns}
+::: {.column width="70%"}
+**Ejemplo (dados):**  
+Si lanzamos un dado 600 veces y calculamos el promedio de los valores, ese promedio se distribuirá normalmente alrededor de 3,5, con una desviación estándar más pequeña cuanto mayor sea \(n\).  
+:::
+::: {.column-margin}
+**Claves**
+1. La media muestral es insesgada.  
+2. El error estándar disminuye con \(n\).  
+3. A partir de cierto tamaño muestral (\(n \geq 30\)), la normalidad es una buena aproximación.  
+:::
+:::
+
+Este resultado hace posible construir **intervalos de confianza** y realizar **tests de hipótesis** en ciencias sociales, incluso cuando no conocemos toda la población.
+
+---
+
+# 2. El test de hipótesis
+
+El **test de hipótesis** es un procedimiento que nos permite decidir, con un nivel de confianza, si los datos apoyan o no una afirmación sobre la población.
+
+## 2.1 Hipótesis nula y alternativa
+
+* **Hipótesis nula (H₀):** no hay efecto o diferencia.  
+* **Hipótesis alternativa (H₁):** existe efecto o diferencia.
+
+Ejemplo:  
+* \(H_0\): "La tasa de participación electoral es igual en hombres y mujeres".  
+* \(H_1\): "La tasa de participación electoral difiere entre hombres y mujeres".
+
+---
+
+## 2.2 Estadístico de prueba y p-valor
+
+El procedimiento general es:
+
+1. Formular \(H_0\) y \(H_1\).  
+2. Elegir un **nivel de significancia** (\(\alpha\), comúnmente 0,05).  
+3. Calcular un **estadístico de prueba** (z, t, chi², etc.).  
+4. Calcular el **p-valor**: probabilidad de observar un resultado tan extremo como el obtenido si \(H_0\) fuera cierta.  
+5. Comparar:  
+   * Si \(p < \alpha\), rechazamos \(H_0\).  
+   * Si \(p \geq \alpha\), no rechazamos \(H_0\).
+
+---
+
+# 3. Errores de tipo I y tipo II
+
+En cualquier test existe el riesgo de cometer errores:
+
+* **Error tipo I (\(\alpha\))**: rechazar \(H_0\) siendo verdadera (falso positivo).  
+* **Error tipo II (\(\beta\))**: no rechazar \(H_0\) siendo falsa (falso negativo).  
+
+La **potencia estadística** de una prueba es \(1-\beta\): la probabilidad de detectar un efecto real.
+
+::: {.columns}
+::: {.column width="70%"}
+**Ejemplo (jurado):**  
+Un jurado debe decidir si un acusado es culpable.  
+* **Error tipo I**: condenar a un inocente.  
+* **Error tipo II**: absolver a un culpable.  
+En la práctica, el sistema judicial fija estándares altos (“más allá de duda razonable”) para minimizar el error tipo I, aceptando el riesgo de aumentar el tipo II.  
+:::
+::: {.column-margin}
+**En encuestas**  
+* Tipo I: concluir que un candidato lidera cuando en realidad no lo hace.  
+* Tipo II: no detectar un liderazgo incipiente real.  
+:::
+:::
+
+---
+
+# 4. Ejemplo aplicado: política comparada
+
+Supongamos que queremos saber si **el gasto militar promedio (% del PIB) difiere entre democracias y autocracias**.  
+
+1. Hipótesis:  
+   * \(H_0\): no hay diferencia (\(\mu_{dem} = \mu_{aut}\)).  
+   * \(H_1\): sí hay diferencia (\(\mu_{dem} \neq \mu_{aut}\)).  
+
+2. Tomamos muestras de cada grupo.  
+
+3. Calculamos la diferencia de medias y el estadístico t.  
+
+4. Obtenemos un p-valor de 0,03.  
+   * Con \(\alpha=0,05\), rechazamos \(H_0\).  
+
+**Interpretación:** hay evidencia estadística de que democracias y autocracias gastan en defensa de manera distinta.  
+
+---
+
+# 5. Límites y buenas prácticas
+
+* El p-valor depende fuertemente del tamaño muestral. Con muestras muy grandes, hasta diferencias mínimas pueden volverse “significativas”:contentReference[oaicite:0]{index=0}.  
+* La significancia estadística no equivale a significancia sustantiva: una diferencia pequeña puede no ser relevante políticamente.  
+* Reportar intervalos de confianza junto al p-valor mejora la transparencia.  
+* Siempre contextualizar los hallazgos en su marco teórico.
+
+---
+
+# Resumen visual
+
+* **TLC** → justifica la normalidad de las medias muestrales.  
+* **Test de hipótesis** → herramienta para contrastar afirmaciones.  
+* **Errores tipo I y II** → riesgos inevitables en la decisión.  
+* **Buenas prácticas** → transparencia, intervalos de confianza, discusión teórica.
+
+---

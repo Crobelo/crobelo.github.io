@@ -1,0 +1,368 @@
+---
+title: "Módulo 7 — Reduciendo los datos: cantidades de interés y medidas resumen"
+format: html
+---
+
+# 1. Propósito del módulo
+
+En este módulo unificamos los dos grandes bloques de la descripción univariada:
+
+* **Cantidades de interés** que normalizan conteos para hacerlos comparables (proporciones, tasas, razones y cambios porcentuales).
+* **Medidas resumen** de **posición** (location) y **dispersión** (scale), con variantes clásicas y **robustas** para datos con asimetrías u outliers.
+
+Además, añadimos herramientas prácticas de **transformación** y **escalado** para preparar datos de política y relaciones internacionales (porcentajes de voto, gasto público, comercio, aprobación presidencial, etc.).
+
+---
+
+# 2. Elecciones antes de calcular
+
+::: {.columns}
+::: {.column width="70%"}
+Antes de aplicar fórmulas, decidí:
+
+* **Qué observaciones entran**: documentá *missing* y criterio de exclusión.
+* **Qué escala tiene tu variable**: nominal/ordinal/intervalo/razón.
+* **Si hay valores extremos** relevantes (evento real) o indeseados (error).
+* **La finalidad**: comparar grupos, seguir una serie de tiempo, resumir una distribución, etc.
+:::
+::: {.column-margin}
+**Checklist**
+1. Revisá histograma/boxplot.  
+2. ¿Asimetría marcada? → preferí **medidas robustas**.  
+3. Reportá siempre \(n\) válido.
+:::
+:::
+
+---
+
+# 3. Tablas de frecuencia (recordatorio breve)
+
+Una tabla de frecuencias presenta **f**, **%**, **% válido** y **% acumulado**. En variables numéricas continuas, agrupá en clases de amplitud homogénea. La tabla es el soporte “contable” del histograma y de todo lo que sigue.
+
+---
+
+# 4. Cantidades de interés: proporciones, tasas, razones y porcentajes
+
+Las **proporciones** y **tasas** convierten conteos en cantidades comparables entre grupos o tamaños poblacionales distintos.
+
+::: {.columns}
+::: {.column width="70%"}
+## 4.1 Proporción y porcentaje
+Sea \(x\) el número de “éxitos” (casos con el atributo) en una muestra de tamaño \(n\).
+
+$$
+\hat{p} \;=\; \frac{x}{n}, \qquad \%\;=\; 100 \times \hat{p}
+$$
+
+**Ejemplo (encuesta):** 240 personas declaran “aprueba” sobre 600 entrevistados.  
+\(\hat{p}=240/600=0{.}40 \Rightarrow 40\%\).
+:::
+::: {.column-margin}
+**Paso a paso**
+1. **Contar** casos con el atributo (\(x\)).  
+2. **Dividir** por el total (\(n\)).  
+3. **Multiplicar** por 100 si querés %.
+:::
+:::
+
+::: {.columns}
+::: {.column width="70%"}
+## 4.2 Tasa (por \(k\))
+Estandariza por tamaño poblacional:
+
+$$
+\text{tasa}_{(k)} \;=\; \frac{\text{eventos}}{\text{población}}\times k 
+$$
+
+**Ejemplo (gestión pública):** 450 robos en población 300.000; tasa por 100.000:  
+\(\frac{450}{300{,}000}\times 100{,}000=150\).
+:::
+::: {.column-margin}
+**Elección de \(k\)**
+* Salud/Crimen: 100.000  
+* Educación: 1.000  
+* Encuestas: %
+:::
+:::
+
+::: {.columns}
+::: {.column width="70%"}
+## 4.3 Razón y cambio porcentual
+**Razón:** \(R=\dfrac{a}{b}\).  
+
+**Cambio \%:** 
+$$
+\%\Delta \;=\; \frac{\text{nuevo}-\text{viejo}}{\text{viejo}}\times 100
+$$
+
+**Ej.:** gasto militar pasa de 0,9% a 1,2% del PBI:  
+\(\%\Delta=(1{.}2-0{.}9)/0{.}9\times 100=33{.}3\%\).
+:::
+::: {.column-margin}
+**Cuidado**
+* Compará **magnitudes homogéneas**.  
+* Aclarar **periodo** y **fuente**.
+:::
+:::
+
+---
+
+# 5. Medidas de posición (location)
+
+## 5.1 Media aritmética
+
+::: {.columns}
+::: {.column width="70%"}
+Para datos simples \(x_1,\dots,x_n\):
+
+$$
+\bar{x} \;=\; \frac{1}{n}\sum_{i=1}^{n} x_i
+$$
+
+Para datos con frecuencias \(x_j\) con \(f_j\):
+
+$$
+\bar{x} \;=\; \frac{\sum_{j} f_j x_j}{\sum_{j} f_j}
+$$
+
+**Ejemplo (notas):** \(x=\{5,6,7,9,10\}\Rightarrow \bar{x}=7{.}4\).
+:::
+::: {.column-margin}
+**Pros y contras**  
+* Eficiente en simetría.  
+* **Sensible** a outliers.
+:::
+:::
+
+## 5.2 Mediana
+
+::: {.columns}
+::: {.column width="70%"}
+La **mediana** \( \tilde{x} \) es el valor central de los datos **ordenados**.
+
+* \(n\) impar: posición \( (n+1)/2 \).
+* \(n\) par: promedio de \( n/2 \) y \( n/2+1 \).
+:::
+::: {.column-margin}
+**Robustez**  
+* Resiste outliers y colas pesadas.  
+* Requiere escala **ordinal** o superior.
+:::
+:::
+
+## 5.3 Moda
+
+* Valor más frecuente.  
+* Válida para **todas** las escalas.  
+* Puede ser **bimodal** o **multimodal** (advertirlo al reportar).
+
+## 5.4 Medias especiales (cuando la media “clásica” no alcanza)
+
+::: {.columns}
+::: {.column width="70%"}
+**Media ponderada**  
+Si cada observación tiene peso \(w_i\):
+
+$$
+\bar{x}_{w}=\frac{\sum_{i=1}^{n} w_i x_i}{\sum_{i=1}^{n} w_i}
+$$
+
+*Útil con encuestas probabilísticas (ponderación por diseño/post-estratificación) o al combinar provincias/países de distinto tamaño.*
+
+**Media geométrica**  
+Para promediar **crecimientos** o **razones** (positivos):
+
+$$
+G \;=\; \left(\prod_{i=1}^{n} x_i \right)^{1/n}
+\quad\text{y}\quad
+\text{TCAC} \;=\; \left(\frac{x_n}{x_1}\right)^{1/(n-1)}-1
+$$
+
+**Media armónica**  
+Para promediar **tasas** del tipo “por unidad”:
+
+$$
+H \;=\; \frac{n}{\sum_{i=1}^{n} \dfrac{1}{x_i}}
+$$
+
+*Ej.: km/h en tramos con diferentes velocidades, o “casos por 100.000”.*
+:::
+::: {.column-margin}
+**Reglas de uso**
+* Ponderada: cuando \(w_i\) ≠ 1.  
+* Geom.: crecimiento compuesto, índices.  
+* Arm.: promediar **tasas**.
+:::
+:::
+
+## 5.5 Medias robustas
+
+::: {.columns}
+::: {.column width="70%"}
+**Media recortada (trimmed mean)**  
+Quita un \(\alpha\%\) inferior y superior y promedia el resto (p. ej., 10%–20%).
+
+**Media winsorizada**  
+Reemplaza los extremos por los cuantiles de corte y luego promedia.
+
+*Ambas reducen la influencia de outliers manteniendo eficiencia.*
+:::
+::: {.column-margin}
+**Cuándo**  
+* Histogramas con **colas largas**.  
+* Datos administrativos con **errores de carga**.
+:::
+:::
+
+---
+
+# 6. Medidas de dispersión (scale)
+
+## 6.1 Rango y cuantiles
+
+::: {.columns}
+::: {.column width="70%"}
+**Rango:** \(\max - \min\).  
+
+**Recorrido intercuartílico (IQR):** \(Q_3 - Q_1\) (50% central).
+:::
+::: {.column-margin}
+**Notas**  
+* Rango: solo extremos.  
+* **IQR**: robusto a outliers.
+:::
+:::
+
+## 6.2 Varianza y desvío estándar
+
+::: {.columns}
+::: {.column width="70%"}
+**Población**:
+
+$$
+\sigma^2=\frac{1}{N}\sum_{i=1}^{N}(x_i-\mu)^2, 
+\qquad \sigma=\sqrt{\sigma^2}
+$$
+
+**Muestra**:
+
+$$
+s^2=\frac{1}{n-1}\sum_{i=1}^{n}(x_i-\bar{x})^2, 
+\qquad s=\sqrt{s^2}
+$$
+:::
+::: {.column-margin}
+**Paso a paso**
+1. Restá la media.  
+2. Elevá al cuadrado.  
+3. Sumá y dividí por \(n-1\) o \(N\).
+:::
+:::
+
+## 6.3 Dispersión relativa: coeficiente de variación
+
+$$
+\mathrm{CV} \;=\; \frac{s}{\bar{x}}\times 100
+$$
+
+*Compara **variabilidad** entre variables/grupos con medias distintas.*
+
+## 6.4 Dispersión robusta: MAD
+
+**MAD (median absolute deviation)**
+
+$$
+\mathrm{MAD} \;=\; \mathrm{mediana}\big(|x_i-\tilde{x}|\big)
+$$
+
+*Escala robusta alternativa al \(s\); útil con outliers.*
+
+---
+
+# 7. Transformaciones y escalado
+
+::: {.columns}
+::: {.column width="70%"}
+**Estandarización (z-score)**  
+Pone todo en “desvíos estándar”:
+
+$$
+z_i \;=\; \frac{x_i-\bar{x}}{s}
+$$
+
+**Reescalado min–max**  
+En \([0,1]\):
+
+$$
+x_i^{*} \;=\; \frac{x_i-\min(x)}{\max(x)-\min(x)}
+$$
+
+**Transformación logarítmica**  
+Para variables **sesgadas a la derecha** (gasto, ingreso, comercio):
+
+$$
+y_i \;=\; \log(x_i + c)
+$$
+
+donde \(c\ge 0\) evita \(\log(0)\).
+:::
+::: {.column-margin}
+**Cuándo usar**  
+* \(z\): comparar asignaturas/indicadores.  
+* Min–max: índices compuestos.  
+* Log: colas largas; expresa **crecimientos**.
+:::
+:::
+
+---
+
+# 8. Ejemplos integrados
+
+## 8.1 Outlier y elección de resumen
+Ingresos (miles): \(\{50,60,70,75,80\}\Rightarrow \bar{x}=67{.}0, \tilde{x}=70\).  
+Agregamos 1000 → \(\bar{x}=222{.}5, \tilde{x}=72{.}5\).  
+*Conclusión:* con extremos, reportá **mediana + IQR** y, si hace falta, una **media recortada 10%**.
+
+## 8.2 Tasa y razón en seguridad
+Robos: 450 en 300.000 → **tasa 100.000** = 150.  
+Razón **aprehensiones/robos** \(R=a/b\).  
+*Buenas prácticas:* reportá tasa, \(R\), periodo y fuente.
+
+## 8.3 Media geométrica para crecimiento
+Exportaciones (índice): 80 → 120 en 5 años.  
+\(\text{TCAC}=(120/80)^{1/4}-1=10{.}67\%\) anual.
+
+## 8.4 Z-scores para comparar cohortes
+Aprobación presidencial: curso A \((\bar{x}=7,s=1)\) y curso B \((\bar{x}=10,s=4)\).  
+Una observación 8 en A: \(z=1\).  
+Una observación 9 en B: \(z=-0{.}25\).  
+*Comparación justa* entre escalas diferentes.
+
+---
+
+# 9. Plantillas de reporte
+
+::: {.callout-tip}
+**Resumen mínimo recomendado (univariado)**
+* \(n\) válido y % de *missing*.  
+* Medida de **posición** acorde (media o mediana) + **dispersión** (s o IQR).  
+* Gráfico: **histograma** + **boxplot**.  
+* Nota metodológica: tratamiento de outliers/transformaciones.
+:::
+
+::: {.callout-note}
+**Ejemplo de fraseo**
+“La distribución del **gasto militar (% PBI)** muestra asimetría positiva. Reportamos **mediana = 1,2** e **IQR = 0,8–1,9**; la **media = 1,6** y **s = 1,1** se ven elevadas por pocos valores altos. Se aplicó **winsorización 5%** para análisis de sensibilidad (resultados similares).”
+:::
+
+---
+
+# 10. Resumen de decisiones prácticas
+
+* Si hay **asimetría** o **outliers** → **mediana + IQR** o **medias robustas**.  
+* Comparaciones entre grupos con medias distintas → **CV**.  
+* Series de **crecimiento** → **media geométrica**.  
+* **Tasas** → considerá **armónica** si promediás tasas heterogéneas.  
+* Documentá todo: *missing*, reglas de outliers, transformaciones y pesos.
+
+---

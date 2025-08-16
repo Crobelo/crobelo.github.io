@@ -1,0 +1,141 @@
+---
+title: "Modulo 5 - Explorando los datos, Estadística descriptiva de una variable: tablas de frecuencia e histogramas"
+format: html
+---
+
+# Introducción
+
+En análisis cuantitativo, uno de los primeros pasos para comprender un conjunto de datos es **describir el comportamiento de una sola variable**. Antes de calcular medidas resumen o probar hipótesis, necesitamos una idea clara de:
+
+* Qué valores toma.
+* Con qué frecuencia se presentan.
+* Cómo se distribuyen.
+
+En esta clase vamos a introducir dos herramientas fundamentales para lograrlo:
+
+1. **Tablas de frecuencia**, que nos permiten resumir los datos en formato tabular.
+2. **Histogramas**, que nos ofrecen una representación gráfica intuitiva y universalmente comprendida.
+
+El objetivo es desarrollar la capacidad de **leer y producir estos resúmenes**, para luego usarlos como base de análisis más complejos.
+# 1. ¿Qué hacemos con los datos?
+
+Cuando termina la **recolección**, comienza la **fase de análisis e interpretación**. Es tan crucial como la de campo, y hoy es impensable sin procesamiento informático (planillas, paquetes estadísticos, scripts) que cubren un amplio espectro analítico (Cea D’Ancona, 2002, p. 251).
+
+En este módulo vamos a **describir** conjuntos de datos: primero con **tablas de frecuencias** y **cantidades de interés** (proporciones, tasas, razones), y luego con **medidas resumen**: tendencia central (media, mediana, moda) y dispersión (rango, IQR, varianza, desvío estándar, coeficiente de variación). También miraremos la **forma** de la distribución (asimetría y curtosis) y los **preliminares** indispensables: *missing values* y *outliers* (Cea D’Ancona, 2002, p. 271).
+
+---
+
+# 2. Preliminares: depuración, *missing* y *outliers*
+
+Antes de calcular nada, es importante **depurar** los datos:
+* Identificar registros con **faltantes** (*missing values*) y documentar el criterio para tratarlos (codificación, exclusión, imputación). Si hay muchos faltantes por caso/variable, puede ser mejor excluirlos del análisis.
+* Detectar **outliers** con resúmenes numéricos y gráficos iniciales (boxplots, histogramas) (Cea D’Ancona, 2002, pp. 272–274).
+
+La **no respuesta** puede sesgar estimaciones; por eso, conviene comparar la muestra con la población cuando sea posible (padrón/censo) para dimensionar las diferencias.
+
+---
+
+# 3. Tablas de frecuencias y primera mirada
+
+Una **tabla de frecuencias** enumera los valores o categorías de una variable, su frecuencia absoluta, relativa (%), y a menudo el **% válido** que excluye *missing*. También puede incluir el **% acumulado** (Cea D’Ancona, 2002, p. 275).
+
+Para variables de intervalo/razón, conviene agrupar en 6–20 clases para no distorsionar la forma (Cea D’Ancona, 2002, p. 276).
+
+
+---
+
+# 1. Tablas de frecuencia: la base descriptiva
+
+Una tabla de frecuencias **enumera los valores posibles** de una variable (o rangos de valores, si es continua) y **cuenta cuántas observaciones corresponden a cada uno**. 
+
+Las columnas típicas incluyen:
+
+* **Frecuencia absoluta (f)**: número de casos en cada categoría o intervalo.
+* **Frecuencia relativa (%)**: proporción respecto del total.
+* **Frecuencia acumulada**: suma de frecuencias hasta esa categoría (útil en variables ordinales o numéricas).
+
+## Ejemplo 1: Tipo de régimen político
+
+Supongamos que tenemos datos de 20 países clasificados como:
+
+* Democracia
+* Híbrido
+* Autoritarismo
+
+| Régimen        | f   | %     | % acumulado |
+|----------------|-----|-------|-------------|
+| Democracia     | 8   | 40,0% | 40,0%       |
+| Híbrido        | 6   | 30,0% | 70,0%       |
+| Autoritarismo  | 6   | 30,0% | 100,0%      |
+| **Total**      | 20  | 100%  | —           |
+
+Esta tabla nos permite ver de un vistazo la distribución de casos y, con la frecuencia acumulada, entender la proporción que representan los regímenes más inclusivos, por ejemplo.
+
+---
+
+# 2. Histogramas: la visualización universal
+
+El **histograma** es el gráfico de referencia para mostrar la distribución de una variable cuantitativa. Divide el rango de valores en **intervalos contiguos** (bins o clases) y muestra la **altura de cada barra proporcional a la frecuencia** en ese intervalo.
+
+A diferencia del gráfico de barras, en un histograma:
+
+* Las barras están pegadas (porque representan intervalos continuos).
+* El ancho de las barras tiene significado: cada barra cubre un rango definido de valores.
+
+## Ejemplo 2: Gasto militar como % del PBI
+
+Supongamos que tenemos datos de gasto militar (% del PBI) para 50 países. El histograma podría verse así:
+
+![Histograma de gasto militar](imagenes/histograma_gasto_militar.png)
+
+Podemos interpretar:
+
+* Si la mayor parte de las observaciones está concentrada en intervalos bajos (p. ej., entre 0% y 2%), la distribución está sesgada hacia la izquierda.
+* Si hay una barra muy alta en un intervalo, indica un rango de valores particularmente frecuente.
+
+---
+
+# 3. Relación entre tablas y gráficos
+
+Las tablas y los histogramas son complementarios:
+
+* **Tablas**: dan exactitud numérica y permiten cálculos posteriores.
+* **Histogramas**: facilitan la interpretación visual, muestran patrones y posibles valores atípicos.
+
+En la práctica profesional —por ejemplo, al presentar datos de opinión pública sobre satisfacción con la democracia— es común incluir **ambos**: una tabla que documenta los datos exactos y un histograma que los resume visualmente.
+
+---
+
+# 4. Decisiones clave al construir histogramas
+
+* **Número de intervalos**: demasiado pocos pueden ocultar patrones; demasiados pueden mostrar ruido. Una regla común es usar \(\sqrt{n}\) clases para \(n\) observaciones como punto de partida.
+* **Rangos iguales**: mantener intervalos de igual amplitud facilita la interpretación.
+* **Etiquetas claras**: los ejes deben indicar unidades y rangos.
+
+---
+
+# 5. Ejercicio práctico
+
+1. Elige una variable numérica de un conjunto de datos (por ejemplo, edad, ingreso, gasto militar, porcentaje de votos).
+2. Construye la tabla de frecuencias con:
+   * Frecuencia absoluta
+   * Frecuencia relativa (%)
+   * Frecuencia acumulada
+3. Construye el histograma correspondiente.
+4. Describe lo que observas:
+   * ¿Dónde se concentra la mayoría de casos?
+   * ¿Hay sesgo a izquierda/derecha?
+   * ¿Algún valor extremo destaca?
+
+---
+
+# Conclusión
+
+Dominar las tablas de frecuencia y los histogramas es **el primer paso** para trabajar con datos de manera profesional. Tanto en ciencia política como en relaciones internacionales, estas herramientas se usan para explorar fenómenos tan diversos como:
+
+* Resultados electorales.
+* Niveles de gasto público.
+* Intensidad de comercio entre países.
+* Opinión pública sobre políticas específicas.
+
+En todos los casos, describir una variable correctamente sienta las bases para análisis más complejos y para la comunicación clara de hallazgos a audiencias diversas.

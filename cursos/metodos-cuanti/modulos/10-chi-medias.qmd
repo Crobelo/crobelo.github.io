@@ -1,0 +1,124 @@
+---
+title: "Módulo 10 — Tablas de Contingencia, Chi-Cuadrado y Comparación de Medias"
+format: html
+---
+
+# 1. Introducción
+
+Con las pruebas de hipótesis dimos un paso fundamental en el análisis inferencial. Ahora avanzamos hacia un conjunto de técnicas que permiten explorar cómo **dos o más variables cualitativas o categóricas se relacionan entre sí**.  
+La herramienta clásica es la **tabla de contingencia**, también conocida como tabla de doble entrada o de asociación.
+
+Como señalan los materiales de clase:contentReference[oaicite:0]{index=0}, estas tablas sirven para:
+
+* **Describir**: cómo se distribuyen los casos en función de combinaciones de categorías.
+* **Explicar**: observar asociaciones entre variables independientes y dependientes (en sentido estadístico, no causal estricto).
+
+---
+
+# 2. Aspectos formales de una tabla de contingencia
+
+Una tabla de contingencia debe cumplir ciertos criterios formales básicos:
+
+* **Numeración**: todas las tablas se numeran para referencia.
+* **Título estructurado**: comienza por la variable dependiente, seguida de la independiente, unidas por un conector como “según” o “por”.
+  * Ejemplo: *Votación de la Resolución 125 de los senadores oficialistas según matriz productiva provincial*.
+* **Fuente**: indicar si es elaboración propia o de qué publicación provienen los datos.
+* **Escala de medida**: señalar si los números son absolutos, porcentajes, proporciones, etc.
+
+Esto asegura **transparencia y comunicabilidad**, condiciones esenciales de cualquier producto científico:contentReference[oaicite:1]{index=1}.
+
+---
+
+# 3. Lectura descriptiva
+
+La primera aproximación es **descriptiva**: ver cómo se distribuyen los porcentajes dentro de la tabla.
+
+**Ejemplo:** supongamos una encuesta en Argentina donde se pregunta:
+
+*Variable dependiente:* percepción de inseguridad en la casa de noche (muy segura, segura, poco segura, nada segura).  
+*Variable independiente:* edad del entrevistado (15–29, 30–49, 50–69, 70+).
+
+Podemos observar si los más jóvenes tienden a sentirse más seguros, o si los mayores reportan más inseguridad. La tabla muestra cómo cada grupo etario se distribuye en las categorías de seguridad.
+
+> **Advertencia:** a este nivel, solo describimos. No afirmamos causalidad ni inferimos a la población entera.
+
+---
+
+# 4. Lectura explicativa: ordinales y linealidad
+
+Cuando las variables son **ordinales** (por ejemplo, edad en categorías y percepción en grados de seguridad), podemos buscar **patrones lineales**:  
+¿Aumenta sistemáticamente la inseguridad percibida con la edad? ¿Disminuye?
+
+La estrategia consiste en mirar **diagonales** dentro de la tabla y verificar si concentran los valores mínimos o máximos en cada fila:contentReference[oaicite:2]{index=2}.
+
+* Si ocurre, podemos hablar de una **relación lineal directa o inversa**.
+* Si no ocurre, concluimos que la relación no es lineal, aunque puede haber diferencias descriptivas en categorías particulares.
+
+Esto nos entrena a distinguir entre un **análisis relacional de variables** (variable completa contra variable completa) y un **análisis meramente descriptivo** (categoría por categoría).
+
+---
+
+# 5. Prueba Chi-Cuadrado (\(\chi^2\))
+
+El paso natural tras la exploración descriptiva es evaluar si la asociación observada podría deberse al azar. Aquí se aplica la prueba **chi-cuadrado de independencia**.
+
+La fórmula general es:
+
+$$
+\chi^2 \;=\; \sum_{i=1}^R \sum_{j=1}^C \frac{(O_{ij} - E_{ij})^2}{E_{ij}}
+$$
+
+Donde:
+
+* \(O_{ij}\): frecuencia observada en la celda \(i,j\).  
+* \(E_{ij} = \dfrac{(\text{total fila}_i)(\text{total columna}_j)}{\text{total general}}\): frecuencia esperada bajo independencia.
+
+Si el valor de \(\chi^2\) es suficientemente grande (p < 0.05), rechazamos la hipótesis de independencia y afirmamos que **hay asociación estadística** entre las variables.
+
+**Ejemplo político:**  
+Queremos saber si la preferencia de voto (gobierno vs oposición) está asociada al género del votante. Una tabla de contingencia con 2×2 categorías nos permitirá aplicar chi-cuadrado y evaluar si las diferencias entre hombres y mujeres son significativas.
+
+---
+
+# 6. Comparación de medias: t de Student
+
+Cuando tenemos una **variable cuantitativa** y una **variable cualitativa dicotómica**, usamos otra estrategia: la **comparación de medias** entre dos grupos.
+
+La estadística t se calcula como:
+
+$$
+t \;=\; \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{s_p^2 \left(\tfrac{1}{n_1}+\tfrac{1}{n_2}\right)}}
+$$
+
+con la varianza combinada:
+
+$$
+s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}
+$$
+
+**Ejemplo (estudiantes):**  
+Queremos saber si hay diferencias en el promedio de horas de estudio semanales entre quienes trabajan y quienes no. La t de Student nos permite evaluar si la diferencia entre medias observada es estadísticamente significativa.
+
+---
+
+# 7. Decisiones prácticas y cautelas
+
+* Las tablas de contingencia son muy útiles para explorar datos categóricos, pero deben complementarse con pruebas de significancia.  
+* El chi-cuadrado indica asociación, **no causalidad**.  
+* La comparación de medias permite contrastar diferencias, pero requiere verificar supuestos (normalidad, varianzas homogéneas).  
+* Siempre documentar: qué categorías se usaron, cómo se agruparon los datos, y qué nivel de confianza se adoptó.
+
+---
+
+# 8. Conclusión
+
+Las tablas de contingencia y las pruebas asociadas constituyen un puente entre lo descriptivo y lo inferencial.  
+Nos permiten:
+
+* Explorar cómo se distribuyen los datos en distintas combinaciones.  
+* Identificar asociaciones y patrones de linealidad.  
+* Formalizar la evidencia con chi-cuadrado y t de Student.
+
+De este modo, avanzamos en la **lectura crítica de datos sociales y políticos**, entrenando la mirada para distinguir entre simples diferencias aparentes y asociaciones respaldadas por evidencia estadística.
+
+---

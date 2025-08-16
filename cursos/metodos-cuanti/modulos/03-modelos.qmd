@@ -1,0 +1,169 @@
+---
+title: "Módulo 3 — Diseño de Investigación, Modelos Teóricos, Hipótesis y Unidad de Análisis"
+format: html
+---
+
+# Introducción
+
+Todo proyecto de investigación, sin importar su escala, campo o enfoque metodológico, debe comenzar con un **diseño sólido**. Este diseño es mucho más que un esquema técnico: es una decisión estratégica sobre cómo queremos conocer algo, a qué preguntas intentaremos responder, qué tipo de datos nos hacen falta, y cómo los vamos a interpretar. En este módulo, nos enfocaremos en los **cimientos conceptuales y metodológicos** de toda investigación cuantitativa: el diseño, el modelo teórico, las hipótesis y la unidad de análisis.
+
+También reflexionaremos sobre un elemento frecuentemente olvidado en los cursos metodológicos: la **factibilidad**. Es decir, si lo que queremos hacer es realmente viable. No toda buena idea puede transformarse en una buena investigación. Y muchas investigaciones correctas en su diseño terminan fallando por no considerar sus limitaciones prácticas.
+
+Este módulo se apoya en materiales clave como Polit y Hungler, Cea D’Ancona, King-Keohane-Verba (KKV), y notas propias de la cátedra.
+
+------------------------------------------------------------------------
+
+# 1. ¿Qué es un diseño de investigación?
+
+El **diseño de investigación** es el plan general que guía todo el proceso desde la formulación de la pregunta hasta la interpretación de los resultados. No es simplemente una fase más del proceso: es la estructura que permite responder una pregunta empírica de forma sistemática, rigurosa y comunicable.
+
+## Elementos básicos del diseño:
+
+-   El **problema o pregunta de investigación**: ¿qué queremos saber?
+-   El **modelo teórico**: ¿cómo creemos que funciona ese fenómeno?
+-   Las **hipótesis**: ¿qué predicciones derivamos del modelo?
+-   La **unidad de análisis**: ¿sobre qué elementos vamos a observar o recolectar datos?
+-   El **tipo de datos**: ¿cómo vamos a medir nuestras variables?
+-   El **método de análisis**: ¿cómo vamos a interpretar la información?
+
+> “La pregunta de investigación determina el tipo de datos por colectar para el estudio. Si un investigador hace una predicción específica acerca de la respuesta a esas preguntas, se dice que plantea una hipótesis que prueba empíricamente.”\
+> — *Polit & Hungler, p. 131*:contentReference[oaicite:0]{index="0"}
+
+### Ejemplo 1: Política argentina
+
+Pregunta: ¿Los niveles de educación explican diferencias en la participación electoral en las provincias argentinas?
+
+Diseño inicial: \* Modelo teórico: mayor educación → mayor participación. \* Hipótesis: las provincias con mayor proporción de población con educación secundaria completa muestran mayores niveles de participación. \* Unidad de análisis: provincias. \* Datos: censo + resultados electorales. \* Método: regresión lineal.
+
+### Ejemplo 2: Relaciones internacionales
+
+Pregunta: ¿Las alianzas militares aumentan la cooperación en votaciones multilaterales?
+
+Diseño inicial: \* Modelo teórico: las alianzas estratégicas no solo implican cooperación militar sino también alineamiento diplomático. \* Hipótesis: los países miembros de una misma alianza militar votan de forma más similar en la Asamblea General de la ONU. \* Unidad de análisis: pares de países (dyads). \* Datos: ATOP + registros de votación de la ONU. \* Método: análisis de correlación y regresión logística.
+
+------------------------------------------------------------------------
+
+# 2. Modelos teóricos
+
+Un **modelo teórico** es una representación simplificada del mundo. Nos permite pensar **cómo** y **por qué** se relacionan ciertos fenómenos, sin necesidad de capturar cada detalle del contexto.
+
+Como se señala en *notes-03-models*:
+
+> “La ciencia es imaginativa. Construir un modelo teórico es más como escribir poesía que como llenar una planilla: implica seleccionar, abstraer y conectar elementos relevantes de forma explicativa.”:contentReference[oaicite:1]{index="1"}
+
+Los modelos sirven para: \* Organizar nuestras ideas. \* Generar hipótesis. \* Detectar contradicciones o vacíos conceptuales. \* Guiar la recolección de datos.
+
+### Características deseables de un modelo teórico:
+
+-   Claridad conceptual: los términos usados deben estar bien definidos.
+-   Parsimonia: debe ser tan simple como sea posible, sin perder capacidad explicativa.
+-   Coherencia interna: las relaciones entre variables deben ser lógicas.
+-   Capacidad de generalización: idealmente, debe poder aplicarse más allá del caso específico.
+
+### Ejemplo práctico: Confianza institucional
+
+Modelo teórico: \* Las experiencias previas con corrupción afectan la percepción de legitimidad del sistema político. \* La percepción de legitimidad afecta el cumplimiento de normas.
+
+Visualmente:
+
+```         
+Experiencia con corrupción → Percepción de legitimidad → Conducta ciudadana (p. ej. pagar impuestos, votar)
+```
+
+Este modelo puede aplicarse tanto a estudios sobre Argentina como a comparaciones internacionales.
+
+------------------------------------------------------------------------
+
+# 3. Hipótesis
+
+Una **hipótesis** es una afirmación concreta que expresa una relación esperada entre dos o más variables. A diferencia del modelo, que puede ser general o abstracto, la hipótesis debe ser **específica, medible y falsable**.
+
+### Tipos comunes de hipótesis:
+
+-   **Hipótesis de relación**: correlación entre dos variables.
+-   **Hipótesis causal**: una variable afecta a otra.
+-   **Hipótesis nula**: no hay efecto ni relación.
+
+> “Las hipótesis son predicciones tentativas que orientan la recolección de datos y permiten verificar si el modelo tiene apoyo empírico.”\
+> — *MC Clase 2, Video 5*
+
+### Buenas prácticas:
+
+-   Usar lenguaje claro y directo.
+-   Incluir las direcciones de la relación (más, menos, mayor, menor).
+-   Evitar hipótesis tautológicas o triviales.
+
+### Ejemplos comparados:
+
+*Hipótesis en Ciencia Política:*\
+“Los votantes jóvenes tienen menos probabilidad de votar en elecciones legislativas que los votantes mayores.”
+
+*Hipótesis en Relaciones Internacionales:*\
+“Los países con mayor intercambio comercial tienen menor probabilidad de entrar en conflicto armado entre sí.”
+
+Ambas hipótesis son falsables, miden fenómenos concretos y derivan de modelos teóricos razonables.
+
+------------------------------------------------------------------------
+
+# 4. Unidad de análisis
+
+La **unidad de análisis** es el “objeto” básico de observación al que se aplican nuestras mediciones y sobre el que se harán inferencias. Puede variar ampliamente según la pregunta:
+
+-   Individuos (personas, votantes, funcionarios)
+-   Grupos (partidos, comunidades, provincias)
+-   Instituciones (congresos, ejércitos, agencias)
+-   Estados (países)
+-   Eventos (elecciones, golpes de Estado, guerras)
+
+> “Elegir la unidad de análisis correcta es clave, ya que define cómo recolectaremos datos y qué tipo de inferencia podremos realizar.”\
+> — *MC Clase 3, Video 1*
+
+### Ejemplos:
+
+*Estudio de opinión pública*\
+Unidad de análisis: individuos.\
+Fuente de datos: encuestas.
+
+*Estudio de cooperación internacional*\
+Unidad de análisis: pares de Estados (dyads).\
+Fuente de datos: bases de tratados y votaciones multilaterales.
+
+------------------------------------------------------------------------
+
+# 5. Evaluar la factibilidad
+
+El diseño puede ser coherente y teóricamente impecable, pero si no se puede implementar, no sirve. La **factibilidad** evalúa si el estudio puede llevarse a cabo dadas las restricciones de:
+
+-   Tiempo.
+-   Acceso a datos.
+-   Recursos financieros.
+-   Barreras éticas o legales.
+
+Como dice *Cea D’Ancona*:
+
+> “El investigador debe equilibrar ambición analítica con viabilidad operativa. No se trata solo de pensar qué sería ideal estudiar, sino qué es posible investigar en condiciones reales.”\
+> — *Cea D’Ancona, Cap. 8*
+
+### Preguntas guía:
+
+-   ¿Tengo acceso a los datos necesarios?
+-   ¿Tengo el tiempo para recolectarlos y analizarlos?
+-   ¿Hay limitaciones éticas o políticas que debo contemplar?
+-   ¿Puedo adaptar el diseño si encuentro obstáculos?
+
+### Ejemplo:
+
+Un estudiante desea estudiar el impacto de la militarización de fronteras en la migración clandestina en América del Sur. Pero los datos sobre migración irregular son escasos, y el acceso a documentos oficiales puede estar restringido. Una alternativa factible sería estudiar la percepción pública sobre la seguridad fronteriza a partir de encuestas regionales.
+
+------------------------------------------------------------------------
+
+# Conclusión
+
+Diseñar una investigación social es un arte y una técnica. Requiere conocimiento teórico, claridad metodológica, intuición empírica y sentido común. En este módulo dimos los primeros pasos para pensar con precisión cómo se construye un proyecto investigativo que sea:
+
+-   Teóricamente fundamentado.
+-   Metodológicamente riguroso.
+-   Empíricamente viable.
+
+En los próximos módulos trabajaremos cómo operacionalizar conceptos abstractos, cómo recolectar y resumir datos, y cómo pasar de las hipótesis a las pruebas estadísticas. Pero todo comienza acá, con una buena pregunta, un modelo sensato, y un diseño honesto y realizable.
+

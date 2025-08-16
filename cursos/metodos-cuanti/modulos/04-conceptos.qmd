@@ -1,0 +1,148 @@
+---
+title: "Módulo 4 — Conceptos, operacionalización y variables"
+format: html
+---
+
+## Introduccion
+
+> “Toda investigación comienza con ideas vagas que necesitan transformarse en herramientas observables. Ese proceso es la médula del trabajo metodológico.”  
+> — Adaptado de Paul Lazarsfeld
+
+En este módulo vamos a recorrer el camino que nos lleva de **conceptos abstractos** a **definiciones medibles y observables**, de modo que podamos usarlas para analizar fenómenos reales. Esto implica entender qué es un concepto, cómo lo definimos, cómo lo convertimos en variable, y cómo evaluamos si nuestra medición es válida y confiable.
+
+---
+
+### 1. ¿Qué es un concepto?
+
+En el lenguaje común, un concepto es una idea general que nos ayuda a agrupar y entender fenómenos. En la ciencia, un concepto es **una abstracción controlada y definida explícitamente**.  
+Paul Lazarsfeld señalaba:
+
+> “Ninguna ciencia aborda su objeto en su plenitud concreta. Todas las ciencias seleccionan determinadas propiedades de su objeto e intentan establecer entre ellas relaciones recíprocas”:contentReference[oaicite:2]{index=2}.
+
+En ciencias sociales, estos conceptos suelen ser multidimensionales y objeto de disputa. Por ejemplo:
+
+* **Pobreza**
+* **Democracia**
+* **Género**
+* **Poder**
+* **Desigualdad**
+* **Confianza política**
+* **Tensión internacional**
+
+Cada uno de estos términos puede definirse de distintas formas. Por eso, el primer paso es **conceptualizar**, es decir, acordar qué entendemos por ese concepto en el contexto de nuestra investigación.
+
+---
+
+### 2. Conceptualización y operacionalización
+
+**Conceptualización**: definir con precisión qué entendemos por un término.  
+**Operacionalización**: decidir cómo vamos a **observar** o **medir** ese concepto en la realidad.
+
+Ejemplo — Democracia:  
+* Definición conceptual (según Dahl): un régimen con altos niveles de **inclusión** y **contienda**.  
+* Operacionalización: codificar como democracia a los países que cumplen simultáneamente estas condiciones:contentReference[oaicite:3]{index=3}:  
+  1. El jefe de Estado es elegido popularmente o por un cuerpo electo popularmente.  
+  2. El legislativo es elegido popularmente.  
+  3. Más de un partido compite en elecciones.  
+  4. Hubo alternancia en el poder bajo las mismas reglas electorales.
+
+---
+
+### 3. Del concepto a la variable
+
+Una **variable** es cualquier característica de un objeto o evento que puede tomar al menos dos valores o categorías. Para que una variable esté bien definida, debe cumplir tres condiciones clave:contentReference[oaicite:4]{index=4}:
+
+* **Exhaustividad**: todas las posibilidades están contempladas.  
+  Ejemplo: incluir categorías como "Otros" o "No sabe/No contesta" en encuestas.
+* **Exclusividad**: cada valor solo puede estar en una categoría.  
+  Ejemplo: evitar rangos que se superpongan (18–25, 25–30).
+* **Precisión**: las categorías son lo más ajustadas posible a la realidad.  
+
+---
+
+### 4. Tipos y niveles de medición
+
+Clasificamos las variables según su función y según el tipo de medición:
+
+#### Según su función en la relación:
+* **Independiente (X)**: se supone que influye o explica.  
+  Ej.: horas de estudio.
+* **Dependiente (Y)**: es lo que queremos explicar.  
+  Ej.: nota de examen.
+* **Interviniente (Z)**: media o modera la relación.  
+  Ej.: horas de sueño.
+
+#### Según su nivel de medición:
+* **Cualitativas nominales**: categorías sin orden. Ej.: nacionalidad, religión.
+* **Cualitativas ordinales**: categorías con orden, pero sin distancias iguales. Ej.: nivel educativo, grado de satisfacción.
+* **Cuantitativas de intervalo**: valores numéricos con distancias iguales, pero sin un cero absoluto. Ej.: temperatura en °C, año calendario.
+* **Cuantitativas de razón**: valores numéricos con distancias iguales y cero absoluto. Ej.: ingreso, número de hijos.
+
+#### Según su escala:
+* **Discretas**: conteos enteros. Ej.: cantidad de tratados firmados.
+* **Continuas**: cualquier valor en un rango infinito. Ej.: altura, gasto militar como % del PBI.
+
+---
+
+### 5. Evaluar nuestras mediciones: validez y confiabilidad
+
+Cuando medimos un concepto, debemos preguntarnos:
+
+* **Validez**: ¿La medición refleja realmente el concepto que queremos?  
+  - **Validez aparente (face validity)**: a simple vista, ¿tiene sentido?  
+  - Un indicador inválido introduce **sesgo sistemático**.
+
+* **Confiabilidad**: ¿La medición es consistente si repetimos el procedimiento?  
+  - La falta de confiabilidad introduce **error aleatorio**.
+
+Podemos representar una medición como:
+
+```
+Medición observada = Valor verdadero + Sesgo + Error aleatorio
+```
+
+Ejemplo de baja validez: medir "democracia" solo preguntando por la existencia de elecciones, sin considerar la competencia real o la inclusión.  
+Ejemplo de baja confiabilidad: una encuesta que produce resultados muy diferentes cada vez que se aplica al mismo grupo sin que haya cambios reales.
+
+---
+
+### 6. Ejemplos integrados
+
+**Concepto**: Pobreza  
+* Dimensión: capacidad de consumo.  
+* Indicador: porcentaje de hogares bajo la línea de pobreza.  
+* Fuente: estadísticas oficiales.  
+
+**Concepto**: Poder militar  
+* Dimensión: proyección de fuerza.  
+* Indicador: número de bases militares en el extranjero.  
+* Fuente: bases de datos internacionales (p. ej., SIPRI).  
+
+**Concepto**: Tensión política internacional  
+* Definición (Davis & Meunier, 2011): desacuerdos sobre políticas, hostilidad entre líderes y sentimiento público negativo:contentReference[oaicite:5]{index=5}.  
+* Indicador: frecuencia anual de incidentes diplomáticos reportados.  
+
+---
+
+### 7. Riesgos y decisiones políticas en la medición
+
+Toda definición y operacionalización implica **elecciones políticas y metodológicas**. Por ejemplo:
+
+* Medir “inseguridad” por la tasa de delitos denunciados puede invisibilizar la violencia no denunciada.
+* Clasificar un país como “democrático” o “autoritario” según criterios demasiado estrictos o laxos puede servir a agendas políticas.
+
+Esto exige transparencia: explicitar qué definiciones usamos, por qué y con qué limitaciones.
+
+---
+
+### 8. Actividad práctica sugerida
+
+1. Elige un concepto central en ciencia política o relaciones internacionales (p. ej., *corrupción*, *alianzas militares*, *participación electoral*).
+2. Define conceptualmente qué significa en tu estudio.
+3. Propón al menos **dos formas distintas** de operacionalizarlo.
+4. Evalúa brevemente la validez y confiabilidad de cada forma.
+5. Discute posibles sesgos o implicancias políticas de tu elección.
+
+---
+
+En el próximo módulo veremos cómo, a partir de nuestras variables, podemos construir resúmenes estadísticos y representaciones gráficas para describir realidades complejas de forma clara y efectiva.

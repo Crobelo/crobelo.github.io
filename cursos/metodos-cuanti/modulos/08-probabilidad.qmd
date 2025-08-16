@@ -1,0 +1,126 @@
+---
+title: "Módulo 8 — Introducción a la probabilidad"
+format: html
+---
+
+# Introducción
+
+La **probabilidad** es la rama de la estadística que estudia fenómenos en los cuales existe incertidumbre.  
+Mientras la estadística descriptiva resume lo que ya sucedió, la probabilidad nos permite **anticipar lo que puede ocurrir en el futuro**. 
+
+Ejemplo cotidiano: un meteorólogo anuncia “70% de probabilidad de lluvia”. Esto significa que, si se repitieran muchas veces situaciones climáticas similares, en el 70% de los casos llovería.  
+
+---
+
+# Conceptos básicos
+
+* **Experimento**: proceso que genera resultados inciertos (ej. lanzar un dado).  
+* **Resultado**: observación particular de un experimento (ej. obtener un “4”).  
+* **Evento**: conjunto de resultados que comparten una característica (ej. obtener un número par).  
+
+---
+
+# Tipos de probabilidad
+
+## 1. Probabilidad clásica
+
+Se aplica cuando los resultados son **igualmente probables**.
+
+\[
+P(E) = \frac{\text{Número de resultados favorables}}{\text{Número total de resultados posibles}}
+\]
+
+**Ejemplo:** al lanzar un dado, la probabilidad de obtener un número par (2, 4 o 6) es:
+
+\[
+P(\text{par}) = \frac{3}{6} = 0.5
+\]
+
+---
+
+## 2. Probabilidad empírica (frecuencia relativa)
+
+Se basa en la **observación repetida** de un fenómeno.
+
+\[
+P(E) = \frac{\text{Número de veces que ocurre el evento}}{\text{Número total de observaciones}}
+\]
+
+**Ejemplo:** en una clase de 80 estudiantes, 12 obtuvieron “A” en la materia:
+
+\[
+P(\text{A}) = \frac{12}{80} = 0.15
+\]
+
+La **ley de los grandes números** indica que mientras más repeticiones hagamos, más se acercará esta probabilidad empírica a la clásica.
+
+---
+
+## 3. Probabilidad subjetiva
+
+Se aplica cuando no hay datos suficientes y la estimación se hace en base a **juicio personal o experiencia**.
+
+Ejemplos:
+* Probabilidad de que un país firme un acuerdo internacional.  
+* Probabilidad de que un equipo de fútbol gane el campeonato.  
+
+---
+
+# Propiedades de la probabilidad
+
+* Siempre toma valores entre **0 y 1**.  
+* La probabilidad de todos los eventos posibles de un experimento suma **1**.  
+* Dos eventos son **mutuamente excluyentes** si no pueden ocurrir al mismo tiempo (ej. en un dado: obtener “3” o “4”).  
+* Un conjunto de eventos es **colectivamente exhaustivo** si cubre todos los resultados posibles (ej. número par o impar en un dado).  
+
+---
+
+# Reglas básicas
+
+1. **Regla de la adición (eventos mutuamente excluyentes)**  
+
+\[
+P(A \text{ o } B) = P(A) + P(B)
+\]
+
+2. **Regla de la multiplicación (eventos independientes)**  
+
+\[
+P(A \text{ y } B) = P(A) \cdot P(B)
+\]
+
+---
+
+# Ejemplos prácticos
+
+* **Moneda:** un estudiante tira una moneda tres veces.  
+¿Cuál es la probabilidad de obtener exactamente dos caras?  
+- Total de posibles resultados: \(2^3 = 8\).  
+- Resultados favorables: HHT, HTH, THH (3).  
+
+\[
+P(\text{2 caras}) = \frac{3}{8} = 0.375
+\]
+
+* **Clase de estudiantes:** en una clase de 40, 10 pertenecen a un equipo de deportes.  
+Si elegimos un estudiante al azar:  
+
+\[
+P(\text{equipo}) = \frac{10}{40} = 0.25
+\]
+
+---
+
+# Ejemplos en Relaciones Internacionales
+
+* La probabilidad de que **dos países entren en guerra** en un periodo dado puede modelarse como la frecuencia de guerras observadas en situaciones similares en la historia.  
+* La probabilidad de que **dos países formen una alianza militar** puede estimarse según la proporción de veces que estados con características parecidas (vecindad, régimen político, amenazas comunes) firmaron tratados.  
+
+---
+
+# Nota histórica
+
+La probabilidad surgió en el siglo XVII con Pascal y Fermat, a partir de problemas de juegos de azar.  
+Hoy es la **base del análisis inferencial** y se aplica en negocios, ciencias sociales y relaciones internacionales: desde estudios de riesgo país hasta encuestas de opinión electoral.
+
+---

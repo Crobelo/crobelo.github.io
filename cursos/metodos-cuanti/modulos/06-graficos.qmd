@@ -1,0 +1,109 @@
+---
+title: "Módulo 6 — Visualización de datos: de la estadística descriptiva a la comunicación efectiva"
+format: html
+---
+
+# Introducción
+
+En la estadística descriptiva, los gráficos no son un adorno: son **herramientas de pensamiento y comunicación**.  
+Un gráfico bien diseñado puede revelar patrones, anomalías o relaciones que no son evidentes en tablas o promedios.  
+Pero para que esto ocurra, debemos combinar:
+
+* **Fundamentos estadísticos clásicos**: precisión, claridad, fidelidad a los datos.
+* **Principios modernos de visualización**: contar historias, facilitar la interpretación, aprovechar el diseño para guiar la atención.
+* **Principios de Tufte**: maximizar la información y minimizar la distracción.
+
+---
+
+# 1. Principios de Tufte aplicados a nuestro contexto
+
+1. **Mostremos los datos, no decoraciones**  
+   Reducir al mínimo elementos que no aportan información (*chartjunk*).  
+   En encuestas de opinión pública, por ejemplo, no es necesario un fondo con banderas o texturas que distraigan del resultado.
+
+2. **Maximicemos la densidad de datos sin perder legibilidad**  
+   Un gráfico debe condensar mucha información en poco espacio, pero manteniendo la claridad.  
+   Por ejemplo, un *small multiple* de gráficos de barras que muestre la aprobación presidencial en 5 países latinoamericanos a lo largo de 10 años.
+
+3. **Mantengamos la proporción y evitemos distorsiones** (*lie factor = 1*)  
+   No alterar escalas para exagerar o minimizar cambios.  
+   Si un gasto público crece del 2% al 4% del PBI, debe reflejarse como un incremento del doble, no como algo menor o mayor.
+
+4. **Facilitemos la comparación**  
+   Usar escalas consistentes para series similares. Si comparamos exportaciones de Argentina, Brasil y Chile, usar el mismo eje vertical en los tres gráficos.
+
+5. **Integrar texto y datos en un mismo espacio**  
+   Anotar directamente en el gráfico los hitos o valores clave, para evitar que el lector tenga que ir a una leyenda separada.
+
+6. **Dar contexto**  
+   Mostrar el periodo, fuente y unidades. Un gráfico sin contexto puede ser técnicamente correcto pero analíticamente inútil.
+
+---
+
+# 2. Principios clásicos que no pasan de moda
+
+Antes de aplicar criterios visuales, un gráfico debe:
+
+* **Ser fiel a los datos**: escalas y proporciones correctas.
+* **Ser claro**: títulos que expliquen de qué trata y ejes etiquetados.
+* **Ser útil**: debe responder a una pregunta o apoyar un argumento.
+
+---
+
+# 3. Tipos de gráficos recomendados
+
+## 3.1 Variable única
+* **Barras**: categorías políticas, tipo de régimen, partidos.
+* **Histogramas**: distribución de edad de legisladores, gasto militar como % del PBI.
+* **Boxplots**: salarios en el sector público por región.
+
+## 3.2 Dos variables
+* **Barras agrupadas**: voto por partido según región.
+* **Dispersión**: gasto militar vs. PIB per cápita.
+* **Líneas**: evolución de aprobación presidencial.
+
+---
+
+# 4. Ejemplo aplicado: estudiantes y horas de estudio
+
+**Datos simulados**: 20 estudiantes, horas de estudio y nota final.
+
+* **En Excel**: gráfico de dispersión con línea de tendencia, anotando el promedio de horas y la nota promedio.
+* **En ggplot2**:
+
+```r
+library(ggplot2)
+
+datos <- data.frame(
+  horas = c(5, 8, 10, 12, 15, 18, 20, 22),
+  nota  = c(6, 6.5, 7, 7.2, 8, 8.5, 9, 9.5)
+)
+
+ggplot(datos, aes(x = horas, y = nota)) +
+  geom_point(color = "steelblue", size = 3) +
+  geom_smooth(method = "lm", se = FALSE, color = "darkred") +
+  geom_vline(xintercept = mean(datos$horas), linetype = "dashed") +
+  geom_hline(yintercept = mean(datos$nota), linetype = "dashed") +
+  annotate("text", x = 15, y = 6.2, label = "Media horas", hjust = 0) +
+  annotate("text", x = 5.2, y = 8.8, label = "Media nota", hjust = 0) +
+  labs(
+    title = "Relación entre horas de estudio y nota final",
+    x = "Horas de estudio por semana",
+    y = "Nota final"
+  ) +
+  theme_minimal()
+```
+
+## el histograma (nuestro viejo amigo)
+
+## El grafico de torta
+
+" los amigos no dejan que los amigos hagan graficos de torta "
+
+## De barras (horizontales, verticales, apiladas)
+
+## De lineas
+
+## Boxplot
+
+## el diagrama de dispersion o scatterplot (nuestro nuevo mejor amigo)

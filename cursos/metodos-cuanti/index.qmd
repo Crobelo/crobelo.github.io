@@ -5,25 +5,21 @@ format: html
 
 # Presentación general
 
-Esta página fue creada para acompañarlos a lo largo de la cursada, brindando un espacio centralizado donde encontrarán los conceptos clave, los materiales trabajados en clase y ejercicios prácticos.  
-Su propósito es **suplementar** la bibliografía y las lecturas obligatorias, no reemplazarlas.
+Esta página fue creada para acompañarlos a lo largo de la cursada, brindando un espacio centralizado donde encontrarán los conceptos clave, los materiales trabajados en clase y ejercicios prácticos. Su propósito es **suplementar** las lecturas y actividades, no reemplazarlas.
 
-Aquí podrán acceder a posteos organizados por cada encuentro, con materiales, ejemplos y actividades.  
-El diseño modular les permitirá revisitar cualquier sección en el momento que lo necesiten — incluso después de finalizar la cursada — de modo que este recurso pueda seguir sirviéndoles como material de referencia tanto en el ámbito académico como en el profesional.
+Aquí podrán acceder a paginas individuales por cada modulo tematico organizados por cada encuentro, con materiales, ejemplos y actividades.  El diseño modular les permitirá revisitar cualquier sección en el momento que lo necesiten — incluso después de finalizar la cursada — de modo que este recurso pueda seguir sirviéndoles como material de referencia tanto en el ámbito académico como en el profesional.
 
-Se trata de una materia eminentemente práctica, dictada por docentes con experiencia directa en todos los ámbitos que abordaremos:  
-* **Encuestas de opinión pública**  
-* **Análisis de datos para la gestión pública**  
-* **Análisis de datos para la toma de decisiones estratégicas**  
-* **Investigación académica cuantitativa**
+Hay varias formas de tratar una materia de metodos cuantitativos en ciencias sociales. En algunos casos se enfocan en los aspectos teoricos del diseño de investigacion, otros en aspectos formales de la estadistica general, recientemente cada vez mas se los orienta a adquirir rudimentos de programacion. Todos esos enfoques son valiosos para el aprendizaje y desarrollo profesional, pero nuestro tiempo juntos es limitado.
 
-Nuestro objetivo es que, si dominan los contenidos y habilidades que trabajaremos, puedan **desempeñarse profesionalmente de inmediato** en entornos donde los datos son protagonistas.  
-El análisis de datos se ha convertido en un campo esencial en la Ciencia Política y las Relaciones Internacionales: desde campañas políticas que requieren encuestas y proyecciones, hasta programas de políticas públicas que deben estimar su impacto antes de implementarse.
+En nuestro caso, queremos orientar la materia a que puedan **leer, interpretar y generar información cuantitativa**, pero sobre todo a **formular las preguntas correctas** y a reconocer qué se puede — y qué no se puede — responder con determinados datos. Los datos se generan en un contexto determinado que tendran que tener en cuenta. En algunos casos, como investigaciones propias, los pueden generar ustedes a partir de conceptos claramente definidos guiados por un marco teorico precisamente definido. En otros provendran de organismos publicos que recopilan estadisticas con objetivos muy distintos al suyo y tendran que saber conciliar las distanias metodologicas entre lo que quieren y lo que tienen a la mano. Evaluar la calidad de los insumos producidos por organismos públicos, instituciones internacionales, medios de comunicación y consultoras es una sensibilidad es crucial al momento de analizar informacion y llegar a conclusiones para la toma de decisiones y el debate academico. 
 
-Aquí aprenderán a **leer, interpretar y generar información**, pero sobre todo a **formular las preguntas correctas** y a reconocer qué se puede — y qué no se puede — responder con determinados datos.  
-También desarrollarán la capacidad de dialogar con profesionales de otras disciplinas y de evaluar la calidad de los insumos producidos por organismos públicos, instituciones internacionales, medios de comunicación y consultoras.
+Junto con la sensibilidad por el contexto de los datos, también desarrollarán la capacidad de dialogar con profesionales de otras disciplinas. La ciencia politica nutre y se nutre de la informacion que se generan en muchos ambitos de actividad. Economistas, Sociologos, Historiadores, Abogados, y autoridades publicas producen sus propios datos y leeran nuestras conclusiones. Poder comunicarse con ellos y el publico general es otra habilidad crucial en la actualidad. 
 
-Por el carácter práctico del curso, todos trabajarán sobre los mismos fundamentos — principalmente herramientas estadísticas — pero cada estudiante podrá profundizar en la orientación que más le interese:  
+En suma, nuestro objetivo es que, si dominan los contenidos y habilidades que trabajaremos, puedan **desempeñarse profesionalmente de inmediato** en entornos donde los datos son protagonistas. El análisis de datos se ha convertido en un campo esencial en la Ciencia Política y las Relaciones Internacionales: desde campañas políticas que requieren encuestas y proyecciones, hasta programas de políticas públicas que deben estimar su impacto antes de implementarse. En la investigacion academica los metodos cuantitativos tambien han crecido de manera sistematica gracias a los avances en computacion y la revolucion de la replicacion. Acercar las conclusiones y debates empiricos de nuestra disciplina tambien es un valor agregado en el mercado laboral. 
+
+
+Por el carácter práctico del curso, todos trabajarán sobre los mismos fundamentos — principalmente herramientas estadísticas — pero cada estudiante podrá profundizar en la orientación que más le interese:
+
 * Opinión Pública  
 * Gestión Pública  
 * Análisis de Datos  
@@ -32,17 +28,17 @@ Por el carácter práctico del curso, todos trabajarán sobre los mismos fundame
 Cada orientación cuenta con materiales y trayectos opcionales que podrán explorar libremente para fortalecer su perfil y mejorar su inserción laboral.
 
 
-## Herramientas prácticas
+# Herramientas prácticas
 
 Dependiendo de sus intereses y experiencia previa, durante el curso trabajaremos con **dos herramientas principales**:
 
-* **Excel**: un software omnipresente en el ámbito laboral, versátil y de gran utilidad. Aprenderemos a aprovecharlo al máximo, explorando sus funciones estadísticas y de visualización de datos. Excel puede generar todo lo que necesitamos para este curso —y mucho más— de manera rápida y accesible.
+* **MS Excel**: un software omnipresente en el ámbito laboral, versátil y de gran utilidad. Aprenderemos a aprovecharlo, explorando sus funciones estadísticas y de visualización de datos. Excel puede generar todo lo que necesitamos para este curso —y mucho más— de manera rápida y  accesible. Ademas, junto con sus cuentas institucionales de la UCA tienen acceso al mismo como parte del pauete Office. 
 
 * **R**: un lenguaje de programación orientado a objetos y optimizado para el análisis estadístico, ampliamente utilizado en investigación y ciencia de datos. Con R podremos implementar las mismas tareas vistas en Excel, pero con la ventaja de la reproducibilidad y automatización. Esta misma página web ha sido desarrollada con R y Quarto.
 
-Teniendo en cuenta la variedad de herramientas disponibles —incluyendo el apoyo de herramientas de IA generativa como ChatGPT, tutoriales en YouTube y otros recursos en línea—, **no evaluaremos su destreza técnica en el uso del software**, sino **su capacidad para interpretar correctamente los resultados** que obtengan.
+Teniendo en cuenta la variedad de herramientas disponibles, incluyendo el apoyo de herramientas de IA generativa como ChatGPT, tutoriales en YouTube y otros recursos en línea, **no evaluaremos su destreza técnica en el uso del software**, sino **su capacidad para interpretar correctamente los resultados** que obtengan a partir de la herramienta de su preferencia. 
 
-Ese es nuestro diferencial y nuestra ventaja comparativa: comprender e interpretar la información, independientemente de si se produce con una herramienta avanzada o con cálculos manuales. Las herramientas nos ayudan a hacerlo más rápido o más presentable, pero la comprensión del contenido y su interpretación correcta son las competencias que buscamos desarrollar.
+Comprender y comunicar informacion compleja es nuestro diferencial y nuestra ventaja comparativa. Las herramientas nos ayudan a hacerlo más rápido o más presentable, pero la comprensión del contenido y su interpretación correcta son las competencias que buscamos desarrollar.
 
 Para quien desee expandir en el uso de herramientas practicas, tendrán acceso (a solicitud individual) a una **suscripción gratuita por 6 meses a DataCamp**, una plataforma de aprendizaje en línea especializada en ciencia de datos. DataCamp ofrece cursos interactivos en estadística, programación, visualización y análisis, permitiéndoles practicar a su propio ritmo y adquirir competencias muy demandadas en el mercado laboral.
 
@@ -53,73 +49,68 @@ Para quien desee expandir en el uso de herramientas practicas, tendrán acceso (
 El curso se desarrolla en **13 entregas semanales**.  
 Cada módulo se activará con:
 
-- **Material de expansión** que profundiza los temas tratados en clase.  
-- **Recursos extra recomendados** (lecturas, videos, datasets).  
-- **Ejercicios adaptados a trayectos profesionales**.
+* **Material de expansión** que profundiza los temas tratados en clase y complementan la bibliografia.  
+* **Recursos extra recomendados** como lecturas de divulgacion masiva, videos ilustrativos y posteos de redes sociales.  
+* **Ejercicios adaptados a trayectos profesionales** donde podran interactuar con datasets relacionados.
 
-Aunque algunos temas incluyen **componentes de matemática**, la intención no es trabajar con cuestiones excesivamente sofisticadas como las que se han desarrollado en la ciencia de datos avanzada, sino **dominar las nociones fundamentales** a un nivel concreto.  
-El objetivo es que puedan **trabajar con intuición** al momento de leer e interpretar datos e información, tanto académica como proveniente de agencias productoras de información (consultoras, organismos estatales, organismos internacionales).  
+Aunque algunos temas incluyen componentes de matemática, la intención no es trabajar con cuestiones excesivamente sofisticadas como las que se han desarrollado en la ciencia de datos avanzada, sino **dominar las nociones fundamentales** a un nivel concreto.  El objetivo es que puedan **trabajar con intuición** al momento de leer e interpretar datos e información, tanto académica como proveniente de agencias productoras de información (consultoras, organismos estatales, organismos internacionales).  
 
 Por eso, los módulos están diseñados para ser **altamente interactivos** y **apoyados en gráficos** siempre que sea posible, con ejemplos extraídos de nuestra experiencia conjunta en el aula (por ejemplo, indicadores básicos como notas de exámenes y horas de estudio) antes de pasar a ejemplos concretos de cada rama de la ciencia política, las relaciones internacionales, la política comparada y las políticas públicas.
 
 ---
 
 # Módulos del curso
-# Módulos del curso
 
 * [**1. Preguntas y respuestas.**](modulos/01-preguntas.qmd)  
-  Exploramos las preguntas que impulsan la persecución del conocimiento humano por curiosidad. Analizamos la diferencia entre **respuestas ideales** y **respuestas reales** y contextualizamos la materia desde esta perspectiva.
+  Exploramos las preguntas que impulsan la persecución del conocimiento humano por curiosidad. Analizamos la diferencia entre respuestas ideales y respuestas reales y contextualizamos la materia desde esta perspectiva.
 
 * [**2. Ciencia, ciencias sociales y lo social en la ciencia.**](modulos/02-ciencia.qmd)  
-  Introducción epistemológica a qué es la ciencia, cuáles son sus límites, mitos y posibilidades. Incluye la reflexión sobre cómo lo social influye en la práctica científica.
+  Introducción epistemológica a qué es la ciencia. Límites, mitos y posibilidades. Explicacion y prediccion. Cómo lo social influye en la práctica científica. Metodología, método y técnica. Metodos cuantitativos. Perspectivas deterministas y probabilisticas.
 
 * [**3. Diseño de investigación, modelos teóricos, hipótesis y unidad de análisis.**](modulos/03-modelos.qmd)  
-  Estudiamos los cimientos de cualquier investigación social: desde la elección del diseño hasta la definición de hipótesis y unidades de análisis. Evaluamos la factibilidad como punto crítico.
+  Los cimientos de la investigación social. Modelos teoricos e implementacion practica. Tipos de diseño de investigacion. Unidades de análisis. Hipotesis. Ideal y factibilidad en el diseño de la investigacion y comunicacion sus resultados.  
 
-* [**4. Conceptos, operacionalización y variables.**](modulos/04-conceptos.qmd)  
-  Cómo pasar de conceptos abstractos de interés a definiciones medibles y observables.
+* [**4. Conceptos, operacionalización y variables.**](modulos/04-conceptos.qmd)    Conceptos abstractos y definiciones claras de interés.Definiciones medibles y observables. Los desafios de la medicion, la validez y la confianza. Variables y constantes. Clasificaciones y niveles de medicion.
 
 * [**4.5 (opcional) Repaso de álgebra y notación matemática.**](modulos/04-matematica.qmd)  
-  Clase opcional para reforzar la comprensión de fórmulas básicas, como el cálculo de promedios, de cara a los módulos posteriores.
+  Modulo opcional para reforzar la comprensión de fórmulas básicas, la notacion matematica como el cálculo de promedios, de cara a los módulos posteriores. Tambien introducimos la nocion de la matematica como un lenguaje de comunicacion simbolica basado en la precision para la comunicacion.
 
 * [**5. Explorando los datos, desde conceptos a las relaciones.**](modulos/05-histograma-tablas.qmd)  
-  Histogramas como herramienta de exploración, Tablas de frecuencia y tablas de contingencia descriptivas.
+  Nuestro primer encuentro con los datos cuantitativos. El Histograma como herramienta de exploración. Describimos los datoscon tablas de frecuencia y tablas de contingencia descriptivas.
 
 * [**6. Comunicando los datos, gráficos uso y principios.**](modulos/06-graficos.qmd)  
-  Transformar datos en representaciones visuales claras y efectivas.
+  Transformar datos en representaciones visuales claras y efectivas. Convenciones clasicas de la presentacion de graficos. Principios modernos para la comunicacion cuantitativa. Malas practicas y desafios.
 
 * [**7. Reduciendo los datos, cantidades de interés y medidas resumen.**](modulos/07-medidas.qmd)  
-  De un conjunto de datos, extraemos información útil para describirlo: medidas de tendencia central y de dispersión.
+  De un conjunto de datos, extraemos información útil para describirlo. Definiendo cantidades de interes. Medidas resumen de tendencia central, posicion y de dispersión.
 
 * [**8. Introducción a la probabilidad.**](modulos/08-probabilidad.qmd)  
-  Teorema del límite central, distribución normal, su historia y mitos. Incluye los fundamentos filosóficos del enfoque frequentista.
+  Teorema del límite central, distribución normal, su historia y mitos. Probabilidades, regla de la adicion y de la multiplicacion. Interpretacion de probabilidaes. Fundamentos filosóficos del enfoque frequentista y desafios en la ciencias sociales. El rol de los contrafacticos.
 
 * [**9. Test de hipótesis y errores tipo I y tipo II.**](modulos/09-test.qmd)  
-  Analizamos la toma de decisiones ante la incertidumbre, usando el ejemplo de Freedman, Pisani y Purves sobre el grado de duda razonable que enfrenta un jurado.
-
+  Toma de decisiones ante la incertidumbre. Test de hipótesis y sus pasos. Desafios en su implementacion. p-valor y significancia. Errores de tipo I y tipo II. El rol de la *duda razonable*
+  
 * [**10. Chi-cuadrado, significancia estadística y comparación de medias.**](modulos/10-chi-medias.qmd)  
-  Incluye experimentos de encuesta y técnicas para evaluar diferencias y asociaciones.
+  Estadisticos de prueba, requisitos. Evaluando la asociacion de eventos discretos. Chi-cuadrado en tablas de contingencia. T de student y comparacion de medias. Implementacion en experimentos de encuesta.
 
 * [**11. Correlación y regresión bivariada.**](modulos/11-correlacion.qmd)  
-  Cómo medir y modelar relaciones entre dos variables.
+  Asociacion entre variables cuantitativas. Proposito y limitaciones. Medicion e interpretacion. Causalidad y asociacion. Causalidad y causalidad inversa. Correlacion espurea. Cómo medir y modelar relaciones entre dos variables. Regresion lineal simple. Regla de minimos cuadrados.
 
 * [**12. Regresión multivariada como promedio condicional.**](modulos/12-regresion.qmd)  
-  Interpretación y uso descriptivo de modelos que incorporan múltiples variables.
+  Repaso de Regresion lineal bivariada. $\beta$ y $\alpha$, calculo e interpretacion. Extension del modelo de Regresion lineal bivariada a multiples variables. Interpretacion de los coeficientes. Comunicacion de los resultados descriptivos. Simulacion de un caso practico. Sesgo, variables omitidas y saturacion de modelo.  
 
 * [**13. Casos académicos en la regresión.**](modulos/13-casos.qmd)  
-  Aplicaciones reales de la regresión: interpretación, casos complejos, interacciones, otras distribuciones y simulaciones computacionales.
+  Aplicaciones reales de la regresión, revision de literatura actual interpretación, casos complejos, interacciones, otras distribuciones y simulaciones computacionales.
 
 ---
 
 # Programa de la Materia
 
-En el siguiente enlace encontrarán el **Programa 2025 de Métodos Cuantitativos** y el **cronograma de clases**:
+En el siguiente enlace encontrarán el **Programa actualizado de Métodos Cuantitativos**:
 
 ➡️ [Descargar Programa](archivos/Programa-2025.pdf)
 
-El programa **rige la materia**. Es nuestro **contrato mutuo**, allí se define qué esperamos de ustedes y a qué nos comprometemos nosotros.  Es el corazón de la materia, por eso les pedimos que lo lean y lo comprendan en profundidad.  
-
-En el **segundo encuentro** esperamos que todos lo tengan leído y aprendido, ya que realizaremos un **parcialito** sobre su contenido.
+El programa **rige la materia**. Es nuestro **contrato mutuo**, allí se define qué esperamos de ustedes y a qué nos comprometemos nosotros.  Es el corazón de la materia, por eso les pedimos que lo lean y lo comprendan en profundidad. En el **segundo encuentro** esperamos que todos lo tengan leído y aprendido, ya que realizaremos un **parcialito** sobre su contenido.
 
 ---
 # Cómo seguir

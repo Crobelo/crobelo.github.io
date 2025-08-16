@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -108,13 +137,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#presentación-general" id="toc-presentación-general" class="nav-link active" data-scroll-target="#presentación-general">Presentación general</a>
-  <ul class="collapse">
+  <li><a href="#presentación-general" id="toc-presentación-general" class="nav-link active" data-scroll-target="#presentación-general">Presentación general</a></li>
   <li><a href="#herramientas-prácticas" id="toc-herramientas-prácticas" class="nav-link" data-scroll-target="#herramientas-prácticas">Herramientas prácticas</a></li>
-  </ul></li>
   <li><a href="#funcionamiento-del-curso" id="toc-funcionamiento-del-curso" class="nav-link" data-scroll-target="#funcionamiento-del-curso">Funcionamiento del curso</a></li>
   <li><a href="#módulos-del-curso" id="toc-módulos-del-curso" class="nav-link" data-scroll-target="#módulos-del-curso">Módulos del curso</a></li>
-  <li><a href="#módulos-del-curso-1" id="toc-módulos-del-curso-1" class="nav-link" data-scroll-target="#módulos-del-curso-1">Módulos del curso</a></li>
   <li><a href="#programa-de-la-materia" id="toc-programa-de-la-materia" class="nav-link" data-scroll-target="#programa-de-la-materia">Programa de la Materia</a></li>
   <li><a href="#cómo-seguir" id="toc-cómo-seguir" class="nav-link" data-scroll-target="#cómo-seguir">Cómo seguir</a></li>
   </ul>
@@ -144,97 +170,89 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="presentación-general" class="level1">
 <h1>Presentación general</h1>
-<p>Esta página fue creada para acompañarlos a lo largo de la cursada, brindando un espacio centralizado donde encontrarán los conceptos clave, los materiales trabajados en clase y ejercicios prácticos.<br>
-Su propósito es <strong>suplementar</strong> la bibliografía y las lecturas obligatorias, no reemplazarlas.</p>
-<p>Aquí podrán acceder a posteos organizados por cada encuentro, con materiales, ejemplos y actividades.<br>
-El diseño modular les permitirá revisitar cualquier sección en el momento que lo necesiten — incluso después de finalizar la cursada — de modo que este recurso pueda seguir sirviéndoles como material de referencia tanto en el ámbito académico como en el profesional.</p>
-<p>Se trata de una materia eminentemente práctica, dictada por docentes con experiencia directa en todos los ámbitos que abordaremos:<br>
-* <strong>Encuestas de opinión pública</strong><br>
-* <strong>Análisis de datos para la gestión pública</strong><br>
-* <strong>Análisis de datos para la toma de decisiones estratégicas</strong><br>
-* <strong>Investigación académica cuantitativa</strong></p>
-<p>Nuestro objetivo es que, si dominan los contenidos y habilidades que trabajaremos, puedan <strong>desempeñarse profesionalmente de inmediato</strong> en entornos donde los datos son protagonistas.<br>
-El análisis de datos se ha convertido en un campo esencial en la Ciencia Política y las Relaciones Internacionales: desde campañas políticas que requieren encuestas y proyecciones, hasta programas de políticas públicas que deben estimar su impacto antes de implementarse.</p>
-<p>Aquí aprenderán a <strong>leer, interpretar y generar información</strong>, pero sobre todo a <strong>formular las preguntas correctas</strong> y a reconocer qué se puede — y qué no se puede — responder con determinados datos.<br>
-También desarrollarán la capacidad de dialogar con profesionales de otras disciplinas y de evaluar la calidad de los insumos producidos por organismos públicos, instituciones internacionales, medios de comunicación y consultoras.</p>
-<p>Por el carácter práctico del curso, todos trabajarán sobre los mismos fundamentos — principalmente herramientas estadísticas — pero cada estudiante podrá profundizar en la orientación que más le interese:<br>
-* Opinión Pública<br>
-* Gestión Pública<br>
-* Análisis de Datos<br>
-* Investigación Académica</p>
+<p>Esta página fue creada para acompañarlos a lo largo de la cursada, brindando un espacio centralizado donde encontrarán los conceptos clave, los materiales trabajados en clase y ejercicios prácticos. Su propósito es <strong>suplementar</strong> las lecturas y actividades, no reemplazarlas.</p>
+<p>Aquí podrán acceder a paginas individuales por cada modulo tematico organizados por cada encuentro, con materiales, ejemplos y actividades. El diseño modular les permitirá revisitar cualquier sección en el momento que lo necesiten — incluso después de finalizar la cursada — de modo que este recurso pueda seguir sirviéndoles como material de referencia tanto en el ámbito académico como en el profesional.</p>
+<p>Hay varias formas de tratar una materia de metodos cuantitativos en ciencias sociales. En algunos casos se enfocan en los aspectos teoricos del diseño de investigacion, otros en aspectos formales de la estadistica general, recientemente cada vez mas se los orienta a adquirir rudimentos de programacion. Todos esos enfoques son valiosos para el aprendizaje y desarrollo profesional, pero nuestro tiempo juntos es limitado.</p>
+<p>En nuestro caso, queremos orientar la materia a que puedan <strong>leer, interpretar y generar información cuantitativa</strong>, pero sobre todo a <strong>formular las preguntas correctas</strong> y a reconocer qué se puede — y qué no se puede — responder con determinados datos. Los datos se generan en un contexto determinado que tendran que tener en cuenta. En algunos casos, como investigaciones propias, los pueden generar ustedes a partir de conceptos claramente definidos guiados por un marco teorico precisamente definido. En otros provendran de organismos publicos que recopilan estadisticas con objetivos muy distintos al suyo y tendran que saber conciliar las distanias metodologicas entre lo que quieren y lo que tienen a la mano. Evaluar la calidad de los insumos producidos por organismos públicos, instituciones internacionales, medios de comunicación y consultoras es una sensibilidad es crucial al momento de analizar informacion y llegar a conclusiones para la toma de decisiones y el debate academico.</p>
+<p>Junto con la sensibilidad por el contexto de los datos, también desarrollarán la capacidad de dialogar con profesionales de otras disciplinas. La ciencia politica nutre y se nutre de la informacion que se generan en muchos ambitos de actividad. Economistas, Sociologos, Historiadores, Abogados, y autoridades publicas producen sus propios datos y leeran nuestras conclusiones. Poder comunicarse con ellos y el publico general es otra habilidad crucial en la actualidad.</p>
+<p>En suma, nuestro objetivo es que, si dominan los contenidos y habilidades que trabajaremos, puedan <strong>desempeñarse profesionalmente de inmediato</strong> en entornos donde los datos son protagonistas. El análisis de datos se ha convertido en un campo esencial en la Ciencia Política y las Relaciones Internacionales: desde campañas políticas que requieren encuestas y proyecciones, hasta programas de políticas públicas que deben estimar su impacto antes de implementarse. En la investigacion academica los metodos cuantitativos tambien han crecido de manera sistematica gracias a los avances en computacion y la revolucion de la replicacion. Acercar las conclusiones y debates empiricos de nuestra disciplina tambien es un valor agregado en el mercado laboral.</p>
+<p>Por el carácter práctico del curso, todos trabajarán sobre los mismos fundamentos — principalmente herramientas estadísticas — pero cada estudiante podrá profundizar en la orientación que más le interese:</p>
+<ul>
+<li>Opinión Pública<br>
+</li>
+<li>Gestión Pública<br>
+</li>
+<li>Análisis de Datos<br>
+</li>
+<li>Investigación Académica</li>
+</ul>
 <p>Cada orientación cuenta con materiales y trayectos opcionales que podrán explorar libremente para fortalecer su perfil y mejorar su inserción laboral.</p>
-<section id="herramientas-prácticas" class="level2">
-<h2 class="anchored" data-anchor-id="herramientas-prácticas">Herramientas prácticas</h2>
+</section>
+<section id="herramientas-prácticas" class="level1">
+<h1>Herramientas prácticas</h1>
 <p>Dependiendo de sus intereses y experiencia previa, durante el curso trabajaremos con <strong>dos herramientas principales</strong>:</p>
 <ul>
-<li><p><strong>Excel</strong>: un software omnipresente en el ámbito laboral, versátil y de gran utilidad. Aprenderemos a aprovecharlo al máximo, explorando sus funciones estadísticas y de visualización de datos. Excel puede generar todo lo que necesitamos para este curso —y mucho más— de manera rápida y accesible.</p></li>
+<li><p><strong>MS Excel</strong>: un software omnipresente en el ámbito laboral, versátil y de gran utilidad. Aprenderemos a aprovecharlo, explorando sus funciones estadísticas y de visualización de datos. Excel puede generar todo lo que necesitamos para este curso —y mucho más— de manera rápida y accesible. Ademas, junto con sus cuentas institucionales de la UCA tienen acceso al mismo como parte del pauete Office.</p></li>
 <li><p><strong>R</strong>: un lenguaje de programación orientado a objetos y optimizado para el análisis estadístico, ampliamente utilizado en investigación y ciencia de datos. Con R podremos implementar las mismas tareas vistas en Excel, pero con la ventaja de la reproducibilidad y automatización. Esta misma página web ha sido desarrollada con R y Quarto.</p></li>
 </ul>
-<p>Teniendo en cuenta la variedad de herramientas disponibles —incluyendo el apoyo de herramientas de IA generativa como ChatGPT, tutoriales en YouTube y otros recursos en línea—, <strong>no evaluaremos su destreza técnica en el uso del software</strong>, sino <strong>su capacidad para interpretar correctamente los resultados</strong> que obtengan.</p>
-<p>Ese es nuestro diferencial y nuestra ventaja comparativa: comprender e interpretar la información, independientemente de si se produce con una herramienta avanzada o con cálculos manuales. Las herramientas nos ayudan a hacerlo más rápido o más presentable, pero la comprensión del contenido y su interpretación correcta son las competencias que buscamos desarrollar.</p>
+<p>Teniendo en cuenta la variedad de herramientas disponibles, incluyendo el apoyo de herramientas de IA generativa como ChatGPT, tutoriales en YouTube y otros recursos en línea, <strong>no evaluaremos su destreza técnica en el uso del software</strong>, sino <strong>su capacidad para interpretar correctamente los resultados</strong> que obtengan a partir de la herramienta de su preferencia.</p>
+<p>Comprender y comunicar informacion compleja es nuestro diferencial y nuestra ventaja comparativa. Las herramientas nos ayudan a hacerlo más rápido o más presentable, pero la comprensión del contenido y su interpretación correcta son las competencias que buscamos desarrollar.</p>
 <p>Para quien desee expandir en el uso de herramientas practicas, tendrán acceso (a solicitud individual) a una <strong>suscripción gratuita por 6 meses a DataCamp</strong>, una plataforma de aprendizaje en línea especializada en ciencia de datos. DataCamp ofrece cursos interactivos en estadística, programación, visualización y análisis, permitiéndoles practicar a su propio ritmo y adquirir competencias muy demandadas en el mercado laboral.</p>
 <hr>
-</section>
 </section>
 <section id="funcionamiento-del-curso" class="level1">
 <h1>Funcionamiento del curso</h1>
 <p>El curso se desarrolla en <strong>13 entregas semanales</strong>.<br>
 Cada módulo se activará con:</p>
 <ul>
-<li><strong>Material de expansión</strong> que profundiza los temas tratados en clase.<br>
+<li><strong>Material de expansión</strong> que profundiza los temas tratados en clase y complementan la bibliografia.<br>
 </li>
-<li><strong>Recursos extra recomendados</strong> (lecturas, videos, datasets).<br>
+<li><strong>Recursos extra recomendados</strong> como lecturas de divulgacion masiva, videos ilustrativos y posteos de redes sociales.<br>
 </li>
-<li><strong>Ejercicios adaptados a trayectos profesionales</strong>.</li>
+<li><strong>Ejercicios adaptados a trayectos profesionales</strong> donde podran interactuar con datasets relacionados.</li>
 </ul>
-<p>Aunque algunos temas incluyen <strong>componentes de matemática</strong>, la intención no es trabajar con cuestiones excesivamente sofisticadas como las que se han desarrollado en la ciencia de datos avanzada, sino <strong>dominar las nociones fundamentales</strong> a un nivel concreto.<br>
-El objetivo es que puedan <strong>trabajar con intuición</strong> al momento de leer e interpretar datos e información, tanto académica como proveniente de agencias productoras de información (consultoras, organismos estatales, organismos internacionales).</p>
+<p>Aunque algunos temas incluyen componentes de matemática, la intención no es trabajar con cuestiones excesivamente sofisticadas como las que se han desarrollado en la ciencia de datos avanzada, sino <strong>dominar las nociones fundamentales</strong> a un nivel concreto. El objetivo es que puedan <strong>trabajar con intuición</strong> al momento de leer e interpretar datos e información, tanto académica como proveniente de agencias productoras de información (consultoras, organismos estatales, organismos internacionales).</p>
 <p>Por eso, los módulos están diseñados para ser <strong>altamente interactivos</strong> y <strong>apoyados en gráficos</strong> siempre que sea posible, con ejemplos extraídos de nuestra experiencia conjunta en el aula (por ejemplo, indicadores básicos como notas de exámenes y horas de estudio) antes de pasar a ejemplos concretos de cada rama de la ciencia política, las relaciones internacionales, la política comparada y las políticas públicas.</p>
 <hr>
 </section>
 <section id="módulos-del-curso" class="level1">
 <h1>Módulos del curso</h1>
-</section>
-<section id="módulos-del-curso-1" class="level1">
-<h1>Módulos del curso</h1>
 <ul>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/01-preguntas.html"><strong>1. Preguntas y respuestas.</strong></a><br>
-Exploramos las preguntas que impulsan la persecución del conocimiento humano por curiosidad. Analizamos la diferencia entre <strong>respuestas ideales</strong> y <strong>respuestas reales</strong> y contextualizamos la materia desde esta perspectiva.</p></li>
+Exploramos las preguntas que impulsan la persecución del conocimiento humano por curiosidad. Analizamos la diferencia entre respuestas ideales y respuestas reales y contextualizamos la materia desde esta perspectiva.</p></li>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/02-ciencia.html"><strong>2. Ciencia, ciencias sociales y lo social en la ciencia.</strong></a><br>
-Introducción epistemológica a qué es la ciencia, cuáles son sus límites, mitos y posibilidades. Incluye la reflexión sobre cómo lo social influye en la práctica científica.</p></li>
+Introducción epistemológica a qué es la ciencia. Límites, mitos y posibilidades. Explicacion y prediccion. Cómo lo social influye en la práctica científica. Metodología, método y técnica. Metodos cuantitativos. Perspectivas deterministas y probabilisticas.</p></li>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/03-modelos.html"><strong>3. Diseño de investigación, modelos teóricos, hipótesis y unidad de análisis.</strong></a><br>
-Estudiamos los cimientos de cualquier investigación social: desde la elección del diseño hasta la definición de hipótesis y unidades de análisis. Evaluamos la factibilidad como punto crítico.</p></li>
-<li><p><a href="../../cursos/metodos-cuanti/modulos/04-conceptos.html"><strong>4. Conceptos, operacionalización y variables.</strong></a><br>
-Cómo pasar de conceptos abstractos de interés a definiciones medibles y observables.</p></li>
+Los cimientos de la investigación social. Modelos teoricos e implementacion practica. Tipos de diseño de investigacion. Unidades de análisis. Hipotesis. Ideal y factibilidad en el diseño de la investigacion y comunicacion sus resultados.</p></li>
+<li><p><a href="../../cursos/metodos-cuanti/modulos/04-conceptos.html"><strong>4. Conceptos, operacionalización y variables.</strong></a> Conceptos abstractos y definiciones claras de interés.Definiciones medibles y observables. Los desafios de la medicion, la validez y la confianza. Variables y constantes. Clasificaciones y niveles de medicion.</p></li>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/04-matematica.html"><strong>4.5 (opcional) Repaso de álgebra y notación matemática.</strong></a><br>
-Clase opcional para reforzar la comprensión de fórmulas básicas, como el cálculo de promedios, de cara a los módulos posteriores.</p></li>
+Modulo opcional para reforzar la comprensión de fórmulas básicas, la notacion matematica como el cálculo de promedios, de cara a los módulos posteriores. Tambien introducimos la nocion de la matematica como un lenguaje de comunicacion simbolica basado en la precision para la comunicacion.</p></li>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/05-histograma-tablas.html"><strong>5. Explorando los datos, desde conceptos a las relaciones.</strong></a><br>
-Histogramas como herramienta de exploración, Tablas de frecuencia y tablas de contingencia descriptivas.</p></li>
+Nuestro primer encuentro con los datos cuantitativos. El Histograma como herramienta de exploración. Describimos los datoscon tablas de frecuencia y tablas de contingencia descriptivas.</p></li>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/06-graficos.html"><strong>6. Comunicando los datos, gráficos uso y principios.</strong></a><br>
-Transformar datos en representaciones visuales claras y efectivas.</p></li>
+Transformar datos en representaciones visuales claras y efectivas. Convenciones clasicas de la presentacion de graficos. Principios modernos para la comunicacion cuantitativa. Malas practicas y desafios.</p></li>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/07-medidas.html"><strong>7. Reduciendo los datos, cantidades de interés y medidas resumen.</strong></a><br>
-De un conjunto de datos, extraemos información útil para describirlo: medidas de tendencia central y de dispersión.</p></li>
+De un conjunto de datos, extraemos información útil para describirlo. Definiendo cantidades de interes. Medidas resumen de tendencia central, posicion y de dispersión.</p></li>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/08-probabilidad.html"><strong>8. Introducción a la probabilidad.</strong></a><br>
-Teorema del límite central, distribución normal, su historia y mitos. Incluye los fundamentos filosóficos del enfoque frequentista.</p></li>
+Teorema del límite central, distribución normal, su historia y mitos. Probabilidades, regla de la adicion y de la multiplicacion. Interpretacion de probabilidaes. Fundamentos filosóficos del enfoque frequentista y desafios en la ciencias sociales. El rol de los contrafacticos.</p></li>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/09-test.html"><strong>9. Test de hipótesis y errores tipo I y tipo II.</strong></a><br>
-Analizamos la toma de decisiones ante la incertidumbre, usando el ejemplo de Freedman, Pisani y Purves sobre el grado de duda razonable que enfrenta un jurado.</p></li>
+Toma de decisiones ante la incertidumbre. Test de hipótesis y sus pasos. Desafios en su implementacion. p-valor y significancia. Errores de tipo I y tipo II. El rol de la <em>duda razonable</em></p></li>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/10-chi-medias.html"><strong>10. Chi-cuadrado, significancia estadística y comparación de medias.</strong></a><br>
-Incluye experimentos de encuesta y técnicas para evaluar diferencias y asociaciones.</p></li>
+Estadisticos de prueba, requisitos. Evaluando la asociacion de eventos discretos. Chi-cuadrado en tablas de contingencia. T de student y comparacion de medias. Implementacion en experimentos de encuesta.</p></li>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/11-correlacion.html"><strong>11. Correlación y regresión bivariada.</strong></a><br>
-Cómo medir y modelar relaciones entre dos variables.</p></li>
+Asociacion entre variables cuantitativas. Proposito y limitaciones. Medicion e interpretacion. Causalidad y asociacion. Causalidad y causalidad inversa. Correlacion espurea. Cómo medir y modelar relaciones entre dos variables. Regresion lineal simple. Regla de minimos cuadrados.</p></li>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/12-regresion.html"><strong>12. Regresión multivariada como promedio condicional.</strong></a><br>
-Interpretación y uso descriptivo de modelos que incorporan múltiples variables.</p></li>
+Repaso de Regresion lineal bivariada. <span class="math inline">\(\beta\)</span> y <span class="math inline">\(\alpha\)</span>, calculo e interpretacion. Extension del modelo de Regresion lineal bivariada a multiples variables. Interpretacion de los coeficientes. Comunicacion de los resultados descriptivos. Simulacion de un caso practico. Sesgo, variables omitidas y saturacion de modelo.</p></li>
 <li><p><a href="../../cursos/metodos-cuanti/modulos/13-casos.html"><strong>13. Casos académicos en la regresión.</strong></a><br>
-Aplicaciones reales de la regresión: interpretación, casos complejos, interacciones, otras distribuciones y simulaciones computacionales.</p></li>
+Aplicaciones reales de la regresión, revision de literatura actual interpretación, casos complejos, interacciones, otras distribuciones y simulaciones computacionales.</p></li>
 </ul>
 <hr>
 </section>
 <section id="programa-de-la-materia" class="level1">
 <h1>Programa de la Materia</h1>
-<p>En el siguiente enlace encontrarán el <strong>Programa 2025 de Métodos Cuantitativos</strong> y el <strong>cronograma de clases</strong>:</p>
+<p>En el siguiente enlace encontrarán el <strong>Programa actualizado de Métodos Cuantitativos</strong>:</p>
 <p>➡️ <a href="archivos/Programa-2025.pdf">Descargar Programa</a></p>
-<p>El programa <strong>rige la materia</strong>. Es nuestro <strong>contrato mutuo</strong>, allí se define qué esperamos de ustedes y a qué nos comprometemos nosotros. Es el corazón de la materia, por eso les pedimos que lo lean y lo comprendan en profundidad.</p>
-<p>En el <strong>segundo encuentro</strong> esperamos que todos lo tengan leído y aprendido, ya que realizaremos un <strong>parcialito</strong> sobre su contenido.</p>
+<p>El programa <strong>rige la materia</strong>. Es nuestro <strong>contrato mutuo</strong>, allí se define qué esperamos de ustedes y a qué nos comprometemos nosotros. Es el corazón de la materia, por eso les pedimos que lo lean y lo comprendan en profundidad. En el <strong>segundo encuentro</strong> esperamos que todos lo tengan leído y aprendido, ya que realizaremos un <strong>parcialito</strong> sobre su contenido.</p>
 <hr>
 </section>
 <section id="cómo-seguir" class="level1">

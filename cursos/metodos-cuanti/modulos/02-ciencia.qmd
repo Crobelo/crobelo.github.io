@@ -1,12 +1,11 @@
 ---
-title: "Clase 1 — Introducción al Conocimiento Científico y la Metodología Cuantitativa"
+title: "2 — Introducción al Conocimiento Científico y la Metodología Cuantitativa"
 format: html
-#author: "Cátedra de Metodología de la Investigación"
 ---
 
 # Introducción
 
-En esta primera clase nos proponemos establecer las bases conceptuales y epistemológicas para comprender la investigación científica, con especial énfasis en la **metodología cuantitativa** y su lugar dentro de las ciencias sociales.
+En esta segunda entrega expandimos las bases conceptuales y epistemológicas para comprender la investigación científica que introdujimos, con especial énfasis en la **metodología cuantitativa** y su lugar dentro de las ciencias sociales.
 
 Como veremos, hablar de ciencia no implica únicamente manejar procedimientos técnicos. También supone reconocer que estos procedimientos están insertos en un **marco epistemológico** y en una **filosofía de la ciencia** que orientan nuestra forma de conocer. Estos marcos no están exentos de debates, tensiones y desacuerdos. 
 
@@ -150,4 +149,9 @@ En palabras de la cátedra:
 
 - Blalock, H. M. (1982). *Conceptualization and Measurement in the Social Sciences*.  
 - Jauretche, A. (1966). *El medio pelo en la sociedad argentina*.  
-- Material de Cátedra — MC. CLASE 2. Videos 1 a 4.
+
+
+# Ideas
+la ciencia busca explicar y predecir. A veces se busca uno y no el otro, depende de que disciplina.
+Los modelos teoricos guian nuestras preguntas (mas de eso la proxima), pero muchas veces se mantienen sin ser verificados como las capas tectonicas (oreskes).
+

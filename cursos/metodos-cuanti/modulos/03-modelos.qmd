@@ -167,3 +167,16 @@ Diseñar una investigación social es un arte y una técnica. Requiere conocimie
 
 En los próximos módulos trabajaremos cómo operacionalizar conceptos abstractos, cómo recolectar y resumir datos, y cómo pasar de las hipótesis a las pruebas estadísticas. Pero todo comienza acá, con una buena pregunta, un modelo sensato, y un diseño honesto y realizable.
 
+------------------------------------------------------------------------
+
+# Causalidad y el problema del contrafáctico
+
+En ciencias sociales y relaciones internacionales, afirmar que “X causa Y” implica imaginar un **mundo contrafáctico**, donde X no ocurre, y comparar el resultado con el mundo real.
+
+Por ejemplo:\
+\* Mundo real: un país que se une a una alianza militar recibe apoyo logístico en una operación internacional.\
+\* Mundo contrafáctico: ese mismo país no se une a la alianza. ¿Habría recibido el mismo apoyo?
+
+El problema es que **no podemos observar ambos mundos a la vez**. A esto se lo llama *problema fundamental de la inferencia causal*. Resolverlo requiere creatividad metodológica: experimentos, diseños cuasi-experimentales o análisis estadísticos cuidadosos.
+
+------------------------------------------------------------------------

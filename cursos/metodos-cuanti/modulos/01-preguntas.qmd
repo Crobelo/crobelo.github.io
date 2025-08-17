@@ -49,7 +49,7 @@ Entonces, suele ser útil distinguir entre tres grandes tipos de interrogantes: 
 
 En el corazón de toda investigación científica se encuentra el esfuerzo por **describir con precisión aquello que ocurre en el mundo**. Las preguntas de hecho, también llamadas descriptivas o fácticas, constituyen el punto de partida indispensable para cualquier empresa de conocimiento. Las preguntas de hecho se concentran en establecer **qué ocurre, cómo ocurre, cuándo ocurre y a quién le ocurre**.  
 
-Lejos de ser un ejercicio menor o preliminar, la descripción es el fundamento mismo sobre el que se erigen las demás formas de análisis. Sin embargo, la ciencia política (fundamentalmente en la tradicion norteamericana[^Shepsle1997]) ha tendido a subestimar la descripción, considerándola un paso previo hacia la causalidad [^Gerring2012]. Sin embargo, sin una base descriptiva rigurosa no hay posibilidad de identificar patrones, ni de construir inferencias causales sólidas. Una explicación sobre los determinantes de la aprobación presidencial, por ejemplo, será frágil si no contamos antes con mediciones sistemáticas sobre cuánta aprobación existe y cómo se distribuye en distintos sectores sociales.  
+Lejos de ser un ejercicio menor o preliminar, la descripción es el fundamento mismo sobre el que se erigen las demás formas de análisis. Sin embargo, la ciencia política (fundamentalmente en la tradicion norteamericana[^Shepsle1997]) ha tendido a subestimar la descripción, considerándola un paso previo hacia la causalidad [^Gerring2012]. Sin embargo, sin una base descriptiva rigurosa no hay posibilidad de identificar patrones, ni de construir inferencias causales sólidas. Una explicación las condiciones que determinan la aprobación presidencial, por ejemplo, será frágil si no contamos antes con mediciones sistemáticas sobre cuánta aprobación existe y cómo se distribuye en distintos sectores sociales.  
 
 Las preguntas de hecho pueden adoptar distintas formas. En su versión más sencilla, buscan establecer datos puntuales: ¿qué porcentaje de argentinos confía en el Congreso en 2025?, ¿cuál fue el nivel de desempleo en octubre de 2023?, ¿cuántas misiones de paz ha integrado Argentina desde 1990?, ¿qué países votaron junto a Estados Unidos en la última sesión de la Asamblea General de Naciones Unidas? Todas estas preguntas apuntan a reunir información y comunicarla de manera clara y ordenada, a partir de encuestas, registros oficiales o estadísticas comparativas.  
 
@@ -57,33 +57,36 @@ Sin embargo, el potencial de las preguntas descriptivas va mucho más allá de e
 
 Otro camino es el de las **asociaciones descriptivas**, que indagan la co-ocurrencia de fenómenos sin necesariamente atribuirles un vínculo causal. Así, podríamos observar la relación entre nivel educativo y participación electoral en diferentes regiones del país, describiendo los patrones que emergen de esa interacción. Finalmente, la descripción puede tomar la forma de **síntesis y tipologías**, donde se busca organizar la diversidad de casos en categorías coherentes. De este modo, es posible clasificar distintos modelos de democracia —electoral, liberal, participativa o deliberativa—.  
 
-Lo que todas estas variantes tienen en común es que, al delimitar, organizar y dar forma a los fenómenos políticos, la investigación descriptiva ofrece el mapa sobre el cual luego será posible identificar regularidades y proponer explicaciones. En última instancia, cualquier análisis causal descansa sobre la solidez del trabajo descriptivo que lo antecede. De allí que las preguntas de hecho no deban ser vistas como una versión reducida de la investigación empírica, sino como una de sus expresiones más valiosas y necesarias.  
+Lo que todas estas variantes tienen en común es que, al delimitar, organizar y dar forma a los fenómenos políticos, la investigación descriptiva ofrece el mapa sobre el cual luego será posible identificar regularidades y proponer explicaciones. En última instancia, cualquier análisis causal descansa sobre la solidez del trabajo descriptivo que lo antecede. De allí que las preguntas de hecho seran protagonistas en nuestro acercamiento a la investigación empírica, como una de sus expresiones más valiosas y necesarias.  
 
 Además de su relevancia académica, la descripción cumple un papel decisivo en el ámbito profesional. Las respuestas a preguntas descriptivas guían la toma de decisiones públicas, ya que permiten a los responsables de diseñar políticas conocer con precisión la magnitud y características de los problemas que enfrentan. También informan al público y a los medios, proveyendo datos verificables que fortalecen el debate democrático y la rendición de cuentas. En ultima instancia nos facilitan un conocimiento compartido de la realidad social y política, que sirve de base tanto para la formulación de estrategias institucionales como para la evaluación de resultados en la gestión estatal o en el trabajo de organizaciones de la sociedad civil.  
 
 ## Preguntas de causa: explicar y predecir  
 
-Más allá de la descripción, los investigadores suelen interesarse en **por qué los fenómenos ocurren de determinada manera**. Aquí entramos en el terreno de las **preguntas causales** —también llamadas explicativas—. Estas preguntas intentan descubrir las relaciones entre variables y, en lo posible, identificar mecanismos de causalidad.  
+Una vez que sabemos **qué ocurre**, surge de inmediato la inquietud por comprender **por qué ocurre de esa forma**. Las preguntas causales —también llamadas explicativas— buscan desentrañar las razones, mecanismos o condiciones que producen determinados fenómenos políticos y sociales.  
 
-Un ejemplo en política comparada sería: *¿Influye la situación económica en la aprobación presidencial?* En el campo de las relaciones internacionales, una pregunta típica podría ser: *¿Reduce la participación en operaciones de paz la probabilidad de que un Estado enfrente un conflicto interestatal?*  
+Las formulaciones más comunes de este tipo de interrogantes son a la vez sencillas y familiares. En política comparada, por ejemplo, podemos preguntar: *¿Influye la situación económica en la aprobación presidencial?*; en estudios legislativos, *¿Contribuye el sistema electoral a que los partidos se fragmenten o se concentren?*; y en relaciones internacionales, *¿Reduce la participación en operaciones de paz la probabilidad de que un Estado enfrente un conflicto interestatal?* Todas estas preguntas comparten un mismo espíritu: ir más allá de la descripción y proponer vínculos entre fenómenos.  
 
-Responder a este tipo de preguntas implica un esfuerzo mucho más elaborado que en el caso de las preguntas de hecho. No basta con observar y medir; es necesario **diseñar investigaciones que permitan contrastar hipótesis, controlar por variables alternativas y evaluar la plausibilidad de los vínculos causales**. Esto puede hacerse mediante estudios estadísticos, experimentos, estudios de caso comparados o modelos formales.  
+Conviene aquí remarcar la diferencia con las **asociaciones descriptivas** del apartado anterior. Un análisis descriptivo puede señalar, por ejemplo, que los países con mayor nivel de desarrollo tienden a mostrar también mayor estabilidad democrática. Ese hallazgo es valioso en sí mismo, pero no equivale todavía a una afirmación causal. Para sostener que el desarrollo económico *produce* estabilidad democrática necesitamos introducir una dimensión contrafáctica: ¿qué habría ocurrido con ese mismo país si no hubiera alcanzado determinado nivel de desarrollo? La causalidad, entonces, no se distingue tanto por el método empleado, ya que muchas veces se utilizan herramientas similares de observación y medición, sino por el propósito de la investigación. Mientras la descripción se satisface con registrar patrones observables, la explicación causal exige imaginar y evaluar escenarios alternativos.  
 
-> **Nota metodológica**: a las preguntas causales también se las denomina *preguntas explicativas*. Sin embargo, conviene aclarar que la palabra “explicación” puede interpretarse de maneras distintas según el marco epistemológico adoptado. En algunos enfoques, una explicación causal se entiende como la identificación certera de un mecanismo universal que conecta variables. En otros, más pragmáticos, una explicación válida es aquella que permite realizar **predicciones útiles**, aunque no revele una causa “última”. Incluso, dentro de la teoría formal o en el análisis de juegos estratégicos, es posible encontrar preguntas de tipo causal que no son estrictamente empíricas, ya que se formulan en términos deductivos o abstractos.  
+En la tradición positivista, el interés por la causalidad ha estado ligado a la búsqueda de **regularidades que se aproximen a leyes de la naturaleza**. La premisa es que las leyes existen independientemente de nuestro conocimiento, y que el papel del investigador es descubrirlas, de manera análoga a lo que ocurre en las ciencias naturales. En este marco, el propósito de una investigación puede ser la explicación en sí misma, entender cómo se producen ciertos fenómenos, o la predicción de fenomenos similares en el futuro. En este último caso, incluso cuando la teoría que formulamos no capture exactamente el mecanismo real, algunos conideran la investigación valiosa si logra anticipar comportamientos que “funcionan como si” respondieran a esa explicación [^pragmatismo metodologico].  
 
-Así, la causalidad en ciencias sociales rara vez implica certezas absolutas. Más bien, se trata de establecer **relaciones probables** y patrones que, bajo ciertas condiciones, nos ayudan a comprender y anticipar la dinámica de lo social y lo político.  
+Históricamente, la ciencia política se ha apoyado en un **empiricismo observacional**, que enfatiza la importancia de recolectar evidencia en el mundo real para evaluar teorias[^Samii2016]. En otras disciplinas, como en ciertas ramas de la biología o la física, se suele sostener que “explicar es manipular”: si no podemos intervenir directamente en el fenómeno para comprobar cómo responde, entonces no tenemos verdadera ciencia. Trasladado a la política, ello implicaría la posibilidad de provocar guerras o crisis económicas para poner a prueba nuestras teorías, algo que no solo es impráctico, sino también **éticamente inadmisible**.  
 
----
+Estas limitaciones han dado lugar a una amplia reflexión en la disciplina. Por un lado, se valora la importancia de **identificar explicaciones claras y robustas**, incluso si se obtienen en contextos muy específicos. Por otro, crece el debate sobre la necesidad de **extender esos hallazgos a otros casos y contextos**, lo que genera una tensión entre la validez interna (la certeza de que un efecto existe en un entorno particular) y la validez externa (la posibilidad de generalizarlo). Hoy asistimos a una verdadera revolución metodológica en torno a estas cuestiones: desde los experimentos de campo hasta las técnicas estadísticas de inferencia causal, pasando por intensas discusiones sobre replicación y extrapolación.  
+
+En este curso no pretendemos resolver todos estos debates, pero sí reconocer su existencia y su importancia. Basta por ahora con retener una idea central: las preguntas causales han dominado los campos más académicos de la ciencia política porque, más allá de las disputas teóricas y metodológicas, expresan una aspiración común y profundamente humana: comprender las razones de lo que ocurre y anticipar cómo podría ocurrir en el futuro.  
+
 
 ## Preguntas de valor: debatir lo que debería ser  
 
-El tercer tipo de interrogantes está constituido por las **preguntas de valor**, también conocidas como normativas. A diferencia de las anteriores, no se centran en lo que ocurre ni en por qué ocurre, sino en lo que *debería ocurrir*. Estas preguntas introducen explícitamente un juicio de valor, una perspectiva ética o un ideal político.  
+El tercer gran tipo de interrogantes que podemos formular en ciencia política son las **preguntas de valor**, también conocidas como normativas. A diferencia de las preguntas de hecho, que buscan describir lo que ocurre, y de las preguntas causales, que intentan explicar por qué ocurre, las preguntas de valor se concentran en lo que *debería ocurrir*. Suponen la introducción explícita de juicios morales, consideraciones éticas o ideales políticos, y por ello ocupan un lugar central en el debate público y en la tradición filosófica de la disciplina.  
 
-Por ejemplo: *¿Debería la Corte Suprema tener mandatos limitados?* o *¿Debería Argentina integrarse a una alianza militar permanente con potencias extra-regionales?* En ambos casos, el debate se centra en principios normativos: la legitimidad, la justicia, la conveniencia moral o política de determinadas decisiones.  
+Ejemplos de este tipo abundan en la vida política cotidiana: *¿Debería la Corte Suprema tener mandatos limitados?*; *¿Debería Argentina integrarse a una alianza militar permanente con potencias extra-regionales?*; *¿Es legítimo restringir ciertas libertades en nombre de la seguridad nacional?* Todas estas preguntas, aunque refieren a hechos concretos, no se limitan a describirlos ni a explicarlos: buscan juzgar su conveniencia, legitimidad o justicia. Las preguntas normativas han constituido el núcleo de la reflexión política. Platón, Aristóteles, Hobbes o Rousseau se preguntaban fundamentalmente por la mejor forma de gobierno, por el fundamento de la autoridad o por la naturaleza de la justicia.   
 
-Este tipo de interrogantes es fundamental para el pensamiento político y filosófico, y constituye el núcleo de la reflexión normativa en la disciplina. Sin embargo, en un curso orientado a la **metodología empírica de las ciencias sociales**, el énfasis estará puesto en las preguntas de hecho y de causa, ya que son aquellas que pueden responderse con las herramientas de observación, medición y análisis cuantitativo o cualitativo.  
+Hoy en día, estas preguntas siguen siendo indispensables para orientar el debate democrático. Determinar qué instituciones queremos, qué fines deben guiar la acción estatal o cuáles son los límites legítimos del poder, no son cuestiones que puedan resolverse únicamente con datos empíricos. La estadística puede mostrarnos cuántos ciudadanos apoyan una política, y los estudios causales pueden ayudarnos a comprender sus efectos, pero la decisión sobre si esa política es justa o deseable remite en última instancia a criterios normativos. 
 
----
+En este curso, sin embargo, nuestro foco estará puesto en las **preguntas de hecho** y en menor medida en las **preguntas causales**, porque son aquellas que pueden abordarse con las herramientas de observación, medición y análisis empírico que nos brinda la metodología de las ciencias sociales. Esto no significa que las preguntas normativas carezcan de importancia. Por el contrario, constituyen el horizonte más amplio en el que se inscribe toda reflexión política: nos recuerdan que el conocimiento no solo describe y explica la realidad, sino que también debe dialogar con los ideales de justicia, legitimidad y bien común que orientan la vida en sociedad.  
 
 ## Comparación y articulación entre los tipos de preguntas  
 
@@ -93,72 +96,83 @@ Por ejemplo, un debate sobre si los jueces de la Corte Suprema deberían tener l
 
 De este modo, cada tipo de pregunta cumple una función específica y complementaria en el proceso de construcción del conocimiento. Entender esta tipología ayuda a los estudiantes a reconocer el alcance y los límites de su propio trabajo y a formular preguntas que sean **viables, pertinentes y significativas**.  
 
----
 
-## Síntesis  
+## Resumiendo  
 
 - Las **preguntas de hecho** buscan describir la realidad observable: qué ocurre y cómo ocurre.  
 - Las **preguntas de causa** intentan explicar por qué ocurre, estableciendo relaciones entre variables y mecanismos.  
 - Las **preguntas de valor** discuten lo que debería ser, incorporando juicios éticos y políticos.  
 
-A lo largo de este curso, nos concentraremos en las preguntas de hecho y de causa, ya que son las que se prestan al análisis metodológico y empírico. Las preguntas normativas seguirán siendo parte del horizonte intelectual de la ciencia política, pero requieren herramientas conceptuales distintas a las que abordaremos aquí.  
-
----
-| Tipo | Qué pregunta | Ejemplo argentino sobre democracia | Ejemplo en relaciones internacionales | Enfoque para responder |
-|---------------|---------------|---------------|---------------|---------------|
-| Normativa | ¿Qué debería ser? (juicio moral) | ¿Debería la Corte Suprema tener mandatos limitados? | ¿Debería Argentina participar en alianzas militares permanentes? | Lógica y razonamiento |
-| Descriptiva | ¿Cómo es la realidad? (observación) | ¿Qué porcentaje de argentinos confía en el Congreso? | ¿Cuántas misiones de paz ha integrado Argentina desde 1990? | Observación y medición |
-| Causal | ¿Por qué es así? (explicación) | ¿Influye la situación económica en la aprobación presidencial? | ¿Reduce la participación en operaciones de paz la probabilidad de conflicto interestatal? | Observación, medición y diseño |
-
-Las preguntas **normativas** son fundamentales para el debate democrático y ético, pero en este curso nos centraremos en las **descriptivas** y **causales**, que son las que podemos abordar con métodos cuantitativos.
-
-------------------------------------------------------------------------
+A lo largo de este curso, nos concentraremos en las preguntas de hecho y en menor medida las de causa, ya que son las que se prestan al análisis metodológico y empírico. Las preguntas normativas seguirán siendo parte del horizonte intelectual de la ciencia política, pero requieren herramientas conceptuales distintas a las que abordaremos aquí.  
 
 # Ejemplos prácticos
 
-## Confianza en la democracia
+Para ilustrar cómo se diferencian las preguntas normativas, descriptivas y causales, es útil llevar la clasificación a temas concretos de la agenda política y de las relaciones internacionales. A continuación presentamos algunos ejemplos, que muestran cómo un mismo tema puede dar lugar a tres tipos de interrogantes muy distintos, según se centre en lo que *debería ser*, en lo que *es* o en lo que *explica lo que es*.  
 
--   **Normativa:** ¿Deberían los ciudadanos confiar en la democracia como forma de gobierno?\
--   **Descriptiva:** ¿Qué porcentaje de argentinos declara estar satisfecho con la democracia? ¿Cómo varía según edad, región o nivel educativo?\
--   **Causal:** ¿La experiencia personal con corrupción reduce la confianza en la democracia?
 
-## Alianzas militares y cooperación internacional
+## Calidad democrática en Argentina
 
--   **Normativa:** ¿Debería Argentina unirse formalmente a una alianza militar regional o global?\
--   **Descriptiva:** ¿Cuántos acuerdos de cooperación en defensa ha firmado Argentina en la última década?\
--   **Causal:** ¿La firma de un tratado de defensa mutua aumenta la probabilidad de recibir asistencia militar en caso de crisis?
+- **Normativa:** ¿Deberían reformarse las reglas electorales argentinas para fortalecer la rendición de cuentas?  
+- **Descriptiva:** ¿Qué porcentaje de ciudadanos declara estar satisfecho con el funcionamiento de la democracia en la Argentina? ¿Cómo varía esa percepción según la edad, la región o el nivel educativo?  
+- **Causal:** ¿La percepción de corrupción en el sector público reduce la satisfacción con la democracia?  
 
-------------------------------------------------------------------------
 
-# Causalidad y el problema del contrafáctico
+## Desigualdad y participación política
 
-En ciencias sociales y relaciones internacionales, afirmar que “X causa Y” implica imaginar un **mundo contrafáctico**, donde X no ocurre, y comparar el resultado con el mundo real.
+- **Normativa:** ¿Debería el Estado garantizar mecanismos de acción afirmativa para reducir las brechas de participación política entre sectores socioeconómicos?  
+- **Descriptiva:** ¿Cuál es la tasa de participación electoral de los votantes de bajos ingresos frente a la de los votantes de ingresos altos en las últimas elecciones?  
+- **Causal:** ¿La desigualdad de ingresos disminuye la probabilidad de participación política activa (como el voto, la protesta o la militancia)?  
 
-Por ejemplo:\
-\* Mundo real: un país que se une a una alianza militar recibe apoyo logístico en una operación internacional.\
-\* Mundo contrafáctico: ese mismo país no se une a la alianza. ¿Habría recibido el mismo apoyo?
+## Conflicto entre el poder ejecutivo y judicial
 
-El problema es que **no podemos observar ambos mundos a la vez**. A esto se lo llama *problema fundamental de la inferencia causal*. Resolverlo requiere creatividad metodológica: experimentos, diseños cuasi-experimentales o análisis estadísticos cuidadosos.
+- **Normativa:** ¿Debería el Poder Judicial tener la potestad de declarar inconstitucionales las decisiones del Poder Ejecutivo sin limitaciones?  
+- **Descriptiva:** ¿Cuántas veces el Poder Ejecutivo argentino ha sido desafiado por la Corte Suprema en los últimos veinte años?  
+- **Causal:** ¿El aumento en los decretos de necesidad y urgencia incrementa la conflictividad entre el Ejecutivo y el Judicial?  
 
-------------------------------------------------------------------------
 
-# Para estimular la inquietud
+## Políticas educativas subnacionales
 
-Esta introducción no pretende agotar el tema, sino abrir puertas:\
-\* ¿Qué preguntas te gustaría responder sobre la democracia en Argentina?\
-\* ¿Qué preguntas te gustaría explorar sobre la política exterior o las alianzas militares del país?\
-\* ¿Qué datos necesitarías para responderlas?\
-\* ¿Qué dificultades encontrarías para demostrar una relación causal en cada caso?
+- **Normativa:** ¿Deberían las provincias argentinas tener plena autonomía para definir sus planes de estudio en la educación básica?  
+- **Descriptiva:** ¿Qué porcentaje del gasto educativo total en Argentina corresponde a los gobiernos provinciales? ¿Cómo varía este porcentaje entre jurisdicciones?  
+- **Causal:** ¿La mayor inversión educativa en provincias con menor desarrollo socioeconómico reduce las brechas de aprendizaje en el largo plazo?  
 
-En el resto del curso aprenderemos a formular preguntas investigables, a diseñar estrategias para responderlas y a interpretar los resultados con espíritu crítico. La meta es que puedas usar la metodología no para apagar tu curiosidad, sino para darle un camino claro y sólido.
 
-------------------------------------------------------------------------
+## Votación en la ONU
 
-::: callout-note
-**Para pensar:** La democracia argentina cumplió 40 años en 2023. ¿Cómo ha cambiado la confianza ciudadana en las instituciones en estas cuatro décadas?\
-Y en el plano internacional: ¿Ha cambiado el papel de Argentina en las alianzas militares y en las misiones de paz desde 1983?\
-¿Cuáles serían tus hipótesis?
+- **Normativa:** ¿Debería Argentina votar sistemáticamente en favor de resoluciones que promuevan los derechos humanos, aun cuando entren en conflicto con alianzas estratégicas?  
+- **Descriptiva:** ¿Con qué países coincide Argentina en la votación de resoluciones en la Asamblea General de Naciones Unidas en los últimos cinco años?  
+- **Causal:** ¿La dependencia económica con Estados Unidos aumenta la probabilidad de que un pais vote en línea con su posición en la ONU?  
+
+
+## Transición hegemónica y el rol de China
+
+- **Normativa:** ¿Deberían los Estados latinoamericanos apoyar activamente una mayor presencia de China en las instituciones multilaterales globales?  
+- **Descriptiva:** ¿Cuál ha sido la evolución de la participación de China en organismos internacionales como el FMI, el Banco Mundial o la ONU en las últimas dos décadas?  
+- **Causal:** ¿El aumento de la influencia económica de China en América Latina conduce a un alineamiento político más estrecho con Beijing en foros internacionales?  
+
+
+
+# Preguntas esperando respuestas
+
+Esta introducción no pretende agotar el tema, sino abrir puertas y estimular nuestra búsqueda de respuestas. Sobre los fenómenos políticos y sociales a los que estamos expuestos todos los días existen infinidad de preguntas posibles. Algunas ya han sido respondidas en el pasado, en otros contextos o en otros tiempos; otras quizá nunca encuentren una respuesta definitiva. Nuestro trabajo, por ahora, es **formular y refinar esas preguntas**. A lo largo de este curso veremos si podemos encontrarles respuestas, y de qué tipo.  
+
+
+::: {.callout-note appearance="simple" icon="false"}
+
+## Para pensar
+
+A lo largo de su carrera han estado expuestos a múltiples materias, lecturas, conceptos, debates e investigaciones. Ahora, centrémonos en un tema de su interés personal.  
+
+Para ese tema, elaboren y distingan claramente los siguientes tipos de pregunta:  
+
+1. Una pregunta de valor o normativa.  
+2. Una pregunta de causa o explicativa.  
+3. Una pregunta de hecho sencilla.  
+4. Una pregunta de hecho compleja.  
+
+Luego, para la cuarta pregunta, indiquen qué datos necesitaríamos idealmente para poder responderla. Ténganlos presentes y compártanlos en nuestro próximo encuentro. Seleccionaremos algunos casos para ilustrar cómo nosotros abordaríamos esas preguntas, y esperamos que el resto pueda las suyas propias durante y después del curso.  
 :::
+
 
 
 
@@ -168,3 +182,7 @@ Y en el plano internacional: ¿Ha cambiado el papel de Argentina en las alianzas
 
 [^Shepsle1997]: Bonchek, M. S., & Shepsle, K. A. (1997). Analyzing politics. Rationality, Behavior and Institutions. Norton 
 [^Gerring2012]: Gerring, J. (2012). Mere description. British Journal of Political Science, 42(4), 721-746.
+
+[^pragmatismo metodologico]: Esta suerte de *pragmatismo metodologico* se encuentra en enfoques de teoria de la eleccion racional, tanto economicos como de teoria formal de ciencia politica. Tambien se encuentran detras de formas mas inductivas de exploracion de datos como la mineria de datos predictiva, machine learning y LLMs.  
+
+[^Samii2016]: Samii, C. (2016). Causal empiricism in quantitative research. The Journal of Politics, 78(3), 941-955.

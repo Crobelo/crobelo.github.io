@@ -273,25 +273,53 @@
     "text": "Comparación y articulación entre los tipos de preguntas\nAunque las hemos presentado como categorías diferenciadas, en la práctica estos tres tipos de preguntas suelen estar interconectados. Es habitual que un investigador comience con una inquietud normativa (“¿Debería…?”), que luego derive en un interrogante de hecho (“¿Qué ocurre actualmente…?”), y que finalmente dé lugar a una pregunta causal (“¿Qué factores explican que ocurra de ese modo…?”).\nPor ejemplo, un debate sobre si los jueces de la Corte Suprema deberían tener límites de mandato (pregunta de valor) puede llevar a investigar cuántos países efectivamente los tienen (pregunta de hecho), y a continuación a preguntarse si la existencia de límites influye en la independencia judicial o en la estabilidad institucional (pregunta de causa).\nDe este modo, cada tipo de pregunta cumple una función específica y complementaria en el proceso de construcción del conocimiento. Entender esta tipología ayuda a los estudiantes a reconocer el alcance y los límites de su propio trabajo y a formular preguntas que sean viables, pertinentes y significativas."
   },
   {
-    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#síntesis",
-    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#síntesis",
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#resumiendo",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#resumiendo",
     "title": "1 — Preguntas y Respuestas",
-    "section": "Síntesis",
-    "text": "Síntesis\n\nLas preguntas de hecho buscan describir la realidad observable: qué ocurre y cómo ocurre.\n\nLas preguntas de causa intentan explicar por qué ocurre, estableciendo relaciones entre variables y mecanismos.\n\nLas preguntas de valor discuten lo que debería ser, incorporando juicios éticos y políticos.\n\nA lo largo de este curso, nos concentraremos en las preguntas de hecho y de causa, ya que son las que se prestan al análisis metodológico y empírico. Las preguntas normativas seguirán siendo parte del horizonte intelectual de la ciencia política, pero requieren herramientas conceptuales distintas a las que abordaremos aquí.\n\n\n\n\n\n\n| Tipo | Qué pregunta | Ejemplo argentino sobre democracia | Ejemplo en relaciones internacionales | Enfoque para responder | |—————|—————|—————|—————|—————| | Normativa | ¿Qué debería ser? (juicio moral) | ¿Debería la Corte Suprema tener mandatos limitados? | ¿Debería Argentina participar en alianzas militares permanentes? | Lógica y razonamiento | | Descriptiva | ¿Cómo es la realidad? (observación) | ¿Qué porcentaje de argentinos confía en el Congreso? | ¿Cuántas misiones de paz ha integrado Argentina desde 1990? | Observación y medición | | Causal | ¿Por qué es así? (explicación) | ¿Influye la situación económica en la aprobación presidencial? | ¿Reduce la participación en operaciones de paz la probabilidad de conflicto interestatal? | Observación, medición y diseño |\n\n\nLas preguntas normativas son fundamentales para el debate democrático y ético, pero en este curso nos centraremos en las descriptivas y causales, que son las que podemos abordar con métodos cuantitativos."
+    "section": "Resumiendo",
+    "text": "Resumiendo\n\nLas preguntas de hecho buscan describir la realidad observable: qué ocurre y cómo ocurre.\n\nLas preguntas de causa intentan explicar por qué ocurre, estableciendo relaciones entre variables y mecanismos.\n\nLas preguntas de valor discuten lo que debería ser, incorporando juicios éticos y políticos.\n\nA lo largo de este curso, nos concentraremos en las preguntas de hecho y en menor medida las de causa, ya que son las que se prestan al análisis metodológico y empírico. Las preguntas normativas seguirán siendo parte del horizonte intelectual de la ciencia política, pero requieren herramientas conceptuales distintas a las que abordaremos aquí."
   },
   {
-    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#confianza-en-la-democracia",
-    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#confianza-en-la-democracia",
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#calidad-democrática-en-argentina",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#calidad-democrática-en-argentina",
     "title": "1 — Preguntas y Respuestas",
-    "section": "Confianza en la democracia",
-    "text": "Confianza en la democracia\n\nNormativa: ¿Deberían los ciudadanos confiar en la democracia como forma de gobierno?\n\nDescriptiva: ¿Qué porcentaje de argentinos declara estar satisfecho con la democracia? ¿Cómo varía según edad, región o nivel educativo?\n\nCausal: ¿La experiencia personal con corrupción reduce la confianza en la democracia?"
+    "section": "Calidad democrática en Argentina",
+    "text": "Calidad democrática en Argentina\n\nNormativa: ¿Deberían reformarse las reglas electorales argentinas para fortalecer la rendición de cuentas?\n\nDescriptiva: ¿Qué porcentaje de ciudadanos declara estar satisfecho con el funcionamiento de la democracia en la Argentina? ¿Cómo varía esa percepción según la edad, la región o el nivel educativo?\n\nCausal: ¿La percepción de corrupción en el sector público reduce la satisfacción con la democracia?"
   },
   {
-    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#alianzas-militares-y-cooperación-internacional",
-    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#alianzas-militares-y-cooperación-internacional",
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#desigualdad-y-participación-política",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#desigualdad-y-participación-política",
     "title": "1 — Preguntas y Respuestas",
-    "section": "Alianzas militares y cooperación internacional",
-    "text": "Alianzas militares y cooperación internacional\n\nNormativa: ¿Debería Argentina unirse formalmente a una alianza militar regional o global?\n\nDescriptiva: ¿Cuántos acuerdos de cooperación en defensa ha firmado Argentina en la última década?\n\nCausal: ¿La firma de un tratado de defensa mutua aumenta la probabilidad de recibir asistencia militar en caso de crisis?"
+    "section": "Desigualdad y participación política",
+    "text": "Desigualdad y participación política\n\nNormativa: ¿Debería el Estado garantizar mecanismos de acción afirmativa para reducir las brechas de participación política entre sectores socioeconómicos?\n\nDescriptiva: ¿Cuál es la tasa de participación electoral de los votantes de bajos ingresos frente a la de los votantes de ingresos altos en las últimas elecciones?\n\nCausal: ¿La desigualdad de ingresos disminuye la probabilidad de participación política activa (como el voto, la protesta o la militancia)?"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#conflicto-entre-el-poder-ejecutivo-y-judicial",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#conflicto-entre-el-poder-ejecutivo-y-judicial",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "Conflicto entre el poder ejecutivo y judicial",
+    "text": "Conflicto entre el poder ejecutivo y judicial\n\nNormativa: ¿Debería el Poder Judicial tener la potestad de declarar inconstitucionales las decisiones del Poder Ejecutivo sin limitaciones?\n\nDescriptiva: ¿Cuántas veces el Poder Ejecutivo argentino ha sido desafiado por la Corte Suprema en los últimos veinte años?\n\nCausal: ¿El aumento en los decretos de necesidad y urgencia incrementa la conflictividad entre el Ejecutivo y el Judicial?"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#políticas-educativas-subnacionales",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#políticas-educativas-subnacionales",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "Políticas educativas subnacionales",
+    "text": "Políticas educativas subnacionales\n\nNormativa: ¿Deberían las provincias argentinas tener plena autonomía para definir sus planes de estudio en la educación básica?\n\nDescriptiva: ¿Qué porcentaje del gasto educativo total en Argentina corresponde a los gobiernos provinciales? ¿Cómo varía este porcentaje entre jurisdicciones?\n\nCausal: ¿La mayor inversión educativa en provincias con menor desarrollo socioeconómico reduce las brechas de aprendizaje en el largo plazo?"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#votación-en-la-onu",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#votación-en-la-onu",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "Votación en la ONU",
+    "text": "Votación en la ONU\n\nNormativa: ¿Debería Argentina votar sistemáticamente en favor de resoluciones que promuevan los derechos humanos, aun cuando entren en conflicto con alianzas estratégicas?\n\nDescriptiva: ¿Con qué países coincide Argentina en la votación de resoluciones en la Asamblea General de Naciones Unidas en los últimos cinco años?\n\nCausal: ¿La dependencia económica con Estados Unidos aumenta la probabilidad de que un pais vote en línea con su posición en la ONU?"
+  },
+  {
+    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#transición-hegemónica-y-el-rol-de-china",
+    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#transición-hegemónica-y-el-rol-de-china",
+    "title": "1 — Preguntas y Respuestas",
+    "section": "Transición hegemónica y el rol de China",
+    "text": "Transición hegemónica y el rol de China\n\nNormativa: ¿Deberían los Estados latinoamericanos apoyar activamente una mayor presencia de China en las instituciones multilaterales globales?\n\nDescriptiva: ¿Cuál ha sido la evolución de la participación de China en organismos internacionales como el FMI, el Banco Mundial o la ONU en las últimas dos décadas?\n\nCausal: ¿El aumento de la influencia económica de China en América Latina conduce a un alineamiento político más estrecho con Beijing en foros internacionales?"
   },
   {
     "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#footnotes",
@@ -432,61 +460,5 @@
     "title": "Módulo 12 — Regresión Multivariada",
     "section": "6.2 Multicolinealidad",
     "text": "6.2 Multicolinealidad\n\nOcurre cuando dos o más variables independientes están fuertemente correlacionadas.\nConsecuencia: los errores estándar crecen, los coeficientes pierden significancia aunque el (R^2) sea alto:contentReferenceoaicite:4.\nHerramienta: VIF (Variance Inflation Factor).\nSi (VIF &gt; 10), hay indicios serios de multicolinealidad:contentReferenceoaicite:5."
-  },
-  {
-    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#resumiendo",
-    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#resumiendo",
-    "title": "1 — Preguntas y Respuestas",
-    "section": "Resumiendo",
-    "text": "Resumiendo\n\nLas preguntas de hecho buscan describir la realidad observable: qué ocurre y cómo ocurre.\n\nLas preguntas de causa intentan explicar por qué ocurre, estableciendo relaciones entre variables y mecanismos.\n\nLas preguntas de valor discuten lo que debería ser, incorporando juicios éticos y políticos.\n\nA lo largo de este curso, nos concentraremos en las preguntas de hecho y en menor medida las de causa, ya que son las que se prestan al análisis metodológico y empírico. Las preguntas normativas seguirán siendo parte del horizonte intelectual de la ciencia política, pero requieren herramientas conceptuales distintas a las que abordaremos aquí."
-  },
-  {
-    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#calidad-democrática-en-argentina",
-    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#calidad-democrática-en-argentina",
-    "title": "1 — Preguntas y Respuestas",
-    "section": "Calidad democrática en Argentina",
-    "text": "Calidad democrática en Argentina\n\nNormativa: ¿Deberían reformarse las reglas electorales argentinas para fortalecer la rendición de cuentas?\n\nDescriptiva: ¿Qué porcentaje de ciudadanos declara estar satisfecho con el funcionamiento de la democracia en la Argentina? ¿Cómo varía esa percepción según la edad, la región o el nivel educativo?\n\nCausal: ¿La percepción de corrupción en el sector público reduce la satisfacción con la democracia?"
-  },
-  {
-    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#desigualdad-y-participación-política",
-    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#desigualdad-y-participación-política",
-    "title": "1 — Preguntas y Respuestas",
-    "section": "Desigualdad y participación política",
-    "text": "Desigualdad y participación política\n\nNormativa: ¿Debería el Estado garantizar mecanismos de acción afirmativa para reducir las brechas de participación política entre sectores socioeconómicos?\n\nDescriptiva: ¿Cuál es la tasa de participación electoral de los votantes de bajos ingresos frente a la de los votantes de ingresos altos en las últimas elecciones?\n\nCausal: ¿La desigualdad de ingresos disminuye la probabilidad de participación política activa (como el voto, la protesta o la militancia)?"
-  },
-  {
-    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#conflicto-entre-el-poder-ejecutivo-y-judicial",
-    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#conflicto-entre-el-poder-ejecutivo-y-judicial",
-    "title": "1 — Preguntas y Respuestas",
-    "section": "Conflicto entre el poder ejecutivo y judicial",
-    "text": "Conflicto entre el poder ejecutivo y judicial\n\nNormativa: ¿Debería el Poder Judicial tener la potestad de declarar inconstitucionales las decisiones del Poder Ejecutivo sin limitaciones?\n\nDescriptiva: ¿Cuántas veces el Poder Ejecutivo argentino ha sido desafiado por la Corte Suprema en los últimos veinte años?\n\nCausal: ¿El aumento en los decretos de necesidad y urgencia incrementa la conflictividad entre el Ejecutivo y el Judicial?"
-  },
-  {
-    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#políticas-educativas-subnacionales",
-    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#políticas-educativas-subnacionales",
-    "title": "1 — Preguntas y Respuestas",
-    "section": "Políticas educativas subnacionales",
-    "text": "Políticas educativas subnacionales\n\nNormativa: ¿Deberían las provincias argentinas tener plena autonomía para definir sus planes de estudio en la educación básica?\n\nDescriptiva: ¿Qué porcentaje del gasto educativo total en Argentina corresponde a los gobiernos provinciales? ¿Cómo varía este porcentaje entre jurisdicciones?\n\nCausal: ¿La mayor inversión educativa en provincias con menor desarrollo socioeconómico reduce las brechas de aprendizaje en el largo plazo?"
-  },
-  {
-    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#votación-en-la-onu",
-    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#votación-en-la-onu",
-    "title": "1 — Preguntas y Respuestas",
-    "section": "Votación en la ONU",
-    "text": "Votación en la ONU\n\nNormativa: ¿Debería Argentina votar sistemáticamente en favor de resoluciones que promuevan los derechos humanos, aun cuando entren en conflicto con alianzas estratégicas?\n\nDescriptiva: ¿Con qué países coincide Argentina en la votación de resoluciones en la Asamblea General de Naciones Unidas en los últimos cinco años?\n\nCausal: ¿La dependencia económica con Estados Unidos aumenta la probabilidad de que un pais vote en línea con su posición en la ONU?"
-  },
-  {
-    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#transición-hegemónica-y-el-rol-de-china",
-    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#transición-hegemónica-y-el-rol-de-china",
-    "title": "1 — Preguntas y Respuestas",
-    "section": "Transición hegemónica y el rol de China",
-    "text": "Transición hegemónica y el rol de China\n\nNormativa: ¿Deberían los Estados latinoamericanos apoyar activamente una mayor presencia de China en las instituciones multilaterales globales?\n\nDescriptiva: ¿Cuál ha sido la evolución de la participación de China en organismos internacionales como el FMI, el Banco Mundial o la ONU en las últimas dos décadas?\n\nCausal: ¿El aumento de la influencia económica de China en América Latina conduce a un alineamiento político más estrecho con Beijing en foros internacionales?"
-  },
-  {
-    "objectID": "cursos/metodos-cuanti/modulos/01-preguntas.html#para-pensar",
-    "href": "cursos/metodos-cuanti/modulos/01-preguntas.html#para-pensar",
-    "title": "1 — Preguntas y Respuestas",
-    "section": "Para pensar",
-    "text": "Para pensar\nA lo largo de su carrera han estado expuestos a múltiples materias, lecturas, conceptos, debates e investigaciones. Ahora, centrémonos en un tema de su interés personal.\nPara ese tema, elaboren y distingan claramente los siguientes tipos de pregunta:\n\nUna pregunta de valor o normativa.\n\nUna pregunta de causa o explicativa.\n\nUna pregunta de hecho sencilla.\n\nUna pregunta de hecho compleja.\n\nLuego, para la cuarta pregunta, indiquen qué datos necesitaríamos idealmente para poder responderla. Ténganlos presentes y compártanlos en nuestro próximo encuentro. Seleccionaremos algunos casos para ilustrar cómo nosotros abordaríamos esas preguntas, y esperamos que el resto pueda las suyas propias durante y después del curso.\n:::"
   }
 ]

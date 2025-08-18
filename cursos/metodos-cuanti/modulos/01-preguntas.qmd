@@ -69,7 +69,7 @@ Las formulaciones más comunes de este tipo de interrogantes son a la vez sencil
 
 Conviene aquí remarcar la diferencia con las **asociaciones descriptivas** del apartado anterior. Un análisis descriptivo puede señalar, por ejemplo, que los países con mayor nivel de desarrollo tienden a mostrar también mayor estabilidad democrática. Ese hallazgo es valioso en sí mismo, pero no equivale todavía a una afirmación causal. Para sostener que el desarrollo económico *produce* estabilidad democrática necesitamos introducir una dimensión contrafáctica: ¿qué habría ocurrido con ese mismo país si no hubiera alcanzado determinado nivel de desarrollo? La causalidad, entonces, no se distingue tanto por el método empleado, ya que muchas veces se utilizan herramientas similares de observación y medición, sino por el propósito de la investigación. Mientras la descripción se satisface con registrar patrones observables, la explicación causal exige imaginar y evaluar escenarios alternativos.  
 
-En la tradición positivista, el interés por la causalidad ha estado ligado a la búsqueda de **regularidades que se aproximen a leyes de la naturaleza**. La premisa es que las leyes existen independientemente de nuestro conocimiento, y que el papel del investigador es descubrirlas, de manera análoga a lo que ocurre en las ciencias naturales. En este marco, el propósito de una investigación puede ser la explicación en sí misma, entender cómo se producen ciertos fenómenos, o la predicción de fenomenos similares en el futuro. En este último caso, incluso cuando la teoría que formulamos no capture exactamente el mecanismo real, algunos conideran la investigación valiosa si logra anticipar comportamientos que “funcionan como si” respondieran a esa explicación [^pragmatismo metodologico].  
+En la tradición positivista, el interés por la causalidad ha estado ligado a la búsqueda de **regularidades que se aproximen a leyes de la naturaleza**. La premisa es que las leyes existen independientemente de nuestro conocimiento, y que el papel del investigador es descubrirlas, de manera análoga a lo que ocurre en las ciencias naturales. En este marco, el propósito de una investigación puede ser la explicación en sí misma, entender cómo se producen ciertos fenómenos, o la predicción de fenomenos similares en el futuro. En este último caso, incluso cuando la teoría que formulamos no capture exactamente el mecanismo real, algunos conideran la investigación valiosa si logra anticipar comportamientos que “funcionan como si” respondieran a esa explicación [^pragmatismo].  
 
 Históricamente, la ciencia política se ha apoyado en un **empiricismo observacional**, que enfatiza la importancia de recolectar evidencia en el mundo real para evaluar teorias[^Samii2016]. En otras disciplinas, como en ciertas ramas de la biología o la física, se suele sostener que “explicar es manipular”: si no podemos intervenir directamente en el fenómeno para comprobar cómo responde, entonces no tenemos verdadera ciencia. Trasladado a la política, ello implicaría la posibilidad de provocar guerras o crisis económicas para poner a prueba nuestras teorías, algo que no solo es impráctico, sino también **éticamente inadmisible**.  
 
@@ -104,6 +104,8 @@ De este modo, cada tipo de pregunta cumple una función específica y complement
 - Las **preguntas de valor** discuten lo que debería ser, incorporando juicios éticos y políticos.  
 
 A lo largo de este curso, nos concentraremos en las preguntas de hecho y en menor medida las de causa, ya que son las que se prestan al análisis metodológico y empírico. Las preguntas normativas seguirán siendo parte del horizonte intelectual de la ciencia política, pero requieren herramientas conceptuales distintas a las que abordaremos aquí.  
+
+------------------------------------------------------------------------
 
 # Ejemplos prácticos
 
@@ -167,12 +169,15 @@ Para ese tema, elaboren y distingan claramente los siguientes tipos de pregunta:
 
 1. Una pregunta de valor o normativa.  
 2. Una pregunta de causa o explicativa.  
-3. Una pregunta de hecho sencilla.  
-4. Una pregunta de hecho compleja.  
+3. Una pregunta de hecho o descriptiva sencilla.  
+4. Una pregunta de hecho o descriptiva compleja.  
 
 Luego, para la cuarta pregunta, indiquen qué datos necesitaríamos idealmente para poder responderla. Ténganlos presentes y compártanlos en nuestro próximo encuentro. Seleccionaremos algunos casos para ilustrar cómo nosotros abordaríamos esas preguntas, y esperamos que el resto pueda las suyas propias durante y después del curso.  
 :::
 
+# Material para expandir este modulo
+
+Booth - the craft of research
 
 
 
@@ -183,6 +188,6 @@ Luego, para la cuarta pregunta, indiquen qué datos necesitaríamos idealmente p
 [^Shepsle1997]: Bonchek, M. S., & Shepsle, K. A. (1997). Analyzing politics. Rationality, Behavior and Institutions. Norton 
 [^Gerring2012]: Gerring, J. (2012). Mere description. British Journal of Political Science, 42(4), 721-746.
 
-[^pragmatismo metodologico]: Esta suerte de *pragmatismo metodologico* se encuentra en enfoques de teoria de la eleccion racional, tanto economicos como de teoria formal de ciencia politica. Tambien se encuentran detras de formas mas inductivas de exploracion de datos como la mineria de datos predictiva, machine learning y LLMs.  
+[^pragmatismo]: Esta suerte de *pragmatismo metodologico* se encuentra en enfoques de teoria de la eleccion racional, tanto economicos como de teoria formal de ciencia politica. Tambien se encuentran detras de formas mas inductivas de exploracion de datos como la mineria de datos predictiva, machine learning y LLMs.  
 
 [^Samii2016]: Samii, C. (2016). Causal empiricism in quantitative research. The Journal of Politics, 78(3), 941-955.

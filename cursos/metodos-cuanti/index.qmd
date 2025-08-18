@@ -65,7 +65,7 @@ Por eso, los módulos están diseñados para ser **altamente interactivos** y **
   Exploramos las preguntas que impulsan la persecución del conocimiento humano por curiosidad. Analizamos la diferencia entre respuestas ideales y respuestas reales y contextualizamos la materia desde esta perspectiva.
 
 * [**2. Ciencia, ciencias sociales y lo social en la ciencia.**](modulos/02-ciencia.qmd)  
-  Introducción epistemológica a qué es la ciencia. Límites, mitos y posibilidades. Explicacion y prediccion. Cómo lo social influye en la práctica científica. Metodología, método y técnica. Metodos cuantitativos. Perspectivas deterministas y probabilisticas.Contrafacticos y el problema fundamental de las ciencias sociales.
+  Introducción epistemológica a qué es la ciencia. Límites, mitos y posibilidades. Explicacion y prediccion. Cómo lo social influye en la práctica científica. Metodología, método y técnica. Metodos cuantitativos. Perspectivas deterministas y probabilisticas. Contrafacticos y el problema fundamental de las ciencias sociales.
 
 * [**3. Diseño de investigación, modelos teóricos, hipótesis y unidad de análisis.**](modulos/03-modelos.qmd)  
   Los cimientos de la investigación social. Modelos teoricos e implementacion practica. Tipos de diseño de investigacion. Unidades de análisis. Hipotesis. Ideal y factibilidad en el diseño de la investigacion y comunicacion sus resultados.  

@@ -2,147 +2,258 @@
 title: "Módulo 4 — Conceptos, operacionalización y variables"
 format: html
 ---
+# Introducción  
 
-## Introduccion
+Imaginemos el inicio de un proyecto de investigación. Queremos estudiar la pobreza, o la democracia, o el poder. De inmediato nos encontramos con que estas palabras, tan frecuentes en la conversación cotidiana, son en realidad mucho más ambiguas de lo que parecen. ¿Qué significa exactamente “pobreza”? ¿Carecer de ingresos suficientes, o también de oportunidades educativas y de acceso a servicios básicos? ¿Qué significa “democracia”? ¿Basta con que existan elecciones, o necesitamos además libertades civiles y controles efectivos al poder?  
 
-> “Toda investigación comienza con ideas vagas que necesitan transformarse en herramientas observables. Ese proceso es la médula del trabajo metodológico.”  
-> — Adaptado de Paul Lazarsfeld
+En la vida diaria podemos usar estos términos de forma intuitiva, sin detenernos demasiado en sus matices. Pero en la ciencia, esa imprecisión es un problema: sin definiciones claras, no podemos analizar ni comparar fenómenos. La problematica de los conceptos no es nueva para el politologo, y gran parte de los debates en la historia de las ideas se centran en ellos, su definicion y la clasificacion de casos. Nuestra tarea, es avanzar mas aun y transformar estas ideas en **herramientas observables**. El tránsito desde un concepto abstracto hasta un indicador concreto que pueda ser medido constituye el núcleo mismo del trabajo metodológico.  
 
-En este módulo vamos a recorrer el camino que nos lleva de **conceptos abstractos** a **definiciones medibles y observables**, de modo que podamos usarlas para analizar fenómenos reales. Esto implica entender qué es un concepto, cómo lo definimos, cómo lo convertimos en variable, y cómo evaluamos si nuestra medición es válida y confiable.
+# ¿Qué es un concepto?  
+
+Un concepto es, en palabras simples, una abstracción. Nos ayuda a ordenar la experiencia y a reunir bajo una misma etiqueta fenómenos que de otro modo se nos escaparían en su diversidad infinita. Decimos “poder” para referirnos a situaciones tan distintas como la autoridad de un profesor en el aula, la influencia de un medio de comunicación o la capacidad de coerción de un Estado [^barnett2005]. Lo que une todos esos casos es que comparten propiedades que nos interesa destacar y comparar.  
+
+
+El Paul Lazarsfeld lo expresó con claridad: ninguna ciencia aborda su objeto en toda su plenitud concreta; siempre selecciona ciertas propiedades e intenta establecer relaciones entre ellas. De allí que los conceptos sean **recortes**: no pretenden abarcarlo todo, sino señalar qué dimensiones de un fenómeno son relevantes para nuestra investigación.  
+
+En ciencias sociales, además, los conceptos suelen ser **multidimensionales** y disputados. Pensemos en algunos ejemplos:  
+
+- **Pobreza**: algunos la definen como falta de ingresos, otros como privación de capacidades, otros como exclusión social.  
+- **Democracia**: para unos es el acto de votar, para otros implica toda una red de derechos y libertades.  
+- **Género**: puede entenderse como identidad, como rol social o como sistema estructural de desigualdades.  
+- **Poder**: puede referirse a la capacidad de coercion directa, o a la creacion de reglas que limitan el comportamiento de terceros.  
+
+Esto significa que conceptualizar no es solo un ejercicio técnico, sino también un acto de **definición política y teórica**, implica tomar partido entre distintas maneras de entender el mundo. Pero como la ciencia es siempre una labor colectiva, la conceptualización también exige un compromiso con la **transparencia**. No investigamos solo para nosotros mismos, sino en diálogo con una comunidad académica que leerá, discutirá y debatirá nuestro trabajo. Ser claros respecto a qué entendemos por un concepto, y por qué lo definimos de determinada manera, es lo que permite que otros investigadores comprendan exactamente qué hicimos, puedan replicar nuestros pasos y, eventualmente, cuestionar o mejorar nuestras propuestas. No basta con que sepamos internamente lo que queremos decir, necesitamos expresarlo de manera que otros puedan entenderlo y discutirlo. Solo así se construye un conocimiento que trasciende el esfuerzo individual y se vuelve parte de la conversación científica más amplia.
+
+
+
+# De la conceptualización a la operacionalización  
+
+El segundo paso del diseño de investigación consiste en llevar nuestras definiciones conceptuales al terreno empírico. Aquí es donde entra en juego la distinción fundamental entre **conceptualización** y **operacionalización**.  
+
+La **conceptualización** implica precisar con claridad qué significa un término dentro de nuestro estudio. No basta con decir que vamos a investigar la “confianza política”: debemos aclarar si hablamos de confianza en el gobierno de turno, en las instituciones estatales en general, en las reglas del sistema democrático, o incluso en los actores políticos individuales. Cada definición abre caminos de investigación distintos y nos lleva a hacer selecciones diferentes de datos.  
+
+Ahora bien, antes de pasar directamente a la operacionalización —es decir, a las preguntas concretas o a los indicadores empíricos—, existe con frecuencia un paso intermedio, la **construcción de índices empíricos**. Este paso es especialmente necesario en ciencias sociales porque muchos de los conceptos que usamos son **multidimensionales**. No pueden reducirse a un único indicador, sino que requieren ser desarmados en varias dimensiones, y en algunos casos en subdimensiones, cada una con sus propios indicadores empíricos.  
+
+Tomemos el ejemplo de la **democracia**. Conceptualmente, Robert Dahl la definió en términos de dos grandes dimensiones: **inclusión** y **contienda**. Pero al intentar medirla empíricamente, estas dimensiones se descomponen en varios elementos: inclusión puede medirse observando cuántos ciudadanos tienen derecho a votar, si las mujeres están incluidas en el electorado, o si existen restricciones étnicas o de clase; la contienda puede desarmarse en la existencia de elecciones competitivas, la presencia de múltiples partidos, la alternancia en el poder y la libertad de prensa. Cada uno de estos aspectos constituye un **indicador empírico**.  
+
+En este punto es habitual que los investigadores construyan un **índice compuesto**: una medida que combina varios indicadores en un puntaje único. Así funcionan escalas ampliamente utilizadas como **Polity IV** o **V-Dem**, que no se limitan a preguntar si un país tiene elecciones, sino que suman información sobre participación, derechos civiles, libertad de expresión, independencia judicial y otras dimensiones. El resultado es un número que simplifica la complejidad de la democracia, pero que permite comparar países y períodos históricos de manera consistente.  
+
+Este procedimiento no se limita a la democracia. Pensemos en la **pobreza**: podemos conceptualizarla como “privación de capacidades”, siguiendo a Amartya Sen. Al operacionalizarla, la pobreza se desarma en dimensiones como educación, salud y vivienda. Cada dimensión, a su vez, se mide con subdimensiones e indicadores: en educación, años de escolaridad o asistencia escolar; en salud, mortalidad infantil o acceso a servicios básicos; en vivienda, acceso a agua potable o hacinamiento. La combinación de todos estos indicadores genera un **índice de pobreza multidimensional**, que nos ofrece una visión más rica y compleja que la mera medición de ingresos.  
+
+La **operacionalización**, entonces, aparece al final de este recorrido: es el momento en que decidimos exactamente cómo mediremos esas dimensiones e indicadores. Supongamos que definimos confianza política como la actitud de los ciudadanos hacia las instituciones estatales. ¿Cómo la vamos a medir? Una opción es incluir en una encuesta la pregunta: “¿Cuánta confianza tiene usted en el Congreso?”, con respuestas que van desde “mucha” hasta “ninguna”. Esa pregunta concreta, con categorías codificadas en valores numéricos, es la traducción empírica final del concepto.  
+
+Este proceso muestra algo fundamental: entre la abstracción del concepto y la concreción de la variable se desarrolla un espacio de construcción que exige **decisiones teóricas y metodológicas**. Decidir qué dimensiones incluimos, cómo las medimos y cómo las combinamos en un índice no es un procedimiento automático, sino un acto de investigación en sí mismo. De esas elecciones dependen tanto la validez de nuestras mediciones como la manera en que otros investigadores podrán dialogar, criticar o replicar nuestro trabajo.  
+
+Conceptualizar y operacionalizar son los cimientos de cualquier investigación empírica. Es un proceso que combina **rigor teórico** y **creatividad práctica**. El rigor viene de la necesidad de definir con precisión nuestros términos y de justificar nuestras elecciones frente a la literatura existente. La creatividad aparece en la búsqueda de formas de medir fenómenos complejos con los datos que tenemos disponibles, en inventar indicadores nuevos, en combinar fuentes de información o en proponer definiciones que capten mejor la realidad que queremos estudiar.  
+
+
+# Aproximandonos a lo empirico, indicadores y variables  
+
+Hasta ahora hemos hablado de conceptos y de cómo se pueden refinar para volverse observables a través de dimensiones e indicadores. El paso siguiente consiste en transformar esos indicadores en **variables**, que son las unidades de información con las que trabajamos en la investigación empírica.  
+
+Una **variable** es cualquier característica de un objeto, actor o evento que puede asumir al menos dos valores o categorías. Decimos que algo se convierte en variable cuando pasa de ser una abstracción (“nivel educativo”) a una característica que podemos registrar de manera diferenciada (“años de escolaridad completados” o "maxima titulacion formal alcanzada"). Para que una variable esté bien definida debe cumplir con ciertos criterios básicos.  
+
+En primer lugar, debe ser **exhaustiva**, es decir, sus categorías deben contemplar todas las posibilidades. Por ejemplo, en una encuesta sobre religión no podemos ofrecer solo las opciones “católico” o “protestante”, porque estaríamos dejando fuera a otras confesiones o a quienes no profesan ninguna. La categoría “otros” o “ninguna” permite cubrir el espectro completo. 
+
+En segundo lugar, debe ser **exclusiva**. Cada caso debe ubicarse en una sola categoría sin solapamientos. Un error frecuente es diseñar intervalos de edad superpuestos, como “18–25” y “25–30”. En ese esquema, un encuestado de 25 años no sabría dónde ubicarse. La exclusividad exige categorías que no se superpongan.
+
+En tercer lugar, debe ser **precisa**, es decir, que las categorías representen de la manera más ajustada posible la característica que queremos observar. Por ejemplo, si medimos el ingreso en rangos demasiado amplios (“bajo, medio, alto”), corremos el riesgo de perder información relevante. Al mismo tiempo, si todos los fenomenos entran en la categoria "otros" tenemos que hacer una revision respecto a las categorias que ideamos, posiblemente con una pregunta abierta precedente. Una clasificación más afinada, con intervalos numéricos claros, nos dará mayor poder analítico.  
+
+## Validez y Confianza  
+
+Una vez que hemos definido nuestras variables, necesitamos evaluar la **calidad de la medición**. Aquí entran en juego dos criterios fundamentales: la **validez** y la **confianza** (o fiabilidad).  
+
+La **validez** se refiere al grado en que una medida refleja efectivamente el concepto que pretende captar. Una medición inválida es aquella que, aunque produzca números consistentes, no corresponde al fenómeno que nos interesa. Por ejemplo, si quisiéramos medir “poder político” únicamente contando el número de escaños en el Congreso, estaríamos dejando de lado otras dimensiones cruciales como la influencia informal o la capacidad de agenda. En ese caso, nuestra medida sería confiable en tanto siempre produce los mismos resultados, pero inválida porque no refleja el concepto en su totalidad.  
+
+La **confianza**, en cambio, se refiere a la capacidad de un procedimiento de medición de producir resultados consistentes y repetibles. Una medición poco confiable está afectada por el azar: cada vez que medimos obtenemos valores diferentes sin razón aparente. Un ejemplo sería una encuesta donde la misma pregunta, hecha dos veces a la misma persona, produce respuestas radicalmente distintas por falta de claridad en el enunciado.  
+
+Una fórmula sencilla resume esta relacion:  
+
+**Medición observada = Valor real + Sesgo + Error aleatorio.**  
+
+- El **sesgo** aparece cuando el instrumento mide de manera sistemáticamente distorsionada (por ejemplo, una balanza mal calibrada que siempre marca 2 kilos de más).  
+- El **error aleatorio** surge de factores contingentes que afectan la medición en direcciones variables (una persona distraída al responder una encuesta, un encuestador que se equivoca al registrar un dato).  
+
+## Dando en el blanco
+
+Una de las formas más claras de distinguir entre validez y confiabilidad es la metáfora del blanco con disparos:  
+
+- **Confiable pero no válido**: imaginemos que los disparos caen siempre juntos, formando un grupo apretado, pero lejos del centro del blanco. El instrumento es consistente, pero mide la cosa equivocada.  
+- **Válido pero no confiable**: los disparos se dispersan por todo el blanco, algunos cerca del centro y otros lejos. En promedio capturan el fenómeno, pero sin consistencia.  
+- **Ni válido ni confiable**: los disparos caen desparramados y lejos del centro. La medida no representa bien el concepto y además es azarosa.  
+- **Válido y confiable**: los disparos se concentran en el centro. La medición refleja con precisión el concepto y lo hace de manera repetida.  
+
+Este ejemplo nos ayuda a recordar que un buen indicador debe aspirar a ser ambas cosas: válido y confiable. Una medida inválida puede ser muy consistente pero inútil; una medida poco confiable puede, en teoría, capturar bien el fenómeno, pero será poco creíble porque no puede replicarse.  
+
+## Variables como puente entre teoría y datos  
+
+En este proceso, las variables cumplen un rol de **puente**. Por un lado, son hijas de los conceptos: traducen definiciones abstractas en atributos observables. Por otro, son la materia prima de los datos: lo que finalmente recolectamos en encuestas, registros oficiales o bases de datos. Entre la teoría y la evidencia empírica, las variables son el eslabón que permite conectar ambos mundos.  
+
+La calidad de una investigación, entonces, no depende solo de la sofisticación de sus modelos o de la potencia de sus análisis estadísticos, sino también —y en gran medida— de la claridad con la que los conceptos se convirtieron en variables válidas y confiables. Diseñar buenas variables es tanto un arte como una técnica: exige creatividad para traducir ideas complejas, pero también disciplina para evaluar con rigor si lo que estamos midiendo corresponde realmente a lo que queremos estudiar.  
+
+
+# Tipos de variables y niveles de medición  
+
+Una vez que hemos transformado los conceptos en variables, necesitamos clasificarlas. Esta clasificación no es un mero formalismo: de ella depende el tipo de análisis que podemos realizar. No todas las variables son iguales, ni todas se prestan al mismo tratamiento estadístico. Saber qué tipo de variable tenemos frente a nosotros es fundamental para evitar errores de interpretación y para escoger los métodos adecuados.  
+
+En primer lugar, podemos distinguir a las variables según la función que cumplen dentro de una relación de investigación. La más conocida es la variable **independiente**, que es la que se supone ejerce influencia o explicación sobre otra. Si pensamos en un ejemplo simple: “a más horas de estudio, mejores notas”, aquí las horas de estudio serían la variable independiente. Frente a ella aparece la variable **dependiente**, que es aquello que queremos explicar; en este caso, la nota del examen. Pero en la práctica también existen variables **intervinientes**, que median o moderan la relación. Tal vez las horas de estudio no sean suficientes si el estudiante durmió muy poco: el descanso podría actuar como variable interviniente que condiciona la relación entre estudio y rendimiento.  
+
+En segundo lugar, las variables se clasifican según su **nivel de medición**, y aquí es donde encontramos diferencias cruciales.  
+
+- Existen variables **cualitativas nominales**, que simplemente agrupan casos en categorías sin ningún tipo de orden. La nacionalidad, la religión o el color de ojos son ejemplos: no hay un “más” o “menos” en estas categorías, son solo distintas entre sí.  
+- Luego están las **cualitativas ordinales**, que sí expresan un orden, pero no garantizan que las distancias entre categorías sean iguales. Por ejemplo, los grados de satisfacción en una encuesta (“muy satisfecho”, “satisfecho”, “insatisfecho”) o el nivel educativo (“primaria”, “secundaria”, “universitario”). Sabemos que una categoría está “por encima” de otra, pero no podemos decir cuánto.  
+- Las variables **cuantitativas de intervalo** ya nos ofrecen valores numéricos con distancias iguales, aunque sin un cero absoluto. La temperatura en grados Celsius es el ejemplo típico: la diferencia entre 10 °C y 20 °C es la misma que entre 20 °C y 30 °C, pero no podemos decir que 20 °C sea “el doble de calor” que 10 °C porque el cero es arbitrario. Otro ejemplo es el año calendario.  
+- Finalmente, las variables **cuantitativas de razón** combinan distancias iguales y un cero absoluto. Aquí sí tiene sentido hablar de proporciones. El ingreso mensual en dólares o el número de hijos son ejemplos: cero hijos significa ausencia real del fenómeno, y podemos decir que una persona con cuatro hijos tiene el doble que alguien con dos.  
+
+Esta clasificación no es una cuestión académica menor, determina qué podemos hacer con la variable. Un ejemplo cercano lo encontramos en la vida de cualquier estudiante. Supongamos que las calificaciones en todas sus materias se expresan con categorías ordinales: “deficiente”, “regular”, “bueno” y “muy bueno”. Estas categorías permiten ordenar el rendimiento, pero no calcular un promedio, porque no sabemos qué distancia hay entre “regular” y “bueno”, ni si esa distancia es equivalente a la que hay entre “bueno” y “muy bueno”. Ahora imaginemos que en lugar de categorías, las calificaciones se expresan con puntajes numéricos de 1 a 10. En este caso, sí podemos calcular un promedio de notas, porque trabajamos con una escala de razón en la que las distancias son iguales y el cero tiene un significado claro (ausencia total de desempeño). Dejando de lado la discusión sobre cuán válidas o confiables son las notas numéricas para medir el conocimiento, este ejemplo muestra qué el nivel de medición define las operaciones matemáticas que podemos aplicar legítimamente.  
+
+Por último, también es útil distinguir entre variables **discretas** y **continuas**. Las discretas son aquellas que se cuentan en números enteros: la cantidad de tratados internacionales firmados por un país, el número de guerras en un siglo, la cantidad de hijos de una persona. Las continuas, en cambio, pueden asumir cualquier valor dentro de un rango infinito: la altura, la edad o el gasto militar como porcentaje del PBI. Esta diferencia también condiciona los métodos estadísticos que resultan adecuados para analizarlas.  
+
+Las variables no son todas iguales. Cada tipo y nivel de medición abre y cierra posibilidades analíticas. En capítulos posteriores veremos cómo estas diferencias nos obligan a elegir herramientas estadísticas distintas. Lo fundamental ahora es que el sepamos identificar qué tipo de variable está construyendo, porque solo así podrá usarlas de manera coherente en el análisis y evitar inferencias equivocadas.  
+
+
+# Las categorías y los códigos  
+
+Cuando pasamos de los conceptos y las definiciones a una base de datos, lo que aparece frente a nosotros no son las palabras que usamos en el cuestionario ni las categorías completas de la investigación, sino **códigos**. Por razones de sencillez en la recolección, la codificación y la manipulación de la información, la mayoría de los cuestionarios y datasets estandarizados asignan un número a cada categoría de respuesta.  
+
+Así, en una encuesta sobre género, es posible que veamos en la base de datos un “1”, un “2” o un “3” en lugar de las etiquetas “hombre”, “mujer” u “otro”. En una variable de nivel educativo, puede que encontremos “0” para “sin instrucción”, “1” para “primaria”, “2” para “secundaria”, “3” para “universitario”. Estos códigos no son la información en sí misma: son una **expresión resumida** que requiere ser interpretada por el investigador. Ver un “2” en la base de datos no nos dice nada hasta que revisamos la documentación que acompaña al estudio y comprobamos que ese valor corresponde, por ejemplo, a “secundaria completa”.  
+
+De aquí la importancia crucial de trabajar siempre con el **libro de códigos** y la documentación asociada a cualquier fuente de datos. Allí se especifica qué significa cada valor, cómo se codificaron las categorías y qué convenciones se usaron para los casos especiales (valores perdidos, no respuestas, etc.). El investigador que trabaja sin consultar esa documentación corre el riesgo de interpretar mal los datos, confundiendo los códigos con la información real.  
+
+## Las no respuestas y los valores perdidos  
+
+Un punto específico dentro de la lógica de codificación son las categorías de **no respuesta**. Estas son distintas de las categorías **residuales**.  
+
+Las categorías residuales son aquellas que incluyen todo lo que no encaja en las opciones principales pero sigue siendo una respuesta válida, como “otros”. En cambio, las **no respuestas** corresponden a valores que reflejan ausencia de información. En una encuesta, puede tratarse de personas que se negaron a contestar, de preguntas saltadas por error o de respuestas que no se registraron correctamente.  
+
+En los datasets, estos valores se representan también mediante códigos, que varían según el programa y la base. Un “99” puede significar “no responde”, un “-1” puede señalar “no aplica”, y un “.” puede marcar un dato faltante. Lo importante es recordar que **un valor perdido no es una categoría empírica más**, sino un vacío de información que debe ser tratado con cuidado en el análisis. Por una parte, dicha categoria no afecta al nivel de medicion de la variable en si, es solo una forma de capturar la realidad observada mas alla de lo que buscamos medio. Ademas, en el analisis posterior incluir estos códigos como si fueran respuestas válidas puede distorsionar seriamente los resultados. 
+
+Un ejemplo muy común aparece en las variables de edad. Supongamos que la encuesta registra la edad de los entrevistados en “años cumplidos”, y que en la base aparece un valor “99”. El manual de codificación aclara que ese número no significa que la persona tenga 99 años, sino que **no respondió la pregunta**. El “99” no es una edad, sino un código que indica “sin información”.  
+
+El problema es que, en el análisis posterior, si no tenemos en cuenta la documentación y tratamos ese “99” como si fuera un dato real, podemos **distorsionar seriamente los resultados**. Pensemos en dos ejemplos:  
+
+Si calculamos la **edad promedio** de los encuestados e incluimos esos “99” como si fueran años reales, el promedio se inflará artificialmente. Un conjunto de entrevistados de entre 20 y 60 años podría terminar mostrando un promedio de 40 o 45 simplemente porque unos pocos “99” arrastraron el resultado hacia arriba.  
+
+Confundir el código con el dato, es un error basico pero frecuente. En este sentido, el investigador debe recordar siempre que los números en una base no son **la realidad misma**, sino **representaciones condensadas** que requieren interpretación. Un “99” no es un año de vida, sino un recordatorio de que allí falta información.  
+
+Por eso, el primer paso en cualquier análisis serio sera **revisar y limpiar los datos**, identificando estos valores perdidos y asegurándonos de que no se cuelen en los cálculos como si fueran observaciones legítimas. Al hacerlo, no solo evitamos errores, sino que damos transparencia al proceso, dejando en claro cuántos casos fueron excluidos y por qué.  
+
+
+## Variables dicotómicas y dummy  
+
+Otro aspecto habitual de la codificación son las **variables dicotómicas** y las **dummy**. Una variable dicotómica es aquella que solo tiene dos categorías posibles: sí/no, presente/ausente, hombre/mujer (en una versión binaria).  
+
+Cuando codificamos esas categorías en forma numérica, hablamos de **variables dummy**. Por convención, se utiliza el “0” para indicar la ausencia de una característica y el “1” para señalar su presencia. Así, una variable dummy de “empleo formal” puede ser 1 para quienes tienen empleo y 0 para quienes no lo tienen. Igualmente, en una base de conflictos interestatales anuales, donde cada caso es el emparejamiento de dos paises en un año dado, se utiliza el “0” para indicar la ausencia de guerra entre los paises y el “1” para señalar que ambos paises se encotnraban en guerra en el año dado.
+
+Es fundamental entender que, aunque las dummies estén expresadas en números, **no son valores numéricos en sentido matemático**. Un “1” no significa “más” que un “0”, ni podemos hacer operaciones aritméticas como si fueran cantidades. Su utilidad está en simplificar el análisis: las dummies se leen bien en tablas de contingencia y son especialmente útiles en modelos estadísticos, donde pueden entrar como predictores categóricos de manera eficiente.  
+
+# Codificación, recodificación y agregación  
+
+El paso de los conceptos a las variables casi nunca es lineal: con frecuencia tenemos que **recodificar** o **agrupar** la información para adaptarla a nuestras necesidades analíticas.  
+
+Un ejemplo clásico, nuevamente, es la **edad**. En muchas encuestas, se registra como variable continua en “años cumplidos”. Esto nos permite un alto nivel de detalle. Pero para algunos análisis podemos preferir trabajar con categorías amplias: “18–29 años”, “30–44”, “45–59”, “60 o más”. Esta recodificación simplifica la comparación entre grupos, facilita la visualización y reduce el ruido.  
+
+Lo que debemos recordar es que este proceso de agregación solo funciona en una dirección: **de lo más detallado a lo más amplio**. A partir de la variable de edad en años cumplidos podemos crear intervalos de edad, pero si el dataset solo nos ofrece intervalos amplios, ya no podemos volver atrás y recuperar la edad exacta. En otras palabras, podemos simplificar, pero no podemos desagregar información que no tenemos.  
+
+La codificación y recodificación son, entonces, pasos metodológicos que implican decisiones analíticas: cada transformación cambia lo que podemos ver y lo que podemos inferir. Ser consciente de esas decisiones, y dejar registro de ellas, es parte del oficio del investigador.  
+
+
+# El caso de la guerra y las disputas interestatales militarizadas  
+
+En el corazón de las Relaciones Internacionales ha existido siempre una pregunta persistente: **¿por qué ocurren las guerras?**. Desde Tucídides hasta nuestros días, el enigma empírico central ha girado en torno a la violencia organizada entre Estados. Algunos enfoques han puesto el acento en la naturaleza humana y sus pulsiones; otros, en los fallos de comunicación, los errores de cálculo o las dinámicas de percepción; otros más, en los diferenciales de poder y en las condiciones estructurales del sistema internacional. Pero antes incluso de intentar explicar la guerra, los investigadores tuvieron que enfrentarse a una pregunta elemental: **¿qué entendemos por “guerra”?**.  
+
+La respuesta no era evidente. La violencia en el sistema internacional adopta formas diversas: crímenes transnacionales, rebeliones internas, disturbios fronterizos, operaciones antiterroristas, campañas antidrogas. ¿Todas ellas son guerras? Claramente no. La Segunda Guerra Mundial es, sin lugar a dudas, una guerra. Pero, ¿lo es la “guerra contra el terrorismo”? ¿O la “guerra contra las drogas”? ¿Podemos llamar guerra a un escaramuza fronteriza que deja un puñado de muertos? ¿Y a una operación militar limitada, rápidamente contenida?  
+
+En los años sesenta y setenta, un grupo de investigadores liderados por **J. David Singer** en la Universidad de Michigan tomó la decisión crucial de dotar a la disciplina de una definición clara y consistente. A través del **Correlates of War Project (COW)**, Singer y Melvin Small (1972; 1982) propusieron un criterio operativo: considerar como **guerra interestatal** a aquellos conflictos armados que produjeran **al menos 1.000 bajas militares en combate en un año calendario**. La cifra, aunque arbitraria, tuvo un poder normativo enorme que permitió distinguir entre violencia de baja intensidad y conflictos de gran escala, y sobre todo estableció un umbral objetivo para la comparación empírica.  
+
+Este umbral cambió para siempre el estudio de la guerra. Por primera vez, Relaciones Internacionales podía construir **bases de datos sistemáticas** sobre guerras interestatales, contabilizarlas, clasificarlas y analizarlas estadísticamente. La definición abrió el camino a una explosión de estudios empíricos en las décadas siguientes, orientados a identificar patrones, correlaciones y posibles causas de la guerra. La construcción de este marco conceptual y operativo fue un antes y un después, sin una definición precisa de qué es la guerra, el análisis cuantitativo habría sido imposible.  
+
+Con el tiempo, sin embargo, surgieron críticas. Muchos investigadores señalaron que la definición de COW dejaba fuera un conjunto amplio de episodios de violencia interestatal que no alcanzaban el umbral de las 1.000 muertes, pero que resultaban políticamente significativos. ¿Debíamos ignorar una crisis que involucraba movilización militar, amenazas explícitas y choques limitados solo porque no llegaba al número requerido? Bajo esa definicion por ejemplo, la Guerra de Malvinas, no llega a clasificar como Guerra. Aun mas, si un conflicto armado tuviera 999 bajas entre agosto y diciembre de un año y otras 999 entre enero y julio del siguiente, no seria guerra solo por la artificialidad del corte de año calendario, en lugar de ser 100 por 12 meses corridos desde el inicio de hostilidades.
+
+Para resolver este problema, se desarrolló la base de datos de las **Disputas Militarizadas Interestatales (MIDs)**, sistematizada por **Jones, Bremer y Singer (1996)**. En lugar de restringirse a las guerras totales, los MIDs incluían todo tipo de episodios donde un Estado utilizaba, o amenazaba con utilizar, la fuerza militar contra otro. El espectro se ampliaba: desde una demostración de fuerza hasta una guerra declarada, pasando por escaramuzas fronterizas o ataques limitados.  
+
+Este giro metodológico permitió estudiar no solo las grandes guerras, sino también la dinámica cotidiana de la coerción y el conflicto en el sistema internacional. A partir de entonces, una enorme cantidad de trabajos empíricos se concentró en identificar qué factores explicaban la **escalada** de una disputa desde un incidente menor hasta una guerra en toda regla. El debate se desplazó de la simple pregunta “¿por qué ocurre la guerra?” a otra más matizada: “¿por qué algunas disputas militarizadas se intensifican hasta convertirse en guerra, mientras que otras se desactivan o se contienen?”.  
+
+La importancia de estas definiciones en Relaciones Internacionales no puede exagerarse. La decisión de fijar un umbral de 1.000 muertes y luego de incluir todas las disputas militarizadas no fue simplemente técnica: constituyó una verdadera **norma disciplinar**. A partir de allí, buena parte de la agenda empírica en el estudio de la guerra se estructuró en torno a estos criterios. La capacidad de acumular conocimiento comparativo dependió de que los investigadores aceptaran trabajar sobre definiciones compartidas, aun cuando no fueran perfectas.  
+
+Hoy el debate continúa. Algunos cuestionan si la definición de COW sigue siendo adecuada en un mundo donde proliferan las guerras civiles, las intervenciones multinacionales y los conflictos híbridos. Otros subrayan que, aun con limitaciones, estas definiciones fueron la condición de posibilidad para que Relaciones Internacionales se consolidara como una ciencia empírica. Sin una definición explícita de guerra, nunca habríamos podido avanzar hacia el análisis comparado, la búsqueda de correlaciones y la construcción de teorías sobre las causas de la guerra.  
+
+En este sentido, la historia de cómo la disciplina definió “guerra” es también la historia de cómo Relaciones Internacionales dio un salto metodológico. Pasamos de debates filosóficos y especulativos a la construcción de una agenda empírica rigurosa, donde conceptos, umbrales y bases de datos se convirtieron en el terreno común para la discusión académica. El número de 1.000 bajas anuales es discutible y perfectible, pero simboliza algo más profundo: el momento en que la disciplina decidió que la guerra debía ser medida, contada y analizada con las herramientas de la ciencia social. Y a partir de allí, toda una tradición de investigación empírica se desplegó, marcando hasta hoy la agenda central de los estudios sobre paz y conflicto. Además, se trata de una definición explícita y transparente, lo que permite que los investigadores la adapten, la cuestionen o la refinen, sin perder la capacidad de dialogar con los mismos datos ni de matizar los hallazgos. Esa apertura a la crítica y a la modificación controlada es, en buena medida, lo que ha dado vitalidad al campo empírico en Relaciones Internacionales.
+
+::: {.callout-tip appearance="simple" icon="false"}
+
+# Operacionalizando tu pregunta de investigación  
+
+En el primer módulo cada uno de ustedes formuló una **pregunta de investigación**. Ahora vamos a dar un paso más: transformar los elementos centrales de esa pregunta en **conceptos claros**, **indicadores empíricos** y finalmente en **variables observables**.  
+
+## Paso 1: retomar tu propia pregunta  
+Vuelve a la pregunta de investigación que escribiste al inicio del curso. Subraya o marca los **conceptos clave** que aparecen en ella. Por ejemplo, si tu pregunta fue:  
+> “¿La desigualdad económica aumenta la probabilidad de protestas sociales en América Latina?”  
+Los conceptos clave serían “desigualdad económica” y “protestas sociales”.  
+
+## Paso 2: conceptualizar  
+Para cada concepto que identifiques, escribe una **definición precisa** de qué entiendes por ese término en el contexto de tu investigación. Recuerda: conceptualizar es decidir qué entra y qué queda fuera de tu definición.  
+
+## Paso 3: desarmar en dimensiones e indicadores  
+Convierte cada concepto en **dimensiones** (sus componentes principales) y, cuando sea necesario, en **subdimensiones**. Luego, piensa en **indicadores empíricos** que podrían medirse en la realidad.  
+
+Ejemplo con “desigualdad económica”:  
+- Dimensión: distribución del ingreso.  
+- Subdimensiones: concentración en el decil superior, brecha entre quintiles.  
+- Indicadores: coeficiente de Gini, ratio ingreso 20% más rico / 20% más pobre.  
+
+## Paso 4: formular la variable  
+Escribe la **variable** final que utilizarías en tu investigación. Asegúrate de que cumpla con los criterios de exhaustividad, exclusividad y precisión, y de que tenga un nivel de medición claro (nominal, ordinal, de intervalo o de razón).  
+
+Ejemplo con “protestas sociales”:  
+- Variable: “Número de eventos de protesta registrados en un país por año”.  
+- Nivel de medición: variable cuantitativa discreta (conteo).  
 
 ---
 
-### 1. ¿Qué es un concepto?
+## ¿Y si no tengo todavía una pregunta clara?  
 
-En el lenguaje común, un concepto es una idea general que nos ayuda a agrupar y entender fenómenos. En la ciencia, un concepto es **una abstracción controlada y definida explícitamente**.  
-Paul Lazarsfeld señalaba:
+Si aún no tienes formulada tu propia pregunta de investigación, o te resulta difícil identificar conceptos en ella, utiliza esta lista de **conceptos alternativos** para practicar:  
 
-> “Ninguna ciencia aborda su objeto en su plenitud concreta. Todas las ciencias seleccionan determinadas propiedades de su objeto e intentan establecer entre ellas relaciones recíprocas”:contentReference[oaicite:2]{index=2}.
+- Pobreza  
+- Democracia  
+- Confianza política  
+- Poder militar  
+- Desigualdad de género  
+- Conflicto interestatal  
 
-En ciencias sociales, estos conceptos suelen ser multidimensionales y objeto de disputa. Por ejemplo:
-
-* **Pobreza**
-* **Democracia**
-* **Género**
-* **Poder**
-* **Desigualdad**
-* **Confianza política**
-* **Tensión internacional**
-
-Cada uno de estos términos puede definirse de distintas formas. Por eso, el primer paso es **conceptualizar**, es decir, acordar qué entendemos por ese concepto en el contexto de nuestra investigación.
+Elige dos de ellos, conceptualízalos, piensa dimensiones e indicadores, y formula una variable para cada uno.  
 
 ---
 
-### 2. Conceptualización y operacionalización
+## Entrega  
 
-**Conceptualización**: definir con precisión qué entendemos por un término.  
-**Operacionalización**: decidir cómo vamos a **observar** o **medir** ese concepto en la realidad.
+El resultado esperado es un **esquema de una página** en el que muestres, para cada concepto:  
 
-Ejemplo — Democracia:  
-* Definición conceptual (según Dahl): un régimen con altos niveles de **inclusión** y **contienda**.  
-* Operacionalización: codificar como democracia a los países que cumplen simultáneamente estas condiciones:contentReference[oaicite:3]{index=3}:  
-  1. El jefe de Estado es elegido popularmente o por un cuerpo electo popularmente.  
-  2. El legislativo es elegido popularmente.  
-  3. Más de un partido compite en elecciones.  
-  4. Hubo alternancia en el poder bajo las mismas reglas electorales.
+1. Definición conceptual.  
+2. Dimensiones y subdimensiones.  
+3. Indicadores empíricos.  
+4. Variable final (con su nivel de medición).  
 
----
+Este ejercicio te permitirá avanzar en tu propio proyecto y, al mismo tiempo, practicar con conceptos clásicos de la ciencia política y las relaciones internacionales.  
 
-### 3. Del concepto a la variable
+:::
 
-Una **variable** es cualquier característica de un objeto o evento que puede tomar al menos dos valores o categorías. Para que una variable esté bien definida, debe cumplir tres condiciones clave:contentReference[oaicite:4]{index=4}:
 
-* **Exhaustividad**: todas las posibilidades están contempladas.  
-  Ejemplo: incluir categorías como "Otros" o "No sabe/No contesta" en encuestas.
-* **Exclusividad**: cada valor solo puede estar en una categoría.  
-  Ejemplo: evitar rangos que se superpongan (18–25, 25–30).
-* **Precisión**: las categorías son lo más ajustadas posible a la realidad.  
 
----
 
-### 4. Tipos y niveles de medición
 
-Clasificamos las variables según su función y según el tipo de medición:
+# Bibliografia
 
-#### Según su función en la relación:
-* **Independiente (X)**: se supone que influye o explica.  
-  Ej.: horas de estudio.
-* **Dependiente (Y)**: es lo que queremos explicar.  
-  Ej.: nota de examen.
-* **Interviniente (Z)**: media o modera la relación.  
-  Ej.: horas de sueño.
+Goertz, Gary. Social Science Concepts and Measurement: New and Completely Revised Edition.
 
-#### Según su nivel de medición:
-* **Cualitativas nominales**: categorías sin orden. Ej.: nacionalidad, religión.
-* **Cualitativas ordinales**: categorías con orden, pero sin distancias iguales. Ej.: nivel educativo, grado de satisfacción.
-* **Cuantitativas de intervalo**: valores numéricos con distancias iguales, pero sin un cero absoluto. Ej.: temperatura en °C, año calendario.
-* **Cuantitativas de razón**: valores numéricos con distancias iguales y cero absoluto. Ej.: ingreso, número de hijos.
+- Singer, J. David & Melvin Small (1972). *The Wages of War, 1816–1965: A Statistical Handbook*. New York: Wiley.  
+- Singer, J. David & Melvin Small (1982). *Resort to Arms: International and Civil Wars, 1816–1980*. Beverly Hills: Sage.  
+- Levy, Jack S. (1989). “The Causes of War: A Review of Theories and Evidence.” In *Behavior, Society, and Nuclear War*, eds. Philip Tetlock et al. New York: Oxford University Press.  
+- Vasquez, John A. (1993). *The War Puzzle*. Cambridge: Cambridge University Press.  
+- Geller, Daniel & J. David Singer (1998). *Nations at War: A Scientific Study of International Conflict*. Cambridge: Cambridge University Press.  
+- Jones, Daniel M., Stuart A. Bremer & J. David Singer (1996). “Militarized Interstate Disputes, 1816–1992: Rationale, Coding Rules, and Empirical Patterns.” *Conflict Management and Peace Science* 15(2): 163–213.  
 
-#### Según su escala:
-* **Discretas**: conteos enteros. Ej.: cantidad de tratados firmados.
-* **Continuas**: cualquier valor en un rango infinito. Ej.: altura, gasto militar como % del PBI.
+[^barnett2005]: Para una descripcion sobre las dimensiones conceptuales del poder de los Estados. Barnett, M., & Duvall, R. (2005). Power in international politics. International organization, 59(1), 39-75.
 
----
 
-### 5. Evaluar nuestras mediciones: validez y confiabilidad
-
-Cuando medimos un concepto, debemos preguntarnos:
-
-* **Validez**: ¿La medición refleja realmente el concepto que queremos?  
-  - **Validez aparente (face validity)**: a simple vista, ¿tiene sentido?  
-  - Un indicador inválido introduce **sesgo sistemático**.
-
-* **Confiabilidad**: ¿La medición es consistente si repetimos el procedimiento?  
-  - La falta de confiabilidad introduce **error aleatorio**.
-
-Podemos representar una medición como:
-
-```
-Medición observada = Valor verdadero + Sesgo + Error aleatorio
-```
-
-Ejemplo de baja validez: medir "democracia" solo preguntando por la existencia de elecciones, sin considerar la competencia real o la inclusión.  
-Ejemplo de baja confiabilidad: una encuesta que produce resultados muy diferentes cada vez que se aplica al mismo grupo sin que haya cambios reales.
-
----
-
-### 6. Ejemplos integrados
-
-**Concepto**: Pobreza  
-* Dimensión: capacidad de consumo.  
-* Indicador: porcentaje de hogares bajo la línea de pobreza.  
-* Fuente: estadísticas oficiales.  
-
-**Concepto**: Poder militar  
-* Dimensión: proyección de fuerza.  
-* Indicador: número de bases militares en el extranjero.  
-* Fuente: bases de datos internacionales (p. ej., SIPRI).  
-
-**Concepto**: Tensión política internacional  
-* Definición (Davis & Meunier, 2011): desacuerdos sobre políticas, hostilidad entre líderes y sentimiento público negativo:contentReference[oaicite:5]{index=5}.  
-* Indicador: frecuencia anual de incidentes diplomáticos reportados.  
-
----
-
-### 7. Riesgos y decisiones políticas en la medición
-
-Toda definición y operacionalización implica **elecciones políticas y metodológicas**. Por ejemplo:
-
-* Medir “inseguridad” por la tasa de delitos denunciados puede invisibilizar la violencia no denunciada.
-* Clasificar un país como “democrático” o “autoritario” según criterios demasiado estrictos o laxos puede servir a agendas políticas.
-
-Esto exige transparencia: explicitar qué definiciones usamos, por qué y con qué limitaciones.
-
----
-
-### 8. Actividad práctica sugerida
-
-1. Elige un concepto central en ciencia política o relaciones internacionales (p. ej., *corrupción*, *alianzas militares*, *participación electoral*).
-2. Define conceptualmente qué significa en tu estudio.
-3. Propón al menos **dos formas distintas** de operacionalizarlo.
-4. Evalúa brevemente la validez y confiabilidad de cada forma.
-5. Discute posibles sesgos o implicancias políticas de tu elección.
-
----
-
-En el próximo módulo veremos cómo, a partir de nuestras variables, podemos construir resúmenes estadísticos y representaciones gráficas para describir realidades complejas de forma clara y efectiva.

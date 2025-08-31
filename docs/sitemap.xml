@@ -1,68 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/13-casos.html</loc>
-    <lastmod>2025-08-15T16:18:27.046Z</lastmod>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/perfiles/analista-datos.html</loc>
+    <lastmod>2025-08-28T13:03:33.189Z</lastmod>
   </url>
   <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/11-correlacion.html</loc>
-    <lastmod>2025-08-14T02:07:26.400Z</lastmod>
-  </url>
-  <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/09-test.html</loc>
-    <lastmod>2025-08-16T02:00:50.961Z</lastmod>
-  </url>
-  <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/07-medidas.html</loc>
-    <lastmod>2025-08-15T21:08:35.392Z</lastmod>
-  </url>
-  <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/05-histograma-tablas.html</loc>
-    <lastmod>2025-08-15T18:57:04.137Z</lastmod>
-  </url>
-  <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/04-conceptos.html</loc>
-    <lastmod>2025-08-15T17:07:02.294Z</lastmod>
-  </url>
-  <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/02-ciencia.html</loc>
-    <lastmod>2025-08-16T19:35:17.648Z</lastmod>
-  </url>
-  <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/index.html</loc>
-    <lastmod>2025-08-16T21:41:43.746Z</lastmod>
-  </url>
-  <url>
-    <loc>https://crobelo.github.io/about.html</loc>
-    <lastmod>2025-08-12T20:01:57.036Z</lastmod>
-  </url>
-  <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/01-preguntas.html</loc>
-    <lastmod>2025-08-17T03:09:48.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/03-modelos.html</loc>
-    <lastmod>2025-08-17T02:28:17.575Z</lastmod>
-  </url>
-  <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/04-matematica.html</loc>
-    <lastmod>2025-08-15T16:15:03.582Z</lastmod>
-  </url>
-  <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/06-graficos.html</loc>
-    <lastmod>2025-08-16T01:44:20.394Z</lastmod>
-  </url>
-  <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/08-probabilidad.html</loc>
-    <lastmod>2025-08-16T01:50:54.344Z</lastmod>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/12-regresion.html</loc>
+    <lastmod>2025-08-16T02:53:57.754Z</lastmod>
   </url>
   <url>
     <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/10-chi-medias.html</loc>
     <lastmod>2025-08-16T02:10:17.461Z</lastmod>
   </url>
   <url>
-    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/12-regresion.html</loc>
-    <lastmod>2025-08-16T02:53:57.754Z</lastmod>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/08-probabilidad.html</loc>
+    <lastmod>2025-08-16T01:50:54.344Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/06-graficos.html</loc>
+    <lastmod>2025-08-16T01:44:20.394Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/04-matematica.html</loc>
+    <lastmod>2025-08-15T16:15:03.582Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/03-modelos.html</loc>
+    <lastmod>2025-08-30T17:12:22.242Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/01-preguntas.html</loc>
+    <lastmod>2025-08-17T03:26:25.243Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/about.html</loc>
+    <lastmod>2025-08-12T20:01:57.036Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/index.html</loc>
+    <lastmod>2025-08-17T03:24:26.417Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/02-ciencia.html</loc>
+    <lastmod>2025-08-29T22:26:12.251Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/04-conceptos.html</loc>
+    <lastmod>2025-08-31T21:20:25.200Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/05-histograma-tablas.html</loc>
+    <lastmod>2025-08-31T15:51:54.751Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/07-medidas.html</loc>
+    <lastmod>2025-08-15T21:08:35.392Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/09-test.html</loc>
+    <lastmod>2025-08-16T02:00:50.961Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/11-correlacion.html</loc>
+    <lastmod>2025-08-14T02:07:26.400Z</lastmod>
+  </url>
+  <url>
+    <loc>https://crobelo.github.io/cursos/metodos-cuanti/modulos/13-casos.html</loc>
+    <lastmod>2025-08-15T16:18:27.046Z</lastmod>
   </url>
   <url>
     <loc>https://crobelo.github.io/cursos/metodos-cuanti/perfiles/gestion-publica.html</loc>

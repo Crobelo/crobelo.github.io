@@ -1,0 +1,6 @@
+---
+title: "analista-datos"
+format: html
+---
+
+https://www.youtube.com/watch?v=uqf6NoAhFts buen ejemplo de storytelling con estadisticas

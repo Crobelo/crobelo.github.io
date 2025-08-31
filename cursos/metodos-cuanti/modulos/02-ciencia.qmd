@@ -3,154 +3,223 @@ title: "2 — Introducción al Conocimiento Científico y la Metodología Cuanti
 format: html
 ---
 
-# Introducción
+# Introducción  
 
-Al iniciar cualquier recorrido en torno a la investigación científica conviene detenernos a reflexionar sobre lo que entendemos por “ciencia”. Con frecuencia utilizamos la palabra como si fuera un concepto obvio, transparente, que todos compartimos sin discusión. Sin embargo, el término “ciencia” no remite a un conjunto cerrado y estable de prácticas, sino a una empresa humana en permanente transformación, atravesada por tensiones internas y debates filosóficos. A lo largo de la historia, distintas disciplinas han reclamado para sí el estatus de *científicas*, y en ese reclamo han discutido qué criterios legitiman su conocimiento, qué métodos se consideran válidos y qué objetivos debe perseguir la investigación.  
-> **nota** recordar citar a Chalmers (1999),
+Al iniciar cualquier recorrido en torno a la investigación científica conviene detenernos a reflexionar sobre lo que entendemos por “ciencia”. Con frecuencia utilizamos la palabra como si fuera un concepto obvio y compartido, pero en realidad se trata de una empresa humana en permanente transformación, atravesada por tensiones internas y debates filosóficos. A lo largo de la historia, distintas disciplinas han reclamado para sí el estatus de *científicas*, y en ese reclamo han discutido qué criterios legitiman su conocimiento, qué métodos se consideran válidos y qué objetivos debe perseguir la investigación[^chalmers1999].  
 
-En el lenguaje común solemos asociar ciencia con objetividad, precisión, neutralidad o incluso con verdad. Pero pronto descubrimos que esos ideales no se cumplen de manera literal y mas bien constituyen mitos sobre la naturaleza de lo ceintifico. La ciencia, más que un conjunto de certezas, es un proceso de búsqueda y corrección constante. Es un modo de aproximarnos a la realidad con herramientas sistemáticas, conscientes de que nuestras conclusiones son siempre provisorias y sujetas a revisión. Esta dimensión revisable de la ciencia es a la vez su limitación y su fuerza: no promete verdades absolutas, pero ofrece un camino compartido para acercarnos a ellas, sometiendo cada hallazgo al escrutinio crítico de la comunidad científica.  
+En el lenguaje común solemos asociar ciencia con objetividad, precisión, neutralidad o incluso con verdad. Sin embargo, esos ideales no se cumplen de manera literal: más bien constituyen **mitos** sobre la naturaleza de lo científico. La ciencia, más que un conjunto de certezas, es un proceso de búsqueda y corrección constante. No promete verdades absolutas, pero sí ofrece un camino compartido para acercarnos a ellas, sometiendo cada hallazgo al escrutinio crítico de la comunidad científica.  
 
-En este sentido, la ciencia es también una actividad social. Los experimentos, los artículos y los datos no circulan en el vacío, sino en redes de investigadores que debaten, acuerdan o rechazan resultados. Como señaló Oreskes (2004), lo que da solidez al conocimiento científico no es la “prueba definitiva” en el sentido matemático o lógico, sino el consenso que se forma en torno a evidencias suficientemente robustas y repetidas. Ese consenso, a su vez, no está exento de intereses, disputas y contextos históricos. De allí que, como recordaba Matthews (2009), comprender la ciencia exige también reconocer sus vínculos con las cosmovisiones, con las instituciones políticas y con los valores culturales de cada época.  
+La ciencia es también una actividad social. Los experimentos, los artículos y los datos no circulan en el vacío: dependen de redes de investigadores que debaten, acuerdan o rechazan resultados. Lo que da solidez al conocimiento científico no es una “prueba definitiva” en sentido matemático, sino el **consenso** que se forma en torno a evidencias suficientemente robustas. Ese consenso, a su vez, está atravesado por intereses, disputas y contextos históricos.  
 
-Por eso, cuando hablamos de metodología cuantitativa en ciencias sociales, no nos referimos solo a técnicas de conteo, fórmulas estadísticas o gráficos. Nos referimos a un entramado mucho más amplio, que incluye debates epistemológicos sobre qué constituye evidencia válida, sobre qué significa explicar o predecir, y sobre cómo se relaciona el conocimiento científico con la vida social y política. Nuestra tarea en esta clase será entonces aproximarnos a estas bases conceptuales, entendiendo que aprender metodología es tanto adquirir herramientas técnicas como reflexionar sobre el marco filosófico y social en el que dichas herramientas cobran sentido.  
+Por ello, cuando hablamos de metodología cuantitativa en ciencias sociales no nos referimos solo a técnicas estadísticas o gráficas. Nos referimos a un entramado amplio que incluye debates epistemológicos sobre qué constituye evidencia válida, qué significa explicar o predecir, y cómo se relaciona el conocimiento científico con la vida social y política. En este módulo no pretendemos agotar el debate —para eso están autores como Popper, Kuhn o Lakatos[^referencias02]— sino **retomar sus bases conceptuales** para entender que aprender metodología es tanto adquirir herramientas como reflexionar sobre sus cimientos filosóficos y sociales.  
 
 # Ciencia como práctica social: mitos y limitaciones  
 
-Cuando nos acercamos por primera vez a la idea de ciencia, suelen hacerlo cargados de una serie de imágenes y expectativas heredadas tanto del sentido común como de la cultura popular. Se imagina al científico como un observador neutral, alguien que aplica un método exacto y libre de valores para obtener conclusiones indiscutibles. La ciencia aparece entonces como un territorio de certezas, de fórmulas precisas y de pruebas definitivas.  
+Al acercarnos a la idea de ciencia solemos cargar una serie de imágenes heredadas del sentido común y la cultura popular. Se imagina al científico como un observador neutral, que aplica un método exacto y libre de valores para obtener conclusiones indiscutibles. La ciencia aparece como un territorio de certezas y pruebas definitivas a veces utilizada como calificativo para elevar argumentos en un debate.
 
-Sin embargo, esta visión resulta engañosa. La práctica científica real es mucho más compleja y, sobre todo, mucho más humana. Como toda empresa social, la ciencia está atravesada por intereses, contextos, decisiones y disputas. Reconocer esta dimensión no implica negar la validez de la ciencia, sino comprender mejor cómo funciona y cuáles son sus posibilidades reales. La ciencia nunca ofrece “pruebas” en el sentido lógico o matemático del término: lo que ofrece son consensos construidos colectivamente, apoyados en la mejor evidencia disponible y siempre sujetos a revisión[^oeskes2004]. De este modo, el conocimiento científico no es un edificio terminado, sino una obra en constante construcción, donde cada aporte se pone a prueba frente a la comunidad.  
+Sin embargo, esta visión es engañosa. La práctica científica real es más compleja y profundamente humana. Como toda empresa social, está atravesada por intereses, decisiones y disputas. Reconocer esta dimensión no niega la validez de la ciencia, sino que permite comprender mejor su funcionamiento. La ciencia nunca ofrece pruebas en sentido lógico-matemático, sino consensos construidos colectivamente y siempre sujetos a revisión[^oreskes2004].  
 
-Jauretche ya advertía, con ironía, sobre la confianza excesiva en las cifras: antes de llegar al número, siempre hubo un acto de selección, alguien que decidió qué medir, cómo hacerlo y en qué contexto. 
->nota: citar tambien el texto de foulcault sobre la opinion publica que no existe ?
-
-Así, incluso el dato más aparentemente “objetivo” es producto de una serie de decisiones sociales y políticas. Comprender esto nos ayuda a desarmar algunos **mitos frecuentes** sobre la ciencia:  
-
-- **La objetividad absoluta**. Ninguna investigación es completamente ajena a los valores y creencias de quienes la realizan. La objetividad, en la práctica, se construye a través de la transparencia del proceso y la posibilidad de que otros lo revisen.  
-- **La exactitud infalible**. Los datos no son fotografías perfectas de la realidad, sino aproximaciones. Una encuesta puede estimar con precisión el apoyo a un partido, pero siempre dentro de un margen de error.  
-- **La neutralidad valorativa**. Escoger un objeto de estudio, priorizar ciertas variables o interpretar un resultado son decisiones que reflejan marcos teóricos y valores. Esto no invalida la ciencia, pero nos recuerda que el conocimiento nunca está totalmente aislado de la sociedad.  
-- **La hipótesis como requisito universal**. Aunque gran parte de la investigación cuantitativa se estructura en torno a hipótesis, no todas las investigaciones científicas lo hacen. También existen estudios descriptivos cuyo valor radica en ordenar información y sentar bases para futuras explicaciones.  
-- **La causalidad definitiva**. En ciencias sociales rara vez hablamos de determinismos absolutos. Lo que podemos establecer son relaciones probabilísticas, patrones que aumentan o disminuyen la probabilidad de ciertos fenómenos bajo determinadas condiciones.  
-
-Aceptar estas limitaciones no debilita a la ciencia, sino que la hace más robusta. Nos permite trabajar con humildad intelectual y reconocer que nuestros hallazgos son siempre provisionales, abiertos a revisión y mejora. Al mismo tiempo, nos recuerda que la ciencia es un esfuerzo colectivo: su fuerza no reside en la infalibilidad de un investigador aislado, sino en la dinámica de debate, corrección y acumulación de conocimiento en el seno de una comunidad.  
+Incluso el dato más aparentemente “objetivo” es producto de elecciones previas: qué medir, cómo hacerlo y en qué contexto. Detrás de cada número, tabla o gráfico hay una cadena de decisiones que tomaron personas concretas con marcos conceptuales, recursos limitados y en situaciones históricas determinadas. Esa conciencia nos ayuda a desmontar algunos **mitos frecuentes sobre la ciencia** y a comprender que, lejos de debilitarla, reconocer sus límites la hace más sólida.  
 
 
-# Metodología, métodos y técnicas
+## **La objetividad absoluta**  
 
-A medida que avanzamos en este recorido, sirve orientarnos y ordenar un vocabulario que suele prestarse a confusión: **metodología**, **método** y **técnica**. Aunque muchas veces se emplean de manera indistinta, cada término corresponde a un nivel diferente de análisis dentro de la práctica científica.  
+El mito de la objetividad absoluta presenta a la ciencia como un espejo fiel de la realidad, inmune a los valores o creencias de quienes investigan. Pero lo cierto es que ninguna investigación es completamente ajena a los contextos culturales y políticos donde se produce.  
 
-La **metodología** se ubica en el plano más abstracto y reflexivo. Es la disciplina que estudia de manera sistemática los métodos y técnicas disponibles, preguntándose por su validez, sus límites y sus supuestos epistemológicos. Cuando un investigador discute si un experimento social puede considerarse válido, si una encuesta capta realmente las actitudes que pretende medir, o si un modelo estadístico ofrece una inferencia robusta, está trabajando en el terreno de la metodología. En este nivel no se trata de aplicar herramientas, sino de pensar críticamente sobre su pertinencia y su alcance.  
+Por ejemplo, cuando un politólogo decide estudiar la corrupción en América Latina, ya está tomando una decisión cargada de valor: podría haber investigado multiples cuestiones como la cooperación internacional, los partidos políticos o la seguridad ciudadana, pero escogió corrupción como una problematica. Esa selección no invalida su trabajo, pero nos recuerda que la ciencia no nace en el vacío. La objetividad se construye mediante reglas de transparencia (explicar cómo se recolectaron los datos, bajo qué supuestos) y de revisión (permitir que otros colegas evalúen y repliquen los hallazgos).  
 
-El **método**, en cambio, se refiere al camino concreto que adoptamos para alcanzar un objetivo de conocimiento. Es menos abstracto que la metodología, pero más general que las técnicas específicas. Hablar del “método comparativo”, del “método experimental” o del “método hipotético-deductivo” implica referirse a estrategias organizadas que guían el trabajo científico. Cada método cuenta con supuestos y pasos característicos, pero no existe un único método universal; lo que se reconoce como válido depende de los consensos de la comunidad científica y de la adecuación del método a la pregunta planteada.  
+En este sentido, la objetividad no es un punto de partida garantizado, sino un resultado frágil que se alcanza colectivamente.  
 
-Finalmente, la **técnica** es el nivel más operativo. Son los procedimientos concretos que empleamos para recolectar, organizar o analizar información: aplicar un cuestionario, realizar una entrevista semiestructurada, construir una base de datos o calcular un coeficiente estadístico. Las técnicas son muchas y diversas, y se perfeccionan con la práctica. Lo importante es entender que las técnicas no “hablan por sí solas”: solo adquieren sentido dentro de un método, y este a su vez dentro de una reflexión metodológica más amplia.  
+## **La exactitud infalible**  
 
-Esta distinción, aunque parezca terminológica, tiene consecuencias prácticas. Cuando confundimos técnica con método, corremos el riesgo de creer que la mera aplicación de un procedimiento garantiza resultados científicos. Y cuando reducimos la metodología a un listado de técnicas, perdemos de vista la reflexión crítica que da sentido a su uso. Como bien señala la cátedra: “Metodología, métodos y técnicas son tres cosas que trabajan mancomunadamente pero son tres cosas distintas: uno más teórico, otro más estratégico y otro mucho más empírico y práctico” (MC. Clase 2, Video 1).  
+Otro mito común es pensar que los datos científicos son siempre precisos y definitivos. En realidad, los datos son aproximaciones a fenómenos complejos.  
 
-Reconocer estos tres planos no solo evita confusiones conceptuales, sino que nos ayuda a ubicar nuestro propio trabajo de investigación: pensar metodológicamente, elegir un método adecuado y ejecutar técnicas coherentes con ese marco. Solo así podremos avanzar en un conocimiento que sea a la vez riguroso y consciente de sus límites.  
+Tomemos el caso de las encuestas electorales. Una encuesta puede estimar con bastante confianza el apoyo a un candidato, pero siempre dentro de un margen de error. Si un sondeo muestra que un partido tiene 35% de apoyo, el resultado real puede estar entre 33% y 37%. Aun así, los medios y los ciudadanos suelen leer el 35% como una cifra “exacta”.  
+
+Este mito también aparece en la economía. El Producto Bruto Interno (PBI) de un país se calcula mediante múltiples supuestos sobre producción, precios y consumo. Aunque se expresa como un número con decimales, no deja de ser una construcción estadística sujeta a revisiones posteriores.  
+
+La lección es clara: los datos iluminan la realidad, pero no la capturan por completo.  
+
+## **La neutralidad valorativa**  
+
+Max Weber, uno de los padres de la sociología, advertía que los científicos sociales deben aspirar a la “neutralidad valorativa”. Sin embargo, esto no significa que puedan desprenderse por completo de sus valores.  
+
+Un ejemplo clásico lo encontramos en la investigación sobre políticas de bienestar. Un investigador que parte de un enfoque liberal tenderá a ver los subsidios estatales como distorsiones del mercado. Otro, con una visión más igualitarista, puede interpretarlos como mecanismos de justicia social. Ambos trabajan con datos, pero el marco teórico y los valores influyen en qué consideran relevante y cómo interpretan los resultados.  
+
+Reconocer este sesgo no significa abandonar la aspiración de imparcialidad, sino ser conscientes de que todo conocimiento se elabora dentro de un horizonte cultural e ideológico.  
+
+## **La hipótesis como requisito universal**  
+
+En la enseñanza de la investigación se suele insistir en que todo trabajo debe comenzar con una hipótesis. Aunque las hipótesis son fundamentales en la investigación explicativa, no todas las ciencias avanzan de esa manera.  
+
+Un ejemplo lo encontramos en los estudios descriptivos. Supongamos que un investigador crea una base de datos de todos los tratados internacionales firmados por países de América Latina desde 1900. Puede que no formule una hipótesis inicial, sino que su aporte consista en ordenar información que antes estaba dispersa. Esa descripción es valiosa porque permitirá a futuros investigadores plantear hipótesis más sofisticadas sobre patrones de cooperación o conflicto.  
+
+En este sentido, no toda ciencia necesita comenzar con una predicción: también puede iniciar con una tarea paciente de descripción y clasificación.  
+
+## **La causalidad definitiva**  
+
+Quizás el mito más difícil de desmontar es el de la causalidad definitiva. En las ciencias naturales estamos acostumbrados a leyes como la de la gravedad, que se cumplen de manera determinista: bajo las mismas condiciones, el resultado será siempre el mismo.  
+
+En cambio, en ciencias sociales trabajamos con relaciones probabilísticas. Por ejemplo, sabemos que un alto desempleo **aumenta la probabilidad** de que un gobierno pierda una elección, pero no determina de manera absoluta ese resultado. Hay gobiernos que sobreviven con altos niveles de desempleo, y otros que caen incluso con buenos indicadores económicos.  
+
+Este carácter probabilístico se ve en fenómenos internacionales. La existencia de disputas territoriales incrementa la probabilidad de conflictos bélicos, pero no todos los litigios fronterizos terminan en guerra. La causalidad, en ciencias sociales, es siempre condicional y contextual.  
+
+## Una lección para el investigador social  
+
+Aceptar estas limitaciones no debilita la ciencia, sino que la fortalece. Nos obliga a trabajar con **humildad intelectual**, sabiendo que nuestras conclusiones son siempre provisorias. También nos recuerda que el conocimiento es un **esfuerzo colectivo**: ningún investigador por sí solo produce verdades absolutas, sino aportes que se ponen a prueba y se corrigen en diálogo con la comunidad.  
+
+El estudiante que se inicia en la investigación debe tener presente esta doble dimensión: la necesidad de aplicar técnicas rigurosas, pero también la conciencia crítica de que ningún dato ni método agotan por completo la complejidad de lo social.  
 
 
-----------------------------------------------------------------------------
+# ¿Para qué ciencia? Entre la descripción, la explicación y la predicción  
 
+Una de las funciones centrales de la ciencia suele ser presentada como la capacidad de **explicar** por qué ocurren los fenómenos y, en ciertos casos, de **predecir** lo que ocurrirá. Esta visión tiene mucho de cierto: gran parte de la historia de la ciencia puede narrarse como el esfuerzo por encontrar causas, mecanismos y regularidades que nos permitan anticipar el futuro.  
 
+Sin embargo, como vimos previamente detenernos únicamente en ese horizonte explicativo y predictivo corre el riesgo de subestimar otra dimensión igualmente fundamental: la **descripción sistemática**. Antes de que podamos explicar o predecir algo, necesitamos saber **qué es lo que ocurre** y cómo se manifiesta.
 
-# Introducción
+En las ciencias sociales, la descripción no es un ejercicio pasivo, sino una tarea activa de construcción de conocimiento. Crear una base de datos con todas las transiciones democráticas en América Latina, elaborar un mapa de la distribución de bases militares en el mundo o clasificar los tipos de regímenes autoritarios son tareas descriptivas que abren el camino a explicaciones futuras. Sin esos registros básicos, no habría terreno sobre el cual construir modelos explicativos más ambiciosos.  
 
-En esta segunda clase nos proponemos dar un paso más allá de la simple formulación de preguntas para internarnos en el terreno de las **bases epistemológicas y metodológicas de la investigación científica**. El énfasis estará puesto en el lugar que ocupa la **metodología cuantitativa** dentro de las ciencias sociales, aunque necesariamente deberemos recorrer debates más amplios en torno a qué es la ciencia, cuáles son sus límites, qué mitos la rodean y cuáles son sus posibilidades reales.  
+Por ejemplo, el Índice de Desarrollo Humano (IDH) elaborado por Naciones Unidas no predice directamente el destino de un país, pero su función descriptiva ha sido decisiva para orientar debates sobre desigualdad, políticas públicas y cooperación internacional. 
 
-Hablar de ciencia no significa únicamente aplicar procedimientos técnicos. Implica reconocer que toda práctica científica se desarrolla dentro de un **marco epistemológico** y una **filosofía de la ciencia** que orientan la forma de conocer. Estos marcos no son neutros ni estables: están atravesados por debates, tensiones y desacuerdos permanentes. Como recuerda Chalmers (1999), lo que llamamos “ciencia” no puede reducirse a una definición única y universal, sino que debe entenderse como una actividad humana en constante transformación.  
+En este sentido, el **horizonte de la ciencia** suele ser explicar y predecir, aun cuando valoramos el papel de la descripción como **punto de partida indispensable**. Sin embargo, explicación y predicción no siempre se buscan al mismo tiempo ni en la misma medida. En física, por ejemplo, la predicción ocupa un lugar central; en biologia, en cambio, suele predominar la explicación, mientras que en medicina, ambas se persiguen en distinta medida dependiendo de la rama.  
 
-> “La limitación del método en la vida práctica está muy tallada por el consenso y el arbitraje de la comunidad científica... con lo positivo que esto puede tener y con lo negativo también, porque no deja de ser una acción humana permeada por intereses.”  
-> *(MC. CLASE 2. Video 1)*
-
-En otras palabras, la ciencia no es un conjunto de recetas neutrales aplicadas a una realidad objetiva. Es también una **actividad social**, marcada por contextos históricos, políticos y culturales, y sostenida por una comunidad que debate, acuerda y eventualmente cambia sus reglas del juego.
-
----
-
-# 1. Metodología, métodos y técnicas
-
-Una distinción fundamental para cualquier investigador es la que existe entre **metodología**, **método** y **técnica**. Aunque a menudo se usan de manera intercambiable, remiten a planos distintos del quehacer científico.  
-
-- **Metodología**: es la reflexión sistemática y abstracta sobre los métodos y técnicas. Responde a la pregunta sobre qué hace válido un procedimiento científico.  
-  Ejemplo: discutir qué criterios debe cumplir un experimento para ser considerado válido en ciencias sociales.  
-
-- **Método**: es el camino estructurado para alcanzar un objetivo de conocimiento. No hay un único método; la comunidad científica valida y consensúa diferentes estrategias.  
-  Ejemplo: el método comparativo aplicado al estudio de sistemas electorales.  
-
-- **Técnica**: son los procedimientos concretos que permiten recolectar o analizar datos. Su dominio se perfecciona con la práctica.  
-  Ejemplo: aplicar una encuesta estandarizada o realizar una codificación sistemática de entrevistas en profundidad.  
-
-> “Metodología, métodos y técnicas son tres cosas que trabajan mancomunadamente pero son tres cosas distintas: uno más teórico, otro más estratégico y otro mucho más empírico y práctico.”  
-> *(MC. CLASE 2. Video 1)*
-
----
-
-# 2. Explicación y predicción en la ciencia
-
-Una de las características más notorias de la ciencia es que no se limita a describir la realidad: busca **explicar** por qué ocurren los fenómenos y, en muchos casos, **predecir** lo que ocurrirá en el futuro. Sin embargo, explicación y predicción no siempre se buscan al mismo tiempo ni en la misma medida. En física, por ejemplo, la predicción ocupa un lugar central; en historia, en cambio, suele predominar la explicación retrospectiva.  
-
-En ciencias sociales coexisten ambas aspiraciones. A veces nos interesa **explicar** cómo se produce un fenómeno —por ejemplo, qué condiciones llevaron a la transición democrática en un país— y otras veces nos interesa **predecir** —como cuando construimos modelos para anticipar resultados electorales. Matthews (2009) recuerda que la ciencia no avanza en el vacío: los modelos teóricos guían nuestras preguntas y muchas veces se sostienen incluso sin verificación constante, porque funcionan como capas tectónicas que orientan la investigación, como lo sugiere también Oreskes (2004).  
+En ciencias sociales coexisten ambas aspiraciones. A veces nos interesa **explicar** cómo se produce un fenómeno —por ejemplo, qué condiciones llevaron a la transición democrática en un país— y otras veces nos interesa **predecir** —como cuando construimos modelos para anticipar resultados electorales. Al mismo tiempo, repetimos, la ciencia no avanza en el vacío: los modelos teóricos guían nuestras preguntas y muchas veces se sostienen incluso sin verificación constante, porque funcionan como capas tectónicas que orientan la investigación [^oreskes2004] .  
 
 > “Los modelos teóricos pueden no ser literalmente verdaderos, pero orientan la investigación y estructuran las expectativas. En muchos campos, se mantienen por su capacidad de organizar el conocimiento, aun cuando no sean verificados constantemente.”  
 > *(Oreskes, 2004)*
 
+## Determinismo, probabilismo y el papel de los contrafácticos  
+
+Las ciencias naturales han forjado su prestigio sobre leyes de carácter **determinista**: si dejamos caer un objeto bajo condiciones controladas, siempre se comportará igual. En cambio, las ciencias sociales rara vez ofrecen ese nivel de certeza. Nuestros hallazgos se formulan en términos **probabilísticos**: afirmamos que ciertas condiciones *aumentan* o *disminuyen* la probabilidad de que algo ocurra, pero sin garantizar resultados idénticos en todos los casos.  
+
+Un ejemplo claro es el de las crisis económicas y la estabilidad política. Sabemos que las recesiones tienden a erosionar el apoyo a los gobiernos, pero no todas las recesiones generan caídas de presidentes ni todas las bonanzas aseguran estabilidad. Lo que encontramos son patrones, no certezas inmutables.  
+
+Este carácter probabilístico nos lleva al problema de los **contrafácticos**: para demostrar que un evento causa otro deberíamos poder observar qué habría ocurrido en un mundo paralelo donde la causa no existió. ¿Habría estallado la Primera Guerra Mundial si no hubiera ocurrido el asesinato del archiduque Francisco Fernando? Como nunca podremos observar ese mundo alternativo, recurrimos a aproximaciones indirectas: comparar casos similares, diseñar modelos estadísticos o aprovechar “experimentos naturales” donde ciertas condiciones se dieron sin intervención del investigador[^morgan2014].  
+
+La imposibilidad de manipular fenómenos como guerras, transiciones de régimen o crisis financieras hace que en ciencias sociales dependamos fuertemente de la **evidencia observacional** y de técnicas estadísticas que buscan acercarnos a ese escenario contrafáctico imposible. Además, hay un límite ético evidente: sería impensable “provocar” una guerra para poner a prueba una teoría de relaciones internacionales.  
+
+En este marco, la investigación social se enfrenta a un doble desafío: reconocer que no alcanzará la exactitud de las leyes físicas, pero también valorar que sus descripciones, explicaciones y predicciones aportan insumos fundamentales para comprender —y en muchos casos mejorar— la vida política y social.  
+ 
+
+
+# Metodología, métodos y técnicas: dos tradiciones en diálogo  
+
+Cuando nos adentramos en el mundo de la investigación social es fácil confundir términos que parecen sinónimos pero que en realidad refieren a niveles distintos de la práctica científica. Ubicar cada concepto en su nivel correcto evita malentendidos y, sobre todo, nos ayuda a organizar con claridad nuestro propio trabajo de investigación.  
+
+En primer lugar, la **metodología** se sitúa en el plano más abstracto y reflexivo. Es la disciplina que se pregunta por la validez de los métodos, sus supuestos epistemológicos y sus límites. Cuando un investigador discute si un experimento social puede considerarse éticamente válido, o si una encuesta realmente capta la opinión pública que pretende medir, está trabajando en un plano metodológico. La metodología, en este sentido, no aplica herramientas sino que piensa críticamente sobre su pertinencia y alcance.  
+
+El **método**, en cambio, es un nivel más concreto. Se refiere al camino general elegido para producir conocimiento: el método comparativo, el experimental, el histórico o el hipotético-deductivo. Cada uno implica supuestos distintos sobre cómo conocer la realidad y orienta las preguntas que podemos hacernos. Por ejemplo, el método comparativo permite analizar semejanzas y diferencias entre países mientras que el experimental busca aislar variables en condiciones controladas.
+
+Finalmente, la **técnica** ocupa el plano más operativo. Son los instrumentos concretos que usamos para recolectar o analizar información: aplicar cuestionarios, realizar entrevistas, construir bases de datos, calcular coeficientes estadísticos. Las técnicas se aprenden y perfeccionan con la práctica, pero nunca son neutrales, adquieren sentido en la medida en que se insertan en un método y, a su vez, en una reflexión metodológica más amplia.  
+
+Confundir estos tres niveles puede llevar a errores importantes. Creer que basta con aplicar una técnica para obtener “resultados científicos” es una ilusión peligrosa. Una encuesta mal diseñada no se vuelve válida solo por tener números, del mismo modo que un experimento improvisado no se transforma en ciencia por incluir un grupo de control. La coherencia entre metodología, método y técnica es lo que da solidez al conocimiento.  
+
+## Dos tradiciones en ciencias sociales: lo cuantitativo y lo cualitativo  
+
+Dentro de este marco aparecen las dos grandes tradiciones de investigación en ciencias sociales, la **cuantitativa** y la **cualitativa**.  
+
+El enfoque **cuantitativo**, fuertemente influenciado por el positivismo, privilegia la medición y la búsqueda de patrones generales. Su fuerza radica en la estandarización: aplicar las mismas preguntas en encuestas masivas, comparar series estadísticas de largo plazo, construir modelos que permiten detectar regularidades y, en algunos casos, realizar predicciones. Gracias a este enfoque sabemos, por ejemplo, cómo la inflación incide en el voto en distintos países o qué factores suelen estar asociados a las transiciones democráticas.
+>nota, citar articulos de ejemplo.
+
+El enfoque **cualitativo**, en cambio, pone el acento en la comprensión profunda de fenómenos singulares. Inspirado en tradiciones como la fenomenología o el interaccionismo simbólico, se interesa por los significados, las experiencias y las narrativas. Una entrevista en profundidad con líderes sociales, el análisis de discursos políticos o la reconstrucción de un proceso histórico específico son ejemplos de técnicas cualitativas. Aunque sus hallazgos no siempre son generalizables, aportan una riqueza interpretativa difícil de alcanzar mediante la cuantificación.  
+
+Ninguno de estos enfoques es “mejor” en términos absolutos. Cada uno responde a distintos tipos de preguntas. Si buscamos explicar **patrones estructurales** —como las causas recurrentes de guerras o las dinámicas de democratización— probablemente necesitemos herramientas cuantitativas. Si en cambio nos interesa entender la **singularidad** de un caso excepcional, como el estallido de la Segunda Guerra Mundial o el rol específico de un líder en un proceso político, el camino será cualitativo.  
+
+Lo central es recordar que la **pregunta de investigación** debe guiar la elección, y no al revés. Elegir un método porque es el que “sabemos usar” o el que “tiene más prestigio” es un error común. La coherencia surge cuando la pregunta, la metodología y las técnicas se alinean. En última instancia, tanto lo cuantitativo como lo cualitativo son complementarios. El verdadero oficio del investigador radica en saber articular estas herramientas, con la reflexión metodológica como brújula.  
+
+## Usando las herramientas de la estadística  
+
+El enfoque cuantitativo que exploraremos en este curso se apoya en la **estadística**, una disciplina con historia, filosofía propia y debates internos sobre sus límites y posibilidades. Así como la filosofía de la ciencia se pregunta qué significa conocer, la estadística reflexiona sobre su objeto de estudio y los supuestos que posibilitan su actividad.  
+
+Comprender esta dimensión es crucial para nuestro curso. Las herramientas estadísticas evolucionaron originalmente en contextos como la biología, la ingeniería o la meteorología, y trasladarlas a fenómenos sociales implica adaptarlas, cuestionar sus supuestos y reconocer sus limitaciones.  
+
+Un caso ilustrativo es el de la **probabilidad**. La escuela estadística más influyente —la frecuentista— entiende la probabilidad como la frecuencia con que ocurre un evento bajo **infinitas repeticiones**. En un ejemplo clásico: ¿cuál es la probabilidad de que llueva mañana? La respuesta se construye pensando en una secuencia interminable de días con las mismas condiciones meteorológicas. De manera similar, los ingenieros calculan la probabilidad de que un bloque de cemento se quiebre bajo pruebas repetidas de resistencia.  
+
+Trasladar este razonamiento a la ciencia política es más complicado. Podemos suponer, por ejemplo, que votantes con características semejantes (edad, educación, nivel socioeconómico, lugar de residencia) tenderán a comportarse de manera similar. Así, como los meteorólogos, intentamos estimar probabilidades de comportamiento electoral. Pero la comparación tiene límites evidentes: mientras que el clima y los materiales responden a leyes físicas relativamente estables, los seres humanos interpretan, reaccionan y cambian sus preferencias de formas menos predecibles.  
+
+El problema se vuelve aún más claro con fenómenos excepcionales. ¿Cuáles son las probabilidades de que ocurra una nueva guerra mundial? Solo tenemos dos casos en la historia, cada uno con circunstancias irrepetibles. Hablar de “infinitas repeticiones” en este contexto es absurdo: no habrá infinitas Alemanias nazis ni infinitos archiduques asesinados en Sarajevo. Aquí la estadística tropieza con la singularidad histórica, y el investigador debe usar su juicio crítico para decidir hasta dónde confiar en los números y hasta dónde tratarlos con cautela.  
+En definitiva la estadística es un aliado indispensable, pero nunca puede aplicarse de manera mecánica. Su uso requiere siempre **conciencia metodológica** que ejercitaremos a lo largo del curso, saber qué supuestos sostienen nuestras técnicas, qué preguntas son legítimas responder con ellas y cuáles exigen otras aproximaciones[^blalock].  
+
+# De la ciencia a los científicos: el espacio de trabajo  
+
+Si hasta aquí hemos hablado de la ciencia como empresa abstracta, de la que seremos parte, pero conviene recordar que consumimos todo el tiempo los productos cientificos. Nuestro tiempo en clase, tanto en este curso como en todos los demas que traten temas empiricos, se desarrollan leyendo, estudiando e interpretando, estudios cientificos. Parte de la oficio colectivo de la investigacion es aproximarse a las personas concretas: los investigadores. Y como en cualquier profesión, los científicos trabajan en entornos con reglas, incentivos y tensiones que moldean su práctica.  
+
+En la vida académica, la presión por **publicar** es tan fuerte como en una oficina lo es la presión por cumplir objetivos de ventas o plazos administrativos. Ascensos, becas y financiamiento dependen muchas veces del número de artículos publicados o de la visibilidad que alcanzan. Este sistema, semejante al de burocracias estatales o a las jerarquías militares, genera incentivos que no siempre favorecen la calidad del conocimiento.  
+
+Entre estos incentivos aparecen conductas habituales: dividir un mismo hallazgo en varios artículos para multiplicar publicaciones; citar estratégicamente a colegas para recibir citas de vuelta; o recurrir a estudiantes como asistentes de investigación que potencien la productividad del equipo. Tales prácticas no son necesariamente fraudulentas, forman parte de las “reglas del juego” en muchos espacios académicos y se asumen como parte del desarrollo profesional.  
+
+Sin embargo, también existen **límites éticos**. Normas editoriales prohíben el autoplagio, exigen dar crédito a todos los coautores y sancionan la manipulación deliberada de datos. Aun así, como toda norma social, estas reglas se enfrentan a desafíos de cumplimiento. Uno de los casos más emblemáticos ha sido precisamente el **falsamiento de datos**, investigadores que inventan o modifican resultados para publicar hallazgos “atractivos”.  
+
+Estos episodios ponen de relieve una verdad central: la ciencia no es solo un conjunto de métodos y técnicas, sino también una comunidad de personas con incentivos, valores y dilemas éticos. Comprender ese contexto es tan importante como aprender fórmulas o dominar programas estadísticos. El estudiante que se inicia en la investigación debe saber que su trabajo se inserta en un entramado humano, institucional y social que condiciona qué preguntas se hacen, qué respuestas se consideran legítimas y cómo circula el conocimiento.  
+
+
+## La revolución de la replicación: un estudio de caso sobre normas y prácticas en la comunidad científica  
+
+En los últimos años, las ciencias sociales —y particularmente la psicología— atravesaron un proceso que muchos llaman la **crisis de replicación**. Todo comenzó cuando varios investigadores intentaron volver a realizar experimentos que habían alcanzado enorme notoriedad y visibilidad académica, solo para descubrir que los resultados no podían repetirse con la misma consistencia. Estudios que habían sido citados miles de veces, utilizados en manuales universitarios y divulgados en medios de comunicación resultaron frágiles cuando se intentó reproducirlos en nuevos contextos.  
+
+Frente a esta situación, la reacción fue construir un nuevo conjunto de normas profesionales que hoy se conocen como **la revolución de la replicación**. Entre las prácticas que se consolidaron destacan:  
+
+- **Pre-registro de hipótesis y métodos.** Antes de recolectar datos, los investigadores deben declarar públicamente cuáles son sus hipótesis, qué variables medirán y cómo planean analizarlas. Esto reduce la tentación de “ajustar” las hipótesis una vez conocidos los resultados (lo que se conoce como *p-hacking*).  
+
+- **Apertura de datos y códigos.** Las revistas y conferencias empezaron a exigir que los datos recolectados y los programas de análisis estuvieran disponibles para otros investigadores. Esto permite verificar resultados, descubrir errores y aprovechar las bases de datos para nuevas investigaciones.  
+
+- **Documentación detallada de procesos.** Ya no basta con presentar tablas o gráficos finales. Los artículos deben incluir información minuciosa sobre cómo se diseñaron los experimentos, cómo se aplicaron encuestas y cómo se procesaron los datos.
+
+Estas medidas no buscan eliminar los errores, sino hacerlos **detectables** y **corregibles**. En otras palabras, institucionalizan la crítica como parte del proceso científico. Ello no implica que todo sea perfecto, ni que los mecanismos sean ineludibles, pero existen normas eticas y un **esfuerzo colectivo**, donde la credibilidad depende de la cooperación y la verificación mutua.
+
+La revolución de la replicación es una gran oportunidad. Compartir datos, reconocer errores y valorar la crítica como parte constitutiva del conocimiento hacen mas facil embarcarse en la investigacion. Grandes debates han comenzado con un estudiante descargando los datos de una investigacion que leyo e intentando mejorarla.
+>nota, ver articulos de replicacion publicados y el debate de alianzas entre leeds y kendrick.
+
+# Conclusión: hacia un abordaje crítico y plural  
+
+A lo largo de este modulo hemos visto que la ciencia no es un camino lineal hacia verdades absolutas, sino una práctica social en constante revisión. Reconocer su naturaleza humana, histórica y comunitaria no debilita el conocimiento, sino que lo vuelve más consciente y responsable. En este marco, la **metodología cuantitativa** se nos presenta como un conjunto de herramientas potentes para identificar patrones, comparar casos y establecer inferencias. Sin embargo, estas herramientas solo alcanzan su verdadero valor cuando se usan con **conciencia crítica**, en diálogo con otros enfoques y con una reflexión filosófica sobre qué significa “conocer” en ciencias sociales.  
+
+Es importante también recordar que **no todo conocimiento válido es necesariamente científico** en el sentido estricto. La sabiduría práctica, la filosofía, la experiencia acumulada en comunidades o el saber popular forman parte de otras formas de comprender el mundo que no dependen de métodos estadísticos o de pruebas empíricas. Reconocer esto nos ayuda a evitar dos errores comunes: por un lado, la falacia de apelar a la ciencia como argumento de autoridad incuestionable; por otro, la idea de que lo que no se mide carece de valor. La ciencia debe dialogar con estos otros saberes, no presentarse como el único camino hacia la comprensión.  
+
+Para el investigador social, esta conclusión tiene una implicación central: nuestro rol no consiste únicamente en producir cifras o tablas, sino en contribuir a una **mirada más amplia sobre la realidad política y social**. La cuantificación nos ayuda a ordenar fenómenos y a detectar regularidades, pero nunca reemplaza la complejidad del mundo vivido. El desafío es saber cuándo medir, cuándo interpretar y cuándo escuchar otras voces y tradiciones de pensamiento.  
+
+En suma, lo mensurable no agota lo real. La riqueza del conocimiento científico surge precisamente de su capacidad para **combinar la descripción, la explicación y la predicción**, reconociendo siempre sus límites. Solo así podremos construir una práctica científica plural, abierta y crítica, capaz de orientar nuestras sociedades sin caer en dogmatismos ni en ilusiones de certeza absoluta.  
+
+El estudiante que se inicia en este camino debe llevarse una convicción doble: la ciencia es una de las formas más poderosas de aproximarnos a la realidad, pero no es la única; y su fortaleza radica menos en ofrecer verdades definitivas que en mantener viva la disposición a revisar, debatir y mejorar lo que sabemos.  
+
+
+
+
+::: {.callout-note appearance="simple" icon="false"}
+
+# Seleccionen un trayecto de aprendizaje  
+
+La ciencia política se distingue de prácticas como el arte de gobernar, la estrategia electoral o el marketing político porque busca abordar los fenómenos con herramientas sistemáticas, contrastables y comparables. No obstante, todas esas actividades se nurten de datos e informacion estadistica.
+
+En este curso, además de los fundamentos metodológicos generales, te proponemos **cuatro trayectos de ejercicios prácticos**. Cada uno refleja un perfil profesional distinto y te permitirá entrenarte en un tipo específico de análisis y herramientas. Revisen en los siguientes escenarios y evaluen en cuál te ves más reflejado:  
+
+1. **Académico cuantitativo**  
+   - *Escenario:* “Quiero entrar en diálogo con los hallazgos empíricos recientes y aportar, aunque sea en pequeña medida, al debate que me antecede. Me interesa producir evidencia nueva para responder preguntas clásicas: ¿por qué ocurren las guerras? ¿Qué factores explican la democratización?”  
+   - *Ejemplo de ejercicio:* construir hipótesis, testearlas con bases de datos internacionales y discutir sus implicaciones teóricas.  
+
+2. **Analista de datos general**  
+   - *Escenario:* “Me interesa adquirir herramientas versátiles de análisis de datos, más allá de la ciencia política. Quiero aprender a limpiar, organizar y visualizar información de forma clara para distintos ámbitos profesionales.”  
+   - *Ejemplo de ejercicio:* procesar un conjunto de datos socioeconómicos y elaborar visualizaciones para comunicar tendencias de manera sencilla y efectiva.  
+
+3. **Analista de políticas públicas**  
+   - *Escenario:* “Quiero orientarme al estudio de problemas sociales concretos y contribuir a mejorar la gestión pública. Me interesa la evaluación de programas, el diseño de indicadores y la formulación de recomendaciones para la toma de decisiones.”  
+   - *Ejemplo de ejercicio:* analizar la efectividad de un programa de asistencia social con métodos comparativos y evaluar factores contextuales que incrementan o disminuyen el impacto de la iniciativa.  
+
+4. **Analista de opinión pública**  
+   - *Escenario:* “Me atrae más la estrategia política y el estudio de la opinión. Me interesa entender cómo piensan y votan los ciudadanos, interpretar encuestas y comunicar hallazgos a audiencias no especializadas.”  
+   - *Ejemplo de ejercicio:* diseñar un cuestionario breve sobre actitudes hacia la distintos candidatos, aplicar una encuesta piloto y analizar los resultados con herramientas básicas de estadística.  
+
 ---
 
-# 3. Determinismo, probabilismo y el papel de los contrafácticos
+En base a estos escenarios, te invitamos a elegir el trayecto que mejor se ajuste a tus intereses. La materia te dará un panorama amplio de las herramientas metodológicas, pero estos perfiles profesionales te orientarán hacia un **camino de aprendizaje específico**, con actividades y competencias alineadas a tu futuro académico o laboral.  
+:::
 
-En las ciencias naturales es común hablar de leyes deterministas: bajo ciertas condiciones, el resultado será siempre el mismo. En cambio, en las ciencias sociales rara vez podemos trabajar con determinismos. Lo que encontramos son **relaciones probabilísticas**: decimos que algo *aumenta* o *disminuye* la probabilidad de que ocurra un fenómeno, pero casi nunca podemos afirmar que lo determine de manera absoluta.  
 
-Esta diferencia introduce el problema de los **contrafácticos**. Para decir que un fenómeno *causa* otro, deberíamos comparar la realidad con lo que habría sucedido en un mundo alternativo donde la causa no estuviera presente. Como explican Morgan y Winship (2014), este es el **problema fundamental de la inferencia causal en ciencias sociales**: nunca podemos observar directamente los contrafácticos. Por eso recurrimos a diseños comparativos, modelos estadísticos y técnicas de inferencia que intentan aproximarse a ese escenario imposible.  
+# Material para expandir este modulo
 
-No obstante, aquí aparecen limitaciones prácticas y éticas. Si explicar fuera simplemente “manipular”, como se afirma en ciertas disciplinas naturales, deberíamos provocar guerras para testear teorías sobre conflictos internacionales, o generar crisis económicas a voluntad para medir su efecto en la política. Esto es, por supuesto, inadmisible. Por eso, en ciencias sociales dependemos de observaciones históricas, experimentos naturales y modelos probabilísticos que nos permitan aprender sin manipular la realidad de manera destructiva.
-
----
-
-# 4. Método cuantitativo y método cualitativo
-
-Dentro de las ciencias sociales conviven dos grandes tradiciones metodológicas: la cuantitativa y la cualitativa.  
-
-- **El enfoque cuantitativo** se asienta en el positivismo y el empirismo. Solo lo que puede medirse es considerado conocimiento válido, y su fuerza reside en la estandarización y la posibilidad de generalizar.  
-- **El enfoque cualitativo** se apoya en corrientes como la fenomenología o el interaccionismo simbólico, y privilegia la comprensión profunda de fenómenos únicos, incorporando significados y experiencias.  
-
-Como advierte Blalock (1982), la elección de un método nunca es neutral: siempre se realiza dentro de un marco conceptual previo que define qué datos se consideran relevantes y cómo deben interpretarse. Así, elegir un método es también una forma de elegir un enfoque sobre la realidad.  
-
----
-
-# 5. Ciencia como práctica social: mitos y limitaciones
-
-Una concepción ingenua de la ciencia tiende a verla como una actividad objetiva, exacta y neutral. Sin embargo, en la práctica existen varios **mitos** que es necesario desmontar:  
-
-1. **La objetividad absoluta**: no existe; todo dato es producto de elecciones humanas sobre qué medir y cómo hacerlo.  
-2. **La exactitud infalible**: las cifras son aproximaciones, no verdades finales.  
-3. **La neutralidad valorativa**: la investigación refleja marcos teóricos y valores que orientan nuestras decisiones.  
-4. **La hipótesis como requisito universal**: hay investigaciones descriptivas que no parten de hipótesis formales.  
-5. **La causalidad definitiva**: en ciencias sociales siempre hablamos de relaciones probabilísticas, no de leyes universales.  
-
-Como señala Oreskes (2004), la ciencia no ofrece “pruebas” en el sentido estricto del término, sino consensos revisables basados en la mejor evidencia disponible:contentReference[oaicite:0]{index=0}. Y como advierte Jauretche, los datos mismos nacen de contextos sociales y políticos: no existen mediciones “puras” al margen de la historia.  
-
----
-
-# 6. La revolución de la replicación y las buenas prácticas
-
-En la última década, las ciencias sociales atravesaron lo que se conoce como la **crisis de replicación**. Varios estudios influyentes no pudieron ser replicados, lo que generó dudas sobre la confiabilidad de los resultados publicados. Lejos de destruir la disciplina, este episodio abrió una transformación positiva: se instaló la exigencia de **transparencia** y **apertura**.  
-
-Hoy las buenas prácticas incluyen:  
-
-- **Pre-registro de estudios** para declarar hipótesis y métodos antes de recolectar datos.  
-- **Disponibilización de datos y códigos** para que otros investigadores puedan replicar los análisis.  
-- **Documentación detallada de los procesos** para que la investigación sea evaluada en todas sus etapas.  
-
-Esta revolución reafirma la idea de que la ciencia es un **esfuerzo colectivo**: progresa gracias a la crítica, la verificación y la corrección entre pares.  
-
----
-
-# Conclusión: hacia un abordaje crítico y plural
-
-Reconocer la naturaleza social de la ciencia y los fundamentos epistemológicos de nuestras elecciones metodológicas es indispensable para realizar investigaciones conscientes y rigurosas. La **metodología cuantitativa** nos brinda herramientas poderosas para identificar patrones y establecer inferencias, pero solo alcanza su máximo potencial cuando se utiliza con conciencia crítica, en diálogo con otros métodos y con la reflexión filosófica sobre lo que significa “conocer” en ciencias sociales.  
-
-En suma, lo mensurable no agota lo real. La riqueza del conocimiento científico proviene de la capacidad de combinar la descripción, la explicación y la predicción, reconociendo al mismo tiempo los límites y las posibilidades de nuestra práctica.  
-
----
+Booth - the craft of research
+Ruse - creation science is not science
+Curd et al - philosophy of science: the central issues
 
 ## Bibliografía
 
@@ -160,3 +229,15 @@ En suma, lo mensurable no agota lo real. La riqueza del conocimiento científico
 - Matthews, M. (2009). *Science, Worldviews and Education*.  
 - Morgan, S. & Winship, C. (2014). *Counterfactuals and Causal Inference*.  
 - Oreskes, N. (2004). *Science and Public Policy: What’s Proof Got to Do with It?*  
+
+## Referencias  
+
+[^chalmers1999]: Chalmers, A. F. (1999). *¿Qué es esa cosa llamada ciencia?*  
+[^oreskes2004]: Oreskes, N. (2004). “Science and public policy: what’s proof got to do with it?” *Environmental Science & Policy*.  
+[^referencias02]: Popper, K. (1935), Kuhn, T. (1962), Lakatos, I. (1978).  
+[^morgan2014]: Morgan, S. L., & Winship, C. (2014). *Counterfactuals and Causal Inference*.  
+[^goertz2012]: Goertz, G., & Mahoney, J. (2012). *A Tale of Two Cultures: Qualitative and Quantitative Research in the Social Sciences*.  
+[^blalock]: Blalock, H. M. (1982). *Conceptualization and Measurement in the Social Sciences*.  
+
+
+>Dada la pretencion practica de este material, hacemos una descipcion mas cercana a la *ciencia normal* de Kuhn, donde el oficio del investigador se encuentra ecausado en una serie de problemas concretos a investigar, asi como la aceptacion de algunas formas de evidencia sobre otras. Ello no implica que la creatividad o el crecimiento sea lineal y progresivo en un sentido de verificabilidad positivista. Si quiere decir que existe una serie de normas profesionales en la practica del dia a dia del investigador empirico. Oreskes ofrece una revision de algunos casos concretos sobre su funcionamiento. Mearshimmer y Walt (2014) ofrecen una critica a este tipo de practicas en su formato mas extremo, el testeo de hipotesis multiples sin discusion teorica que la guie. 

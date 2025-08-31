@@ -3,180 +3,175 @@ title: "Módulo 3 — Diseño de Investigación, Modelos Teóricos, Hipótesis y
 format: html
 ---
 
-# Introducción
+# Introducción  
 
-Todo proyecto de investigación, sin importar su escala, campo o enfoque metodológico, debe comenzar con un **diseño sólido**. Este diseño es mucho más que un esquema técnico: es una decisión estratégica sobre cómo queremos conocer algo, a qué preguntas intentaremos responder, qué tipo de datos nos hacen falta, y cómo los vamos a interpretar. En este módulo, nos enfocaremos en los **cimientos conceptuales y metodológicos** de toda investigación cuantitativa: el diseño, el modelo teórico, las hipótesis y la unidad de análisis.
+Todo proyecto de investigación, sin importar su escala, campo o enfoque metodológico, debe comenzar con un **diseño sólido**. El diseño no es un simple trámite administrativo ni un esquema técnico, es la **decisión estratégica** que organiza todo el proceso de conocimiento. Define cómo vamos a responder una pregunta, qué tipo de datos necesitamos y de qué manera interpretaremos los resultados.  
 
-También reflexionaremos sobre un elemento frecuentemente olvidado en los cursos metodológicos: la **factibilidad**. Es decir, si lo que queremos hacer es realmente viable. No toda buena idea puede transformarse en una buena investigación. Y muchas investigaciones correctas en su diseño terminan fallando por no considerar sus limitaciones prácticas.
+En este módulo trabajaremos sobre los **cimientos conceptuales y metodológicos** que sostienen cualquier investigación cuantitativa: el diseño, el modelo teórico, las hipótesis y la unidad de análisis. A estos elementos añadiremos una reflexión indispensable y, sin embargo, a menudo descuidada: la **factibilidad**. No toda buena idea se convierte en un buen proyecto, y muchas investigaciones bien formuladas terminan fracasando porque no evaluaron con realismo los límites de tiempo, recursos o acceso a la información.  
 
-Este módulo se apoya en materiales clave como Polit y Hungler, Cea D’Ancona, King-Keohane-Verba (KKV), y notas propias de la cátedra.
+# ¿Qué es un diseño de investigación?  
 
-------------------------------------------------------------------------
+El **diseño de investigación** es el plan general que organiza el camino desde la formulación de la pregunta hasta la interpretación de los resultados. No es una fase aislada: es la **columna vertebral** que mantiene la coherencia de todo el trabajo.  
 
-# 1. ¿Qué es un diseño de investigación?
+Un diseño sólido responde a preguntas clave como:  
 
-El **diseño de investigación** es el plan general que guía todo el proceso desde la formulación de la pregunta hasta la interpretación de los resultados. No es simplemente una fase más del proceso: es la estructura que permite responder una pregunta empírica de forma sistemática, rigurosa y comunicable.
+- **¿Qué queremos saber?** (problema o pregunta de investigación)  
+- **¿Cómo creemos que funciona el lo que vamos a investigar?** (modelo teórico) 
+- **¿Sobre qué elementos vamos a observar o recolectar datos?** (unidad de análisis)  
+- **¿Qué predicciones podemos derivar?** (hipótesis)  
+- **¿Cómo mediremos nuestras objetos de interes?** (tipos de datos)  
+- **¿Cómo analizaremos esa información?** (método de análisis)  
 
-## Elementos básicos del diseño:
+> “La pregunta de investigación determina el tipo de datos por colectar para el estudio. Si un investigador hace una predicción específica acerca de la respuesta a esas preguntas, se dice que plantea una hipótesis que prueba empíricamente.”  
+> — *Polit & Hungler, p. 131*  
 
--   El **problema o pregunta de investigación**: ¿qué queremos saber?
--   El **modelo teórico**: ¿cómo creemos que funciona ese fenómeno?
--   Las **hipótesis**: ¿qué predicciones derivamos del modelo?
--   La **unidad de análisis**: ¿sobre qué elementos vamos a observar o recolectar datos?
--   El **tipo de datos**: ¿cómo vamos a medir nuestras variables?
--   El **método de análisis**: ¿cómo vamos a interpretar la información?
 
-> “La pregunta de investigación determina el tipo de datos por colectar para el estudio. Si un investigador hace una predicción específica acerca de la respuesta a esas preguntas, se dice que plantea una hipótesis que prueba empíricamente.”\
-> — *Polit & Hungler, p. 131*:contentReference[oaicite:0]{index="0"}
+## Ejemplo práctico  
+>nota, evaluar el lenguaje apropiado a esta altura del curso, tal vez un ejemplo de un articulo reciente para dejar adjunto. 
 
-### Ejemplo 1: Política argentina
 
-Pregunta: ¿Los niveles de educación explican diferencias en la participación electoral en las provincias argentinas?
+Sin habernos adentrado aun en los elementos tengamos como norte un ejemplo practico. Este ejemplo lo iremos suplementando con contenidos teoricos a medida que avanzamos. Imaginemos que queremos investigar la relación entre desigualdad económica y estabilidad democrática en América Latina.  
 
-Diseño inicial: \* Modelo teórico: mayor educación → mayor participación. \* Hipótesis: las provincias con mayor proporción de población con educación secundaria completa muestran mayores niveles de participación. \* Unidad de análisis: provincias. \* Datos: censo + resultados electorales. \* Método: regresión lineal.
+1. **Pregunta de investigación:** ¿La desigualdad económica afecta la estabilidad de los regímenes democráticos en América Latina?  
+2. **Modelo teórico:** Sostenemos que altos niveles de desigualdad generan tensiones sociales y políticas que debilitan la legitimidad de las instituciones democráticas.  
+3. **Hipótesis:** En países con mayor desigualdad, la probabilidad de interrupciones democráticas es más alta.  
+4. **Unidad de análisis:** País-año (por ejemplo, Argentina-1995, Chile-2004, etc.).  
+5. **Tipo de datos:** Indicadores de desigualdad (coeficiente de Gini) y de estabilidad democrática (índices de democracia como Polity o V-Dem).  
+6. **Método de análisis:** Un modelo estadístico de regresión logística que estime la probabilidad de quiebre democrático en función de la desigualdad.  
 
-### Ejemplo 2: Relaciones internacionales
+Este ejemplo muestra cómo el diseño ordena de manera sistemática lo que, de otro modo, serían intuiciones dispersas.  
 
-Pregunta: ¿Las alianzas militares aumentan la cooperación en votaciones multilaterales?
+## La importancia de la factibilidad  
 
-Diseño inicial: \* Modelo teórico: las alianzas estratégicas no solo implican cooperación militar sino también alineamiento diplomático. \* Hipótesis: los países miembros de una misma alianza militar votan de forma más similar en la Asamblea General de la ONU. \* Unidad de análisis: pares de países (dyads). \* Datos: ATOP + registros de votación de la ONU. \* Método: análisis de correlación y regresión logística.
+Un buen diseño de investigación no se mide únicamente por la claridad de sus conceptos o la elegancia de su modelo teórico. También debe preguntarse, con realismo, si lo que propone es posible de llevar a cabo. Esta dimensión, llamada **factibilidad**, suele ser subestimada, pero es la que finalmente marca la diferencia entre un proyecto que llega a buen puerto y uno que queda inconcluso.
 
-------------------------------------------------------------------------
+Muchas investigaciones no fracasan por fallas en las ideas, sino por problemas prácticos: preguntas demasiado ambiciosas para el tiempo disponible, ausencia de datos confiables, dificultades para acceder a fuentes, o recursos materiales que nunca se concretan. La factibilidad es, entonces, el puente entre la ambición intelectual y la realidad concreta de la investigación.  
 
-# 2. Modelos teóricos
+Pensemos en un ejemplo. Un estudiante plantea como tema de su tesis “analizar todas las elecciones municipales en América Latina durante el último siglo para identificar patrones de participación ciudadana”. La idea es interesante y sugerente: permitiría trazar comparaciones regionales de largo plazo, identificar tendencias y aportar a debates centrales sobre democracia y representación. Sin embargo, cuando intentamos llevarla a la práctica aparecen los obstáculos: los datos municipales de muchos países simplemente no existen o no son comparables; reunir información de más de diez países a lo largo de cien años es una tarea que sobrepasa los límites de cualquier trabajo individual; y el tiempo de investigación —en este caso, un año académico— hace inviable un proyecto de esa escala.  
 
-Un **modelo teórico** es una representación simplificada del mundo. Nos permite pensar **cómo** y **por qué** se relacionan ciertos fenómenos, sin necesidad de capturar cada detalle del contexto.
+Aquí es donde la factibilidad cumple su rol pedagógico. El proyecto puede reformularse de modo más realista: por ejemplo, centrarse en las elecciones municipales de Argentina y Chile entre 1990 y 2010. De ese modo, la investigación mantiene el atractivo comparativo, pero se ajusta a fuentes accesibles, a un marco temporal delimitado y a los recursos efectivamente disponibles. La pregunta deja de ser inabordable y se convierte en un estudio concreto, viable y con potencial para aportar conocimiento relevante.  
 
-Como se señala en *notes-03-models*:
+Evaluar la factibilidad no significa, sin embargo, renunciar a la ambición. Al contrario, puede convertirse en una fuente de creatividad. Cuando los datos perfectos no están disponibles, los investigadores encuentran soluciones ingeniosas: recurren a archivos periodísticos, diseñan entrevistas, utilizan encuestas previas o se apoyan en “experimentos naturales” que ofrece la historia. La falta de recursos obliga a repensar métodos, a seleccionar casos estratégicos o a combinar distintas fuentes, y de esas limitaciones muchas veces surgen aportes innovadores.
 
-> “La ciencia es imaginativa. Construir un modelo teórico es más como escribir poesía que como llenar una planilla: implica seleccionar, abstraer y conectar elementos relevantes de forma explicativa.”:contentReference[oaicite:1]{index="1"}
+La lección central es que el diseño de investigación es, en gran medida, un **ejercicio de equilibrio**. Debe mantener viva la aspiración de responder preguntas importantes sin perder de vista los límites prácticos del proyecto. Los grandes debates de la ciencia política no se construyeron en un solo estudio monumental, sino en la acumulación de investigaciones parciales, cada una ajustada a su contexto, pero todas ellas dialogando entre sí. De este modo, lo factible no es una barrera que achica la ciencia, sino la condición que permite que nuestras ideas se conviertan en hallazgos concretos, comunicables y útiles para la comunidad académica y para la sociedad.  
 
-Los modelos sirven para: \* Organizar nuestras ideas. \* Generar hipótesis. \* Detectar contradicciones o vacíos conceptuales. \* Guiar la recolección de datos.
+Diseñar con factibilidad es, en última instancia, aprender a pensar como estrategas: escoger qué batallas podemos dar, formular preguntas que puedan responderse dentro de nuestras posibilidades, y reconocer que cada avance, por modesto que sea, puede sumarse a un esfuerzo colectivo mayor.  En este curso vamos a progresar en las preguntas de investigacion que formularon la primera semana, pero la regla es el ingenio para abordarla a pesar de los desafios.
 
-### Características deseables de un modelo teórico:
+# Modelos teóricos  
+> nota incluir descripcion de carslile sobre que es un modelo 
 
--   Claridad conceptual: los términos usados deben estar bien definidos.
--   Parsimonia: debe ser tan simple como sea posible, sin perder capacidad explicativa.
--   Coherencia interna: las relaciones entre variables deben ser lógicas.
--   Capacidad de generalización: idealmente, debe poder aplicarse más allá del caso específico.
+En el corazón de toda investigación científica encontramos una herramienta que rara vez se ve directamente, pero que organiza silenciosamente cada paso del proceso: el **modelo teórico**. Hablar de un modelo no significa reproducir la realidad con todos sus detalles, sino diseñar una representación simplificada que nos ayude a orientarnos en medio de la complejidad del mundo social. La metáfora más adecuada es la del mapa: un mapa que pretendiera registrar cada árbol, cada piedra y cada detalle del terreno dejaría de ser útil; lo que lo hace valioso es su capacidad de seleccionar lo esencial, destacar lo relevante y dejar de lado lo accesorio. De igual modo, un modelo teórico no busca copiar la realidad en su totalidad, sino recortar ciertos aspectos para comprenderlos mejor.  
 
-### Ejemplo práctico: Confianza institucional
+Las ciencias sociales siempre han estado atravesadas por el debate en torno a cómo construir esas representaciones. Kant sostenía que la realidad es, en bruto, un caos de sensaciones que solo se vuelve inteligible a través de conceptos que ordenan y dan forma. En ese sentido, los modelos son nuestro modo de poner orden en la arena informe de los fenómenos políticos y sociales. Sin teoría, los hechos son una acumulación dispersa, difícil de interpretar; pero sin contacto con los hechos, los modelos son castillos vacíos, bellas construcciones sin sustento empírico. De allí que la relación entre teoría y realidad deba pensarse como un equilibrio: necesitamos de los modelos para pensar, pero esos modelos deben ser confrontados con la evidencia para no caer en la irrelevancia.  
 
-Modelo teórico: \* Las experiencias previas con corrupción afectan la percepción de legitimidad del sistema político. \* La percepción de legitimidad afecta el cumplimiento de normas.
+Los modelos en ciencias sociales cumplen una doble función. Por un lado, organizan nuestras ideas, obligándonos a tomar decisiones sobre qué factores son centrales y cuáles no. Por otro, nos permiten generar hipótesis, detectar contradicciones conceptuales y guiar la recolección de datos. Un modelo no es tanto un espejo de la realidad como un ejercicio de imaginación disciplinada. Scott Page lo expresa de manera sugestiva: construir un modelo es un acto creativo más cercano a la poesía que a la contabilidad. Como el poeta selecciona imágenes para dar forma a una experiencia, el investigador selecciona conceptos y relaciones para dar sentido a un fenómeno social.  
 
-Visualmente:
+Un ejemplo clásico que ilustra este punto es el modelo del **votante racional** desarrollado por Anthony Downs en la década de 1950. Downs partía de un supuesto inspirado en la economía: los individuos son actores racionales que buscan maximizar su utilidad. Trasladado al campo político, esto implicaba que los votantes eligen entre partidos y candidatos de la misma manera en que los consumidores eligen entre bienes: prefieren aquella opción que les ofrece mayores beneficios en términos de sus intereses, particularmente los económicos. A partir de este supuesto simple, Downs construyó todo un modelo teórico del comportamiento electoral, que incluía predicciones sobre la ubicación de los partidos en un “espacio ideológico” y sobre cómo tenderían a converger hacia el centro para captar el voto de la mayoría.  
 
-```         
-Experiencia con corrupción → Percepción de legitimidad → Conducta ciudadana (p. ej. pagar impuestos, votar)
-```
+Este modelo, aunque obviamente simplificado, tuvo un enorme poder explicativo. No pretendía capturar todas las motivaciones posibles de los votantes —sabemos bien que las identidades, la religión o la ideología pueden pesar tanto como la economía—, pero ofrecía una forma ordenada de pensar el problema. Además, permitió generar hipótesis que podían ponerse a prueba con datos electorales: ¿realmente los partidos moderan sus propuestas para acercarse al centro? ¿los votantes castigan o premian a los gobiernos según la marcha de la economía? En muchos casos, los resultados no coincidieron exactamente con lo que el modelo predecía, y eso abrió nuevas preguntas: ¿por qué hay votantes que no actúan de forma “racional” en términos económicos? ¿qué otros factores habría que incorporar al modelo? Así, la teoría de Downs no fue un dogma, sino un punto de partida que estimuló décadas de investigación comparada sobre elecciones, partidos y comportamiento político.  
 
-Este modelo puede aplicarse tanto a estudios sobre Argentina como a comparaciones internacionales.
+Este ejemplo muestra lo que caracteriza a los modelos en ciencias sociales. No son copias de la realidad, sino **brújulas** que orientan nuestra mirada, nos permiten formular preguntas más precisas y, en muchos casos, detectar los enigmas que realmente valen la pena investigar. Supuestos como que “los políticos buscan siempre la reelección” o que “los Estados procuran maximizar su seguridad” funcionan de manera similar: simplifican un mundo complejo y, a partir de allí, generan hipótesis sobre la conducta de los actores. A veces la realidad confirma esas expectativas, y otras veces las contradice, lo cual abre la puerta a nuevas explicaciones.
+> nota, incluir el realismo de waltz como otro tipo de modelo teorico
 
-------------------------------------------------------------------------
+La clave está en que un modelo teórico debe ser claro en sus conceptos, parsimonioso en sus supuestos, coherente en su lógica interna y, en la medida de lo posible, generalizable más allá del caso específico que lo inspiró. Ningún modelo logra cumplir a la perfección con todos estos criterios, pero los mejores son aquellos que encuentran un balance: lo suficientemente simples para ser comprensibles y lo suficientemente ricos para ser útiles.  
 
-# 3. Hipótesis
+En definitiva, los modelos son una guia para investigadores sociales organizamos el caos de la experiencia para volverla investigable. Nos ayudan a transformar intuiciones vagas en hipótesis concretas, a convertir preguntas filosóficas en predicciones empíricas y a traducir la complejidad de la política en marcos que, aunque imperfectos, nos permiten avanzar en la comprensión del mundo. Como el mapa que no registra cada piedra pero señala los caminos, el modelo teórico nos guía en nuestro viaje intelectual, no nos lleva a todas partes, pero nos muestra por dónde empezar.  
 
-Una **hipótesis** es una afirmación concreta que expresa una relación esperada entre dos o más variables. A diferencia del modelo, que puede ser general o abstracto, la hipótesis debe ser **específica, medible y falsable**.
+Es importante subrayar, además, que los modelos no surgen de manera automática ni de recetas preestablecidas. Son el producto de un delicado equilibrio entre la **creatividad individual** del investigador, la **experiencia acumulada** en el campo que estudia y el **diálogo constante con la literatura existente**. Leer a quienes nos precedieron nos da marcos, conceptos y ejemplos; observar la realidad nos ofrece intuiciones y enigmas; pero es la capacidad creativa de cada investigador la que combina estos insumos para generar un modelo nuevo o adaptar uno existente a un problema específico. En primera instancia, lo más valioso es esa chispa creativa que nos permite ver conexiones donde otros vieron hechos aislados, imaginar mecanismos donde otros solo describieron resultados, o plantear supuestos novedosos que abran caminos de investigación. 
+> nota, citar al paper de shoe leather !
 
-### Tipos comunes de hipótesis:
+Por eso, el desafío para ustedes como estudiantes es doble. No basta con formular una pregunta de investigación clara y bien delimitada; es necesario también comenzar a pensar cuál podría ser el modelo teórico que subyace a la dinámica social que desean explorar. ¿Qué supuestos podrían ayudarles a organizar esa realidad? ¿Qué mecanismos o relaciones imaginan que están en juego? ¿Qué simplificaciones son necesarias para que el problema sea investigable sin perder su riqueza? Los invitamos a detenerse en su propia pregunta de investigación y a esbozar un modelo, por incipiente que sea. Ese primer ejercicio creativo es el inicio del camino: la base sobre la cual podrán dialogar con la literatura existente, poner a prueba hipótesis y, finalmente, aportar su propio ladrillo al edificio colectivo de la ciencia social.  
+> nota, incluir a modo de ejemplo el ejercicio de amanda sobre porque los estudantes siempre se sientan al fondo del curso.
 
--   **Hipótesis de relación**: correlación entre dos variables.
--   **Hipótesis causal**: una variable afecta a otra.
--   **Hipótesis nula**: no hay efecto ni relación.
 
-> “Las hipótesis son predicciones tentativas que orientan la recolección de datos y permiten verificar si el modelo tiene apoyo empírico.”\
-> — *MC Clase 2, Video 5*
 
-### Buenas prácticas:
+# Hipótesis  
 
--   Usar lenguaje claro y directo.
--   Incluir las direcciones de la relación (más, menos, mayor, menor).
--   Evitar hipótesis tautológicas o triviales.
+En el proceso de investigación, el modelo teórico nos da un marco general para pensar cómo funciona la realidad. Pero ese marco debe traducirse en proposiciones más concretas, que puedan ser puestas a prueba. Esa traducción adopta la forma de una **hipótesis**. Una hipótesis no es simplemente una idea vaga o una corazonada, sino una afirmación clara que plantea una relación esperada. A diferencia del modelo, que puede ser más abstracto o general, la hipótesis exige ser **específica, medible y falsable**.  
 
-### Ejemplos comparados:
+Podemos decir, por ejemplo: “Los países con mayores niveles de desigualdad tienden a experimentar más inestabilidad democrática”. Esta es una hipótesis porque establece un vínculo concreto entre dos elementos —desigualdad e inestabilidad— y porque su validez puede ponerse a prueba con datos empíricos. La clave está en que una hipótesis siempre debe poder ser refutada por la evidencia. Si decimos que “todos los políticos siempre buscan reelegirse”, sin matices ni posibilidad de excepción, estamos ante una afirmación que roza lo tautológico: difícil de comprobar, pero también imposible de falsar. La ciencia avanza precisamente porque formula hipótesis que pueden fallar, y de ese fracaso surgen nuevas ideas, correcciones y descubrimientos. Vale la pena repetir que esta perspectiva falsacionista tiene sus criticos, pero en gran medida han guiado la trayectoria del empirisismo cuantitativista en ciencias sociales[^referencias-falsacionismo]. 
 
-*Hipótesis en Ciencia Política:*\
-“Los votantes jóvenes tienen menos probabilidad de votar en elecciones legislativas que los votantes mayores.”
+En las ciencias sociales, las hipótesis adoptan diversas formas. Algunas son de **relación**, cuando lo que proponemos es que dos variables se mueven juntas: a mayor educación, mayor participación política; a menor confianza institucional, menor cumplimiento de las normas. Otras son de carácter **causal**, cuando sostenemos que un factor produce un efecto en otro: un aumento en el gasto militar reduce la inversión en políticas sociales; la aprobación de leyes de cuotas incrementa la representación femenina en los parlamentos. Finalmente, toda hipótesis empírica convive con su contraparte, la llamada **hipótesis nula**, que establece que no existe ninguna relación entre las variables consideradas. La hipótesis nula es fundamental, porque representa el escenario de referencia contra el cual se evalúan las alternativas.  
 
-*Hipótesis en Relaciones Internacionales:*\
-“Los países con mayor intercambio comercial tienen menor probabilidad de entrar en conflicto armado entre sí.”
+Lo más importante al formular una hipótesis es que el lenguaje sea claro y que la dirección de la relación quede explícita. No basta con decir “la educación está vinculada a la participación política”; hay que precisar si esperamos que más educación implique más participación, o al contrario, menos. La claridad en este punto orienta no solo la recolección de datos, sino también el tipo de análisis estadístico que será necesario para evaluarla. Y, sobre todo, evita que caigamos en afirmaciones triviales que confunden más de lo que explican.  
 
-Ambas hipótesis son falsables, miden fenómenos concretos y derivan de modelos teóricos razonables.
+De este modo, la hipótesis funciona como un **puente** entre teoría y evidencia: surge de un modelo teórico, pero solo cobra sentido en el contraste con la realidad. Como decía un recordado profesor de metodología: una buena hipótesis es aquella que nos obliga a salir al campo, recolectar datos y dejar que la evidencia tenga la última palabra.  
 
-------------------------------------------------------------------------
+# Unidad de análisis  
 
-# 4. Unidad de análisis
+Si la hipótesis nos dice qué relación queremos poner a prueba, la **unidad de análisis** nos indica **sobre qué entidades vamos a observarla**. Este concepto, aunque a veces se presenta como un detalle técnico, es en realidad un elemento decisivo del diseño de investigación. La unidad de análisis es el “objeto básico” de observación, aquello al que aplicamos nuestras mediciones y sobre el cual construiremos nuestras inferencias.  
 
-La **unidad de análisis** es el “objeto” básico de observación al que se aplican nuestras mediciones y sobre el que se harán inferencias. Puede variar ampliamente según la pregunta:
+En ciencias sociales, las posibilidades son variadas. Podemos trabajar con **individuos**, como en los estudios de comportamiento electoral donde el foco está en las personas y sus decisiones de voto. Podemos concentrarnos en **grupos**, como partidos, sindicatos o comunidades locales, y analizar cómo interactúan o evolucionan. También podemos tomar como unidad a las **instituciones**, por ejemplo, parlamentos, ejércitos o agencias estatales, y estudiar su diseño, sus prácticas o su desempeño. En ocasiones, lo más apropiado es pensar en **estados** como unidades, sobre todo en los estudios de relaciones internacionales, donde lo relevante es el comportamiento de países en el sistema internacional. Y en otros casos, la unidad de análisis son **eventos**: elecciones, protestas, golpes de Estado, guerras, tratados de paz.  
 
--   Individuos (personas, votantes, funcionarios)
--   Grupos (partidos, comunidades, provincias)
--   Instituciones (congresos, ejércitos, agencias)
--   Estados (países)
--   Eventos (elecciones, golpes de Estado, guerras)
+La elección de la unidad de análisis define qué datos vamos a recolectar, cómo vamos a medirlos y qué tipo de inferencias serán posibles. Por ejemplo, si nos interesa saber si la educación influye en el voto, la unidad más adecuada son los individuos: necesitamos datos de personas, encuestas que nos digan cuánto estudiaron y cómo votaron. Si, en cambio, nos preguntamos si la inversión en educación se relaciona con el desarrollo económico, probablemente la unidad adecuada sean los países: necesitamos datos agregados a nivel estatal. 
 
-> “Elegir la unidad de análisis correcta es clave, ya que define cómo recolectaremos datos y qué tipo de inferencia podremos realizar.”\
-> — *MC Clase 3, Video 1*
+El cuidado con la unidad de análisis, por lo tanto, es fundamental. Elegirla bien nos ahorra problemas de interpretación y nos acerca a inferencias más sólidas. Como recordamos en clase, la unidad de análisis es como el lente de una cámara: determina el nivel de resolución con el que veremos el fenómeno. Un lente demasiado amplio puede perdernos en generalidades; uno demasiado estrecho puede aislarnos en detalles irrelevantes. Lo esencial es que el lente coincida con la pregunta de investigación, de manera que podamos enfocar con claridad el objeto que buscamos comprender.  
 
-### Ejemplos:
 
-*Estudio de opinión pública*\
-Unidad de análisis: individuos.\
-Fuente de datos: encuestas.
+## Falacia ecológica  (mejorar el ejemplo basico)
 
-*Estudio de cooperación internacional*\
-Unidad de análisis: pares de Estados (dyads).\
-Fuente de datos: bases de tratados y votaciones multilaterales.
+Un error común en investigación es confundir el nivel de la hipótesis con el de la unidad de análisis. Quien formula hipótesis sobre individuos pero utiliza datos agregados corre el riesgo de incurrir en la llamada “falacia ecológica”: atribuir al comportamiento individual lo que solo fue observado en los promedios de un país o región.  
 
-------------------------------------------------------------------------
+Supongamos que queremos analizar la relación entre **nivel educativo** y **apoyo a la democracia**. Tenemos datos agregados a nivel de provincias (unidad de análisis: provincias) y observamos lo siguiente:
 
-# 5. Evaluar la factibilidad
+| Provincia | % con educación universitaria | % que apoya la democracia |
+|-----------|-------------------------------|---------------------------|
+| Alfa      | 40%                           | 80%                       |
+| Beta      | 20%                           | 60%                       |
+| Gamma     | 10%                           | 50%                       |
+| **Total (país)** | **23%**                | **63%**                   |
 
-El diseño puede ser coherente y teóricamente impecable, pero si no se puede implementar, no sirve. La **factibilidad** evalúa si el estudio puede llevarse a cabo dadas las restricciones de:
+A nivel agregado, los datos parecen claros: las provincias con **mayor proporción de población universitaria** muestran **mayor apoyo a la democracia**. Podríamos concluir, apresuradamente, que **las personas con educación universitaria apoyan más la democracia que las personas sin ella**.  
 
--   Tiempo.
--   Acceso a datos.
--   Recursos financieros.
--   Barreras éticas o legales.
+Sin embargo, cuando vamos a los **datos individuales**, la historia puede ser distinta. Imaginemos que dentro de cada provincia, los votantes con educación universitaria son en realidad **más críticos** de la democracia que los que no tienen educación universitaria. Lo que ocurre es que las provincias con más universitarios tienen, por otras razones (historia política local, mayor urbanización, influencia de movimientos sociales), niveles más altos de apoyo a la democracia.  
 
-Como dice *Cea D’Ancona*:
+En este caso, la inferencia a nivel individual (los universitarios apoyan más la democracia) no se sostiene, porque los datos agregados esconden la verdadera relación dentro de cada unidad.  
 
-> “El investigador debe equilibrar ambición analítica con viabilidad operativa. No se trata solo de pensar qué sería ideal estudiar, sino qué es posible investigar en condiciones reales.”\
-> — *Cea D’Ancona, Cap. 8*
+La falacia ecológica nos recuerda que **no podemos pasar del nivel agregado al individual**. Si nuestra hipótesis está formulada sobre individuos, necesitamos datos individuales para ponerla a prueba.  El ejemplo clásico es de Robinson (1950) sobre inmigración en Estados Unidos: a nivel estatal, los estados con mayor proporción de inmigrantes tenían en promedio **tasas más altas de alfabetización**, lo que llevó a inferir que los inmigrantes eran más alfabetizados que los nativos. Pero al mirar los datos individuales, resultó que los inmigrantes eran en realidad menos alfabetizados que los nativos: lo que ocurría es que vivían en estados donde los nativos tenían niveles de alfabetización excepcionalmente altos.  
 
-### Preguntas guía:
-
--   ¿Tengo acceso a los datos necesarios?
--   ¿Tengo el tiempo para recolectarlos y analizarlos?
--   ¿Hay limitaciones éticas o políticas que debo contemplar?
--   ¿Puedo adaptar el diseño si encuentro obstáculos?
-
-### Ejemplo:
-
-Un estudiante desea estudiar el impacto de la militarización de fronteras en la migración clandestina en América del Sur. Pero los datos sobre migración irregular son escasos, y el acceso a documentos oficiales puede estar restringido. Una alternativa factible sería estudiar la percepción pública sobre la seguridad fronteriza a partir de encuestas regionales.
-
-------------------------------------------------------------------------
 
 # Conclusión
 
-Diseñar una investigación social es un arte y una técnica. Requiere conocimiento teórico, claridad metodológica, intuición empírica y sentido común. En este módulo dimos los primeros pasos para pensar con precisión cómo se construye un proyecto investigativo que sea:
+Al final, todo diseño de investigación se construye sobre estos tres pilares que hemos recorrido: el modelo teórico, que nos ofrece un marco de sentido; la hipótesis, que convierte ese marco en afirmaciones comprobables; y la unidad de análisis, que nos dice dónde y sobre quiénes mirar para evaluar esas afirmaciones. El reto, como siempre, está en lograr la coherencia entre los tres, de modo que la pregunta planteada encuentre en los datos la mejor oportunidad de respuesta. 
 
--   Teóricamente fundamentado.
--   Metodológicamente riguroso.
--   Empíricamente viable.
 
-En los próximos módulos trabajaremos cómo operacionalizar conceptos abstractos, cómo recolectar y resumir datos, y cómo pasar de las hipótesis a las pruebas estadísticas. Pero todo comienza acá, con una buena pregunta, un modelo sensato, y un diseño honesto y realizable.
+::: {.callout-note appearance="simple" icon="false"}
 
-------------------------------------------------------------------------
+De la pregunta al diseño de investigación  
 
-# Causalidad y el problema del contrafáctico
+Hasta aquí hemos recorrido los componentes centrales del diseño: la factibilidad, el modelo teórico, las hipótesis y la unidad de análisis. Ahora es el momento de ponerlos en juego a partir de tu propia **pregunta de investigación**, aquella que definiste en el primer módulo.  
 
-En ciencias sociales y relaciones internacionales, afirmar que “X causa Y” implica imaginar un **mundo contrafáctico**, donde X no ocurre, y comparar el resultado con el mundo real.
+El ejercicio consiste en avanzar un paso más y bosquejar el diseño preliminar de tu proyecto siguiendo cuatro pasos:  
 
-Por ejemplo:\
-\* Mundo real: un país que se une a una alianza militar recibe apoyo logístico en una operación internacional.\
-\* Mundo contrafáctico: ese mismo país no se une a la alianza. ¿Habría recibido el mismo apoyo?
+1. **Modelo teórico**  
+   Imagina un mecanismo, relación o supuesto que podría explicar la dinámica social detrás de tu pregunta. No tiene que ser perfecto ni definitivo: puede surgir de lo que ya leíste en otros cursos, de un autor clásico que recuerdes, o de una idea propia. Lo importante es que proponga una forma de organizar la realidad.  
+   *Ejemplo:* “Si los votantes buscan maximizar su utilidad económica, entonces tenderán a castigar a los gobiernos en contextos de crisis.”  
 
-El problema es que **no podemos observar ambos mundos a la vez**. A esto se lo llama *problema fundamental de la inferencia causal*. Resolverlo requiere creatividad metodológica: experimentos, diseños cuasi-experimentales o análisis estadísticos cuidadosos.
+2. **Hipótesis**  
+   Formula una afirmación concreta y falsable que pueda derivarse de tu modelo. Sé específico en la dirección de la relación.  
+   *Ejemplo:* “A mayor tasa de desempleo, menor probabilidad de que un presidente latinoamericano sea reelecto.”  
 
-------------------------------------------------------------------------
+3. **Unidad de análisis**  
+   Define cuál será el objeto básico de observación para tu estudio. ¿Vas a analizar personas, partidos, gobiernos, países, o eventos? Piensa en cuál es la unidad que mejor encaja con tu pregunta y tu hipótesis.  
+   *Ejemplo:* País-año (Argentina 2003, Brasil 2010, etc.) para estudiar la relación entre desempleo y reelección presidencial.  
+
+4. **Factibilidad**  
+   Reflexiona críticamente sobre si tu proyecto es realizable. ¿Existen datos disponibles para tu unidad de análisis? ¿Podrías recolectarlos en el tiempo y con los recursos que tienes? ¿El alcance de tu pregunta es adecuado para el nivel del trabajo (práctico de curso, tesis, investigación doctoral)?  
+   *Ejemplo:* “Los datos de desempleo y elecciones presidenciales en América Latina están disponibles en series públicas (CEPAL, Banco Mundial, LAPOP). Esto hace factible el estudio para un trabajo final de licenciatura en un plazo de un semestre.”  
+
+## Para entregar  
+Escribe un breve esquema (máximo una página) con tu modelo teórico, hipótesis, unidad de análisis y justificación de factibilidad. La idea es que no solo practiques la formulación, sino que también empieces a visualizar los desafíos y alcances reales de tu investigación.  
+
+Recuerden, la creatividad en el modelo es el punto de partida, la claridad en la hipótesis el puente hacia la evidencia, la elección de la unidad de análisis la base de tu diseño, y la factibilidad el límite que convierte una buena idea en un proyecto viable.  
+
+:::
+
+Bibliografia
+Lave, Charles A., and James G. March. 1993. An Introduction to Models in the Social Sciences. New York: Harper and Row
+
+Mearsheimer, John J., and Stephen M. Walt. "Leaving theory behind: Why simplistic hypothesis testing is bad for International Relations." European Journal of International Relations 19, no. 3 (2013): 427-457.
+
+scott page - the model thinker
+
+
+[^referencias-falsacionismo]: Para una defensa al falsacionismo consultar a popper..., para criticas dentro de la filosofia de la ciencia, revisar a Khun. Un contrapunto interesante dentro de las relaciones internacionales waltz y mearshimmer y su debate contra lake.

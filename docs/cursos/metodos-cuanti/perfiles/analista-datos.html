@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modulo 5 - Explorando los datos, Estadística descriptiva de una variable: histogramas y tablas de frecuencia – Claudio Robelo</title>
+<title>analista-datos – Claudio Robelo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -103,40 +103,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">En esta página</h2>
-   
-  <ul>
-  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
-  <li><a href="#con-que-datos-contamos" id="toc-con-que-datos-contamos" class="nav-link" data-scroll-target="#con-que-datos-contamos">Con que datos contamos</a></li>
-  <li><a href="#qué-hacemos-con-los-datos" id="toc-qué-hacemos-con-los-datos" class="nav-link" data-scroll-target="#qué-hacemos-con-los-datos">¿Qué hacemos con los datos?</a></li>
-  <li><a href="#v1" id="toc-v1" class="nav-link" data-scroll-target="#v1">V1</a></li>
-  <li><a href="#introducción-1" id="toc-introducción-1" class="nav-link" data-scroll-target="#introducción-1">Introducción</a></li>
-  <li><a href="#qué-hacemos-con-los-datos-1" id="toc-qué-hacemos-con-los-datos-1" class="nav-link" data-scroll-target="#qué-hacemos-con-los-datos-1">1. ¿Qué hacemos con los datos?</a></li>
-  <li><a href="#preliminares-depuración-missing-y-outliers" id="toc-preliminares-depuración-missing-y-outliers" class="nav-link" data-scroll-target="#preliminares-depuración-missing-y-outliers">2. Preliminares: depuración, <em>missing</em> y <em>outliers</em></a></li>
-  <li><a href="#tablas-de-frecuencias-y-primera-mirada" id="toc-tablas-de-frecuencias-y-primera-mirada" class="nav-link" data-scroll-target="#tablas-de-frecuencias-y-primera-mirada">3. Tablas de frecuencias y primera mirada</a></li>
-  <li><a href="#tablas-de-frecuencia-la-base-descriptiva" id="toc-tablas-de-frecuencia-la-base-descriptiva" class="nav-link" data-scroll-target="#tablas-de-frecuencia-la-base-descriptiva">1. Tablas de frecuencia: la base descriptiva</a>
-  <ul class="collapse">
-  <li><a href="#ejemplo-1-tipo-de-régimen-político" id="toc-ejemplo-1-tipo-de-régimen-político" class="nav-link" data-scroll-target="#ejemplo-1-tipo-de-régimen-político">Ejemplo 1: Tipo de régimen político</a></li>
-  </ul></li>
-  <li><a href="#histogramas-la-visualización-universal" id="toc-histogramas-la-visualización-universal" class="nav-link" data-scroll-target="#histogramas-la-visualización-universal">2. Histogramas: la visualización universal</a>
-  <ul class="collapse">
-  <li><a href="#ejemplo-2-gasto-militar-como-del-pbi" id="toc-ejemplo-2-gasto-militar-como-del-pbi" class="nav-link" data-scroll-target="#ejemplo-2-gasto-militar-como-del-pbi">Ejemplo 2: Gasto militar como % del PBI</a></li>
-  </ul></li>
-  <li><a href="#relación-entre-tablas-y-gráficos" id="toc-relación-entre-tablas-y-gráficos" class="nav-link" data-scroll-target="#relación-entre-tablas-y-gráficos">3. Relación entre tablas y gráficos</a></li>
-  <li><a href="#decisiones-clave-al-construir-histogramas" id="toc-decisiones-clave-al-construir-histogramas" class="nav-link" data-scroll-target="#decisiones-clave-al-construir-histogramas">4. Decisiones clave al construir histogramas</a></li>
-  <li><a href="#ejercicio-práctico" id="toc-ejercicio-práctico" class="nav-link" data-scroll-target="#ejercicio-práctico">5. Ejercicio práctico</a></li>
-  <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión">Conclusión</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Modulo 5 - Explorando los datos, Estadística descriptiva de una variable: histogramas y tablas de frecuencia</h1>
+<h1 class="title">analista-datos</h1>
 </div>
 
 
@@ -153,213 +128,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introducción" class="level1">
-<h1>Introducción</h1>
-<p>En el camino de la investigación cuantitativa, una vez que hemos formulado preguntas, diseñado un plan y transformado conceptos en variables, llegamos al momento de <strong>mirar de frente a los datos</strong>. Este módulo marca la entrada en el terreno de la <strong>estadística descriptiva</strong>, es decir, el conjunto de técnicas que nos permiten conocer cómo están compuestos los datos antes de avanzar hacia inferencias más complejas o pruebas de hipótesis.</p>
-<p>Es importante subrayar que los datos que describimos pueden provenir de distintas fuentes. En algunos casos, somos nosotros mismos quienes los hemos producido mediante encuestas, entrevistas estructuradas o registros de observación en el campo. En otros, recurrimos a <strong>fuentes secundarias</strong>, como bases de datos internacionales, encuestas nacionales ya publicadas o estadísticas oficiales que han sido recopiladas por organismos e institutos especializados. En ambos escenarios, el trabajo descriptivo cumple la misma función: darnos un panorama claro de la información con la que contamos y ayudarnos a identificar patrones, errores, vacíos y sorpresas.</p>
-<p>Antes de calcular indicadores de resumen o de lanzarnos a modelos estadísticos, debemos responder tres preguntas muy básicas pero fundamentales:</p>
-<ol type="1">
-<li><strong>¿Qué valores toma la variable?</strong><br>
-</li>
-<li><strong>¿Con qué frecuencia se presentan esos valores?</strong><br>
-</li>
-<li><strong>¿Cómo se distribuyen dentro del conjunto de datos?</strong></li>
-</ol>
-<p>Responder a estas preguntas es como tomarle el pulso a nuestros datos: no nos dice todavía “por qué” ocurren las cosas, pero sí nos muestra “qué está pasando” en la información que tenemos delante.</p>
-<p>Para ello contamos con dos herramientas clásicas, sencillas y enormemente poderosas:</p>
-<ul>
-<li>Los <strong>histogramas</strong>, que ofrecen una representación gráfica intuitiva de la distribución de una variable y permiten identificar rápidamente tendencias, concentraciones, valores extremos o vacíos.<br>
-</li>
-<li>Las <strong>tablas de frecuencia</strong>, que resumen la información en formato tabular y nos muestran con precisión cuántas veces aparece cada valor, qué porcentaje del total representa y cómo se organiza la variabilidad del conjunto.</li>
-</ul>
-<p>El objetivo de este módulo no es solo que aprendas a <strong>leer</strong> estos resúmenes, sino también a <strong>producirlos</strong>, a interpretarlos críticamente y a reconocerlos como el primer peldaño de un análisis más profundo. Como veremos, esta primera exploración descriptiva es el punto de partida para detectar problemas de calidad (valores perdidos, <em>missing values</em>; o casos atípicos, <em>outliers</em>) y para orientar las decisiones analíticas posteriores.</p>
-</section>
-<section id="con-que-datos-contamos" class="level1">
-<h1>Con que datos contamos</h1>
-<p>Introduccion a la matriz de datos fila caso nuestra unidad de analisis columna variable celda dato individual, el valor de la variable para el caso que tenemos</p>
-<p>Idealmente tendran un formato rectangular, es decir habran tantas celdas llenas como la multiplicacion de las filas por las columnas.</p>
-<p>Algunos casos complejos de formato y una pequeña introduccion a la teoria de bases de datos.</p>
-<p>Supongamos una lista de paises en filas y datos de gasto en servicios sociales año a año. Un formato puede tener cada año como columnas o variables, donde la fila sera argentina, y entre las columnas tendremos el gasto en en servicios sociales para 2008, 2009 y asi sucesivamente. Otra forma de encarar la estructura de la seria que cada fila sea un pais para un año. Entonces gasto en servicios sociales, sera una sola columna, mientras que Argentina 2008, Argentina 2009 seran dos filas (dos casos) distintos. Como vemos la decision de la unidad de analisis tiene un impacto directo en la recolecion y en la estructura de los datos. Si bien es muy dificil volver a recolectar datos, veremos en los ejercicios de cada trayecto profesional que reestructurarlos es una tarea mas sencilla, todo dependera de que tipo de analisis y comparaciones querramos hacer.</p>
-<p>recordemos que en el modulo anterior discutimos el rol de los codigos, por sencillez en la codificacion, la recoleccion y la manipulacion de los datos por lo general las bases de datos estandarizadas cuentan con codigos. ejemplo,</p>
-<p>dependiendo del programa que se utilice se puede incorporar esta informaicon. Siempre es importante revisar el libro de codigos y documentacion asociada la los datos que estamos trabajando. Es</p>
-</section>
-<section id="qué-hacemos-con-los-datos" class="level1">
-<h1>¿Qué hacemos con los datos?</h1>
-<p>Cuando termina la fase de <strong>recolección</strong>, comienza la etapa no menos desafiante de <strong>análisis e interpretación</strong>. Lo que sigue a partir de ese momento no es un mero trámite técnico, sino un trabajo que requiere rigor, paciencia y, cada vez más, destrezas informáticas. En la actualidad sería impensable abordar este proceso sin apoyarnos en planillas electrónicas, paquetes estadísticos o scripts especializados que nos permiten organizar, limpiar y explorar datos de manera sistemática (Cea D’Ancona, 2002, p.&nbsp;251).</p>
-<p>En este módulo nos concentraremos en la <strong>descripción de conjuntos de datos</strong>. Primero aprenderemos a construir <strong>tablas de frecuencias</strong> y a calcular algunas cantidades de interés, como proporciones, tasas o razones. Luego avanzaremos hacia las <strong>medidas de resumen</strong>: aquellas que sintetizan un conjunto en valores representativos. Revisaremos medidas de <strong>tendencia central</strong> (media, mediana y moda) y de <strong>dispersión</strong> (rango, rango intercuartílico, varianza, desvío estándar y coeficiente de variación).</p>
-<p>A esto añadiremos el análisis de la <strong>forma de la distribución</strong>: veremos cómo la asimetría y la curtosis nos dicen si los datos se concentran en un extremo, si presentan colas alargadas o si se distribuyen de manera “aplanada” o “puntuda”. Y, como paso previo indispensable, abordaremos los <strong>controles preliminares</strong>: la identificación de valores perdidos (<em>missing values</em>) y de casos atípicos (<em>outliers</em>), que pueden alterar significativamente nuestras conclusiones si no los tratamos con cuidado (Cea D’Ancona, 2002, p.&nbsp;271).</p>
-<p>La estadística descriptiva es, en suma, el momento en que los números comienzan a contar su historia. No nos dirán todavía las causas profundas de los fenómenos, pero sí nos ofrecerán una radiografía inicial: cómo luce el conjunto de datos con el que vamos a trabajar, cuáles son sus regularidades, y en qué puntos conviene poner la lupa antes de avanzar hacia explicaciones más ambiciosas.</p>
-</section>
-<section id="v1" class="level1">
-<h1>V1</h1>
-</section>
-<section id="introducción-1" class="level1">
-<h1>Introducción</h1>
-<p>En análisis cuantitativo, uno de los primeros pasos para comprender un conjunto de datos es <strong>describir el comportamiento de una sola variable</strong>. Antes de calcular medidas resumen o probar hipótesis, necesitamos una idea clara de:</p>
-<ul>
-<li>Qué valores toma.</li>
-<li>Con qué frecuencia se presentan.</li>
-<li>Cómo se distribuyen.</li>
-</ul>
-<p>En esta clase vamos a introducir dos herramientas fundamentales para lograrlo:</p>
-<ol type="1">
-<li><strong>Histogramas</strong>, que nos ofrecen una representación gráfica intuitiva y universalmente comprendida.</li>
-<li><strong>Tablas de frecuencia</strong>, que nos permiten resumir los datos en formato tabular.</li>
-</ol>
-<p>El objetivo es desarrollar la capacidad de <strong>leer y producir estos resúmenes</strong>, para luego usarlos como base de análisis más complejos.</p>
-</section>
-<section id="qué-hacemos-con-los-datos-1" class="level1">
-<h1>1. ¿Qué hacemos con los datos?</h1>
-<p>Cuando termina la <strong>recolección</strong>, comienza la <strong>fase de análisis e interpretación</strong>. Es tan crucial como la de campo, y hoy es impensable sin procesamiento informático (planillas, paquetes estadísticos, scripts) que cubren un amplio espectro analítico (Cea D’Ancona, 2002, p.&nbsp;251).</p>
-<p>En este módulo vamos a <strong>describir</strong> conjuntos de datos: primero con <strong>tablas de frecuencias</strong> y <strong>cantidades de interés</strong> (proporciones, tasas, razones), y luego con <strong>medidas resumen</strong>: tendencia central (media, mediana, moda) y dispersión (rango, IQR, varianza, desvío estándar, coeficiente de variación). También miraremos la <strong>forma</strong> de la distribución (asimetría y curtosis) y los <strong>preliminares</strong> indispensables: <em>missing values</em> y <em>outliers</em> (Cea D’Ancona, 2002, p.&nbsp;271).</p>
-<hr>
-</section>
-<section id="preliminares-depuración-missing-y-outliers" class="level1">
-<h1>2. Preliminares: depuración, <em>missing</em> y <em>outliers</em></h1>
-<p>Antes de calcular nada, es importante <strong>depurar</strong> los datos: * Identificar registros con <strong>faltantes</strong> (<em>missing values</em>) y documentar el criterio para tratarlos (codificación, exclusión, imputación). Si hay muchos faltantes por caso/variable, puede ser mejor excluirlos del análisis. * Detectar <strong>outliers</strong> con resúmenes numéricos y gráficos iniciales (boxplots, histogramas) (Cea D’Ancona, 2002, pp.&nbsp;272–274).</p>
-<p>La <strong>no respuesta</strong> puede sesgar estimaciones; por eso, conviene comparar la muestra con la población cuando sea posible (padrón/censo) para dimensionar las diferencias.</p>
-<hr>
-</section>
-<section id="tablas-de-frecuencias-y-primera-mirada" class="level1">
-<h1>3. Tablas de frecuencias y primera mirada</h1>
-<p>Una <strong>tabla de frecuencias</strong> enumera los valores o categorías de una variable, su frecuencia absoluta, relativa (%), y a menudo el <strong>% válido</strong> que excluye <em>missing</em>. También puede incluir el <strong>% acumulado</strong> (Cea D’Ancona, 2002, p.&nbsp;275).</p>
-<p>Para variables de intervalo/razón, conviene agrupar en 6–20 clases para no distorsionar la forma (Cea D’Ancona, 2002, p.&nbsp;276).</p>
-<hr>
-</section>
-<section id="tablas-de-frecuencia-la-base-descriptiva" class="level1">
-<h1>1. Tablas de frecuencia: la base descriptiva</h1>
-<p>Una tabla de frecuencias <strong>enumera los valores posibles</strong> de una variable (o rangos de valores, si es continua) y <strong>cuenta cuántas observaciones corresponden a cada uno</strong>.</p>
-<p>Las columnas típicas incluyen:</p>
-<ul>
-<li><strong>Frecuencia absoluta (f)</strong>: número de casos en cada categoría o intervalo.</li>
-<li><strong>Frecuencia relativa (%)</strong>: proporción respecto del total.</li>
-<li><strong>Frecuencia acumulada</strong>: suma de frecuencias hasta esa categoría (útil en variables ordinales o numéricas).</li>
-</ul>
-<section id="ejemplo-1-tipo-de-régimen-político" class="level2">
-<h2 class="anchored" data-anchor-id="ejemplo-1-tipo-de-régimen-político">Ejemplo 1: Tipo de régimen político</h2>
-<p>Supongamos que tenemos datos de 20 países clasificados como:</p>
-<ul>
-<li>Democracia</li>
-<li>Híbrido</li>
-<li>Autoritarismo</li>
-</ul>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Régimen</th>
-<th>f</th>
-<th>%</th>
-<th>% acumulado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Democracia</td>
-<td>8</td>
-<td>40,0%</td>
-<td>40,0%</td>
-</tr>
-<tr class="even">
-<td>Híbrido</td>
-<td>6</td>
-<td>30,0%</td>
-<td>70,0%</td>
-</tr>
-<tr class="odd">
-<td>Autoritarismo</td>
-<td>6</td>
-<td>30,0%</td>
-<td>100,0%</td>
-</tr>
-<tr class="even">
-<td><strong>Total</strong></td>
-<td>20</td>
-<td>100%</td>
-<td>—</td>
-</tr>
-</tbody>
-</table>
-<p>Esta tabla nos permite ver de un vistazo la distribución de casos y, con la frecuencia acumulada, entender la proporción que representan los regímenes más inclusivos, por ejemplo.</p>
-<hr>
-</section>
-</section>
-<section id="histogramas-la-visualización-universal" class="level1">
-<h1>2. Histogramas: la visualización universal</h1>
-<p>El <strong>histograma</strong> es el gráfico de referencia para mostrar la distribución de una variable cuantitativa. Divide el rango de valores en <strong>intervalos contiguos</strong> (bins o clases) y muestra la <strong>altura de cada barra proporcional a la frecuencia</strong> en ese intervalo.</p>
-<p>A diferencia del gráfico de barras, en un histograma:</p>
-<ul>
-<li>Las barras están pegadas (porque representan intervalos continuos).</li>
-<li>El ancho de las barras tiene significado: cada barra cubre un rango definido de valores.</li>
-</ul>
-<section id="ejemplo-2-gasto-militar-como-del-pbi" class="level2">
-<h2 class="anchored" data-anchor-id="ejemplo-2-gasto-militar-como-del-pbi">Ejemplo 2: Gasto militar como % del PBI</h2>
-<p>Supongamos que tenemos datos de gasto militar (% del PBI) para 50 países. El histograma podría verse así:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="imagenes/histograma_gasto_militar.png" class="img-fluid figure-img"></p>
-<figcaption>Histograma de gasto militar</figcaption>
-</figure>
-</div>
-<p>Podemos interpretar:</p>
-<ul>
-<li>Si la mayor parte de las observaciones está concentrada en intervalos bajos (p.&nbsp;ej., entre 0% y 2%), la distribución está sesgada hacia la izquierda.</li>
-<li>Si hay una barra muy alta en un intervalo, indica un rango de valores particularmente frecuente.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="relación-entre-tablas-y-gráficos" class="level1">
-<h1>3. Relación entre tablas y gráficos</h1>
-<p>Las tablas y los histogramas son complementarios:</p>
-<ul>
-<li><strong>Tablas</strong>: dan exactitud numérica y permiten cálculos posteriores.</li>
-<li><strong>Histogramas</strong>: facilitan la interpretación visual, muestran patrones y posibles valores atípicos.</li>
-</ul>
-<p>En la práctica profesional —por ejemplo, al presentar datos de opinión pública sobre satisfacción con la democracia— es común incluir <strong>ambos</strong>: una tabla que documenta los datos exactos y un histograma que los resume visualmente.</p>
-<hr>
-</section>
-<section id="decisiones-clave-al-construir-histogramas" class="level1">
-<h1>4. Decisiones clave al construir histogramas</h1>
-<ul>
-<li><strong>Número de intervalos</strong>: demasiado pocos pueden ocultar patrones; demasiados pueden mostrar ruido. Una regla común es usar () clases para (n) observaciones como punto de partida.</li>
-<li><strong>Rangos iguales</strong>: mantener intervalos de igual amplitud facilita la interpretación.</li>
-<li><strong>Etiquetas claras</strong>: los ejes deben indicar unidades y rangos.</li>
-</ul>
-<hr>
-</section>
-<section id="ejercicio-práctico" class="level1">
-<h1>5. Ejercicio práctico</h1>
-<ol type="1">
-<li>Elige una variable numérica de un conjunto de datos (por ejemplo, edad, ingreso, gasto militar, porcentaje de votos).</li>
-<li>Construye la tabla de frecuencias con:
-<ul>
-<li>Frecuencia absoluta</li>
-<li>Frecuencia relativa (%)</li>
-<li>Frecuencia acumulada</li>
-</ul></li>
-<li>Construye el histograma correspondiente.</li>
-<li>Describe lo que observas:
-<ul>
-<li>¿Dónde se concentra la mayoría de casos?</li>
-<li>¿Hay sesgo a izquierda/derecha?</li>
-<li>¿Algún valor extremo destaca?</li>
-</ul></li>
-</ol>
-<hr>
-</section>
-<section id="conclusión" class="level1">
-<h1>Conclusión</h1>
-<p>Dominar las tablas de frecuencia y los histogramas es <strong>el primer paso</strong> para trabajar con datos de manera profesional. Tanto en ciencia política como en relaciones internacionales, estas herramientas se usan para explorar fenómenos tan diversos como:</p>
-<ul>
-<li>Resultados electorales.</li>
-<li>Niveles de gasto público.</li>
-<li>Intensidad de comercio entre países.</li>
-<li>Opinión pública sobre políticas específicas.</li>
-</ul>
-<p>En todos los casos, describir una variable correctamente sienta las bases para análisis más complejos y para la comunicación clara de hallazgos a audiencias diversas.</p>
+<p>https://www.youtube.com/watch?v=uqf6NoAhFts buen ejemplo de storytelling con estadisticas</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

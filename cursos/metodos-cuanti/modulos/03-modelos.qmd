@@ -1,5 +1,5 @@
 ---
-title: "Módulo 3 — Diseño de Investigación, Modelos Teóricos, Hipótesis y Unidad de Análisis"
+title: "Diseño de Investigación, Modelos Teóricos, Hipótesis y Unidad de Análisis"
 format: html
 ---
 

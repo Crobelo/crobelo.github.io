@@ -1,5 +1,5 @@
 ---
-title: "2 — Introducción al Conocimiento Científico y la Metodología Cuantitativa"
+title: "Introducción al Conocimiento Científico y la Metodología Cuantitativa"
 format: html
 ---
 
@@ -229,14 +229,13 @@ Curd et al - philosophy of science: the central issues
 - Matthews, M. (2009). *Science, Worldviews and Education*.  
 - Morgan, S. & Winship, C. (2014). *Counterfactuals and Causal Inference*.  
 - Oreskes, N. (2004). *Science and Public Policy: What’s Proof Got to Do with It?*  
-
+- Goertz, G., & Mahoney, J. (2012). *A Tale of Two Cultures: Qualitative and Quantitative Research in the Social Sciences*. 
 ## Referencias  
 
 [^chalmers1999]: Chalmers, A. F. (1999). *¿Qué es esa cosa llamada ciencia?*  
 [^oreskes2004]: Oreskes, N. (2004). “Science and public policy: what’s proof got to do with it?” *Environmental Science & Policy*.  
 [^referencias02]: Popper, K. (1935), Kuhn, T. (1962), Lakatos, I. (1978).  
 [^morgan2014]: Morgan, S. L., & Winship, C. (2014). *Counterfactuals and Causal Inference*.  
-[^goertz2012]: Goertz, G., & Mahoney, J. (2012). *A Tale of Two Cultures: Qualitative and Quantitative Research in the Social Sciences*.  
 [^blalock]: Blalock, H. M. (1982). *Conceptualization and Measurement in the Social Sciences*.  
 
 

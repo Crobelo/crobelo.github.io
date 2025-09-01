@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modulo 5 - Explorando los datos, Estadística descriptiva de una variable: histogramas y tablas de frecuencia – Claudio Robelo</title>
+<title>Explorando los datos, Estadística descriptiva de una variable: histogramas y tablas de frecuencia – Claudio Robelo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -109,25 +144,51 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
-  <li><a href="#con-que-datos-contamos" id="toc-con-que-datos-contamos" class="nav-link" data-scroll-target="#con-que-datos-contamos">Con que datos contamos</a></li>
+  <li><a href="#con-qué-datos-contamos" id="toc-con-qué-datos-contamos" class="nav-link" data-scroll-target="#con-qué-datos-contamos">¿Con qué datos contamos?</a>
+  <ul class="collapse">
+  <li><a href="#el-formato-rectangular-y-la-filosofía-de-los-datos" id="toc-el-formato-rectangular-y-la-filosofía-de-los-datos" class="nav-link" data-scroll-target="#el-formato-rectangular-y-la-filosofía-de-los-datos">El formato rectangular y la filosofía de los datos</a></li>
+  <li><a href="#la-estructura-de-los-datos-un-ejemplo-con-países-y-gasto-social" id="toc-la-estructura-de-los-datos-un-ejemplo-con-países-y-gasto-social" class="nav-link" data-scroll-target="#la-estructura-de-los-datos-un-ejemplo-con-países-y-gasto-social">La estructura de los datos, un ejemplo con países y gasto social</a></li>
+  <li><a href="#códigos-y-documentación" id="toc-códigos-y-documentación" class="nav-link" data-scroll-target="#códigos-y-documentación">Códigos y documentación</a></li>
+  <li><a href="#una-nota-sobre-bases-de-datos-más-complejas" id="toc-una-nota-sobre-bases-de-datos-más-complejas" class="nav-link" data-scroll-target="#una-nota-sobre-bases-de-datos-más-complejas">Una nota sobre bases de datos más complejas</a></li>
+  </ul></li>
   <li><a href="#qué-hacemos-con-los-datos" id="toc-qué-hacemos-con-los-datos" class="nav-link" data-scroll-target="#qué-hacemos-con-los-datos">¿Qué hacemos con los datos?</a></li>
-  <li><a href="#v1" id="toc-v1" class="nav-link" data-scroll-target="#v1">V1</a></li>
-  <li><a href="#introducción-1" id="toc-introducción-1" class="nav-link" data-scroll-target="#introducción-1">Introducción</a></li>
-  <li><a href="#qué-hacemos-con-los-datos-1" id="toc-qué-hacemos-con-los-datos-1" class="nav-link" data-scroll-target="#qué-hacemos-con-los-datos-1">1. ¿Qué hacemos con los datos?</a></li>
-  <li><a href="#preliminares-depuración-missing-y-outliers" id="toc-preliminares-depuración-missing-y-outliers" class="nav-link" data-scroll-target="#preliminares-depuración-missing-y-outliers">2. Preliminares: depuración, <em>missing</em> y <em>outliers</em></a></li>
-  <li><a href="#tablas-de-frecuencias-y-primera-mirada" id="toc-tablas-de-frecuencias-y-primera-mirada" class="nav-link" data-scroll-target="#tablas-de-frecuencias-y-primera-mirada">3. Tablas de frecuencias y primera mirada</a></li>
-  <li><a href="#tablas-de-frecuencia-la-base-descriptiva" id="toc-tablas-de-frecuencia-la-base-descriptiva" class="nav-link" data-scroll-target="#tablas-de-frecuencia-la-base-descriptiva">1. Tablas de frecuencia: la base descriptiva</a>
+  <li><a href="#histogramas-la-visualización-universal" id="toc-histogramas-la-visualización-universal" class="nav-link" data-scroll-target="#histogramas-la-visualización-universal">Histogramas: la visualización universal</a></li>
+  <li><a href="#conociendo-nuestros-datos" id="toc-conociendo-nuestros-datos" class="nav-link" data-scroll-target="#conociendo-nuestros-datos">Conociendo nuestros datos</a>
   <ul class="collapse">
-  <li><a href="#ejemplo-1-tipo-de-régimen-político" id="toc-ejemplo-1-tipo-de-régimen-político" class="nav-link" data-scroll-target="#ejemplo-1-tipo-de-régimen-político">Ejemplo 1: Tipo de régimen político</a></li>
-  </ul></li>
-  <li><a href="#histogramas-la-visualización-universal" id="toc-histogramas-la-visualización-universal" class="nav-link" data-scroll-target="#histogramas-la-visualización-universal">2. Histogramas: la visualización universal</a>
+  <li><a href="#primera-vuelta-de-la-eleccion-presidencial-de-2023-en-argentina." id="toc-primera-vuelta-de-la-eleccion-presidencial-de-2023-en-argentina." class="nav-link" data-scroll-target="#primera-vuelta-de-la-eleccion-presidencial-de-2023-en-argentina.">Primera vuelta de la eleccion presidencial de 2023 en Argentina.</a>
   <ul class="collapse">
-  <li><a href="#ejemplo-2-gasto-militar-como-del-pbi" id="toc-ejemplo-2-gasto-militar-como-del-pbi" class="nav-link" data-scroll-target="#ejemplo-2-gasto-militar-como-del-pbi">Ejemplo 2: Gasto militar como % del PBI</a></li>
+  <li><a href="#la-organización-del-sistema-electoral" id="toc-la-organización-del-sistema-electoral" class="nav-link" data-scroll-target="#la-organización-del-sistema-electoral">La organización del sistema electoral</a></li>
+  <li><a href="#la-variable-que-analizamos" id="toc-la-variable-que-analizamos" class="nav-link" data-scroll-target="#la-variable-que-analizamos">La variable que analizamos</a></li>
+  <li><a href="#de-la-fuente-al-análisis" id="toc-de-la-fuente-al-análisis" class="nav-link" data-scroll-target="#de-la-fuente-al-análisis">De la fuente al análisis</a></li>
+  <li><a href="#un-primer-vistazo-con-histogramas" id="toc-un-primer-vistazo-con-histogramas" class="nav-link" data-scroll-target="#un-primer-vistazo-con-histogramas">Un primer vistazo con histogramas</a></li>
+  <li><a href="#interpretando-la-distribución" id="toc-interpretando-la-distribución" class="nav-link" data-scroll-target="#interpretando-la-distribución">Interpretando la distribución</a></li>
+  <li><a href="#un-contraste-los-votos-del-frente-de-izquierda" id="toc-un-contraste-los-votos-del-frente-de-izquierda" class="nav-link" data-scroll-target="#un-contraste-los-votos-del-frente-de-izquierda">Un contraste: los votos del Frente de Izquierda</a></li>
   </ul></li>
-  <li><a href="#relación-entre-tablas-y-gráficos" id="toc-relación-entre-tablas-y-gráficos" class="nav-link" data-scroll-target="#relación-entre-tablas-y-gráficos">3. Relación entre tablas y gráficos</a></li>
-  <li><a href="#decisiones-clave-al-construir-histogramas" id="toc-decisiones-clave-al-construir-histogramas" class="nav-link" data-scroll-target="#decisiones-clave-al-construir-histogramas">4. Decisiones clave al construir histogramas</a></li>
-  <li><a href="#ejercicio-práctico" id="toc-ejercicio-práctico" class="nav-link" data-scroll-target="#ejercicio-práctico">5. Ejercicio práctico</a></li>
+  <li><a href="#la-base-polity-v-un-estándar-en-el-estudio-de-los-regímenes-políticos" id="toc-la-base-polity-v-un-estándar-en-el-estudio-de-los-regímenes-políticos" class="nav-link" data-scroll-target="#la-base-polity-v-un-estándar-en-el-estudio-de-los-regímenes-políticos">La base Polity V: un estándar en el estudio de los regímenes políticos</a>
+  <ul class="collapse">
+  <li><a href="#qué-mide-polity" id="toc-qué-mide-polity" class="nav-link" data-scroll-target="#qué-mide-polity">¿Qué mide Polity?</a></li>
+  </ul></li>
+  <li><a href="#interpretando-el-histograma-de-polity5-en-2018" id="toc-interpretando-el-histograma-de-polity5-en-2018" class="nav-link" data-scroll-target="#interpretando-el-histograma-de-polity5-en-2018">Interpretando el histograma de Polity5 en 2018</a></li>
+  <li><a href="#polity5-en-1991-un-mundo-en-transición" id="toc-polity5-en-1991-un-mundo-en-transición" class="nav-link" data-scroll-target="#polity5-en-1991-un-mundo-en-transición">Polity5 en 1991: un mundo en transición</a></li>
+  <li><a href="#la-base-de-datos-de-disputas-militarizadas-mids" id="toc-la-base-de-datos-de-disputas-militarizadas-mids" class="nav-link" data-scroll-target="#la-base-de-datos-de-disputas-militarizadas-mids">La base de datos de Disputas Militarizadas (MIDs)</a>
+  <ul class="collapse">
+  <li><a href="#midiendo-la-letalidad-de-un-mid" id="toc-midiendo-la-letalidad-de-un-mid" class="nav-link" data-scroll-target="#midiendo-la-letalidad-de-un-mid">Midiendo la letalidad de un MID</a></li>
+  </ul></li>
+  <li><a href="#el-riesgo-de-confundir-códigos-con-datos" id="toc-el-riesgo-de-confundir-códigos-con-datos" class="nav-link" data-scroll-target="#el-riesgo-de-confundir-códigos-con-datos">El riesgo de confundir códigos con datos</a>
+  <ul class="collapse">
+  <li><a href="#el-histograma-de-la-letalidad" id="toc-el-histograma-de-la-letalidad" class="nav-link" data-scroll-target="#el-histograma-de-la-letalidad">El histograma de la letalidad</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#decisiones-clave-al-construir-histogramas" id="toc-decisiones-clave-al-construir-histogramas" class="nav-link" data-scroll-target="#decisiones-clave-al-construir-histogramas">Decisiones clave al construir histogramas</a></li>
+  <li><a href="#tablas-de-frecuencias-y-primera-mirada" id="toc-tablas-de-frecuencias-y-primera-mirada" class="nav-link" data-scroll-target="#tablas-de-frecuencias-y-primera-mirada">Tablas de frecuencias y primera mirada</a>
+  <ul class="collapse">
+  <li><a href="#consideraciones-prácticas" id="toc-consideraciones-prácticas" class="nav-link" data-scroll-target="#consideraciones-prácticas">Consideraciones prácticas</a>
+  <ul class="collapse">
+  <li><a href="#una-reflexión" id="toc-una-reflexión" class="nav-link" data-scroll-target="#una-reflexión">Una reflexión</a></li>
+  </ul></li>
+  </ul></li>
   <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión">Conclusión</a></li>
+  <li><a href="#bibliografia" id="toc-bibliografia" class="nav-link" data-scroll-target="#bibliografia">Bibliografia</a></li>
   </ul>
 </nav>
     </div>
@@ -136,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Modulo 5 - Explorando los datos, Estadística descriptiva de una variable: histogramas y tablas de frecuencia</h1>
+<h1 class="title">Explorando los datos, Estadística descriptiva de una variable: histogramas y tablas de frecuencia</h1>
 </div>
 
 
@@ -174,178 +235,470 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>El objetivo de este módulo no es solo que aprendas a <strong>leer</strong> estos resúmenes, sino también a <strong>producirlos</strong>, a interpretarlos críticamente y a reconocerlos como el primer peldaño de un análisis más profundo. Como veremos, esta primera exploración descriptiva es el punto de partida para detectar problemas de calidad (valores perdidos, <em>missing values</em>; o casos atípicos, <em>outliers</em>) y para orientar las decisiones analíticas posteriores.</p>
 </section>
-<section id="con-que-datos-contamos" class="level1">
-<h1>Con que datos contamos</h1>
-<p>Introduccion a la matriz de datos fila caso nuestra unidad de analisis columna variable celda dato individual, el valor de la variable para el caso que tenemos</p>
-<p>Idealmente tendran un formato rectangular, es decir habran tantas celdas llenas como la multiplicacion de las filas por las columnas.</p>
-<p>Algunos casos complejos de formato y una pequeña introduccion a la teoria de bases de datos.</p>
-<p>Supongamos una lista de paises en filas y datos de gasto en servicios sociales año a año. Un formato puede tener cada año como columnas o variables, donde la fila sera argentina, y entre las columnas tendremos el gasto en en servicios sociales para 2008, 2009 y asi sucesivamente. Otra forma de encarar la estructura de la seria que cada fila sea un pais para un año. Entonces gasto en servicios sociales, sera una sola columna, mientras que Argentina 2008, Argentina 2009 seran dos filas (dos casos) distintos. Como vemos la decision de la unidad de analisis tiene un impacto directo en la recolecion y en la estructura de los datos. Si bien es muy dificil volver a recolectar datos, veremos en los ejercicios de cada trayecto profesional que reestructurarlos es una tarea mas sencilla, todo dependera de que tipo de analisis y comparaciones querramos hacer.</p>
-<p>recordemos que en el modulo anterior discutimos el rol de los codigos, por sencillez en la codificacion, la recoleccion y la manipulacion de los datos por lo general las bases de datos estandarizadas cuentan con codigos. ejemplo,</p>
-<p>dependiendo del programa que se utilice se puede incorporar esta informaicon. Siempre es importante revisar el libro de codigos y documentacion asociada la los datos que estamos trabajando. Es</p>
-</section>
-<section id="qué-hacemos-con-los-datos" class="level1">
-<h1>¿Qué hacemos con los datos?</h1>
-<p>Cuando termina la fase de <strong>recolección</strong>, comienza la etapa no menos desafiante de <strong>análisis e interpretación</strong>. Lo que sigue a partir de ese momento no es un mero trámite técnico, sino un trabajo que requiere rigor, paciencia y, cada vez más, destrezas informáticas. En la actualidad sería impensable abordar este proceso sin apoyarnos en planillas electrónicas, paquetes estadísticos o scripts especializados que nos permiten organizar, limpiar y explorar datos de manera sistemática (Cea D’Ancona, 2002, p.&nbsp;251).</p>
-<p>En este módulo nos concentraremos en la <strong>descripción de conjuntos de datos</strong>. Primero aprenderemos a construir <strong>tablas de frecuencias</strong> y a calcular algunas cantidades de interés, como proporciones, tasas o razones. Luego avanzaremos hacia las <strong>medidas de resumen</strong>: aquellas que sintetizan un conjunto en valores representativos. Revisaremos medidas de <strong>tendencia central</strong> (media, mediana y moda) y de <strong>dispersión</strong> (rango, rango intercuartílico, varianza, desvío estándar y coeficiente de variación).</p>
-<p>A esto añadiremos el análisis de la <strong>forma de la distribución</strong>: veremos cómo la asimetría y la curtosis nos dicen si los datos se concentran en un extremo, si presentan colas alargadas o si se distribuyen de manera “aplanada” o “puntuda”. Y, como paso previo indispensable, abordaremos los <strong>controles preliminares</strong>: la identificación de valores perdidos (<em>missing values</em>) y de casos atípicos (<em>outliers</em>), que pueden alterar significativamente nuestras conclusiones si no los tratamos con cuidado (Cea D’Ancona, 2002, p.&nbsp;271).</p>
-<p>La estadística descriptiva es, en suma, el momento en que los números comienzan a contar su historia. No nos dirán todavía las causas profundas de los fenómenos, pero sí nos ofrecerán una radiografía inicial: cómo luce el conjunto de datos con el que vamos a trabajar, cuáles son sus regularidades, y en qué puntos conviene poner la lupa antes de avanzar hacia explicaciones más ambiciosas.</p>
-</section>
-<section id="v1" class="level1">
-<h1>V1</h1>
-</section>
-<section id="introducción-1" class="level1">
-<h1>Introducción</h1>
-<p>En análisis cuantitativo, uno de los primeros pasos para comprender un conjunto de datos es <strong>describir el comportamiento de una sola variable</strong>. Antes de calcular medidas resumen o probar hipótesis, necesitamos una idea clara de:</p>
-<ul>
-<li>Qué valores toma.</li>
-<li>Con qué frecuencia se presentan.</li>
-<li>Cómo se distribuyen.</li>
-</ul>
-<p>En esta clase vamos a introducir dos herramientas fundamentales para lograrlo:</p>
-<ol type="1">
-<li><strong>Histogramas</strong>, que nos ofrecen una representación gráfica intuitiva y universalmente comprendida.</li>
-<li><strong>Tablas de frecuencia</strong>, que nos permiten resumir los datos en formato tabular.</li>
-</ol>
-<p>El objetivo es desarrollar la capacidad de <strong>leer y producir estos resúmenes</strong>, para luego usarlos como base de análisis más complejos.</p>
-</section>
-<section id="qué-hacemos-con-los-datos-1" class="level1">
-<h1>1. ¿Qué hacemos con los datos?</h1>
-<p>Cuando termina la <strong>recolección</strong>, comienza la <strong>fase de análisis e interpretación</strong>. Es tan crucial como la de campo, y hoy es impensable sin procesamiento informático (planillas, paquetes estadísticos, scripts) que cubren un amplio espectro analítico (Cea D’Ancona, 2002, p.&nbsp;251).</p>
-<p>En este módulo vamos a <strong>describir</strong> conjuntos de datos: primero con <strong>tablas de frecuencias</strong> y <strong>cantidades de interés</strong> (proporciones, tasas, razones), y luego con <strong>medidas resumen</strong>: tendencia central (media, mediana, moda) y dispersión (rango, IQR, varianza, desvío estándar, coeficiente de variación). También miraremos la <strong>forma</strong> de la distribución (asimetría y curtosis) y los <strong>preliminares</strong> indispensables: <em>missing values</em> y <em>outliers</em> (Cea D’Ancona, 2002, p.&nbsp;271).</p>
-<hr>
-</section>
-<section id="preliminares-depuración-missing-y-outliers" class="level1">
-<h1>2. Preliminares: depuración, <em>missing</em> y <em>outliers</em></h1>
-<p>Antes de calcular nada, es importante <strong>depurar</strong> los datos: * Identificar registros con <strong>faltantes</strong> (<em>missing values</em>) y documentar el criterio para tratarlos (codificación, exclusión, imputación). Si hay muchos faltantes por caso/variable, puede ser mejor excluirlos del análisis. * Detectar <strong>outliers</strong> con resúmenes numéricos y gráficos iniciales (boxplots, histogramas) (Cea D’Ancona, 2002, pp.&nbsp;272–274).</p>
-<p>La <strong>no respuesta</strong> puede sesgar estimaciones; por eso, conviene comparar la muestra con la población cuando sea posible (padrón/censo) para dimensionar las diferencias.</p>
-<hr>
-</section>
-<section id="tablas-de-frecuencias-y-primera-mirada" class="level1">
-<h1>3. Tablas de frecuencias y primera mirada</h1>
-<p>Una <strong>tabla de frecuencias</strong> enumera los valores o categorías de una variable, su frecuencia absoluta, relativa (%), y a menudo el <strong>% válido</strong> que excluye <em>missing</em>. También puede incluir el <strong>% acumulado</strong> (Cea D’Ancona, 2002, p.&nbsp;275).</p>
-<p>Para variables de intervalo/razón, conviene agrupar en 6–20 clases para no distorsionar la forma (Cea D’Ancona, 2002, p.&nbsp;276).</p>
-<hr>
-</section>
-<section id="tablas-de-frecuencia-la-base-descriptiva" class="level1">
-<h1>1. Tablas de frecuencia: la base descriptiva</h1>
-<p>Una tabla de frecuencias <strong>enumera los valores posibles</strong> de una variable (o rangos de valores, si es continua) y <strong>cuenta cuántas observaciones corresponden a cada uno</strong>.</p>
-<p>Las columnas típicas incluyen:</p>
-<ul>
-<li><strong>Frecuencia absoluta (f)</strong>: número de casos en cada categoría o intervalo.</li>
-<li><strong>Frecuencia relativa (%)</strong>: proporción respecto del total.</li>
-<li><strong>Frecuencia acumulada</strong>: suma de frecuencias hasta esa categoría (útil en variables ordinales o numéricas).</li>
-</ul>
-<section id="ejemplo-1-tipo-de-régimen-político" class="level2">
-<h2 class="anchored" data-anchor-id="ejemplo-1-tipo-de-régimen-político">Ejemplo 1: Tipo de régimen político</h2>
-<p>Supongamos que tenemos datos de 20 países clasificados como:</p>
-<ul>
-<li>Democracia</li>
-<li>Híbrido</li>
-<li>Autoritarismo</li>
-</ul>
+<section id="con-qué-datos-contamos" class="level1">
+<h1>¿Con qué datos contamos?</h1>
+<p>Antes de comenzar con cualquier análisis descriptivo, debemos tener claro <strong>qué datos tenemos delante y en qué formato se encuentran</strong>. En la investigación cuantitativa trabajamos, casi siempre, con lo que se conoce como una <strong>matriz de datos</strong>. Se trata de una tabla rectangular donde cada fila representa un <strong>caso</strong> (es decir, una unidad de análisis) y cada columna corresponde a una <strong>variable</strong>. En la intersección entre fila y columna encontramos la <strong>celda</strong>, que contiene un valor específico: el dato individual de esa variable para ese caso en particular.</p>
+<p>Por ejemplo, si nuestra unidad de análisis son las personas encuestadas, cada fila será un individuo: “Juan Pérez”, “María Gómez”, “Carlos Rodríguez”. Las columnas podrán ser variables como “edad”, “nivel educativo”, “ingreso mensual”. En las celdas, entonces, veremos que Juan tiene 35 años, educación secundaria completa y un ingreso de 800 dólares; mientras que María tiene 52 años, nivel universitario y un ingreso de 1.200 dólares. Este formato rectangular es la base de la gran mayoría de los análisis estadísticos.</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 8%">
+<col style="width: 33%">
+<col style="width: 31%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Régimen</th>
-<th>f</th>
-<th>%</th>
-<th>% acumulado</th>
+<th>Nombre</th>
+<th>Edad</th>
+<th>Nivel educativo</th>
+<th>Ingreso mensual (USD)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Democracia</td>
-<td>8</td>
-<td>40,0%</td>
-<td>40,0%</td>
+<td>Juan Pérez</td>
+<td>35</td>
+<td>Secundaria completa</td>
+<td>800</td>
 </tr>
 <tr class="even">
-<td>Híbrido</td>
-<td>6</td>
-<td>30,0%</td>
-<td>70,0%</td>
+<td>María Gómez</td>
+<td>52</td>
+<td>Universitario</td>
+<td>1.200</td>
 </tr>
 <tr class="odd">
-<td>Autoritarismo</td>
-<td>6</td>
-<td>30,0%</td>
-<td>100,0%</td>
-</tr>
-<tr class="even">
-<td><strong>Total</strong></td>
-<td>20</td>
-<td>100%</td>
-<td>—</td>
+<td>Carlos Rodríguez</td>
+<td>41</td>
+<td>Secundaria incompleta</td>
+<td>950</td>
 </tr>
 </tbody>
 </table>
-<p>Esta tabla nos permite ver de un vistazo la distribución de casos y, con la frecuencia acumulada, entender la proporción que representan los regímenes más inclusivos, por ejemplo.</p>
-<hr>
+<section id="el-formato-rectangular-y-la-filosofía-de-los-datos" class="level2">
+<h2 class="anchored" data-anchor-id="el-formato-rectangular-y-la-filosofía-de-los-datos">El formato rectangular y la filosofía de los datos</h2>
+<p>Idealmente, nuestras bases de datos deben mantener un formato <strong>rectangular limpio</strong>, es decir, que haya tantas celdas llenas como la multiplicación del número de filas por el número de columnas. Cada caso debe estar representado en una sola fila, y cada variable en una sola columna. Esta es la lógica detrás de lo que Hadley Wickham (2014) llamó el principio de datos <strong>“tidy”</strong>: un dataset claro y ordenado es aquel en el que:</p>
+<ol type="1">
+<li>Cada variable tiene su propia columna.<br>
+</li>
+<li>Cada observación (o caso) tiene su propia fila.<br>
+</li>
+<li>Cada valor ocupa su propia celda.</li>
+</ol>
+<p>Este principio puede parecer obvio, pero en la práctica muchos datasets se presentan en formatos más complejos o “desordenados”. Los datos con los que trabajaremos nosotros ya estaran limpios por fines didacticos, pero es fundamental saber que en el mundo real gran parte del analista de datos consiste en “limpiar” datos de distintas formas. Arreglar codificaciones confusas, cambiar estilos numericos, separar celdas combinadas, entre otros.</p>
 </section>
+<section id="la-estructura-de-los-datos-un-ejemplo-con-países-y-gasto-social" class="level2">
+<h2 class="anchored" data-anchor-id="la-estructura-de-los-datos-un-ejemplo-con-países-y-gasto-social">La estructura de los datos, un ejemplo con países y gasto social</h2>
+<p>Supongamos que tenemos una lista de países y queremos analizar el gasto en servicios sociales año a año. Existen, al menos, dos formas de estructurar estos datos:</p>
+<ul>
+<li><strong>Formato ancho (wide):</strong> cada país ocupa una fila, y cada año aparece como una columna distinta. Así, la fila “Argentina” tendría columnas llamadas “2008”, “2009”, “2010”, con los valores de gasto social en cada celda.</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>País</th>
+<th>2008</th>
+<th>2009</th>
+<th>2010</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Argentina</td>
+<td>25</td>
+<td>27</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Chile</td>
+<td>18</td>
+<td>19</td>
+<td>21</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Formato largo (long o tidy):</strong> cada fila corresponde a un país en un año específico. En este caso, “Argentina 2008” sería una fila, “Argentina 2009” otra fila, y así sucesivamente. Solo habría una columna llamada “gasto en servicios sociales”, que contendría los valores, acompañada de otra columna que indica el año.</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>País</th>
+<th>Año</th>
+<th>Gasto en servicios sociales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Argentina</td>
+<td>2008</td>
+<td>25</td>
+</tr>
+<tr class="even">
+<td>Argentina</td>
+<td>2009</td>
+<td>27</td>
+</tr>
+<tr class="odd">
+<td>Argentina</td>
+<td>2010</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Chile</td>
+<td>2008</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td>Chile</td>
+<td>2009</td>
+<td>19</td>
+</tr>
+<tr class="even">
+<td>Chile</td>
+<td>2010</td>
+<td>21</td>
+</tr>
+</tbody>
+</table>
+<p>La elección de formato no es una cuestión estética: depende de la <strong>unidad de análisis</strong> y del tipo de análisis que queramos realizar. En el formato ancho es fácil ver la serie temporal de cada país de un vistazo, pero es más difícil hacer comparaciones estadísticas entre todos los países y todos los años. En el formato largo, en cambio, la base se adapta mejor a la mayoría de los paquetes estadísticos y permite aplicar directamente métodos de regresión, modelos de series temporales o análisis de panel.</p>
+<p>La decisión sobre la <strong>unidad de análisis</strong> (¿qué es cada fila: un país, un país-año, una persona, un evento?) tiene un impacto directo en la recolección y en la estructura de los datos. Recolectar datos de nuevo suele ser casi imposible, pero reestructurar una base para cambiar el formato es una tarea mucho más sencilla. Por eso, en los ejercicios prácticos de este curso veremos cómo adaptar los datos según el tipo de comparación que nos interese realizar.</p>
+</section>
+<section id="códigos-y-documentación" class="level2">
+<h2 class="anchored" data-anchor-id="códigos-y-documentación">Códigos y documentación</h2>
+<p>En el modulo anterior discutimos el rol de los <strong>códigos</strong> en los datasets. Conviene recordarlo aquí: lo que vemos en las celdas no siempre son las categorías textuales (“hombre”, “mujer”, “otros”), sino códigos que representan esas categorías (“1”, “2”, “3”). Este sistema simplifica la recolección y la manipulación de los datos, pero obliga al investigador a estar siempre atento a la <strong>documentación</strong> y al <strong>libro de códigos</strong> que acompaña la base.</p>
+<p>Un número en la celda nunca habla por sí solo, puede significar un dato real, pero también una categoría residual (“otros”), una no respuesta (“99”) o un valor perdido (“-1”). La tarea del investigador es saber exactamente qué significa cada código y cómo debe ser tratado en el análisis.</p>
+</section>
+<section id="una-nota-sobre-bases-de-datos-más-complejas" class="level2">
+<h2 class="anchored" data-anchor-id="una-nota-sobre-bases-de-datos-más-complejas">Una nota sobre bases de datos más complejas</h2>
+<p>Aunque aquí nos concentremos en las matrices rectangulares, conviene anticipar que en el mundo real existen estructuras de datos más complejas: bases relacionales con múltiples tablas, encuestas multinivel (personas anidadas en hogares, hogares en municipios, municipios en provincias), o registros administrativos que acumulan observaciones en formatos no convencionales. Sin embargo, para los fines de este curso y de la estadística descriptiva, el punto de partida seguirá siendo la lógica de la <strong>matriz rectangular</strong>: un listado claro de casos y variables con el que trabajaremos a lo largo de nuestros análisis.</p>
+</section>
+</section>
+<section id="qué-hacemos-con-los-datos" class="level1">
+<h1>¿Qué hacemos con los datos?</h1>
+<p>Una vez que contamos con nuestros datos comienza la etapa de <strong>análisis e interpretación</strong>. Lo que sigue a partir de ese momento no es un mero trámite técnico, sino un trabajo que requiere rigor, paciencia y, cada vez más, destrezas informáticas. En la actualidad sería impensable abordar este proceso sin apoyarnos en planillas electrónicas, paquetes estadísticos o scripts especializados que nos permiten organizar, limpiar y explorar datos de manera sistemática. Contemplando la diversidad de destresas requeridas es que desarrollamos el formato modular de los trayector profesionales. No obstante, hay una serie de capacidades analiticas que todos deberian tener en su caja de herramientas profesional.</p>
+<p>En este módulo nos concentraremos en la <strong>descripción de conjuntos de datos</strong>. Se trata de una primera aproximación, cuyo objetivo principal es familiarizarnos con la información disponible: ver cómo está organizada, qué valores aparecen, con qué frecuencia lo hacen y si existen patrones reconocibles a simple vista. Antes de intentar responder preguntas más ambiciosas o realizar análisis complejos, necesitamos este <strong>paso preliminar de exploración</strong>.</p>
+<p>Lo que aprenderemos aquí constituye una especie de “radiografía inicial” de nuestros datos. No estamos todavía en el terreno de las conclusiones definitivas, sino en el de la observación cuidadosa y sistemática. Así, comenzaremos por construir tablas y graficos, que nos muestran de manera precisa cuántas veces aparece cada categoría o rango de valores. En módulos posteriores daremos un paso más, sintetizando toda esa información en pocas cifras representativas, pero aquí nos limitaremos a observar y describir.</p>
 </section>
 <section id="histogramas-la-visualización-universal" class="level1">
-<h1>2. Histogramas: la visualización universal</h1>
-<p>El <strong>histograma</strong> es el gráfico de referencia para mostrar la distribución de una variable cuantitativa. Divide el rango de valores en <strong>intervalos contiguos</strong> (bins o clases) y muestra la <strong>altura de cada barra proporcional a la frecuencia</strong> en ese intervalo.</p>
-<p>A diferencia del gráfico de barras, en un histograma:</p>
-<ul>
-<li>Las barras están pegadas (porque representan intervalos continuos).</li>
-<li>El ancho de las barras tiene significado: cada barra cubre un rango definido de valores.</li>
-</ul>
-<section id="ejemplo-2-gasto-militar-como-del-pbi" class="level2">
-<h2 class="anchored" data-anchor-id="ejemplo-2-gasto-militar-como-del-pbi">Ejemplo 2: Gasto militar como % del PBI</h2>
-<p>Supongamos que tenemos datos de gasto militar (% del PBI) para 50 países. El histograma podría verse así:</p>
-<div class="quarto-figure quarto-figure-center">
+<h1>Histogramas: la visualización universal</h1>
+<p>El <strong>histograma</strong> es, un gráfico sencillo que nos permite visualizar cómo se distribuyen los valores de una variable cuantitativa. Lo que hace es dividir el rango de valores posibles en <strong>intervalos contiguos</strong> (a veces llamados <em>clases</em> o <em>bins</em>) y mostrar con la altura de cada barra la <strong>frecuencia</strong> con que los casos caen en ese intervalo. En el histograma, las barras están unidas, porque representan intervalos consecutivos de una misma escala continua. Además, el ancho de cada barra tiene un significado: nos indica el rango de valores que cubre.</p>
+<p>Podemos imaginarlo como si dividiéramos una estantería en cajones de igual tamaño y luego colocáramos dentro de cada cajón todos los casos que caen en ese rango. Si la barra de un cajón es muy alta, quiere decir que ese rango concentra muchos casos. Si es baja, significa que en ese intervalo hay pocos. Y si alguna barra aparece aislada, lejos del resto, es una señal de que puede haber un valor atípico que merece atención.</p>
+</section>
+<section id="conociendo-nuestros-datos" class="level1">
+<h1>Conociendo nuestros datos</h1>
+<p>Para empezar a aplicar herramientas de estadística descriptiva necesitamos trabajar con un conjunto de datos real, que nos permita ver de manera concreta cómo las variables se organizan y cómo se expresan en tablas y gráficos.</p>
+<section id="primera-vuelta-de-la-eleccion-presidencial-de-2023-en-argentina." class="level2">
+<h2 class="anchored" data-anchor-id="primera-vuelta-de-la-eleccion-presidencial-de-2023-en-argentina.">Primera vuelta de la eleccion presidencial de 2023 en Argentina.</h2>
+<p>En este módulo vamos a introducir un ejemplo especialmente relevante: los resultados oficiales de las <strong>elecciones generales de 2023 en Argentina</strong>, disponibles públicamente en el portal del Ministerio del Interior (https://resultados.mininterior.gob.ar/resultados/2023/2/1/0).</p>
+<p>Estos datos tienen varias ventajas para nuestro aprendizaje. En primer lugar, son una <strong>fuente oficial y confiable</strong>, lo que nos asegura que fueron recopilados con procedimientos sistemáticos y transparentes. En segundo lugar, son datos de gran escala: abarcan la totalidad del territorio nacional, con miles de unidades registradas. Y en tercer lugar, son datos <strong>estructurados en formato de matriz</strong>, es decir, perfectamente adaptables al tipo de análisis cuantitativo que nos interesa practicar.</p>
+<section id="la-organización-del-sistema-electoral" class="level3">
+<h3 class="anchored" data-anchor-id="la-organización-del-sistema-electoral">La organización del sistema electoral</h3>
+<p>Para comprender los datos conviene recordar cómo funciona el proceso electoral argentino. Los votos se registran en lo que se denomina una <strong>mesa electoral</strong>, que es la unidad mínima de organización: un conjunto de votantes asignados a un lugar específico (generalmente una escuela o establecimiento público). Cada mesa recibe un padrón de entre 200 y 350 electores habilitados, y en ella se cuentan los votos de manera independiente. Esto significa que, en la base de datos, cada fila representa una <strong>mesa electoral</strong> como unidad de análisis, con todas las variables asociadas: cantidad de electores, votos emitidos, votos en blanco, votos nulos, y votos a cada agrupación política.</p>
+<p>Este detalle es fundamental porque determina qué estamos observando. Si decimos que una mesa tuvo 80 votos para una fuerza política, estamos hablando de una fracción muy pequeña del total nacional, pero es justamente esa unidad mínima la que nos permite explorar cómo se distribuye el apoyo electoral en el territorio. A partir de allí podemos agregar los datos por distrito, provincia o región, pero la lógica de base es siempre la misma: cada mesa es un caso en nuestra matriz de datos.</p>
+</section>
+<section id="la-variable-que-analizamos" class="level3">
+<h3 class="anchored" data-anchor-id="la-variable-que-analizamos">La variable que analizamos</h3>
+<p>En este ejemplo nos concentramos en una variable muy puntual: la <strong>cantidad de votos obtenidos por La Libertad Avanza en cada mesa electoral</strong>. Se trata de un número entero, que puede ir desde 0 (si en esa mesa el partido no recibió ningún voto) hasta más de 200 en mesas donde concentró la mayoría de los sufragios. Es una variable cuantitativa discreta, porque representa conteos de votos.</p>
+<p>Al elegir esta variable, estamos en condiciones de preguntarnos: ¿cómo se distribuye el número de votos de La Libertad Avanza en las distintas mesas del país? ¿Qué valores son más frecuentes? ¿Hay mesas donde obtuvo apoyos extremadamente bajos o extremadamente altos?</p>
+</section>
+<section id="de-la-fuente-al-análisis" class="level3">
+<h3 class="anchored" data-anchor-id="de-la-fuente-al-análisis">De la fuente al análisis</h3>
+<p>Aquí aparece una reflexión metodológica clave: aunque la fuente original nos brinde datos masivos y detallados, lo primero que debemos hacer es <strong>revisar qué significa cada unidad de análisis y qué representa cada variable</strong>. Solo así evitamos malinterpretaciones. En este caso, la unidad de análisis no son los individuos (los votantes), ni tampoco los distritos o provincias: son las <strong>mesas</strong>. Cada observación del dataset corresponde a una mesa, y por lo tanto los resultados reflejan la distribución de votos a ese nivel de agregación.</p>
+<p>Además, como trabajamos con datos que no hemos producido nosotros directamente, sino que provienen de una fuente secundaria oficial, debemos tener presente lo que vimos en el módulo anterior: estos datos vienen codificados y documentados. En la matriz que usamos, cada celda tiene un valor que remite a una categoría definida, y es responsabilidad del investigador <strong>leer el manual de códigos</strong> y la documentación para interpretar correctamente lo que aparece en pantalla.</p>
+</section>
+<section id="un-primer-vistazo-con-histogramas" class="level3">
+<h3 class="anchored" data-anchor-id="un-primer-vistazo-con-histogramas">Un primer vistazo con histogramas</h3>
+<p>Con esta base en mente, podemos explorar la distribución de la variable seleccionada —los votos de La Libertad Avanza por mesa— a través de un histograma. Este gráfico nos permitirá observar rápidamente cómo se organizan los resultados, cuáles son los valores más frecuentes y qué tan dispersos se encuentran los apoyos entre las distintas mesas.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
 <figure class="figure">
-<p><img src="imagenes/histograma_gasto_militar.png" class="img-fluid figure-img"></p>
-<figcaption>Histograma de gasto militar</figcaption>
+<p><img src="05-histograma-tablas_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="864"></p>
 </figure>
 </div>
-<p>Podemos interpretar:</p>
+</div>
+</div>
+<p>Una nota preliminar, los graficos aqui generados son deliveradamente los que por defecto genera cada programa para enfatizar el analisis. Estilisticamente hay muchas cosas a mejorar como veremos mas acabadamente en el modulo de graficos y sus respectivas ejercitaciones practicas, pero este primer histograma es una aproximacion a los datos apra se visualizada por el investigador y no necesariamente incluida en un informe o articulo a divulgar.</p>
 <ul>
-<li>Si la mayor parte de las observaciones está concentrada en intervalos bajos (p.&nbsp;ej., entre 0% y 2%), la distribución está sesgada hacia la izquierda.</li>
-<li>Si hay una barra muy alta en un intervalo, indica un rango de valores particularmente frecuente.</li>
+<li><p><strong>Eje X (horizontal):</strong> los valores posibles de la variable analizada, en este caso, la cantidad de votos que obtuvo La Libertad Avanza en cada mesa. Cada barra cubre un intervalo de votos (por ejemplo, de 40 a 50 votos, de 50 a 60 votos, etc.).</p></li>
+<li><p><strong>Eje Y (vertical):</strong> la <strong>frecuencia</strong>, es decir, cuántas mesas cayeron dentro de ese intervalo. Una barra alta indica que muchas mesas registraron un número de votos en ese rango; una barra baja, que pocas mesas tuvieron esa cantidad.</p></li>
+<li><p><strong>Cada barra:</strong> representa un rango definido de resultados de mesa. La altura de la barra está directamente relacionada con el número de mesas que tuvieron esa cantidad de votos para el partido en cuestión.</p></li>
 </ul>
-<hr>
+</section>
+<section id="interpretando-la-distribución" class="level3">
+<h3 class="anchored" data-anchor-id="interpretando-la-distribución">Interpretando la distribución</h3>
+<p>Lo que observamos es una distribución con forma de campana, donde la mayoría de las mesas se concentran alrededor de un rango intermedio (aproximadamente entre 60 y 80 votos), mientras que hay pocas mesas con números muy bajos o muy altos. Al mismo tiempo se puede ver un salto importante en la barra de menores votos, entre 0 y 10.</p>
+<p>Esto tiene sentido si pensamos en la estructura electoral: la cantidad de votos por mesa depende tanto del tamaño del padrón asignado a cada mesa como de la proporción de votantes que apoyaron a ese partido en esa zona. Por eso, la mayor parte de los casos se acumula en un rango medio, y solo unas pocas mesas quedan en los extremos (muy bajas porque el partido obtuvo escaso apoyo en ese distrito, muy altas porque concentró un fuerte apoyo en esa mesa particular).</p>
+</section>
+<section id="un-contraste-los-votos-del-frente-de-izquierda" class="level3">
+<h3 class="anchored" data-anchor-id="un-contraste-los-votos-del-frente-de-izquierda">Un contraste: los votos del Frente de Izquierda</h3>
+<p>El histograma de arriba muestra la distribución de votos del Frente de Izquierda en cada mesa electoral del país durante las elecciones generales de 2023. Al igual que en el caso anterior con La Libertad Avanza, la <strong>unidad de análisis</strong> sigue siendo la mesa electoral, y lo que registramos en el eje X son las cantidades de votos obtenidos por esa fuerza en cada una. El eje Y, por su parte, indica la cantidad de mesas que registraron esos valores.</p>
+<p>Lo primero que salta a la vista es que la mayor parte de las barras se concentran en el extremo izquierdo del gráfico: la mayoría de las mesas le asignó al Frente de Izquierda entre 0 y 10 votos. Hay un descenso muy marcado a medida que nos movemos hacia la derecha: pocas mesas registran entre 10 y 20 votos, y casi ninguna supera los 30.</p>
+<p>Esto nos muestra una distribución altamente <strong>asimétrica</strong>, con gran concentración de frecuencias en los valores bajos. Dicho en términos más simples, el Frente de Izquierda recibió apoyos reducidos en la mayoría de las mesas, con muy pocos casos excepcionales donde alcanzó números relativamente altos.</p>
+<p>La comparación con el histograma de La Libertad Avanza nos permite destacar un punto metodológico central: <strong>la forma del histograma refleja la distribución del apoyo electoral, no el total de votos a nivel nacional</strong>. Mientras que una fuerza de alcance nacional y con alta performance puede mostrar una distribución centrada en valores intermedios (con miles de mesas aportando entre 60 y 80 votos), una fuerza más pequeña tenderá a mostrar distribuciones muy sesgadas hacia los valores bajos.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="05-histograma-tablas_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
-<section id="relación-entre-tablas-y-gráficos" class="level1">
-<h1>3. Relación entre tablas y gráficos</h1>
-<p>Las tablas y los histogramas son complementarios:</p>
+<section id="la-base-polity-v-un-estándar-en-el-estudio-de-los-regímenes-políticos" class="level2">
+<h2 class="anchored" data-anchor-id="la-base-polity-v-un-estándar-en-el-estudio-de-los-regímenes-políticos">La base Polity V: un estándar en el estudio de los regímenes políticos</h2>
+<p>En Política Comparada, una de las preguntas más persistentes es cómo medir y comparar el <strong>régimen político</strong> de los países. ¿Qué tan democrático es un país? ¿Podemos ubicar a los Estados en un continuo entre autocracia y democracia? Para responder a estas preguntas, se han desarrollado varias bases de datos internacionales, pero una de las más influyentes es la serie <strong>Polity</strong>, cuyo último desarrollo es <strong>Polity V</strong> (2018).</p>
+<section id="qué-mide-polity" class="level3">
+<h3 class="anchored" data-anchor-id="qué-mide-polity">¿Qué mide Polity?</h3>
+<p>La base <strong>Polity</strong> ofrece un puntaje que ubica a cada país en una escala que va de <strong>-10 (autocracias plenas)</strong> a <strong>+10 (democracias plenas)</strong>. Para asignar esta puntuación, se tienen en cuenta distintos componentes de las instituciones políticas:<br>
+- La <strong>apertura de la competencia política</strong> (qué tan competitivas son las elecciones).<br>
+- Las <strong>restricciones al poder ejecutivo</strong> (si existen límites y controles efectivos al gobernante).<br>
+- La <strong>calidad de la participación política</strong> (si es inclusiva o está restringida a ciertos grupos).</p>
+<p>A partir de estos criterios, se genera un índice agregado que resume, en un solo número, la ubicación de cada país en ese continuo autocracia–democracia.</p>
+<p>El puntaje Polity se ha convertido en una referencia habitual para:<br>
+- Estudios comparados de democratización.<br>
+- Análisis estadísticos sobre la relación entre democracia y guerra, desarrollo económico o estabilidad política.<br>
+- Construcción de tipologías globales de regímenes.</p>
+</section>
+</section>
+<section id="interpretando-el-histograma-de-polity5-en-2018" class="level2">
+<h2 class="anchored" data-anchor-id="interpretando-el-histograma-de-polity5-en-2018">Interpretando el histograma de Polity5 en 2018</h2>
+<p>El gráfico que observamos muestra la distribución de puntajes Polity5 para todos los países del mundo en el año 2018.</p>
 <ul>
-<li><strong>Tablas</strong>: dan exactitud numérica y permiten cálculos posteriores.</li>
-<li><strong>Histogramas</strong>: facilitan la interpretación visual, muestran patrones y posibles valores atípicos.</li>
+<li><strong>Eje X (horizontal):</strong> representa el puntaje de Polity, desde -10 (autocracias plenas) hasta +10 (democracias plenas).<br>
+</li>
+<li><strong>Eje Y (vertical):</strong> indica la cantidad de países que se ubican en cada intervalo de la escala.<br>
+</li>
+<li><strong>Cada barra:</strong> agrupa a los países que comparten un rango de puntajes. &gt; cual es nuestra unidad de analisis aqui ?</li>
 </ul>
-<p>En la práctica profesional —por ejemplo, al presentar datos de opinión pública sobre satisfacción con la democracia— es común incluir <strong>ambos</strong>: una tabla que documenta los datos exactos y un histograma que los resume visualmente.</p>
-<hr>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="05-histograma-tablas_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol type="1">
+<li><p><strong>Concentración en el extremo positivo:</strong> Se observa una marcada concentración en el valor +10, que corresponde a las democracias plenas. Más de 50 países en 2018 alcanzaron ese puntaje máximo, lo cual refleja la consolidación democrática en buena parte del mundo. En el extremo opuesto, también hay varios países ubicados en los valores más bajos (-10, -9, -8), correspondientes a regímenes autoritarios pero en menor cantidad.</p></li>
+<li><p><strong>Un “valle” en el centro:</strong> Entre los valores intermedios (de -5 a +5) la cantidad de países es menor. Esto sugiere que las democracias parciales o regímenes híbridos existen, pero son menos numerosos que los casos más “puros” en cada extremo. La distribución, por lo tanto, no es homogénea, sino bimodal: predominan las democracias plenas y las autocracias consolidadas, mientras que los regímenes mixtos o en transición son menos frecuentes.</p></li>
+<li><p><strong>El caso del cero:</strong> Apenas unos pocos países aparecen en torno al puntaje 0, lo que indica situaciones de ambigüedad institucional, transiciones inestables o estados fallidos.</p></li>
+</ol>
+</section>
+<section id="polity5-en-1991-un-mundo-en-transición" class="level2">
+<h2 class="anchored" data-anchor-id="polity5-en-1991-un-mundo-en-transición">Polity5 en 1991: un mundo en transición</h2>
+<p>Para entender el valor de los datos de Polity, conviene situarnos históricamente. El año 1991 marcó un punto de inflexión en la política internacional. Fue el momento de la <strong>disolución de la Unión Soviética</strong>, la culminación de la Guerra Fría y el inicio de un proceso que algunos analistas llamaron la “tercera ola de democratización”. En ese contexto, el mapa global de regímenes políticos estaba en plena transformación.</p>
+<p>La base Polity5 nos permite observar esa transición con claridad. El histograma que presentamos a continuación muestra cómo se distribuían los países del mundo en la escala de Polity en 1991.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="05-histograma-tablas_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol type="1">
+<li><p><strong>La persistencia de las autocracias.</strong> Una proporción importante de países se encontraba en los valores más bajos de la escala (entre -10 y -6). Esto refleja la existencia de regímenes autoritarios consolidados, en muchos casos vinculados a partidos únicos, dictaduras militares o monarquías absolutas. África y Asia concentraban gran parte de estos casos, pero también persistían regímenes comunistas y autoritarios en otras regiones.</p></li>
+<li><p><strong>Democracias plenas, pero aún minoritarias.</strong> En el extremo opuesto vemos un grupo de países con puntaje +10. Se trata de las democracias consolidadas, principalmente Europa Occidental, Norteamérica, Oceanía y algunos países de América Latina que habían logrado redemocratizarse en los años ochenta. Sin embargo, este grupo era todavía más reducido que en la actualidad: las democracias eran numerosas, pero no dominaban el mapa.</p></li>
+<li><p><strong>El “vacío” del centro.</strong> Entre los valores intermedios, aproximadamente entre -2 y +2, la cantidad de países era mucho menor. Esto sugiere que, a comienzos de los noventa, la política mundial tendía a polarizarse entre regímenes autoritarios y democracias plenas, con menos espacio para los híbridos o los sistemas en transición. Los llamados regímenes “semidemocráticos” existían, pero eran menos frecuentes.</p></li>
+</ol>
+<p>Si ponemos este histograma junto al que analizamos para 2018, la diferencia en la forma de la distribución cambia radicalmente: de un mundo polarizado en 1991 pasamos a un mundo donde predominan las democracias en 2018. En términos gráficos, es como si la masa de países se hubiera desplazado hacia la derecha del histograma.</p>
+</section>
+<section id="la-base-de-datos-de-disputas-militarizadas-mids" class="level2">
+<h2 class="anchored" data-anchor-id="la-base-de-datos-de-disputas-militarizadas-mids">La base de datos de Disputas Militarizadas (MIDs)</h2>
+<p>Dentro del campo de estudios sobre guerra y paz en Relaciones Internacionales, una de las fuentes empíricas más utilizadas es la base de datos de las <strong>Disputas Militarizadas Interestatales (MIDs, por su sigla en inglés)</strong>, compilada por el proyecto <strong>Correlates of War (COW)</strong>. Su última versión, <strong>MIDs 5</strong>, cubre el período 1816–2014 e identifica cada instancia en que un Estado recurrió, amenazó con recurrir o desplegó fuerzas militares contra otro Estado.<br>
+Aquí lo que se busca es mapear cada episodio de conflicto, desde las amenazas y demostraciones de fuerza hasta las guerras abiertas. Cada fila de la base representa un <strong>MID</strong> (es decir, una disputa militarizada), y para cada disputa se registran múltiples variables: fecha, participantes, tipo de acción, resultado, nivel de hostilidad y, entre ellas, un dato clave: la <strong>letalidad del conflicto</strong>.</p>
+<section id="midiendo-la-letalidad-de-un-mid" class="level3">
+<h3 class="anchored" data-anchor-id="midiendo-la-letalidad-de-un-mid">Midiendo la letalidad de un MID</h3>
+<p>A primera vista, en el dataset encontramos una variable llamada <code>fatality</code>. Podría pensarse que se trata del número real de muertes producidas en la disputa, pero aquí aparece una cuestión fundamental: <strong>no son conteos absolutos, sino categorías codificadas</strong>.</p>
+<p>Según el libro de códigos de MIDs 5, el valor de <code>fatality</code> significa lo siguiente:</p>
+<ul>
+<li><strong>0</strong> → Ninguna muerte.<br>
+</li>
+<li><strong>1</strong> → Entre 1 y 25 muertes.<br>
+</li>
+<li><strong>2</strong> → Entre 26 y 100 muertes.<br>
+</li>
+<li><strong>3</strong> → Entre 101 y 250 muertes.<br>
+</li>
+<li><strong>4</strong> → Entre 251 y 500 muertes.<br>
+</li>
+<li><strong>5</strong> → Entre 501 y 999 muertes.<br>
+</li>
+<li><strong>6</strong> → Más de 999 muertes.<br>
+</li>
+<li><strong>-9</strong> → Dato faltante (missing).</li>
+</ul>
+<p>Esto implica que, aunque los valores aparezcan en formato numérico, no son cantidades directas de muertes, sino <strong>categorías ordinales</strong> que agrupan a las disputas en intervalos de letalidad. Un valor “2” no significa “dos muertes”, sino que la disputa se ubica en la categoría de entre 26 y 100 muertes.</p>
+</section>
+</section>
+<section id="el-riesgo-de-confundir-códigos-con-datos" class="level2">
+<h2 class="anchored" data-anchor-id="el-riesgo-de-confundir-códigos-con-datos">El riesgo de confundir códigos con datos</h2>
+<p>En el siguiente histograma vemos cómo se distribuyen las disputas según su nivel de fatalidad.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="05-histograma-tablas_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Si miramos el histograma de la variable de letalidad, lo primero que salta a la vista es que hay una gran cantidad de disputas con valores negativos, en particular en -9, lo que podría interpretarse como que hubo “menos nueve” muertes en esos casos. Además, se nota que la mayoría de los conflictos se concentran en el valor 0, es decir, literalmente cero muertes, mientras que prácticamente no hay casos en los valores intermedios. También se observa que la escala solo llega hasta 6, lo que parece indicar que ninguna disputa pasó de seis muertes en total. En conjunto, podríamos concluir entonces que los conflictos militarizados rara vez generan víctimas, que los valores negativos muestran una intensidad aún menor y que, en el peor de los casos, no se superan las seis fatalidades. Este ejemplo ilustra de manera muy clara la advertencia que venimos haciendo a lo largo del curso: <strong>los números en un dataset no siempre son datos directos de la realidad, sino códigos que requieren interpretación</strong>.</p>
+<p>Si un investigador tratara los valores de <code>fatality</code>, sin leer la documentacion o hacer una exploracion preliminar como esta, cometería un error grave. Por ejemplo, podría calcular el promedio de la variable y concluir que “la disputa militarizada promedio tuvo 1,5 muertes”. Esa interpretación sería absurda, porque lo que el número refleja no son muertes individuales, sino categorías. El “1” no significa “una muerte”, sino “entre 1 y 25”.</p>
+<p>El valor correcto de la variable está en el <strong>intervalo</strong> que representa, no en el número que aparece en la celda. Por eso, el primer paso al trabajar con este tipo de bases es leer con cuidado el libro de códigos y comprender qué significa cada valor.</p>
+<section id="el-histograma-de-la-letalidad" class="level3">
+<h3 class="anchored" data-anchor-id="el-histograma-de-la-letalidad">El histograma de la letalidad</h3>
+<p>Ahora si procedamos a un histograma preprocesado, donde quitamos los valores -9 o perdidos.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="05-histograma-tablas_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Aqui vemos lo siguiente,</p>
+<ul>
+<li><strong>Eje X:</strong> valores de <code>fatality</code>, que en realidad son categorías codificadas.<br>
+</li>
+<li><strong>Eje Y:</strong> número de disputas que se ubican en cada categoría.</li>
+</ul>
+<p>Lo que observamos es que la gran mayoría de las disputas se concentra en el valor <strong>0</strong>, es decir, en incidentes donde no hubo muertes. Recordemos, la variable <code>fatality</code> no nos dice cuántas muertes exactas hubo, sino <strong>qué nivel de letalidad alcanzó cada disputa según una escala ordinal predefinida</strong>. Comprender esta diferencia es esencial para cualquier análisis riguroso.</p>
+<p>Luego de la categoria con 0 muertes, también hay un número apreciable de disputas en la categoría 1 (1–25 muertes), y mucho menos frecuentes son las disputas con altos niveles de fatalidad (categorías 3, 4 y 5). Finalmente, volvemos a ver una barra destacable hacia el final de la escala en la categoria 6. Esto nos dice que en su mayoria los incidentes internacionales no tienen muchas fatalidades, pero cuando encontramos fatalidades, suelen ser mayores a 999. Esta descripcion puede ser muy orientadora en estudios sobre la escalada de violencia internacional, una vez que se desatan las hostilidades, rapidamente crece el numero de fatalidades.</p>
+</section>
+</section>
 </section>
 <section id="decisiones-clave-al-construir-histogramas" class="level1">
-<h1>4. Decisiones clave al construir histogramas</h1>
+<h1>Decisiones clave al construir histogramas</h1>
+<p>Aunque los programas informáticos generan histogramas automáticamente, conviene recordar que el investigador siempre toma decisiones que afectan la forma final del gráfico:</p>
 <ul>
-<li><strong>Número de intervalos</strong>: demasiado pocos pueden ocultar patrones; demasiados pueden mostrar ruido. Una regla común es usar () clases para (n) observaciones como punto de partida.</li>
-<li><strong>Rangos iguales</strong>: mantener intervalos de igual amplitud facilita la interpretación.</li>
-<li><strong>Etiquetas claras</strong>: los ejes deben indicar unidades y rangos.</li>
+<li><strong>Número de intervalos</strong>: si usamos muy pocos, la distribución puede verse excesivamente simplificada y ocultar patrones relevantes; si usamos demasiados, podemos introducir ruido y perder claridad. Una regla práctica es comenzar con () clases para (n) observaciones, y luego ajustar según el caso.<br>
+</li>
+<li><strong>Rangos iguales</strong>: mantener intervalos de igual amplitud facilita la comparación entre barras y evita interpretaciones engañosas.<br>
+</li>
+<li><strong>Etiquetas claras</strong>: los ejes deben estar bien señalados, indicando unidades, rangos y títulos comprensibles. Un buen histograma no solo muestra la forma de los datos, también comunica de manera transparente lo que se está midiendo.</li>
+</ul>
+<p>En suma, los histogramas son la puerta de entrada a la exploración visual de los datos. Nos permiten ver “la silueta” de una variable, identificar dónde se concentra la mayor parte de los casos y empezar a preguntarnos por qué la distribución adopta esa forma. Son, junto con las tablas de frecuencia, las dos herramientas básicas que nos ayudan a pasar de un cúmulo de números a una imagen clara de cómo se organiza la información.</p>
+</section>
+<section id="tablas-de-frecuencias-y-primera-mirada" class="level1">
+<h1>Tablas de frecuencias y primera mirada</h1>
+<p>Hasta ahora nos hemos concentrado en los <strong>histogramas</strong> como forma visual de explorar la distribución de los datos. Los histogramas son muy potentes porque permiten captar de un vistazo la “silueta” de una variable: dónde se concentra la mayor parte de los casos, qué tan dispersos están y si hay valores atípicos. Pero no siempre son suficientes.</p>
+<p>En algunos contextos, el histograma puede resultar <strong>confuso o poco informativo</strong>. Pensemos en por ejemplo en la base de <strong>MIDs</strong>, vimos que la variable <code>fatality</code> está codificada en categorías discretas (0, 1, 2, …, 6, y -9 para datos faltantes). Graficar un histograma en este caso puede dar la impresión de que se trata de una variable continua, cuando en realidad son pocos valores posibles y con saltos abruptos. Asi es como en casos de categorias discretas, la herramienta complementaria es la <strong>tabla de frecuencias</strong>.</p>
+<p>Una tabla de frecuencias es una forma de organizar la información en <strong>formato tabular</strong>, donde se listan los valores posibles de una variable (o intervalos de valores, si la variable es continua) y se cuenta cuántas observaciones corresponden a cada uno.</p>
+<p>Sus columnas típicas incluyen:</p>
+<ul>
+<li><strong>Frecuencia absoluta (f):</strong> el número de casos que caen en esa categoría o intervalo.</li>
+<li><strong>Frecuencia relativa (%):</strong> la proporción de esos casos respecto del total.<br>
+</li>
+<li><strong>Frecuencia acumulada:</strong> la suma de las frecuencias hasta esa categoría, especialmente útil en variables ordinales o numéricas, porque nos dice qué proporción del total se encuentra “hasta aquí”.</li>
+</ul>
+<p>Algunos programas estadísticos, también registran el <strong>% válido</strong>, que excluye los <em>missing values</em> (valores faltantes o codificados como “-9”, “99”, etc.), para no distorsionar los cálculos.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>tabla_fatality <span class="ot">&lt;-</span> mids <span class="sc">%&gt;%</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(fatality, <span class="at">name =</span> <span class="st">"frecuencia"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">porcentaje =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> frecuencia <span class="sc">/</span> <span class="fu">sum</span>(frecuencia), <span class="dv">2</span>),</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">acumulada =</span> <span class="fu">cumsum</span>(frecuencia)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  tabla_fatality,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">"Tabla de frecuencias de la variable fatality"</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">align =</span> <span class="st">"c"</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Tabla de frecuencias de la variable fatality</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">fatality</th>
+<th style="text-align: center;">frecuencia</th>
+<th style="text-align: center;">porcentaje</th>
+<th style="text-align: center;">acumulada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">-9</td>
+<td style="text-align: center;">268</td>
+<td style="text-align: center;">11.00</td>
+<td style="text-align: center;">268</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1736</td>
+<td style="text-align: center;">71.26</td>
+<td style="text-align: center;">2004</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">213</td>
+<td style="text-align: center;">8.74</td>
+<td style="text-align: center;">2217</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">78</td>
+<td style="text-align: center;">3.20</td>
+<td style="text-align: center;">2295</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">1.44</td>
+<td style="text-align: center;">2330</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">0.57</td>
+<td style="text-align: center;">2344</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0.21</td>
+<td style="text-align: center;">2349</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">87</td>
+<td style="text-align: center;">3.57</td>
+<td style="text-align: center;">2436</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ul>
+<li><p><strong>MIDs:</strong> si queremos saber qué tan letales han sido las disputas, una tabla de frecuencias nos permite ver que, por ejemplo, el 65% de los incidentes se ubican en la categoría 0 (ninguna muerte), un 20% en la categoría 1 (1–25 muertes), y apenas un 3% en la categoría 6 (&gt;999 muertes). El histograma nos muestra la silueta, pero la tabla nos da el <strong>número exacto de disputas en cada categoría</strong>.</p></li>
+<li><p><strong>Polity V:</strong> para 2018, una tabla nos mostraría claramente que 54 países tienen un puntaje de +10, 21 países están en el rango de +6 a +9, y 14 países permanecen en el rango de -10 a -6. Esta precisión es difícil de extraer solo del gráfico.</p></li>
+<li><p><strong>Elecciones 2023:</strong> en lugar de ver simplemente que la mayoría de las mesas dieron entre 60 y 80 votos a La Libertad Avanza, una tabla nos podría decir: “10.345 mesas registraron entre 70 y 79 votos, lo que representa el 12% del total de mesas válidas”.</p></li>
 </ul>
 <hr>
-</section>
-<section id="ejercicio-práctico" class="level1">
-<h1>5. Ejercicio práctico</h1>
-<ol type="1">
-<li>Elige una variable numérica de un conjunto de datos (por ejemplo, edad, ingreso, gasto militar, porcentaje de votos).</li>
-<li>Construye la tabla de frecuencias con:
-<ul>
-<li>Frecuencia absoluta</li>
-<li>Frecuencia relativa (%)</li>
-<li>Frecuencia acumulada</li>
-</ul></li>
-<li>Construye el histograma correspondiente.</li>
-<li>Describe lo que observas:
-<ul>
-<li>¿Dónde se concentra la mayoría de casos?</li>
-<li>¿Hay sesgo a izquierda/derecha?</li>
-<li>¿Algún valor extremo destaca?</li>
-</ul></li>
-</ol>
+<section id="consideraciones-prácticas" class="level2">
+<h2 class="anchored" data-anchor-id="consideraciones-prácticas">Consideraciones prácticas</h2>
+<p>En variables categóricas o discretas, la tabla puede mostrar todas las categorías posibles. En cambio, para variables continuas o con muchos valores distintos (como la edad en años, el ingreso en pesos o los votos exactos por mesa), conviene <strong>agrupar en intervalos</strong>. Los manuales metodológicos sugieren entre 6 y 20 clases, dependiendo del tamaño de la muestra (Cea D’Ancona, 2002, p.&nbsp;276). De esta manera, la tabla no se vuelve inmanejable y conserva su capacidad de síntesis.</p>
 <hr>
+<section id="una-reflexión" class="level3">
+<h3 class="anchored" data-anchor-id="una-reflexión">Una reflexión</h3>
+<p>La tabla de frecuencias es, en definitiva, la <strong>otra cara de la moneda</strong> de los histogramas. Mientras que el gráfico apela a la intuición visual y nos permite identificar patrones de un vistazo, la tabla ofrece precisión numérica y permite calcular con exactitud proporciones, porcentajes y acumulados. En el trabajo profesional —ya sea en informes académicos, en análisis de opinión pública o en reportes de política internacional— lo más habitual es que ambas herramientas aparezcan juntas: primero la tabla que da la información “dura”, luego el gráfico que la hace más accesible e interpretable.</p>
+<p>La lección para el estudiante es clara: no se trata de elegir entre histogramas o tablas, sino de <strong>aprender a usarlos de manera complementaria</strong>, combinando claridad visual con precisión numérica.</p>
+</section>
+</section>
 </section>
 <section id="conclusión" class="level1">
 <h1>Conclusión</h1>
@@ -357,6 +710,10 @@ ul.task-list li input[type="checkbox"] {
 <li>Opinión pública sobre políticas específicas.</li>
 </ul>
 <p>En todos los casos, describir una variable correctamente sienta las bases para análisis más complejos y para la comunicación clara de hallazgos a audiencias diversas.</p>
+</section>
+<section id="bibliografia" class="level1">
+<h1>Bibliografia</h1>
+<p>Palmer, Glenn, Roseanne W. McManus, Vito D’Orazio, Michael R. Kenwick, Mikaela Karstens, Chase Bloch, Nick Dietrich, Kayla Kahn, Kellan Ritter, Michael J. Soules. 2020. “The MID5 Dataset, 2011-2014: Procedures, Coding Rules, and Description.” Conflict Management and Peace Science, 39(4): 470-482. DOI: https://journals.sagepub.com/doi/full/10.1177/0738894221995743</p>
 
 
 </section>

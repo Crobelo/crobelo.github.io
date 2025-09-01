@@ -1,5 +1,5 @@
 ---
-title: "1 — Preguntas y Respuestas"
+title: "Preguntas y Respuestas"
 format: html
 ---
 

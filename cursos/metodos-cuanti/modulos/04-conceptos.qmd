@@ -1,5 +1,5 @@
 ---
-title: "Módulo 4 — Conceptos, operacionalización y variables"
+title: "Conceptos, operacionalización y variables"
 format: html
 ---
 # Introducción  

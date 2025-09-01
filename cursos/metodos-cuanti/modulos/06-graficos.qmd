@@ -1,5 +1,5 @@
 ---
-title: "Módulo 6 — Visualización de datos: de la estadística descriptiva a la comunicación efectiva"
+title: "Visualización de datos: de la estadística descriptiva a la comunicación efectiva"
 format: html
 ---
 
@@ -50,9 +50,21 @@ Antes de aplicar criterios visuales, un gráfico debe:
 
 ---
 
-# 3. Tipos de gráficos recomendados
+
+Con la ciencia de datos y creacion de softwares y lenguajes de programacion especificos los graficos han explotado en popularidad y complejidad pero como tufte nos recuerda los principios se mantienen en el tiempo.
+
+
+El ejemplo de napoleon y la cantidad de variables en un solo grafico
+
+
+Mas alla de eso queremos usar los graficos como una herramienta de doble uso, de analisis para nosotros y de comunicacion para otros. 
+
+vamos a comenzar remarcando las buenas practicas de cada uno de los tipos mas comunes y luego cada uno de los trajector profesionales tendra su modulo para explorar 
+
 
 ## 3.1 Variable única
+
+- de torta, poco utilizado
 * **Barras**: categorías políticas, tipo de régimen, partidos.
 * **Histogramas**: distribución de edad de legisladores, gasto militar como % del PBI.
 * **Boxplots**: salarios en el sector público por región.

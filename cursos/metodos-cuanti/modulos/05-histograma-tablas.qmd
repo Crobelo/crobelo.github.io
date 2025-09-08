@@ -34,7 +34,7 @@ Para ello contamos con dos herramientas clásicas, sencillas y enormemente poder
 El objetivo de este módulo no es solo que aprendas a **leer** estos resúmenes, sino también a **producirlos**, a interpretarlos críticamente y a reconocerlos como el primer peldaño de un análisis más profundo. Como veremos, esta primera exploración descriptiva es el punto de partida para detectar problemas de calidad (valores perdidos, *missing values*; o casos atípicos, *outliers*) y para orientar las decisiones analíticas posteriores.  
 
 
-# ¿Con qué datos contamos?  
+# La matriz de datos
 
 Antes de comenzar con cualquier análisis descriptivo, debemos tener claro **qué datos tenemos delante y en qué formato se encuentran**. En la investigación cuantitativa trabajamos, casi siempre, con lo que se conoce como una **matriz de datos**. Se trata de una tabla rectangular donde cada fila representa un **caso** (es decir, una unidad de análisis) y cada columna corresponde a una **variable**. En la intersección entre fila y columna encontramos la **celda**, que contiene un valor específico: el dato individual de esa variable para ese caso en particular.  
 
@@ -94,7 +94,7 @@ Un número en la celda nunca habla por sí solo,  puede significar un dato real,
 Aunque aquí nos concentremos en las matrices rectangulares, conviene anticipar que en el mundo real existen estructuras de datos más complejas: bases relacionales con múltiples tablas, encuestas multinivel (personas anidadas en hogares, hogares en municipios, municipios en provincias), o registros administrativos que acumulan observaciones en formatos no convencionales. Sin embargo, para los fines de este curso y de la estadística descriptiva, el punto de partida seguirá siendo la lógica de la **matriz rectangular**: un listado claro de casos y variables con el que trabajaremos a lo largo de nuestros análisis.  
 
 
-# ¿Qué hacemos con los datos?  
+# Explorando los datos
 
 Una vez que contamos con nuestros datos comienza la etapa de **análisis e interpretación**. Lo que sigue a partir de ese momento no es un mero trámite técnico, sino un trabajo que requiere rigor, paciencia y, cada vez más, destrezas informáticas. En la actualidad sería impensable abordar este proceso sin apoyarnos en planillas electrónicas, paquetes estadísticos o scripts especializados que nos permiten organizar, limpiar y explorar datos de manera sistemática. Contemplando la diversidad de destresas requeridas es que desarrollamos el formato modular de los trayector profesionales. No obstante, hay una serie de capacidades analiticas que todos deberian tener en su caja de herramientas profesional.  
 
@@ -102,14 +102,14 @@ En este módulo nos concentraremos en la **descripción de conjuntos de datos**.
 
 Lo que aprenderemos aquí constituye una especie de “radiografía inicial” de nuestros datos. No estamos todavía en el terreno de las conclusiones definitivas, sino en el de la observación cuidadosa y sistemática. Así, comenzaremos por construir tablas y graficos, que nos muestran de manera precisa cuántas veces aparece cada categoría o rango de valores. En módulos posteriores daremos un paso más, sintetizando toda esa información en pocas cifras representativas, pero aquí nos limitaremos a observar y describir.  
 
-# Histogramas: la visualización universal  
+# Histogramas, una aproximacion visual  
 
 El **histograma** es, un gráfico sencillo que nos permite visualizar cómo se distribuyen los valores de una variable cuantitativa. Lo que hace es dividir el rango de valores posibles en **intervalos contiguos** (a veces llamados *clases* o *bins*) y mostrar con la altura de cada barra la **frecuencia** con que los casos caen en ese intervalo. En el histograma, las barras están unidas, porque representan intervalos consecutivos de una misma escala continua. Además, el ancho de cada barra tiene un significado: nos indica el rango de valores que cubre.  
 
 Podemos imaginarlo como si dividiéramos una estantería en cajones de igual tamaño y luego colocáramos dentro de cada cajón todos los casos que caen en ese rango. Si la barra de un cajón es muy alta, quiere decir que ese rango concentra muchos casos. Si es baja, significa que en ese intervalo hay pocos. Y si alguna barra aparece aislada, lejos del resto, es una señal de que puede haber un valor atípico que merece atención.  
 
 
-# Conociendo nuestros datos  
+# Conociendo nuestros datos de trabajo  
 
 Para empezar a aplicar herramientas de estadística descriptiva necesitamos trabajar con un conjunto de datos real, que nos permita ver de manera concreta cómo las variables se organizan y cómo se expresan en tablas y gráficos. 
 
@@ -230,7 +230,7 @@ El puntaje Polity se ha convertido en una referencia habitual para:
 - Construcción de tipologías globales de regímenes.  
 
 
-## Interpretando el histograma de Polity5 en 2018  
+### Interpretando el histograma de Polity5 en 2018  
 
 El gráfico que observamos muestra la distribución de puntajes Polity5 para todos los países del mundo en el año 2018.  
 
@@ -265,7 +265,7 @@ hist(pol$polity[pol$year == 2018 & pol$polity >= -10],
 3. **El caso del cero:** Apenas unos pocos países aparecen en torno al puntaje 0, lo que indica situaciones de ambigüedad institucional, transiciones inestables o estados fallidos.  
 
 
-## Polity5 en 1991: un mundo en transición  
+### Polity5 en 1991: un mundo en transición  
 
 Para entender el valor de los datos de Polity, conviene situarnos históricamente. El año 1991 marcó un punto de inflexión en la política internacional. Fue el momento de la **disolución de la Unión Soviética**, la culminación de la Guerra Fría y el inicio de un proceso que algunos analistas llamaron la “tercera ola de democratización”. En ese contexto, el mapa global de regímenes políticos estaba en plena transformación.  
 
@@ -386,6 +386,7 @@ Luego de la categoria con 0 muertes, también hay un número apreciable de dispu
 
 
 # Decisiones clave al construir histogramas  
+> nota, pasar seccion a modulo de graficos
 
 Aunque los programas informáticos generan histogramas automáticamente, conviene recordar que el investigador siempre toma decisiones que afectan la forma final del gráfico:  
 
@@ -437,7 +438,7 @@ kable(
 
 
 
-
+## variables continuas y recodificacion!
 
 
 - **MIDs:** si queremos saber qué tan letales han sido las disputas, una tabla de frecuencias nos permite ver que, por ejemplo, el 65% de los incidentes se ubican en la categoría 0 (ninguna muerte), un 20% en la categoría 1 (1–25 muertes), y apenas un 3% en la categoría 6 (>999 muertes). El histograma nos muestra la silueta, pero la tabla nos da el **número exacto de disputas en cada categoría**.  

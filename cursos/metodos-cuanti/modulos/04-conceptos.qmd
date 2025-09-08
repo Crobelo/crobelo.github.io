@@ -85,6 +85,8 @@ Una de las formas más claras de distinguir entre validez y confiabilidad es la 
 
 Este ejemplo nos ayuda a recordar que un buen indicador debe aspirar a ser ambas cosas: válido y confiable. Una medida inválida puede ser muy consistente pero inútil; una medida poco confiable puede, en teoría, capturar bien el fenómeno, pero será poco creíble porque no puede replicarse.  
 
+> nota, agregar los tipos de validez, de constructo, etc.
+
 ## Variables como puente entre teoría y datos  
 
 En este proceso, las variables cumplen un rol de **puente**. Por un lado, son hijas de los conceptos: traducen definiciones abstractas en atributos observables. Por otro, son la materia prima de los datos: lo que finalmente recolectamos en encuestas, registros oficiales o bases de datos. Entre la teoría y la evidencia empírica, las variables son el eslabón que permite conectar ambos mundos.  

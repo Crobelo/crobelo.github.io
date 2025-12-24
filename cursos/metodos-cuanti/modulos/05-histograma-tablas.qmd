@@ -47,6 +47,10 @@ Por ejemplo, si nuestra unidad de análisis son las personas encuestadas, cada f
 | María Gómez       | 52   | Universitario          | 1.200                 |
 | Carlos Rodríguez  | 41   | Secundaria incompleta  | 950                   |
 
+> nota, expandir sobre la relevancia de la unidad de analisis al momento de tener en cuenta
+las filas y los posibles problemas de ponerlo mal
+
+
 ## El formato rectangular y la filosofía de los datos  
 
 Idealmente, nuestras bases de datos deben mantener un formato **rectangular limpio**, es decir, que haya tantas celdas llenas como la multiplicación del número de filas por el número de columnas. Cada caso debe estar representado en una sola fila, y cada variable en una sola columna. Esta es la lógica detrás de lo que Hadley Wickham (2014) llamó el principio de datos **“tidy”**: un dataset claro y ordenado es aquel en el que:  
@@ -166,7 +170,7 @@ hist(generales2023$votos_cantidad[generales2023$agrupacion_id == 135],
 
 ```
 
-Una nota preliminar, los graficos aqui generados son deliveradamente los que por defecto genera cada programa para enfatizar el analisis. Estilisticamente hay muchas cosas a mejorar como veremos mas acabadamente en el modulo de graficos y sus respectivas ejercitaciones practicas, pero este primer histograma es una aproximacion a los datos apra se visualizada por el investigador y no necesariamente incluida en un informe o articulo a divulgar.
+Una nota preliminar, los graficos aqui generados son deliberadamente los que por defecto genera cada programa para enfatizar el analisis. Estilisticamente hay muchas cosas a mejorar como veremos mas acabadamente en el modulo de graficos y sus respectivas ejercitaciones practicas, pero este primer histograma es una aproximacion a los datos apra se visualizada por el investigador y no necesariamente incluida en un informe o articulo a divulgar.
 
 - **Eje X (horizontal):** los valores posibles de la variable analizada, en este caso, la cantidad de votos que obtuvo La Libertad Avanza en cada mesa. Cada barra cubre un intervalo de votos (por ejemplo, de 40 a 50 votos, de 50 a 60 votos, etc.).  
 

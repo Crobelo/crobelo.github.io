@@ -144,16 +144,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
-  <li><a href="#con-qué-datos-contamos" id="toc-con-qué-datos-contamos" class="nav-link" data-scroll-target="#con-qué-datos-contamos">¿Con qué datos contamos?</a>
+  <li><a href="#la-matriz-de-datos" id="toc-la-matriz-de-datos" class="nav-link" data-scroll-target="#la-matriz-de-datos">La matriz de datos</a>
   <ul class="collapse">
   <li><a href="#el-formato-rectangular-y-la-filosofía-de-los-datos" id="toc-el-formato-rectangular-y-la-filosofía-de-los-datos" class="nav-link" data-scroll-target="#el-formato-rectangular-y-la-filosofía-de-los-datos">El formato rectangular y la filosofía de los datos</a></li>
   <li><a href="#la-estructura-de-los-datos-un-ejemplo-con-países-y-gasto-social" id="toc-la-estructura-de-los-datos-un-ejemplo-con-países-y-gasto-social" class="nav-link" data-scroll-target="#la-estructura-de-los-datos-un-ejemplo-con-países-y-gasto-social">La estructura de los datos, un ejemplo con países y gasto social</a></li>
   <li><a href="#códigos-y-documentación" id="toc-códigos-y-documentación" class="nav-link" data-scroll-target="#códigos-y-documentación">Códigos y documentación</a></li>
   <li><a href="#una-nota-sobre-bases-de-datos-más-complejas" id="toc-una-nota-sobre-bases-de-datos-más-complejas" class="nav-link" data-scroll-target="#una-nota-sobre-bases-de-datos-más-complejas">Una nota sobre bases de datos más complejas</a></li>
   </ul></li>
-  <li><a href="#qué-hacemos-con-los-datos" id="toc-qué-hacemos-con-los-datos" class="nav-link" data-scroll-target="#qué-hacemos-con-los-datos">¿Qué hacemos con los datos?</a></li>
-  <li><a href="#histogramas-la-visualización-universal" id="toc-histogramas-la-visualización-universal" class="nav-link" data-scroll-target="#histogramas-la-visualización-universal">Histogramas: la visualización universal</a></li>
-  <li><a href="#conociendo-nuestros-datos" id="toc-conociendo-nuestros-datos" class="nav-link" data-scroll-target="#conociendo-nuestros-datos">Conociendo nuestros datos</a>
+  <li><a href="#explorando-los-datos" id="toc-explorando-los-datos" class="nav-link" data-scroll-target="#explorando-los-datos">Explorando los datos</a></li>
+  <li><a href="#histogramas-una-aproximacion-visual" id="toc-histogramas-una-aproximacion-visual" class="nav-link" data-scroll-target="#histogramas-una-aproximacion-visual">Histogramas, una aproximacion visual</a></li>
+  <li><a href="#conociendo-nuestros-datos-de-trabajo" id="toc-conociendo-nuestros-datos-de-trabajo" class="nav-link" data-scroll-target="#conociendo-nuestros-datos-de-trabajo">Conociendo nuestros datos de trabajo</a>
   <ul class="collapse">
   <li><a href="#primera-vuelta-de-la-eleccion-presidencial-de-2023-en-argentina." id="toc-primera-vuelta-de-la-eleccion-presidencial-de-2023-en-argentina." class="nav-link" data-scroll-target="#primera-vuelta-de-la-eleccion-presidencial-de-2023-en-argentina.">Primera vuelta de la eleccion presidencial de 2023 en Argentina.</a>
   <ul class="collapse">
@@ -167,9 +167,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#la-base-polity-v-un-estándar-en-el-estudio-de-los-regímenes-políticos" id="toc-la-base-polity-v-un-estándar-en-el-estudio-de-los-regímenes-políticos" class="nav-link" data-scroll-target="#la-base-polity-v-un-estándar-en-el-estudio-de-los-regímenes-políticos">La base Polity V: un estándar en el estudio de los regímenes políticos</a>
   <ul class="collapse">
   <li><a href="#qué-mide-polity" id="toc-qué-mide-polity" class="nav-link" data-scroll-target="#qué-mide-polity">¿Qué mide Polity?</a></li>
-  </ul></li>
   <li><a href="#interpretando-el-histograma-de-polity5-en-2018" id="toc-interpretando-el-histograma-de-polity5-en-2018" class="nav-link" data-scroll-target="#interpretando-el-histograma-de-polity5-en-2018">Interpretando el histograma de Polity5 en 2018</a></li>
   <li><a href="#polity5-en-1991-un-mundo-en-transición" id="toc-polity5-en-1991-un-mundo-en-transición" class="nav-link" data-scroll-target="#polity5-en-1991-un-mundo-en-transición">Polity5 en 1991: un mundo en transición</a></li>
+  </ul></li>
   <li><a href="#la-base-de-datos-de-disputas-militarizadas-mids" id="toc-la-base-de-datos-de-disputas-militarizadas-mids" class="nav-link" data-scroll-target="#la-base-de-datos-de-disputas-militarizadas-mids">La base de datos de Disputas Militarizadas (MIDs)</a>
   <ul class="collapse">
   <li><a href="#midiendo-la-letalidad-de-un-mid" id="toc-midiendo-la-letalidad-de-un-mid" class="nav-link" data-scroll-target="#midiendo-la-letalidad-de-un-mid">Midiendo la letalidad de un MID</a></li>
@@ -237,8 +237,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>El objetivo de este módulo no es solo que aprendas a <strong>leer</strong> estos resúmenes, sino también a <strong>producirlos</strong>, a interpretarlos críticamente y a reconocerlos como el primer peldaño de un análisis más profundo. Como veremos, esta primera exploración descriptiva es el punto de partida para detectar problemas de calidad (valores perdidos, <em>missing values</em>; o casos atípicos, <em>outliers</em>) y para orientar las decisiones analíticas posteriores.</p>
 </section>
-<section id="con-qué-datos-contamos" class="level1">
-<h1>¿Con qué datos contamos?</h1>
+<section id="la-matriz-de-datos" class="level1">
+<h1>La matriz de datos</h1>
 <p>Antes de comenzar con cualquier análisis descriptivo, debemos tener claro <strong>qué datos tenemos delante y en qué formato se encuentran</strong>. En la investigación cuantitativa trabajamos, casi siempre, con lo que se conoce como una <strong>matriz de datos</strong>. Se trata de una tabla rectangular donde cada fila representa un <strong>caso</strong> (es decir, una unidad de análisis) y cada columna corresponde a una <strong>variable</strong>. En la intersección entre fila y columna encontramos la <strong>celda</strong>, que contiene un valor específico: el dato individual de esa variable para ese caso en particular.</p>
 <p>Por ejemplo, si nuestra unidad de análisis son las personas encuestadas, cada fila será un individuo: “Juan Pérez”, “María Gómez”, “Carlos Rodríguez”. Las columnas podrán ser variables como “edad”, “nivel educativo”, “ingreso mensual”. En las celdas, entonces, veremos que Juan tiene 35 años, educación secundaria completa y un ingreso de 800 dólares; mientras que María tiene 52 años, nivel universitario y un ingreso de 1.200 dólares. Este formato rectangular es la base de la gran mayoría de los análisis estadísticos.</p>
 <table class="caption-top table">
@@ -277,6 +277,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
+<blockquote class="blockquote">
+<p>nota, expandir sobre la relevancia de la unidad de analisis al momento de tener en cuenta las filas y los posibles problemas de ponerlo mal</p>
+</blockquote>
 <section id="el-formato-rectangular-y-la-filosofía-de-los-datos" class="level2">
 <h2 class="anchored" data-anchor-id="el-formato-rectangular-y-la-filosofía-de-los-datos">El formato rectangular y la filosofía de los datos</h2>
 <p>Idealmente, nuestras bases de datos deben mantener un formato <strong>rectangular limpio</strong>, es decir, que haya tantas celdas llenas como la multiplicación del número de filas por el número de columnas. Cada caso debe estar representado en una sola fila, y cada variable en una sola columna. Esta es la lógica detrás de lo que Hadley Wickham (2014) llamó el principio de datos <strong>“tidy”</strong>: un dataset claro y ordenado es aquel en el que:</p>
@@ -376,19 +379,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Aunque aquí nos concentremos en las matrices rectangulares, conviene anticipar que en el mundo real existen estructuras de datos más complejas: bases relacionales con múltiples tablas, encuestas multinivel (personas anidadas en hogares, hogares en municipios, municipios en provincias), o registros administrativos que acumulan observaciones en formatos no convencionales. Sin embargo, para los fines de este curso y de la estadística descriptiva, el punto de partida seguirá siendo la lógica de la <strong>matriz rectangular</strong>: un listado claro de casos y variables con el que trabajaremos a lo largo de nuestros análisis.</p>
 </section>
 </section>
-<section id="qué-hacemos-con-los-datos" class="level1">
-<h1>¿Qué hacemos con los datos?</h1>
+<section id="explorando-los-datos" class="level1">
+<h1>Explorando los datos</h1>
 <p>Una vez que contamos con nuestros datos comienza la etapa de <strong>análisis e interpretación</strong>. Lo que sigue a partir de ese momento no es un mero trámite técnico, sino un trabajo que requiere rigor, paciencia y, cada vez más, destrezas informáticas. En la actualidad sería impensable abordar este proceso sin apoyarnos en planillas electrónicas, paquetes estadísticos o scripts especializados que nos permiten organizar, limpiar y explorar datos de manera sistemática. Contemplando la diversidad de destresas requeridas es que desarrollamos el formato modular de los trayector profesionales. No obstante, hay una serie de capacidades analiticas que todos deberian tener en su caja de herramientas profesional.</p>
 <p>En este módulo nos concentraremos en la <strong>descripción de conjuntos de datos</strong>. Se trata de una primera aproximación, cuyo objetivo principal es familiarizarnos con la información disponible: ver cómo está organizada, qué valores aparecen, con qué frecuencia lo hacen y si existen patrones reconocibles a simple vista. Antes de intentar responder preguntas más ambiciosas o realizar análisis complejos, necesitamos este <strong>paso preliminar de exploración</strong>.</p>
 <p>Lo que aprenderemos aquí constituye una especie de “radiografía inicial” de nuestros datos. No estamos todavía en el terreno de las conclusiones definitivas, sino en el de la observación cuidadosa y sistemática. Así, comenzaremos por construir tablas y graficos, que nos muestran de manera precisa cuántas veces aparece cada categoría o rango de valores. En módulos posteriores daremos un paso más, sintetizando toda esa información en pocas cifras representativas, pero aquí nos limitaremos a observar y describir.</p>
 </section>
-<section id="histogramas-la-visualización-universal" class="level1">
-<h1>Histogramas: la visualización universal</h1>
+<section id="histogramas-una-aproximacion-visual" class="level1">
+<h1>Histogramas, una aproximacion visual</h1>
 <p>El <strong>histograma</strong> es, un gráfico sencillo que nos permite visualizar cómo se distribuyen los valores de una variable cuantitativa. Lo que hace es dividir el rango de valores posibles en <strong>intervalos contiguos</strong> (a veces llamados <em>clases</em> o <em>bins</em>) y mostrar con la altura de cada barra la <strong>frecuencia</strong> con que los casos caen en ese intervalo. En el histograma, las barras están unidas, porque representan intervalos consecutivos de una misma escala continua. Además, el ancho de cada barra tiene un significado: nos indica el rango de valores que cubre.</p>
 <p>Podemos imaginarlo como si dividiéramos una estantería en cajones de igual tamaño y luego colocáramos dentro de cada cajón todos los casos que caen en ese rango. Si la barra de un cajón es muy alta, quiere decir que ese rango concentra muchos casos. Si es baja, significa que en ese intervalo hay pocos. Y si alguna barra aparece aislada, lejos del resto, es una señal de que puede haber un valor atípico que merece atención.</p>
 </section>
-<section id="conociendo-nuestros-datos" class="level1">
-<h1>Conociendo nuestros datos</h1>
+<section id="conociendo-nuestros-datos-de-trabajo" class="level1">
+<h1>Conociendo nuestros datos de trabajo</h1>
 <p>Para empezar a aplicar herramientas de estadística descriptiva necesitamos trabajar con un conjunto de datos real, que nos permita ver de manera concreta cómo las variables se organizan y cómo se expresan en tablas y gráficos.</p>
 <section id="primera-vuelta-de-la-eleccion-presidencial-de-2023-en-argentina." class="level2">
 <h2 class="anchored" data-anchor-id="primera-vuelta-de-la-eleccion-presidencial-de-2023-en-argentina.">Primera vuelta de la eleccion presidencial de 2023 en Argentina.</h2>
@@ -421,7 +424,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Una nota preliminar, los graficos aqui generados son deliveradamente los que por defecto genera cada programa para enfatizar el analisis. Estilisticamente hay muchas cosas a mejorar como veremos mas acabadamente en el modulo de graficos y sus respectivas ejercitaciones practicas, pero este primer histograma es una aproximacion a los datos apra se visualizada por el investigador y no necesariamente incluida en un informe o articulo a divulgar.</p>
+<p>Una nota preliminar, los graficos aqui generados son deliberadamente los que por defecto genera cada programa para enfatizar el analisis. Estilisticamente hay muchas cosas a mejorar como veremos mas acabadamente en el modulo de graficos y sus respectivas ejercitaciones practicas, pero este primer histograma es una aproximacion a los datos apra se visualizada por el investigador y no necesariamente incluida en un informe o articulo a divulgar.</p>
 <ul>
 <li><p><strong>Eje X (horizontal):</strong> los valores posibles de la variable analizada, en este caso, la cantidad de votos que obtuvo La Libertad Avanza en cada mesa. Cada barra cubre un intervalo de votos (por ejemplo, de 40 a 50 votos, de 50 a 60 votos, etc.).</p></li>
 <li><p><strong>Eje Y (vertical):</strong> la <strong>frecuencia</strong>, es decir, cuántas mesas cayeron dentro de ese intervalo. Una barra alta indica que muchas mesas registraron un número de votos en ese rango; una barra baja, que pocas mesas tuvieron esa cantidad.</p></li>
@@ -465,9 +468,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 - Análisis estadísticos sobre la relación entre democracia y guerra, desarrollo económico o estabilidad política.<br>
 - Construcción de tipologías globales de regímenes.</p>
 </section>
-</section>
-<section id="interpretando-el-histograma-de-polity5-en-2018" class="level2">
-<h2 class="anchored" data-anchor-id="interpretando-el-histograma-de-polity5-en-2018">Interpretando el histograma de Polity5 en 2018</h2>
+<section id="interpretando-el-histograma-de-polity5-en-2018" class="level3">
+<h3 class="anchored" data-anchor-id="interpretando-el-histograma-de-polity5-en-2018">Interpretando el histograma de Polity5 en 2018</h3>
 <p>El gráfico que observamos muestra la distribución de puntajes Polity5 para todos los países del mundo en el año 2018.</p>
 <ul>
 <li><strong>Eje X (horizontal):</strong> representa el puntaje de Polity, desde -10 (autocracias plenas) hasta +10 (democracias plenas).<br>
@@ -491,8 +493,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><strong>El caso del cero:</strong> Apenas unos pocos países aparecen en torno al puntaje 0, lo que indica situaciones de ambigüedad institucional, transiciones inestables o estados fallidos.</p></li>
 </ol>
 </section>
-<section id="polity5-en-1991-un-mundo-en-transición" class="level2">
-<h2 class="anchored" data-anchor-id="polity5-en-1991-un-mundo-en-transición">Polity5 en 1991: un mundo en transición</h2>
+<section id="polity5-en-1991-un-mundo-en-transición" class="level3">
+<h3 class="anchored" data-anchor-id="polity5-en-1991-un-mundo-en-transición">Polity5 en 1991: un mundo en transición</h3>
 <p>Para entender el valor de los datos de Polity, conviene situarnos históricamente. El año 1991 marcó un punto de inflexión en la política internacional. Fue el momento de la <strong>disolución de la Unión Soviética</strong>, la culminación de la Guerra Fría y el inicio de un proceso que algunos analistas llamaron la “tercera ola de democratización”. En ese contexto, el mapa global de regímenes políticos estaba en plena transformación.</p>
 <p>La base Polity5 nos permite observar esa transición con claridad. El histograma que presentamos a continuación muestra cómo se distribuían los países del mundo en la escala de Polity en 1991.</p>
 <div class="cell">
@@ -510,6 +512,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><strong>El “vacío” del centro.</strong> Entre los valores intermedios, aproximadamente entre -2 y +2, la cantidad de países era mucho menor. Esto sugiere que, a comienzos de los noventa, la política mundial tendía a polarizarse entre regímenes autoritarios y democracias plenas, con menos espacio para los híbridos o los sistemas en transición. Los llamados regímenes “semidemocráticos” existían, pero eran menos frecuentes.</p></li>
 </ol>
 <p>Si ponemos este histograma junto al que analizamos para 2018, la diferencia en la forma de la distribución cambia radicalmente: de un mundo polarizado en 1991 pasamos a un mundo donde predominan las democracias en 2018. En términos gráficos, es como si la masa de países se hubiera desplazado hacia la derecha del histograma.</p>
+</section>
 </section>
 <section id="la-base-de-datos-de-disputas-militarizadas-mids" class="level2">
 <h2 class="anchored" data-anchor-id="la-base-de-datos-de-disputas-militarizadas-mids">La base de datos de Disputas Militarizadas (MIDs)</h2>
@@ -579,6 +582,9 @@ Aquí lo que se busca es mapear cada episodio de conflicto, desde las amenazas y
 </section>
 <section id="decisiones-clave-al-construir-histogramas" class="level1">
 <h1>Decisiones clave al construir histogramas</h1>
+<blockquote class="blockquote">
+<p>nota, pasar seccion a modulo de graficos</p>
+</blockquote>
 <p>Aunque los programas informáticos generan histogramas automáticamente, conviene recordar que el investigador siempre toma decisiones que afectan la forma final del gráfico:</p>
 <ul>
 <li><strong>Número de intervalos</strong>: si usamos muy pocos, la distribución puede verse excesivamente simplificada y ocultar patrones relevantes; si usamos demasiados, podemos introducir ruido y perder claridad. Una regla práctica es comenzar con () clases para (n) observaciones, y luego ajustar según el caso.<br>
